@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'alexonbstudio/webjet-cloud',
-        'pretty_version' => '2.2.0',
-        'version' => '2.2.0.0',
+        'pretty_version' => '2.2.1',
+        'version' => '2.2.1.0',
         'reference' => NULL,
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
@@ -11,8 +11,8 @@
     ),
     'versions' => array(
         'alexonbstudio/webjet-cloud' => array(
-            'pretty_version' => '2.2.0',
-            'version' => '2.2.0.0',
+            'pretty_version' => '2.2.1',
+            'version' => '2.2.1.0',
             'reference' => NULL,
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
