@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+#E-Mail
+RewriteRule ^contact\.html$ index.php?pages=email [L]
+#security CSP 
+RewriteRule ^security/csp-violate\.html$ email.php?security=csp [L]
+
+
+########## CONTACT - French ##########
+RewriteRule ^fr/contactez\.html$ email.php?lang=fr&pages=index [L]
+
+
+########## CONTACT - English ##########
+RewriteRule ^en/contact\.html$ email.php?lang=en&pages=index [L]
+</IfModule>
