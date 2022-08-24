@@ -17,7 +17,7 @@ $hosting = array(
 		'external' => array(
 			'cloud' => array(
 				'google' => array(
-					'name' => 'Google',
+					'name' => '', /*Google exemple*/
 					'siret' => '',
 					'tva' => '',
 					'vat' => '',
@@ -30,7 +30,7 @@ $hosting = array(
 			),
 			'cdn' => array(
 				'cloudflare' => array(
-					'name' => 'Cloudflare',
+					'name' => '', /*Cloudflare exemple*/
 					'siret' => '',
 					'tva' => '',
 					'vat' => '',

@@ -181,6 +181,11 @@
                 "recaptcha",
                 "spam"
             ],
+            "support": {
+                "forum": "https://groups.google.com/forum/#!forum/recaptcha",
+                "issues": "https://github.com/google/recaptcha/issues",
+                "source": "https://github.com/google/recaptcha"
+            },
             "install-path": "../google/recaptcha"
         },
         {
@@ -810,6 +815,9 @@
                 }
             ],
             "description": "API for ssllabs.com",
+            "support": {
+                "source": "https://github.com/VisualAppeal/php-ssllabs-api/tree/master"
+            },
             "install-path": "../visualappeal/php-ssllabs-api"
         }
     ],

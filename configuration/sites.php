@@ -6,8 +6,8 @@ exemple $sites['e-mail']['contact'];
 
 */
 $sites = array(
-	'name' => 'Website Project (WP)',
-	'domain' => 'dev.lan', /*domain: exemple.tld*/
+	'name' => 'WebJet',
+	'domain' => 'webjet.cloud', /*domain: exemple.tld*/
 	'acceptlang' => 'fr',
 	'auto' => array(
 		'domain' => preg_replace('/www./i', '', $_SERVER['SERVER_NAME']) /*Automate domain.tld no put*/
@@ -15,7 +15,7 @@ $sites = array(
 	'email' => array(
 		'receive' => 'text' /* [text or icon] (icon: need to use template mailing - contact form you'll receive */
 	),
-	'sub-domain' => '',  /*domain: cdexemple.tld*/
+	'sub-domain' => 'cdnjs.webjet.cloud',  /*domain: cdexemple.tld*/
 	'protocol' => isset($_SERVER["HTTPS"]) ? 'https' : 'http',
 	'template' => 'default',
 	'create' => array(),
@@ -23,7 +23,7 @@ $sites = array(
 		'rdf' => date('Y-m-d')
 	),
 	'copyright' => array(
-		'frontend' => 'Copyright &copy; 2019-'.date('Y'), /*show on template */
+		'frontend' => 'Copyright &copy; 2022-'.date('Y'), /*show on template */
 		'rdf' => 'Copyright &copy;' /*show only template seo/txt/rdf*/
 	),
 	'head' => array(
