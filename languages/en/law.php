@@ -4,8 +4,10 @@ $law = array(
 	'full' => array(
 		'content' => array(
 			'footer' => 'All Right Reserved.',
-			'developper' => 'Developper',
-			'designer' => 'Designer'
+			'developper' => 'Developper by',
+			'designer' => 'Designer by',
+			'distributed' => 'Distributed by',
+			'powered' => 'Powered by'
 		)
 	),
 	'pages' => array(

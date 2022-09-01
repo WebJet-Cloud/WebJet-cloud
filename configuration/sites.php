@@ -1,8 +1,8 @@
 <?php
 /*
-exemple $sites['show'];
+exemple $sites['name'];
 exemple $sites['update']['rdf'];
-exemple $sites['e-mail']['contact'];
+exemple $sites['tarifs']['plan'][''];
 
 */
 $sites = array(
@@ -17,7 +17,7 @@ $sites = array(
 	),
 	'sub-domain' => 'cdnjs.webjet.cloud',  /*domain: cdexemple.tld*/
 	'protocol' => isset($_SERVER["HTTPS"]) ? 'https' : 'http',
-	'template' => 'default',
+	'template' => 'startup',
 	'create' => array(),
 	'update' => array(
 		'rdf' => date('Y-m-d')
@@ -32,13 +32,11 @@ $sites = array(
 	'default-timezone' => 'Etc/UTC', /*Docs PHP variable date_default_timezone_set() */
 	/*Pricing*/
 	'tarifs' => array(
-		'<services>' => array(
-			'<sector>1' => array(
-				'<purpose1>' => '1'
-			),
-			'<sector>2' => array(
-				'<proposition1>' => '10'
-			)  
+		'money' => '€',
+		'plan' => array(
+			'basic' => '10',
+			'standard' => '81',
+			'premium' => '162'
 		)
 	)
 );

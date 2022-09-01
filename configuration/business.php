@@ -1,9 +1,9 @@
 <?php
-#business['local']['status']['name']
+# $business['local']['name']
 $business = array(
 	'local' => array(
 		'born' => '', /*exemple Day/Month/Year number only indicate age */
-		'name' => 'business compagny',/*IF empty variable output not show public/not use*/
+		'name' => 'WebJet',/*IF empty variable output not show public/not use*/
 		'siret' => '',
 		'tva' => '',
 		'vat' => '',

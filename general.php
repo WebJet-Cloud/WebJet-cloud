@@ -1,7 +1,7 @@
 <?php
 # Check out if have error and fix
-#error_reporting(E_ALL);
-#ini_set("display_errors", 1);
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 
 require 'libs/autoload.php';
 #require libs/custom/
@@ -63,6 +63,7 @@ $law = json_decode($JE_translate_law, true);
 $email = json_decode($JE_translate_email, true);
 $block = json_decode($JE_translate_block, true);
 $sitemap = json_decode($JE_translate_sitemap, true);
+$teams = json_decode($JE_translate_teams, true);
 
 #Email contact form PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
@@ -103,8 +104,41 @@ if(isset($_GET['lang'])){
 				$imgs = $general['index']['sitemap']['images'];
 				$vdos = $general['index']['sitemap']['video'];
 				define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$general['index']['url'][$DefineTranslateLang]);
-				include('themes/'.$sites['template'].'/header.php');
+				include('themes/'.$sites['template'].'/header-fix.php');
 				include_once('themes/'.$sites['template'].'/general/home.php');
+				include('themes/'.$sites['template'].'/footer.php');	
+			} else if($_GET['pages'] == 'aboutus'){
+				$title = $general['aboutus']['title'];
+				$description = $general['aboutus']['description'];
+				$keyword = $general['aboutus']['keyword'];
+				$urls = $general['aboutus']['url']['default'];
+				$imgs = $general['aboutus']['sitemap']['images'];
+				$vdos = $general['aboutus']['sitemap']['video'];
+				define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$general['aboutus']['url'][$DefineTranslateLang]);
+				include('themes/'.$sites['template'].'/header.php');
+				include_once('themes/'.$sites['template'].'/general/aboutus.php');
+				include('themes/'.$sites['template'].'/footer.php');	
+			} else if($_GET['pages'] == 'services'){
+				$title = $general['services']['title'];
+				$description = $general['services']['description'];
+				$keyword = $general['services']['keyword'];
+				$urls = $general['services']['url']['default'];
+				$imgs = $general['services']['sitemap']['images'];
+				$vdos = $general['services']['sitemap']['video'];
+				define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$general['services']['url'][$DefineTranslateLang]);
+				include('themes/'.$sites['template'].'/header.php');
+				include_once('themes/'.$sites['template'].'/general/services.php');
+				include('themes/'.$sites['template'].'/footer.php');	
+			} else if($_GET['pages'] == 'teams'){
+				$title = $teams['index']['title'];
+				$description = $teams['index']['description'];
+				$keyword = $teams['index']['keyword'];
+				$urls = $teams['index']['url']['default'];
+				$imgs = $teams['index']['sitemap']['images'];
+				$vdos = $teams['index']['sitemap']['video'];
+				define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$teams['index']['url'][$DefineTranslateLang]);
+				include('themes/'.$sites['template'].'/header.php');
+				include_once('themes/'.$sites['template'].'/general/teams.php');
 				include('themes/'.$sites['template'].'/footer.php');	
 			} else {
 				header('Location: '.$protocols.'://'.$domainTLD);

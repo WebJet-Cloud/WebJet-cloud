@@ -1,11 +1,11 @@
 <?php
-# $private['mail']['public']
+# $private['phone']['code'].' '.$private['phone']['number']
 
 $private = array(
 	'born' => '24/04/1991', /*exemple Day/Month/Year number only indicate age */
-	'name' => 'Private name',/*IF empty variable output not show public/not use*/
-	'address' => '',
-	'postal' => '75000',
+	'name' => 'Alexon Balangue',/*IF empty variable output not show public/not use*/
+	'address' => 'adresse personnel non partager',
+	'postal' => '75017',
 	'city' => 'Paris',
 	'region' => 'Paris',
 	'contry' => 'France',
@@ -25,10 +25,10 @@ $private = array(
 		'number' => '',
 	),
 	'mail' => array(
-		'public' => 'contact', /*IF yes domain name or not indicate use mail private -> @ -> external = gamil.com*/
-		'private' => 'exemple', /* *@gmail.com down is gmail.com*/
+		'public' => 'services', /*IF yes domain name or not indicate use mail private -> @ -> external = gamil.com*/
+		'private' => 'alexonbstudio', /* *@gmail.com down is gmail.com*/
 		'@' => array(
-			'external' => 'gmail.com'
+			'external' => 'protonmail.com'
 		)
 	)
 );

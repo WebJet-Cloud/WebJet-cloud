@@ -5,8 +5,8 @@ $social_http_sites = isset($_SERVER["HTTPS"]) ? 'https' : 'http';
 $social = array(
 	'facebook' => array(
 		'sites' => 'facebook',
-		'name' => 'alexonbstudio.fr',
-		'url' => $social_http_sites.'://fb.me/alexonbstudio.fr',
+		'name' => 'webjetclouds',
+		'url' => $social_http_sites.'://fb.me/webjetclouds',
 		'admins' => '103042234555592',
 		'profile-id' => '100000686899395',
 		'app-id' => '215266456206074',
@@ -14,165 +14,165 @@ $social = array(
 	),
 	'twitter' => array(
 		'sites' => 'twitter',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://twitter.com/alexonbstudio'
+		'name' => 'webjetclouds',
+		'url' => $social_http_sites.'://twitter.com/webjetclouds'
 	),
 	'tiktok' => array(
 		'sites' => 'tiktok',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://tiktok.com/@alexonbstudio'
+		'name' => '',
+		'url' => ''
 	),
 	'blogger' => array(
 		'sites' => 'blogger',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://draft.blogger.com/profile/12116612549748477496'
+		'name' => '',
+		'url' => ''
 	),
 	'spotify' => array(
 		'sites' => 'spotify',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://open.spotify.com/user/21cd2q2a2jbqpusnle6beyxwq?si=WhrDmqJSQISXuJ1Bi5jIDw'
+		'name' => '',
+		'url' => ''
 	),
 	'instagram' => array(
 		'sites' => 'instagram',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://instagram.com/alexonbstudio'
+		'name' => 'webjetclouds',
+		'url' => $social_http_sites.'://instagram.com/webjetclouds'
 	),
 	'soundcloud' => array(
 		'sites' => 'soundcloud',
-		'name' => 'alexonbstudiofr',
-		'url' => $social_http_sites.'://soundcloud.com/alexonbstudiofr'
+		'name' => '',
+		'url' => ''
 	),
 	'linkedin' => array(
 		'sites' => 'linkedin',
-		'name' => 'alexonbalangue',
-		'url' => $social_http_sites.'://linkedin.com/alexonbalangue',
+		'name' => '',
+		'url' => '',
 		'team' => array(
-			'url' => $social_http_sites.'://linkedin.com/alexonbalangue'
+			'url' => ''
 		)
 	),
 	'youtube' => array(
 		'sites' => 'youtube',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://www.youtube.com/channel/UCerEqBJT8YAgTWb9bCaNC4A'
+		'name' => 'WebJetClouds',
+		'url' => $social_http_sites.'://www.youtube.com/channel/UCb_yP8M244gxQG1uen6dRgQ'
 	),
 	'twitch' => array(
 		'sites' => 'twitch',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://twitch.com/alexonbstudio'
+		'name' => '',
+		'url' => ''
 	),
 	'github' => array(
 		'sites' => 'github',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://github.com/alexonbstudio',
+		'name' => 'WebJet-Cloud',
+		'url' => $social_http_sites.'://github.com/WebJet-Cloud/',
 		'sponsor' => $social_http_sites.'://github.com/sponsors/alexonbstudio'
 	),
 	'discord' => array(
 		'sites' => 'discord',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://discord.gg/yn2v7es'
+		'name' => '',
+		'url' => ''
 	),
 	'viadeo' => array(
 		'sites' => 'viadeo',
-		'name' => 'alexon balangue',
-		'url' => $social_http_sites.'://viadeo.journaldunet.com/p/alexon-balangue-1976544',
+		'name' => '',
+		'url' => '',
 		'team' => array(
-			'url' => $social_http_sites.'://viadeo.journaldunet.com/p/alexon-balangue-1976544'
+			'url' => ''
 		)
 	),
 	'mixcloud' => array(
 		'sites' => 'mixcloud',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://mixcloud.com/alexonbstudio'
+		'name' => '',
+		'url' => ''
 	),
 	'dailymotion' => array(
 		'sites' => 'dailymotion',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://www.dailymotion.com/alexonbstudio'
+		'name' => '',
+		'url' => ''
 	),
 	'pinterest' => array(
 		'sites' => 'pinterest',
-		'name' => 'alexonbstudiofr',
-		'url' => $social_http_sites.'://pinterest.com/alexonbstudiofr'
+		'name' => 'webjetclouds',
+		'url' => $social_http_sites.'://www.pinterest.com/webjetclouds'
 	),
 	'redbubble' => array(
 		'sites' => 'redbubble',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://alexonbstudio.redbubble.com'
+		'name' => '',
+		'url' => ''
 	),
 	'spreadshirt' => array(
 		'sites' => 'spreadshirt',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://shop.spreadshirt.co.uk/alexonbstudio'
+		'name' => '',
+		'url' => ''
 	),
 	'teespring' => array(
 		'sites' => 'teespring',
-		'name' => 'alexonbstudiofr',
-		'url' => $social_http_sites.'://teespring.com/stores/alexonbstudiofr'
+		'name' => '',
+		'url' => ''
 	),
 	'shop' => array(
 		'sites' => 'shop',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://shop.alexonbstudio.fr'
+		'name' => 'webjet',
+		'url' => $social_http_sites.'://lives.webjet.cloud/boutique/'
 	),
 	'coinbase' => array(
 		'sites' => 'coinbase',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://commerce.coinbase.com/checkout/129a7ffa-2284-4b98-b869-5e1b667840f5'
+		'name' => '',
+		'url' => ''
 	),
 	'patreon' => array(
 		'sites' => 'patreon',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://www.patreon.com/alexonbstudio'
+		'name' => '',
+		'url' => ''
 	),
 	'paypal' => array(
 		'sites' => 'paypal',
-		'name' => 'alexonbalangue',
-		'url' => $social_http_sites.'://paypal.me/alexonbalangue'
+		'name' => '',
+		'url' => ''
 	),
 	'tipeee' => array(
 		'sites' => 'tipeee',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://fr.tipeee.com/alexonbstudio'
+		'name' => '',
+		'url' => ''
 	),
 	'utip' => array(
 		'sites' => 'utip',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://utip.io/alexonbstudio'
+		'name' => '',
+		'url' => ''
 	),
 	'omlet-arcade' => array(
 		'sites' => 'omlet arcade',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://omlet.gg/profile/alexonbstudio'
+		'name' => '',
+		'url' => ''
 	),
 	'streamlabs' => array(
 		'sites' => 'streamlabs',
-		'name' => 'alexonbstudio1',
-		'url' => $social_http_sites.'://streamlabs.com/alexonbstudio1'
+		'name' => '',
+		'url' => ''
 	),
 	'twitch' => array(
 		'sites' => 'twitch',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://twitch.com/alexonbstudio'
+		'name' => '',
+		'url' => ''
 	),
 	'bigo' => array(
 		'sites' => 'bigo',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://bigo.tv/alexonbstudio'
+		'name' => '',
+		'url' => ''
 	),
 	'slack' => array(
 		'sites' => 'slack',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://alexonbstudio.slack.com'
+		'name' => 'webjetclouds',
+		'url' => $social_http_sites.'://webjetclouds.slack.com'
 	),
 	'telegram' => array(
 		'sites' => 'telegram',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://t.me/alexonbstudioworld'
+		'name' => '',
+		'url' => ''
 	),
 	'snapchat' => array(
 		'sites' => 'snapchat',
-		'name' => 'alexonbstudio',
-		'url' => $social_http_sites.'://snapchat.com/alexonbstudio'
+		'name' => '',
+		'url' => ''
 	)
 );
 

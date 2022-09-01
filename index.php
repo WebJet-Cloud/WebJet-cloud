@@ -1,7 +1,7 @@
 <?php
 # Check out if have error and fix
-#error_reporting(E_ALL);
-#ini_set("display_errors", 1);
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 
 require 'libs/autoload.php';
 #require libs/custom/
@@ -65,6 +65,7 @@ $email = json_decode($JE_translate_email, true);
 $block = json_decode($JE_translate_block, true);
 $sitemap = json_decode($JE_translate_sitemap, true);
 $phone_results = json_decode($JE_translate_phone_results, true);
+$teams = json_decode($JE_translate_teams, true);
 
 #Email contact form PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
@@ -127,11 +128,46 @@ if(isset($_GET['pages'])){
 		$imgs = $general['index']['sitemap']['images'];
 		$vdos = $general['index']['sitemap']['video'];
 		define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$general['index']['url'][$DefineTranslateLang]);
-		include('themes/'.$sites['template'].'/header.php');
+		include('themes/'.$sites['template'].'/header-fix.php');
 		include_once('themes/'.$sites['template'].'/general/home.php');
 		include('themes/'.$sites['template'].'/footer.php');
-		
-		
+
+	} else if($_GET['pages'] == 'aboutus'){
+		$title = $general['aboutus']['title'];
+		$description = $general['aboutus']['description'];
+		$keyword = $general['aboutus']['keyword'];
+		$urls = $general['aboutus']['url']['default'];
+		$imgs = $general['aboutus']['sitemap']['images'];
+		$vdos = $general['aboutus']['sitemap']['video'];
+		define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$general['aboutus']['url'][$DefineTranslateLang]);
+		include('themes/'.$sites['template'].'/header.php');
+		include_once('themes/'.$sites['template'].'/general/aboutus.php');
+		include('themes/'.$sites['template'].'/footer.php');
+
+	} else if($_GET['pages'] == 'services'){
+		$title = $general['services']['title'];
+		$description = $general['services']['description'];
+		$keyword = $general['services']['keyword'];
+		$urls = $general['services']['url']['default'];
+		$imgs = $general['services']['sitemap']['images'];
+		$vdos = $general['services']['sitemap']['video'];
+		define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$general['services']['url'][$DefineTranslateLang]);
+		include('themes/'.$sites['template'].'/header.php');
+		include_once('themes/'.$sites['template'].'/general/services.php');
+		include('themes/'.$sites['template'].'/footer.php');
+
+	} else if($_GET['pages'] == 'teams'){
+		$title = $teams['index']['title'];
+		$description = $teams['index']['description'];
+		$keyword = $teams['index']['keyword'];
+		$urls = $teams['index']['url']['default'];
+		$imgs = $teams['index']['sitemap']['images'];
+		$vdos = $teams['index']['sitemap']['video'];
+		define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$teams['index']['url'][$DefineTranslateLang]);
+		include('themes/'.$sites['template'].'/header.php');
+		include_once('themes/'.$sites['template'].'/general/teams.php');
+		include('themes/'.$sites['template'].'/footer.php');
+
 	} else if($_GET['pages'] == 'debug'){
 		/**########## debug DIR ##########**/
 		if(isset($_GET['json'])){
@@ -331,6 +367,170 @@ if(isset($_GET['pages'])){
 		include('themes/'.$sites['template'].'/header.php');
 		include_once('themes/'.$sites['template'].'/email/full.php');
 		include('themes/'.$sites['template'].'/footer.php');	
+	} else if($_GET['pages'] == 'ask-quotes'){
+		/**########## EMAIL DIR ##########**/	
+		$title = $email['ask-quotes']['title'];
+		$description = $email['ask-quotes']['description'];
+		$keyword = $email['ask-quotes']['keyword'];
+		$urls = $email['ask-quotes']['url']['default'];
+		$imgs = $email['ask-quotes']['sitemap']['images'];
+		$vdos = $email['ask-quotes']['sitemap']['video'];
+
+
+			if (array_key_exists('email', $_POST) && $mail->validateAddress($_POST['email'])) {
+				date_default_timezone_set($sites['default-timezone']);
+				
+				$mail->setFrom($_POST['email'], $_POST['name']);
+				
+				if(!empty($private['mail']['public'])){
+					$mail->addAddress($private['mail']['public'].'@'.$domainTLD, $domainTLD);
+				} else {
+					$mail->addAddress($private['mail']['private'].'@'.$private['mail']['@']['external'], $domainTLD);
+				}
+
+				if(isset($_POST['phone-country-code']) && !empty($_POST['phone-country-code'])){
+					$PhoneCountryCodeArray = $_POST['phone-country-code'];
+					print_r($PhoneCountryCodeArray);
+						foreach($PhoneCountryCodeArray as $PhoneCountryCodeValue){
+								$PhoneCountryCode = $PhoneCountryCodeValue;
+					}
+				}
+				# Verify Number libphonenumber-for-php		
+				if(!empty($_POST['phone'])){
+					$phone = $PhoneNumberUtil->parse(substr(strip_tags($_POST['phone']), 0, 255), $PhoneCountryCode); # Default FR
+				} else {
+					$phone = $PhoneNumberUtil->parse('000000000', $PhoneCountryCode); # Default FR
+				}
+				if ($PhoneNumberUtil->isValidNumber($phone)){
+					$PhoneVerify = $phone_results['true'][$sites['email']['receive']];
+					$PhoneRegionCodeNumbers = $PhoneNumberUtil->getCountryCodeForRegion($PhoneCountryCode); # 33
+					$PhonecarrerNumbers = $PhoneNumberCarrierMapper->getNameForNumber($phone, $DefineTranslateLang);
+					$PhoneformatE164Numbers = $PhoneNumberUtil->format($phone, PhoneNumberFormat::E164);
+					$PhoneformatNATIONALNumbers = $PhoneNumberUtil->format($phone, PhoneNumberFormat::NATIONAL);
+					$PhoneformatINTERNATIONALNumbers = $PhoneNumberUtil->format($phone, PhoneNumberFormat::INTERNATIONAL);
+					$PhoneformatRFC3966Numbers = $PhoneNumberUtil->format($phone, PhoneNumberFormat::RFC3966);
+				} else {
+					$PhoneVerify = $phone_results['false'][$sites['email']['receive']];
+					$PhoneRegionCodeNumbers = $PhoneNumberUtil->getCountryCodeForRegion($PhoneCountryCode); # 33
+					$PhonecarrerNumbers = '';
+					$PhoneformatE164Numbers = '#';
+					$PhoneformatNATIONALNumbers = '000000000';
+					$PhoneformatINTERNATIONALNumbers = '000000000';
+					$PhoneformatRFC3966Numbers = '#';
+				}
+				
+				switch ($PhoneNumberUtil->getNumberType($phone)) {
+					case '0':
+						$PhoneGetType = $phone_results['switch']['FIXED-LINE'];
+					break;
+					case '1':
+						$PhoneGetType = $phone_results['switch']['MOBILE'];
+					break;
+					case '2':
+						$PhoneGetType = $phone_results['switch']['FIXED-LINE-OR-MOBILE'];
+					break;
+					case '3':
+						$PhoneGetType = $phone_results['switch']['TOLL-REE'];
+					break;
+					case '4':
+						$PhoneGetType = $phone_results['switch']['PREMIUM-RATE'];
+					break;
+					case '5':
+						$PhoneGetType = $phone_results['switch']['SHARED-COST'];
+					break;
+					case '6':
+						$PhoneGetType = $phone_results['switch']['VOIP'];
+					break;
+					case '7':
+						$PhoneGetType = $phone_results['switch']['PERSONAL-NUMBER'];
+					break;
+					case '8':
+						$PhoneGetType = $phone_results['switch']['PAGER'];
+					break;
+					case '9':
+						$PhoneGetType = $phone_results['switch']['UAN'];
+					break;
+					case '10':
+						$PhoneGetType = $phone_results['switch']['UNKNOWN'];
+					break;
+					case '27':
+						$PhoneGetType = $phone_results['switch']['EMERGENCY'];
+					break;
+					case '28':
+						$PhoneGetType = $phone_results['switch']['VOICEMAIL'];
+					break;
+					case '29':
+						$PhoneGetType = $phone_results['switch']['SHORT-CODE'];
+					break;
+					case '30':
+						$PhoneGetType = $phone_results['switch']['STANDARD-RATE'];
+					break;
+					default:
+						$PhoneGetType = $phone_results['switch']['UNKNOWN'];
+				}
+						
+				if ($mail->addReplyTo($_POST['email'], $_POST['name']) && isset($_POST['h-captcha-response']) && !empty($_POST['h-captcha-response'])) {
+					$mail->Subject = $_POST['subject'].' ('.$email['ask-quotes']['title'].') - '.$domainTLD.'.';
+					$mail->isHTML(true);
+							/*
+							#Solution 1
+							ob_start("ob_html_compress");
+							include 'themes/email/backend.php';
+							$body = ob_get_clean();
+							$mail->msgHTML($body, dirname(__FILE__));
+							*/
+							#Solution 2
+							/*$email_vars_tpl = array(
+								'subject' => $_POST['subject'],
+								'email' => $_POST['email'],
+								'name' => $_POST['name'],
+								'phone' =>  '(Type:'.$PhoneGetType.'/'.$PhoneVerify.')='.$phone.' | +('.$PhoneRegionCodeNumbers.') <a href="'.$PhoneformatE164Numbers.'">'.$PhoneformatINTERNATIONALNumbers.'</a> <strong>(info: '.$PhonecarrerNumbers.')',
+								'message' => $_POST['message'],
+							);
+							$body_tpl = file_get_contents('themes/email/public.php');
+
+							if(isset($vars_tpl)){
+								foreach($email_vars_tpl as $code_tpl=>$value){
+									$body_tpl = str_replace('{'.strtoupper($code_tpl).'}', $value, $body_tpl);
+								}
+							}
+							$mail->msgHTML($body_tpl, dirname(__FILE__));
+							#Solution 3
+							#$mail->msgHTML(file_get_contents('contents.html'), __DIR__);*/
+							#Solution 0 = basic
+							$mail->Body = '
+							<h2>'.$email['ask-quotes']['title'].': '.$domainTLD.'</h2>
+							<h4>'.$email['ask-quotes']['content']['default']['subject'].' - '.$_POST['subject'].'</h4>
+							<strong>'.$email['ask-quotes']['content']['default']['email'].':</strong> '.$_POST['email'].'<br />
+							<strong>'.$email['ask-quotes']['content']['default']['name'].':</strong> '.$_POST['name'].'<br />
+							<strong>'.$email['ask-quotes']['content']['default']['phone'].':</strong> (Type:'.$PhoneGetType.'/'.$PhoneVerify.')='.$phone.' | +('.$PhoneRegionCodeNumbers.') <a href="'.$PhoneformatE164Numbers.'">'.$PhoneformatINTERNATIONALNumbers.'</a> <strong>(info: '.$PhonecarrerNumbers.')</strong><br /><br />
+							<strong>'.$email['ask-quotes']['content']['default']['message'].':</strong> '.$_POST['message'];
+					
+					//$Gresponse = $GRecaptcha->setExpectedHostname($domainTLD)->verify($GRecaptchaResponse, IpHelper::getIp());
+
+					# anti spam with HCAPTCHA
+					$hcaptcha_VResponse = file_get_contents('https://hcaptcha.com/siteverify?secret='.$apiexternal['captcha']['hcaptcha']['secret'].'&response='.$_POST['h-captcha-response'].'&remoteip='.IpHelper::getIp());
+					$hcaptcha_RData = json_decode($hcaptcha_VResponse);
+					
+					
+					if (!$mail->send() AND $hcaptcha_RData->success) {
+					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url']['default']);
+					   exit();
+					} else {
+					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['success']['url']['default']);
+					   exit();
+					}
+				} else {
+					header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url']['default']);
+					exit();
+
+				}
+			}		
+
+		define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$email['index']['url'][$DefineTranslateLang]);
+		include('themes/'.$sites['template'].'/header.php');
+		include_once('themes/'.$sites['template'].'/email/ask-devis.php');
+		include('themes/'.$sites['template'].'/footer.php');	
 	} else if($_GET['pages'] == 'sponsor'){
 		/**########## SPONSOR DIR ##########**/	
 		$title = $sponsor['index']['title'];
@@ -505,7 +705,7 @@ if(isset($_GET['pages'])){
 	$imgs = $general['index']['sitemap']['images'];
 	$vdos = $general['index']['sitemap']['video'];
 	define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$general['index']['url'][$DefineTranslateLang]);
-	include('themes/'.$sites['template'].'/header.php');
+	include('themes/'.$sites['template'].'/header-fix.php');
 	include_once('themes/'.$sites['template'].'/general/home.php');
 	include('themes/'.$sites['template'].'/footer.php');	
 }

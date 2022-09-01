@@ -1,11 +1,13 @@
 <?php
-# $law['full']['content']['developper']
+# $law['full']['content']['powered']
 $law = array(
 	'full' => array(
 		'content' => array(
 			'footer' => 'Tous Droits Réservés.',
-			'developper' => 'Développeur',
-			'designer' => 'Designer'
+			'developper' => 'Développeur par',
+			'designer' => 'Designer par',
+			'distributed' => 'Distributé par',
+			'powered' => 'Propulsé par'
 		)
 	),
 	###################PAGE URL#####################

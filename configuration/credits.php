@@ -1,5 +1,5 @@
 <?php
-# $credits['developper']['alexonbstudio']['url'].' '.$credits['webdesigner']['startbootstrap']['name'].' '.$credits['developper']['PHPMailer']['name'].' '.$credits['developper']['joomla']['name']
+# $credits['version']['stable']['url'].' '.$credits['webdesigner']['startbootstrap']['name'].' '.$credits['developper']['PHPMailer']['name'].' '.$credits['developper']['joomla']['name']
 
 $credits = array(
 	'developper' => array(

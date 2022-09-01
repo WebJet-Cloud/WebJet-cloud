@@ -61,6 +61,7 @@ $email = json_decode($JE_translate_email, true);
 $block = json_decode($JE_translate_block, true);
 $sitemap = json_decode($JE_translate_sitemap, true);
 $debug = json_decode($JE_translate_debug, true);
+$teams = json_decode($JE_translate_teams, true);
 
 
 

@@ -39,7 +39,7 @@ $images = array(
 			/*Custom your own*/
 		)
 	),
-	'dir' => 'assets/images'
+	'dir' => 'images'
 );
 
 $JE_images = json_encode($images);
