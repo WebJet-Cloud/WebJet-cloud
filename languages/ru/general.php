@@ -44,8 +44,8 @@ $general = array(
 	),
 	'index' => array(
 		'title' => 'Добро пожаловать',
-		'description' => '',
-		'keyword' => '',
+		'description' => 'WebJet — это PHP с открытым исходным кодом от сообщества.',
+		'keyword' => 'webjet, webjet php, webjet с открытым исходным кодом, с открытым исходным кодом, php, php8, веб-приложение, composer php',
 		'url' => array(
 			'default' => 'index',
 			'ru' => 'home'
