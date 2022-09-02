@@ -4,8 +4,10 @@
 
 # Preparing integrated on the sitemap
 $generator->addURL('/'.$general['index']['url']['default'], new DateTime(), 'monthly', 0.5, null);
+$generator->addURL('/'.$general['services']['url']['default'], new DateTime(), 'monthly', 0.5, null);
 $generator->addURL('/'.$about['index']['url']['default'], new DateTime(), 'weekly', 1, null);
 $generator->addURL('/'.$email['index']['url']['default'], new DateTime(), 'weekly', 1, null);
+$generator->addURL('/'.$email['ask-quotes']['url']['default'], new DateTime(), 'weekly', 1, null);
 $generator->addURL('/'.$sponsor['index']['url']['default'], new DateTime(), 'weekly', 1, null);
 $generator->addURL('/'.$partner['index']['url']['default'], new DateTime(), 'weekly', 1, null);
 $generator->addURL('/'.$law['pages']['url']['default'], new DateTime(), 'weekly', 1, null);

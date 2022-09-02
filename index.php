@@ -1,7 +1,7 @@
 <?php
 # Check out if have error and fix
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
+#error_reporting(E_ALL);
+#ini_set("display_errors", 1);
 
 require 'libs/autoload.php';
 #require libs/custom/
@@ -395,6 +395,15 @@ if(isset($_GET['pages'])){
 								$PhoneCountryCode = $PhoneCountryCodeValue;
 					}
 				}
+				
+				if(isset($_POST['servicesweb']) && !empty($_POST['servicesweb'])){
+					$serviceswebArray = $_POST['servicesweb'];
+					print_r($serviceswebArray);
+						foreach($serviceswebArray as $serviceswebValue){
+								$serviceswebCode = $serviceswebValue;
+					}
+				}
+
 				# Verify Number libphonenumber-for-php		
 				if(!empty($_POST['phone'])){
 					$phone = $PhoneNumberUtil->parse(substr(strip_tags($_POST['phone']), 0, 255), $PhoneCountryCode); # Default FR

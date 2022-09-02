@@ -17,16 +17,16 @@ $email = array(
 					'2' => 'Email to get free quote',
 					'3' => 'Visit our office'
 				),
-				'calendly' => 'Schedule time with me'
+				'calendly' => 'Schedule time with me'                                                                                                                                                                                                                                                                                                                                                                         
 			),
 			'mail' => array(
 				'contact' => 'Contact',
 				'support' => 'Support',
 				'commercial' => 'Commercial',
-				'sponsor' => 'Sponsor',
+			 	'sponsor' => 'Sponsor',
 				'partner' => 'Partner',
 				'business' => 'Business'
-			),
+			),                
 			'default' => array(
 				'email' => 'Email',
 				'phone' => 'Phone',
@@ -62,6 +62,11 @@ $email = array(
 			'en' => 'ask-quote'
 		),
 		'content' => array(
+			'sebservices' => array(
+				'developper' => 'developper',
+				'webmaster' => 'Webmaster',
+				'services-it' => 'Services IT'
+			),
 			'mail' => array(
 				'contact' => 'Contact',
 				'support' => 'Support',

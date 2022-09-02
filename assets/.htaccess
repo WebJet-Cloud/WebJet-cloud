@@ -1222,3 +1222,571 @@ FileETag None
      RewriteCond %{REQUEST_FILENAME} !-f
      RewriteRule ^(.+)\.(\w+)\.(bmp|css|cur|gif|ico|jpe?g|m?js|a?png|svgz?|webp|webmanifest)$ $1.$3 [L]
  </IfModule>
+
+
+
+#INDEX frontend default
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^index$ index.php [L]
+	RewriteRule ^index$ index.php?pages=index [L]
+	RewriteRule ^cv-alexonbalangue$ index.php?pages=cv [L]
+	RewriteRule ^marketplace$ index.php?pages=shop [L]
+	RewriteRule ^server$ index.php?pages=server [L]
+	RewriteRule ^project$ index.php?pages=project [L]
+	RewriteRule ^invest$ index.php?pages=invest [L]
+	RewriteRule ^token-coin$ index.php?pages=crypto [L]
+	RewriteRule ^downloads$ index.php?pages=download [L]
+	RewriteRule ^donation$ index.php?pages=donation [L]
+	RewriteRule ^streaming$ index.php?pages=stream [L]
+
+#### INVEST   
+
+
+	RewriteRule ^invest/crypto$ index.php?pages=invest&all=crypto [L]
+	RewriteRule ^invest/bourse$ index.php?pages=invest&all=bourse [L]
+	RewriteRule ^invest/crowdfunding$ index.php?pages=invest&all=crowfunding [L]
+	RewriteRule ^invest/crowdlending$ index.php?pages=invest&all=crowlending [L]
+</IfModule>
+
+#Translate
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	#Translate French
+	RewriteRule ^fr/accueil.html$ general.php?lang=fr&pages=index [L]
+
+	#											SPECIAL													#
+
+	########## debug - English ##########
+	RewriteRule ^fr/déboguer$ debug.php?lang=fr&pages=debug [L]
+	RewriteRule ^fr/api/sites\.json$ debug.php?lang=fr&pages=debug&json=sites [L]
+	RewriteRule ^fr/api/social\.json$ debug.php?lang=fr&pages=debug&json=social [L]
+	RewriteRule ^fr/api/private\.json$ debug.php?lang=fr&pages=debug&json=private [L]
+	RewriteRule ^fr/api/business\.json$ debug.php?lang=fr&pages=debug&json=business [L]
+	RewriteRule ^fr/api/images\.json$ debug.php?lang=fr&pages=debug&json=images [L]
+	RewriteRule ^fr/api/partner\.json$ debug.php?lang=fr&pages=debug&json=partner [L]
+	RewriteRule ^fr/api/sponsor\.json$ debug.php?lang=fr&pages=debug&json=sponsor [L]
+	RewriteRule ^fr/api/credits\.json$ debug.php?lang=fr&pages=debug&json=credits [L]
+	
+	RewriteRule ^fr/curriculum-vitae-alexonbalangue$ general.php?lang=fr&pages=cv [L]
+	RewriteRule ^fr/boutiques$ general.php?lang=fr&pages=shop [L]
+	RewriteRule ^fr/serveur$ general.php?lang=fr&pages=server [L]
+	RewriteRule ^fr/equipment$ general.php?lang=fr&pages=equipment [L]
+	RewriteRule ^fr/projet$ general.php?lang=fr&pages=project [L]
+	RewriteRule ^fr/investissement$ general.php?lang=fr&pages=invest [L]
+	RewriteRule ^fr/token-coin$ general.php?lang=fr&pages=invest [L]
+	RewriteRule ^fr/téléchargé$ general.php?lang=fr&pages=download [L]
+	RewriteRule ^fr/faire-un-don$ general.php?lang=fr&pages=donation [L]
+	RewriteRule ^fr/streaming$ general.php?lang=fr&pages=stream [L]
+
+	########## Download - french ########## 
+	RewriteRule ^fr/téléchargé-joomla-component$ general.php?lang=fr&pages=download&joomla=component [L]
+	RewriteRule ^fr/téléchargé-joomla-module$ general.php?lang=fr&pages=download&joomla=module [L]
+	RewriteRule ^fr/téléchargé-joomla-plugin$ general.php?lang=fr&pages=download&joomla=plugin [L]
+	RewriteRule ^fr/téléchargé-joomla-template$ general.php?lang=fr&pages=download&joomla=template [L]
+	RewriteRule ^fr/téléchargé-bureautique-personnel$ general.php?lang=fr&pages=download&office=personnel [L]
+	RewriteRule ^fr/téléchargé-bureautique-professionnel$ general.php?lang=fr&pages=download&office=professionnel [L]
+	RewriteRule ^fr/téléchargé-bureautique-ebook$ general.php?lang=fr&pages=download&office=ebook [L]
+	RewriteRule ^fr/téléchargé-bureautique-audio-book$ general.php?lang=fr&pages=download&office=audio-book [L]
+	RewriteRule ^fr/téléchargé-php-website-project-wp$ general.php?lang=fr&pages=download&php=website-project-wp [L]
+
+	########## LAW - French ########## 
+	RewriteRule ^fr/règles$ law.php?lang=fr&pages=law [L]
+	RewriteRule ^fr/conditions-générales-utilisation$ law.php?lang=fr&pages=law&full=cgu [L]
+	RewriteRule ^fr/conditions-générales-de-vente$ law.php?lang=fr&pages=law&full=cgv [L]
+	RewriteRule ^fr/dmca$ law.php?lang=fr&pages=law&full=dmca [L]
+	RewriteRule ^fr/mentions-légales$ law.php?lang=fr&pages=law&full=legal [L]
+	RewriteRule ^fr/politique-de-confidentialité$ law.php?lang=fr&pages=law&full=policy-privacy [L]
+	RewriteRule ^fr/rgpd$ law.php?lang=fr&pages=law&full=rgpd [L]
+	RewriteRule ^fr/cookies$ law.php?lang=fr&pages=law&full=cookies [L]
+	RewriteRule ^fr/auteur$ law.php?lang=fr&pages=law&full=author [L]
+
+	########## FAQs - French ##########
+	RewriteRule ^fr/faqs$ faqs.php?lang=fr&pages=index [L]
+
+	########## POOL - French ##########
+	RewriteRule ^fr/pool$ pool-services.php?lang=fr&pages=index [L]
+	RewriteRule ^fr/pool/crypto-monnaie$ pool-services.php?lang=fr&pages=crypto [L]
+	RewriteRule ^fr/pool/photographe$ pool-services.php?lang=fr&pages=photo [L]
+	RewriteRule ^fr/pool/rencontre$ pool-services.php?lang=fr&pages=meet [L]
+	RewriteRule ^fr/pool/entrepreneur$ pool-services.php?lang=fr&pages=entrepreneur [L]
+	RewriteRule ^fr/pool/gameur$ pool-services.php?lang=fr&pages=gaming [L]
+	RewriteRule ^fr/pool/musique$ pool-services.php?lang=fr&pages=music [L]
+	RewriteRule ^fr/pool/hacker$ pool-services.php?lang=fr&pages=hacker [L]
+	RewriteRule ^fr/pool/développeur$ pool-services.php?lang=fr&pages=developper [L]
+	RewriteRule ^fr/pool/webmestre$ pool-services.php?lang=fr&pages=webmaster [L]
+	RewriteRule ^fr/pool/informatique$ pool-services.php?lang=fr&pages=informatique [L]
+	RewriteRule ^fr/pool/référencement-naturel$ pool-services.php?lang=fr&pages=seo [L]
+	RewriteRule ^fr/pool/autres-listes$ pool-services.php?lang=fr&pages=list [L]
+	RewriteRule ^fr/pool/formation$ pool-services.php?lang=fr&pages=formation [L]
+	RewriteRule ^fr/pool/animaux$ pool-services.php?lang=fr&pages=animal [L]
+	RewriteRule ^fr/pool/immobilier$ pool-services.php?lang=fr&pages=immo [L]
+	RewriteRule ^fr/pool/sport$ pool-services.php?lang=fr&pages=sport [L]
+	RewriteRule ^fr/pool/graphiste$ pool-services.php?lang=fr&pages=designer [L]
+	RewriteRule ^fr/pool/rédacteur$ pool-services.php?lang=fr&pages=editor [L]
+	RewriteRule ^fr/pool/traducteur$ pool-services.php?lang=fr&pages=translator [L]
+	RewriteRule ^fr/pool/avocat$ pool-services.php?lang=fr&pages=lawyer [L]
+	RewriteRule ^fr/pool/marketing$ pool-services.php?lang=fr&pages=marketing [L]		
+	RewriteRule ^fr/pool/artisanat$ pool-services.php?lang=fr&pages=pool&index=arts-and-crafts [L]
+	RewriteRule ^fr/pool/transport$ pool-services.php?lang=fr&pages=pool&index=transport [L]
+	RewriteRule ^fr/pool/tourisme$ pool-services.php?lang=fr&pages=pool&index=tourism [L]
+	RewriteRule ^fr/pool/santé$ pool-services.php?lang=fr&pages=pool&index=health [L]
+	RewriteRule ^fr/pool/mode-textile$ pool-services.php?lang=fr&pages=pool&index=textile-fashion [L]
+	RewriteRule ^fr/pool/restauration$ pool-services.php?lang=fr&pages=pool&index=restoration [L]
+	RewriteRule ^fr/pool/culture$ pool-services.php?lang=fr&pages=pool&index=culture [L]
+	RewriteRule ^fr/pool/assurance$ pool-services.php?lang=fr&pages=pool&index=insurance [L]
+	RewriteRule ^fr/pool/financière$ pool-services.php?lang=fr&pages=pool&index=financial [L]
+	RewriteRule ^fr/pool/automobile$ pool-services.php?lang=fr&pages=pool&index=automobile [L]
+	RewriteRule ^fr/pool/audio-visuel$ pool-services.php?lang=fr&pages=pool&index=audio-visual [L]
+	RewriteRule ^fr/pool/architecte$ pool-services.php?lang=fr&pages=pool&index=architect [L]
+	RewriteRule ^fr/pool/agrilculture$ pool-services.php?lang=fr&pages=pool&index=agrilculture [L]
+	RewriteRule ^fr/pool/diy$ pool-services.php?lang=fr&pages=pool&index=diy [L]
+	RewriteRule ^fr/pool/administratifs$ pool-services.php?lang=fr&pages=pool&index=administrative [L]
+	RewriteRule ^fr/pool/biologie$ pool-services.php?lang=fr&pages=pool&index=biology [L]
+	RewriteRule ^fr/pool/commerce$ pool-services.php?lang=fr&pages=pool&index=trade [L]
+	RewriteRule ^fr/pool/association$ pool-services.php?lang=fr&pages=pool&index=association [L]
+	RewriteRule ^fr/pool/hotel$ pool-services.php?lang=fr&pages=pool&index=hotel [L]
+	RewriteRule ^fr/pool/adulte$ pool-services.php?lang=fr&pages=pool&index=adult [L]
+
+
+	########## PRICING - French ##########
+	RewriteRule ^fr/tarification$ pricing.php?lang=fr&pages=index [L]
+	RewriteRule ^fr/tarification-business$ pricing.php?lang=fr&pages=base [L]
+	RewriteRule ^fr/tarification-freelance$ pricing.php?lang=fr&pages=freelancer [L]
+	RewriteRule ^fr/tarification-demande-un-devis$ pricing.php?lang=fr&pages=devis [L]
+
+	########## SPONSOR - French ##########
+	RewriteRule ^fr/sponsorisé$ sponsor.php?lang=fr&pages=index [L]
+
+	########## PARTNER - French ##########
+	RewriteRule ^fr/partenaire$ partner.php?lang=fr&pages=index [L]
+
+	########## CONTACT - French ##########
+	RewriteRule ^fr/contactez$ email.php?lang=fr&pages=index [L]
+
+	########## SITEMAP - French ##########
+	RewriteRule ^fr/plan-du-site$ sitemap.php?lang=fr&pages=index [L]
+
+	########## ABOUT - French ##########
+	RewriteRule ^fr/a-propos-de-nous$ about.php?lang=fr&pages=index [L]
+	RewriteRule ^fr/portfolio$ about.php?lang=fr&pages=portfolio [L]
+
+	########## BLOCK - French ##########
+	RewriteRule ^fr/contact/success$ block.php?lang=fr&pages=success [L]
+	RewriteRule ^fr/erreur$ block.php?lang=fr&pages=error [L]
+	RewriteRule ^fr/presse$ others.php?lang=fr&pages=press [L]
+	RewriteRule ^fr/recrutement$ others.php?lang=fr&pages=career [L]
+
+	########## INVEST - French ##########
+	RewriteRule ^fr/investissement/crypto$ general.php?lang=fr&pages=invest&all=crypto [L]
+	RewriteRule ^fr/investissement/bourse$ general.php?lang=fr&pages=invest&all=bourse [L]
+	RewriteRule ^fr/investissement/financement-participatif$ general.php?lang=fr&pages=invest&all=crowfunding [L]
+	RewriteRule ^fr/investissement/pret-participatif$ general.php?lang=fr&pages=invest&all=crowlending [L]
+
+	####################################################################################################
+	#											SPECIAL													#
+
+	RewriteRule ^en/resume-alexonbalangue$ general.php?lang=en&pages=cv [L]
+	RewriteRule ^en/store$ general.php?lang=en&pages=shop [L]
+	RewriteRule ^en/server$ general.php?lang=en&pages=server [L]
+	RewriteRule ^en/equipment$ general.php?lang=en&pages=equipment [L]
+	RewriteRule ^en/project$ general.php?lang=en&pages=project [L]
+	RewriteRule ^en/investment$ general.php?lang=en&pages=invest [L]
+	RewriteRule ^en/downloads$ general.php?lang=en&pages=download [L]
+	RewriteRule ^en/token-coin$ general.php?lang=en&pages=crypto [L]
+	RewriteRule ^en/donate$ general.php?lang=en&pages=donation [L]
+	RewriteRule ^en/streaming$ general.php?lang=en&pages=stream [L]
+
+	#Translate English
+	RewriteRule ^en/home.html$ general.php?lang=en&pages=index [L]
+
+	########## debug - English ##########
+	RewriteRule ^en/debug$ debug.php?lang=en&pages=debug [L]
+	RewriteRule ^en/api/sites\.json$ debug.php?lang=en&pages=debug&json=sites [L]
+	RewriteRule ^en/api/social\.json$ debug.php?lang=en&pages=debug&json=social [L]
+	RewriteRule ^en/api/private\.json$ debug.php?lang=en&pages=debug&json=private [L]
+	RewriteRule ^en/api/business\.json$ debug.php?lang=en&pages=debug&json=business [L]
+	RewriteRule ^en/api/images\.json$ debug.php?lang=en&pages=debug&json=images [L]
+	RewriteRule ^en/api/partner\.json$ debug.php?lang=en&pages=debug&json=partner [L]
+	RewriteRule ^en/api/sponsor\.json$ debug.php?lang=en&pages=debug&json=sponsor [L]
+	RewriteRule ^en/api/credits\.json$ debug.php?lang=en&pages=debug&json=credits [L]
+	
+	########## Download - English ########## 
+	RewriteRule ^en/downloads-joomla-component$ general.php?lang=en&pages=download&joomla=component [L]
+	RewriteRule ^en/downloads-joomla-module$ general.php?lang=en&pages=download&joomla=module [L]
+	RewriteRule ^en/downloads-joomla-plugin$ general.php?lang=en&pages=download&joomla=plugin [L]
+	RewriteRule ^en/downloads-joomla-template$ general.php?lang=en&pages=download&joomla=template [L]
+	RewriteRule ^en/downloads-office-personnal$ general.php?lang=en&pages=download&office=personnel [L]
+	RewriteRule ^en/downloads-office-professionnal$ general.php?lang=en&pages=download&office=professionnel [L]
+	RewriteRule ^en/downloads-office-ebook$ general.php?lang=en&pages=download&office=ebook [L]
+	RewriteRule ^en/downloads-office-audio-book$ general.php?lang=en&pages=download&office=audio-book [L]
+	RewriteRule ^en/downloads-php-website-project-wp$ general.php?lang=en&pages=download&php=website-project-wp [L]
+	
+	########## LAW - English ########## 
+	RewriteRule ^en/rules$ law.php?lang=en&pages=law [L]
+	RewriteRule ^en/terms-and-conditions$ law.php?lang=en&pages=law&full=cgu [L]
+	RewriteRule ^en/terms-and-conditions-of-sale$ law.php?lang=en&pages=law&full=cgv [L]
+	RewriteRule ^en/dmca$ law.php?lang=en&pages=law&full=dmca [L]
+	RewriteRule ^en/legal$ law.php?lang=en&pages=law&full=legal [L]
+	RewriteRule ^en/policy-privacy$ law.php?lang=en&pages=law&full=policy-privacy [L]
+	RewriteRule ^en/grpd$ law.php?lang=en&pages=law&full=rgpd [L]
+	RewriteRule ^en/cookies$ law.php?lang=en&pages=law&full=cookies [L]
+	RewriteRule ^en/author$ law.php?lang=en&pages=law&full=author [L]
+
+	########## POOL - English ##########
+	RewriteRule ^en/pool$ pool-services.php?lang=en&pages=index [L]
+	RewriteRule ^en/pool/crypto-currency$ pool-services.php?lang=en&pages=crypto [L]
+	RewriteRule ^en/pool/photographer$ pool-services.php?lang=en&pages=photo [L]
+	RewriteRule ^en/pool/meeting$ pool-services.php?lang=en&pages=meet [L]
+	RewriteRule ^en/pool/entrepreneur$ pool-services.php?lang=en&pages=entrepreneur [L]
+	RewriteRule ^en/pool/gaming$ pool-services.php?lang=en&pages=gaming [L]
+	RewriteRule ^en/pool/music$ pool-services.php?lang=en&pages=music [L]
+	RewriteRule ^en/pool/hacking$ pool-services.php?lang=en&pages=hacker [L]
+	RewriteRule ^en/pool/developper$ pool-services.php?lang=en&pages=developper [L]
+	RewriteRule ^en/pool/webmaster$ pool-services.php?lang=en&pages=webmaster [L]
+	RewriteRule ^en/pool/computing$ pool-services.php?lang=en&pages=informatique [L]
+	RewriteRule ^en/pool/natural-referencing$ pool-services.php?lang=en&pages=seo [L]
+	RewriteRule ^en/pool/others-list$ pool-services.php?lang=en&pages=list [L]
+	RewriteRule ^en/pool/training$ pool-services.php?lang=en&pages=formation [L]
+	RewriteRule ^en/pool/sport$ pool-services.php?lang=en&pages=sport [L]
+	RewriteRule ^en/pool/real-estate$ pool-services.php?lang=en&pages=immo [L]
+	RewriteRule ^en/pool/animal$ pool-services.php?lang=en&pages=animal [L]
+	RewriteRule ^en/pool/designer$ pool-services.php?lang=en&pages=designer [L]
+	RewriteRule ^en/pool/editor$ pool-services.php?lang=en&pages=editor [L]
+	RewriteRule ^en/pool/translator$ pool-services.php?lang=en&pages=translator [L]
+	RewriteRule ^en/pool/marketing$ pool-services.php?lang=en&pages=marketing [L]
+	RewriteRule ^en/pool/non-profit$ pool-services.php?lang=en&pages=association [L]
+	RewriteRule ^en/pool/hotel$ pool-services.php?lang=en&pages=hotel [L]	
+	RewriteRule ^en/pool/arts-and-crafts$ pool-services.php?lang=en&pages=pool&index=arts-and-crafts [L]
+	RewriteRule ^en/pool/transport$ pool-services.php?lang=en&pages=pool&index=transport [L]
+	RewriteRule ^en/pool/tourism$ pool-services.php?lang=en&pages=pool&index=tourism [L]
+	RewriteRule ^en/pool/health$ pool-services.php?lang=en&pages=pool&index=health [L]
+	RewriteRule ^en/pool/textile-fashion$ pool-services.php?lang=en&pages=pool&index=textile-fashion [L]
+	RewriteRule ^en/pool/restoration$ pool-services.php?lang=en&pages=pool&index=restoration [L]
+	RewriteRule ^en/pool/culture$ pool-services.php?lang=en&pages=pool&index=culture [L]
+	RewriteRule ^en/pool/insurance$ pool-services.php?lang=en&pages=pool&index=insurance [L]
+	RewriteRule ^en/pool/financial$ pool-services.php?lang=en&pages=pool&index=financial [L]
+	RewriteRule ^en/pool/automobile$ pool-services.php?lang=en&pages=pool&index=automobile [L]
+	RewriteRule ^en/pool/audio-visual$ pool-services.php?lang=en&pages=pool&index=audio-visual [L]
+	RewriteRule ^en/pool/architect$ pool-services.php?lang=en&pages=pool&index=architect [L]
+	RewriteRule ^en/pool/agrilculture$ pool-services.php?lang=en&pages=pool&index=agrilculture [L]
+	RewriteRule ^en/pool/diy$ pool-services.php?lang=en&pages=pool&index=diy [L]
+	RewriteRule ^en/pool/administrative$ pool-services.php?lang=en&pages=pool&index=administrative [L]
+	RewriteRule ^en/pool/biology$ pool-services.php?lang=en&pages=pool&index=biology [L]
+	RewriteRule ^en/pool/trade$ pool-services.php?lang=en&pages=pool&index=trade [L]
+	RewriteRule ^en/pool/adult$ pool-services.php?lang=en&pages=pool&index=adult [L]
+
+	########## FAQs - English ##########
+	RewriteRule ^en/q-and-as$ faqs.php?lang=en&pages=index [L]
+
+	########## PRICING - English ##########
+	RewriteRule ^en/pricing$ pricing.php?lang=en&pages=index [L]
+	RewriteRule ^en/pricing-ask-for-a-quote$ pricing.php?lang=en&pages=devis [L]
+	RewriteRule ^en/pricing-freelancer$ pricing.php?lang=en&pages=freelancer [L]
+	RewriteRule ^en/pricing-business$ pricing.php?lang=en&pages=base [L]
+
+	########## SPONSOR - English ##########
+	RewriteRule ^en/sponsor$ sponsor.php?lang=en&pages=index [L]
+
+	########## PARTNER - English ##########
+	RewriteRule ^en/partner$ partner.php?lang=en&pages=index [L]
+
+	########## CONTACT - English ##########
+	RewriteRule ^en/contact$ email.php?lang=en&pages=index [L]
+
+	########## ABOUT - English ##########
+	RewriteRule ^en/about-us$ about.php?lang=en&pages=index [L]
+	RewriteRule ^en/portfolio$ about.php?lang=en&pages=portfolio [L]
+
+	########## SITEMAP - English ##########
+	RewriteRule ^en/sitemap$ sitemap.php?lang=en&pages=index [L]
+
+	########## BLOCK - English ##########
+	RewriteRule ^en/contact/success$ block.php?lang=en&pages=success [L]
+	RewriteRule ^en/error$ block.php?lang=en&pages=error [L]
+	RewriteRule ^en/press$ others.php?lang=en&pages=press [L]
+	RewriteRule ^en/recrutment$ others.php?lang=en&pages=career [L]
+
+
+
+	########## INVEST - English ##########
+	RewriteRule ^en/iinvestment/crypto$ general.php?lang=en&pages=invest&all=crypto [L]
+	RewriteRule ^en/investment/bourse$ general.php?lang=en&pages=invest&all=bourse [L]
+	RewriteRule ^en/investment/crowdfunding$ general.php?lang=en&pages=invest&all=crowfunding [L]
+	RewriteRule ^en/investment/crowdlending$ general.php?lang=en&pages=invest&all=crowlending [L]
+
+</IfModule>
+
+#contact
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^contact$ index.php?pages=email [L]
+</IfModule>
+
+#contact - message
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^contact/success$ index.php?pages=success [L]
+	RewriteRule ^error$ index.php?pages=error [L]
+</IfModule>
+
+#About
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^about$ index.php?pages=about [L]
+	RewriteRule ^portfolio$ index.php?pages=portfolio [L]
+	RewriteRule ^equipment$ index.php?pages=equipment [L]
+</IfModule>
+
+#Pool
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^pool$ index.php?pages=pool [L]
+	RewriteRule ^pool/crypto-currency$ index.php?pages=pool&index=crypto [L]
+	RewriteRule ^pool/photographer$ index.php?pages=pool&index=photo [L]
+	RewriteRule ^pool/meeting$ index.php?pages=pool&index=meet [L]
+	RewriteRule ^pool/entrepreneur$ index.php?pages=pool&index=entrepreneur [L]
+	RewriteRule ^pool/gaming$ index.php?pages=pool&index=gaming [L]
+	RewriteRule ^pool/music$ index.php?pages=pool&index=music [L]
+	RewriteRule ^pool/hacking$ index.php?pages=pool&index=hacker [L]
+	RewriteRule ^pool/developper$ index.php?pages=pool&index=developper [L]
+	RewriteRule ^pool/webmaster$ index.php?pages=pool&index=webmaster [L]
+	RewriteRule ^pool/computing$ index.php?pages=pool&index=informatique [L]
+	RewriteRule ^pool/seo$ index.php?pages=pool&index=seo [L]
+	RewriteRule ^pool/list$ index.php?pages=pool&index=list [L]
+	RewriteRule ^pool/training$ index.php?pages=pool&index=formation [L]
+	RewriteRule ^pool/immo$ index.php?pages=pool&index=immo [L]
+	RewriteRule ^pool/sport$ index.php?pages=pool&index=sport [L]
+	RewriteRule ^pool/animal$ index.php?pages=pool&index=animal [L]
+	RewriteRule ^pool/designer$ index.php?pages=pool&index=designer [L]
+	RewriteRule ^pool/translator$ index.php?pages=pool&index=translator [L]
+	RewriteRule ^pool/editor$ index.php?pages=pool&index=editor [L]
+	RewriteRule ^pool/lawyer$ index.php?pages=pool&index=lawyer [L]
+	RewriteRule ^pool/marketing$ index.php?pages=pool&index=marketing [L]	
+	RewriteRule ^pool/arts-and-crafts$ index.php?pages=pool&index=arts-and-crafts [L]
+	RewriteRule ^pool/transport$ index.php?pages=pool&index=transport [L]
+	RewriteRule ^pool/tourism$ index.php?pages=pool&index=tourism [L]
+	RewriteRule ^pool/health$ index.php?pages=pool&index=health [L]
+	RewriteRule ^pool/textile-fashion$ index.php?pages=pool&index=textile-fashion [L]
+	RewriteRule ^pool/restoration$ index.php?pages=pool&index=restoration [L]
+	RewriteRule ^pool/culture$ index.php?pages=pool&index=culture [L]
+	RewriteRule ^pool/insurance$ index.php?pages=pool&index=insurance [L]
+	RewriteRule ^pool/financial$ index.php?pages=pool&index=financial [L]
+	RewriteRule ^pool/automobile$ index.php?pages=pool&index=automobile [L]
+	RewriteRule ^pool/audio-visual$ index.php?pages=pool&index=audio-visual [L]
+	RewriteRule ^pool/architect$ index.php?pages=pool&index=architect [L]
+	RewriteRule ^pool/agrilculture$ index.php?pages=pool&index=agrilculture [L]
+	RewriteRule ^pool/diy$ index.php?pages=pool&index=diy [L]
+	RewriteRule ^pool/administrative$ index.php?pages=pool&index=administrative [L]
+	RewriteRule ^pool/biology$ index.php?pages=pool&index=biology [L]
+	RewriteRule ^pool/trade$ index.php?pages=pool&index=trade [L]
+	RewriteRule ^pool/non-profit$ index.php?pages=pool&index=association [L]
+	RewriteRule ^pool/hotel$ index.php?pages=pool&index=hotel [L]
+	RewriteRule ^pool/adult$ index.php?pages=pool&index=adult [L]
+</IfModule>
+
+#Faqs
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^faqs$ index.php?pages=faqs [L]
+</IfModule>
+
+#Pricing
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^pricing$ index.php?pages=pricing [L]
+	RewriteRule ^pricing-freelancer$ index.php?pages=pricing&index=freelancer [L]
+	RewriteRule ^pricing-business$ index.php?pages=pricing&index=base [L]
+	RewriteRule ^pricing-ask-for-a-quote$ index.php?pages=pricing&index=devis [L]
+</IfModule>
+
+#sponsor
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^sponsor$ index.php?pages=sponsor [L]
+</IfModule>
+
+#Partner
+
+<IfModule mod_rewrite.c>
+
+	RewriteEngine on
+	RewriteRule ^partner$ index.php?pages=partner [L]
+</IfModule>
+
+#Others
+
+<IfModule mod_rewrite.c>
+
+	RewriteEngine on
+	RewriteRule ^press$ index.php?pages=others&index=press [L]
+	RewriteRule ^career$ index.php?pages=others&index=career [L]
+</IfModule>
+
+#law
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^rules$ index.php?pages=law [L]
+	RewriteRule ^cgu$ index.php?pages=law&full=cgu [L]
+	RewriteRule ^cgv$ index.php?pages=law&full=cgv [L]
+	RewriteRule ^dmca$ index.php?pages=law&full=dmca [L]
+	RewriteRule ^legal$ index.php?pages=law&full=legal [L]
+	RewriteRule ^policy-privacy$ index.php?pages=law&full=policy-privacy [L]
+	RewriteRule ^grpd$ index.php?pages=law&full=rgpd [L]
+	RewriteRule ^cookies$ index.php?pages=law&full=cookies [L]
+	RewriteRule ^author$ index.php?pages=law&full=author [L]
+</IfModule>
+
+#sitemap
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^sitemap$ index.php?pages=sitemap [L]
+</IfModule>
+
+#seo
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+
+	###### XML ###### 
+	RewriteRule ^rss\.xml$ seo-others.php?index=rss [L]
+	RewriteRule ^badge\.xml$ seo-others.php?index=badge [L]
+	RewriteRule ^browserconfig\.xml$ seo-others.php?index=badge [L]
+	RewriteRule ^BingSiteAuth\.xml$ seo-others.php?index=BingSiteAuth [L]
+  RewriteRule ^sitemap\.xml$ seo-others.php?sitemap=index [L]
+
+	##SITEMAP NOT NEED##
+	#RewriteRule ^sitemap-index\.xml$ seo-others.php?sitemap=default [L]
+	#RewriteRule ^sitemap-en\.xml$ seo-others.php?sitemap=en [L]
+	#RewriteRule ^sitemap-fr\.xml$ seo-others.php?sitemap=fr [L]
+
+	###### JSON ###### 
+	RewriteRule ^manifest\.json$ seo.php?json=manifest [L]
+	RewriteRule ^site\.webmanifest$ seo.php?json=manifest [L]
+	RewriteRule ^json-ld\.json$ seo.php?json=ld [L]
+	RewriteRule ^\.well-known/microsoft-identity-association\.json$ seo.php?json=microsoft-identity-association [L]
+
+	###### TXT ###### 
+	RewriteRule ^robots\.txt$ seo.php?txt=robots [L]
+	RewriteRule ^humans\.txt$ seo.php?txt=humans [L]
+	RewriteRule ^\.well-known/brave-rewards-verification\.txt$ seo.php?txt=brave-rewards-verification [L]
+	RewriteRule ^ads\.txt$ seo.php?txt=ads [L]
+
+	###### HTML VERIFY ###### 
+
+	RewriteRule ^dmlkc9lkuwiiakno7\.html$ seo.php?html-verify=dailymotion [L]
+	#RewriteRule ^$var\.html$ seo.php?html-verify=google [L]
+	#RewriteRule ^pinterest-ccf5f\.html$ seo.php?html-verify=pinterest [L]
+	RewriteRule ^yandex_59fb2941f1f550e4\.html$ seo.php?html-verify=yandex [L]
+</IfModule>
+
+# download 
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^downloads-joomla-component$ index.php?pages=download&joomla=component [L]
+	RewriteRule ^downloads-joomla-module$ index.php?pages=download&joomla=module [L]
+	RewriteRule ^downloads-joomla-plugin$ index.php?pages=download&joomla=plugin [L]
+	RewriteRule ^downloads-joomla-template$ index.php?pages=download&joomla=template [L]
+	RewriteRule ^downloads-office-personnal$ index.php?pages=download&office=personnel [L]
+	RewriteRule ^downloads-office-professionnal$ index.php?pages=download&office=professionnel [L]
+	RewriteRule ^downloads-office-ebook$ index.php?pages=download&office=ebook [L]
+	RewriteRule ^downloads-office-audio-book$ index.php?pages=download&office=audio-book [L]
+	RewriteRule ^downloads-php-website-project-wp$ index.php?pages=download&php=website-project-wp [L]
+</IfModule>
+
+# DEBUG 
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^debug$ index.php?pages=debug [L]
+	RewriteRule ^api/sites\.json$ index.php?pages=debug&json=sites [L]
+	RewriteRule ^api/social\.json$ index.php?pages=debug&json=social [L]
+	RewriteRule ^api/private\.json$ index.php?pages=debug&json=private [L]
+	RewriteRule ^api/business\.json$ index.php?pages=debug&json=business [L]
+	RewriteRule ^api/images\.json$ index.php?pages=debug&json=images [L]
+	RewriteRule ^api/partner\.json$ index.php?pages=debug&json=partner [L]
+	RewriteRule ^api/sponsor\.json$ index.php?pages=debug&json=sponsor [L]
+	RewriteRule ^api/credits\.json$ index.php?pages=debug&json=credits [L]
+</IfModule>
+
+
+
+
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+#security CSP 
+RewriteRule ^security/csp-violate$ email.php?security=csp [L]
+
+</IfModule>
+
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+#genrator sitemap & minify ameliorate your SEO/SERP
+RewriteRule ^automate/generator/sitemap-index$ seo-others.php?sitemap=index [L]
+RewriteRule ^automate/generator/sitemap-fr$ seo-others.php?sitemap=fr [L]
+RewriteRule ^automate/generator/sitemap-en$ seo-others.php?sitemap=en [L]
+
+#RewriteRule ^automate/generator/sitemap-test$ sitemap-php.php [L]
+
+RewriteRule ^automate/minify/css$ minify-php.php?css=all [L]
+RewriteRule ^automate/minify/js$ minify-php.php?js=all [L]
+
+
+</IfModule>
+
+
+
+
+# TOOLS
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^tools$ tools.php?pages=index [L]
+	RewriteRule ^tools/verify-phone$ tools.php?pages=phonelibs [L]
+	RewriteRule ^fr/outils$ tools.php?lang=fr&pages=index [L]
+	RewriteRule ^fr/outils/vérifier-le-téléphone$ tools.php?lang=fr&pages=phonelibs [L]
+	RewriteRule ^en/tools$ tools.php?lang=en&pages=index [L]
+	RewriteRule ^en/tools/verify-phone$ tools.php?lang=en&pages=phonelibs [L]
+</IfModule>
+ 
+# docs
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteRule ^documentation$ docs.php?pages=home [L]
+	RewriteRule ^documentation/api-data-json-basic$ docs.php?pages=basic [L]
+	RewriteRule ^documentation/api-data-json-business$ docs.php?pages=business [L]
+	
+	RewriteRule ^fr/documentation$ docs.php?lang=fr&pages=home [L]
+	RewriteRule ^fr/documentation/api-data-json-basic$ docs.php?lang=fr&pages=basic [L]
+	RewriteRule ^fr/documentation/api-data-json-business$ docs.php?lang=fr&pages=business [L]
+	
+	RewriteRule ^en/documentation$ docs.php?lang=en&pages=home [L]
+	RewriteRule ^en/documentation/api-data-json-basic$ docs.php?lang=en&pages=basic [L]
+	RewriteRule ^en/documentation/api-data-json-business$ docs.php?lang=en&pages=business [L]
+</IfModule>
+

@@ -1,5 +1,5 @@
 <?php
-# $email['index']['content']['container']['calendly']['']
+# $email['ask-quotes']['content']['sebservices']['developper']
 $email = array(
 	'index' => array(
 		'title' => 'Contactez',
@@ -62,6 +62,11 @@ $email = array(
 			'fr' => 'demande-devis'
 		),
 		'content' => array(
+			'sebservices' => array(
+				'developper' => 'développeur',
+				'webmaster' => 'Webmestre',
+				'services-it' => 'Services IT'
+			),
 			'mail' => array(
 				'contact' => 'Contact',
 				'support' => 'Support',
