@@ -15,7 +15,7 @@ $teams = array(
 		),
 		'sitemap' => array(
 			'images' => 'block/.jpg'  /*directory images from <exemple.tld>/assets */,
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA'  /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	)
 );

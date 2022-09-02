@@ -15,7 +15,7 @@ $partner = array(
 		),
 		'sitemap' => array(
 			'images' => 'themes/bg-alexonbstudio.png',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA'  /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	)
 );

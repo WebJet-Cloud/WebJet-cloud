@@ -197,7 +197,7 @@ $general = array(
 		),
 		'sitemap' => array(
 			'images' => 'themes/bg-alexonbstudio.png',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA'  /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	),
 	'aboutus' => array(
@@ -213,7 +213,7 @@ $general = array(
 		),
 		'sitemap' => array(
 			'images' => 'block/error.jpg',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA'  /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	),
 	'services' => array(
@@ -229,7 +229,7 @@ $general = array(
 		),
 		'sitemap' => array(
 			'images' => 'block/error.jpg',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA'  /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	)
 );

@@ -25,7 +25,7 @@ $law = array(
 		),
 		'sitemap' => array(
 			'images' => 'background/law/law.jpg',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA' /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc' /*directory images from <exemple.tld>/assets */
 		)
 	),
 	'cookies' => array(
@@ -42,7 +42,7 @@ $law = array(
 		),
 		'sitemap' => array(
 			'images' => 'background/law/cookie.jpg',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA' /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc' /*directory images from <exemple.tld>/assets */
 		)
 	),
 	'cgu' => array(
@@ -59,7 +59,7 @@ $law = array(
 		),
 		'sitemap' => array(
 			'images' => 'background/law/cgu.jpg',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA' /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc' /*directory images from <exemple.tld>/assets */
 		)
 	),
 	'cgv' => array(
@@ -76,7 +76,7 @@ $law = array(
 		),
 		'sitemap' => array(
 			'images' => 'background/law/cgv.jpg',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA' /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc' /*directory images from <exemple.tld>/assets */
 		)
 	),
 	'dmca' => array(
@@ -93,7 +93,7 @@ $law = array(
 		),
 		'sitemap' => array(
 			'images' => 'background/law/copyright.jpg',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA' /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc' /*directory images from <exemple.tld>/assets */
 		)
 	),
 	'legal' => array(
@@ -153,7 +153,7 @@ $law = array(
 		),
 		'sitemap' => array(
 			'images' => 'background/law/copyright.jpg',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA' /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc' /*directory images from <exemple.tld>/assets */
 		)
 	),
 	'policy-privacy' => array(
@@ -170,7 +170,7 @@ $law = array(
 		),
 		'sitemap' => array(
 			'images' => 'background/law/privacy-policy.jpg',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA' /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc' /*directory images from <exemple.tld>/assets */
 		)
 	),
 	'rgpd' => array(
@@ -187,7 +187,7 @@ $law = array(
 		),
 		'sitemap' => array(
 			'images' => 'background/law/rgpd.jpg',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA' /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc' /*directory images from <exemple.tld>/assets */
 		)
 	)
 );

@@ -15,7 +15,7 @@ $block = array(
 		),
 		'sitemap' => array(
 			'images' => 'block/success.jpg',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA'  /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	),
 	'error' => array(
@@ -38,7 +38,7 @@ $block = array(
 		),
 		'sitemap' => array(
 			'images' => 'block/error.jpg',
-			'video' => 'www.youtube.com/watch?v=pzXxTTyxFNA'  /*directory images from <exemple.tld>/assets */
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	)
 );
