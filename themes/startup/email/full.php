@@ -43,7 +43,7 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form>
+                    <form method="post" role="form" class="php-email-form">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <input type="text" name="name" class="form-control border-0 bg-light px-4" placeholder="<?php echo $email['index']['content']['default']['name']; ?>" style="height: 55px;">

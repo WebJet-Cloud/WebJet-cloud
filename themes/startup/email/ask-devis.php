@@ -7,7 +7,7 @@
                     <h1 class="mb-0"><?php echo $general['index']['content']['quotes']['container']['description']; ?></h1>
             </div>
             <div class="row">
-                <form>
+                <form method="post" role="form" class="php-email-form">
                     <div class="col-lg-12 wow slideInUp" data-wow-delay="0.3s">
                         <div class="row">
                             <div class="col-md-6">
