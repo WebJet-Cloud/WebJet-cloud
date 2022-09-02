@@ -1,7 +1,0 @@
-#Preparing Caddyfile * caddyserver v2
-
-handle_errors {
-#	rewrite * /{http.error.status_code}.html
-	rewrite index.php?pages=error /error.html
-	file_server
-}

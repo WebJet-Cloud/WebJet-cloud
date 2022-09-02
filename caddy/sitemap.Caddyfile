@@ -1,4 +1,0 @@
-#Preparing Caddyfile * caddyserver v2
-#sponsor
-rewrite index.php?pages=sitemap /sponsor.html
-

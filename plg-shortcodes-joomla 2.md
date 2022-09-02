@@ -1,2 +1,0 @@
-# Plugin Shortcodes Joomla
-
