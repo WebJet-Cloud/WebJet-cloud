@@ -260,9 +260,9 @@
                         <div class="row">
                             <div class="col-md-6">
 								<select name="servicesweb[]" id="select">
-								    <option value="developper"><?php echo $email['ask-quotes']['content']['sebservices']['developper']?></option>
-								    <option value="webmaster"><?php echo $email['ask-quotes']['content']['sebservices']['webmaster']?></option>
-								    <option value="service-it"><?php echo $email['ask-quotes']['content']['sebservices']['service-it']?></option>
+								    <option value="developper"><?php echo $email['ask-quotes']['content']['sebservices']['developper']; ?></option>
+								    <option value="webmaster"><?php echo $email['ask-quotes']['content']['sebservices']['webmaster']; ?></option>
+								    <option value="service-it"><?php echo $email['ask-quotes']['content']['sebservices']['service-it']; ?></option>
                                 </select>
                             </div>
                         </div>
@@ -282,11 +282,6 @@
                              <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" name="message" placeholder="Message"></textarea>
                         </div>
 
-							<div class="mb-3">
-								<div class="loading"><?php echo $email['index']['content']['form']['load']; ?></div>
-								<div class="error-message"></div>
-								<div class="sent-message"><?php echo $email['index']['content']['form']['msg-thanks']; ?></div>
-							</div>
                         <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit"><?php echo $email['index']['content']['form']['send']; ?></button>
                         </div>
