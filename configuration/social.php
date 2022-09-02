@@ -10,7 +10,7 @@ $social = array(
 		'admins' => '103042234555592',
 		'profile-id' => '100000686899395',
 		'app-id' => '215266456206074',
-		'page-id' => ''
+		'page-id' => '103207239191211'
 	),
 	'twitter' => array(
 		'sites' => 'twitter',
