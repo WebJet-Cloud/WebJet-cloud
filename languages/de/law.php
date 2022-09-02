@@ -3,21 +3,21 @@
 $law = array(
 	'full' => array(
 		'content' => array(
-			'footer' => 'Tous Droits Réservés.',
-			'developper' => 'Développeur par',
-			'designer' => 'Designer par',
-			'distributed' => 'Distributé par',
-			'powered' => 'Propulsé par'
+			'footer' => 'Alle Rechte vorbehalten.',
+			'developper' => 'Entwickler von',
+			'designer' => 'Designer von',
+			'distributed' => 'Vertrieben von',
+			'powered' => 'Unterstützt von'
 		)
 	),
 	###################PAGE URL#####################
 	'pages' => array(
-		'title' => 'Règles',
+		'title' => 'Regeln',
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'rules',
-			'fr' => 'règles'
+			'de' => 'regeln'
 		),
 		'content' => array(
 			'' => ''
@@ -29,12 +29,12 @@ $law = array(
 		)
 	),
 	'cookies' => array(
-		'title' => 'Cookies',
+		'title' => 'Kekse',
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'cookies',
-			'fr' => 'cookies'
+			'de' => 'kekse'
 		),
 		'content' => array(
 			'' => ''
@@ -46,12 +46,12 @@ $law = array(
 		)
 	),
 	'cgu' => array(
-		'title' => 'Conditions générales d\'utilisation',
+		'title' => 'Nutzungsbedingungen',
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'cgu',
-			'fr' => 'conditions-générales-utilisation'
+			'de' => 'nutzungsbedingungen'
 		),
 		'content' => array(
 			'' => ''
@@ -63,12 +63,12 @@ $law = array(
 		)
 	),
 	'cgv' => array(
-		'title' => 'Conditions générales de vente',
+		'title' => 'Verkaufsbedingungen',
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'cgv',
-			'fr' => 'conditions-générales-de-vente'
+			'de' => 'verkaufsbedingungen'
 		),
 		'content' => array(
 			'' => ''
@@ -85,7 +85,7 @@ $law = array(
 		'keyword' => '',
 		'url' => array(
 			'default' => 'dmca',
-			'fr' => 'dmca'
+			'de' => 'dmca'
 		),
 		'content' => array(
 			'' => ''
@@ -97,57 +97,57 @@ $law = array(
 		)
 	),
 	'legal' => array(
-		'title' => 'Mentions légales',
+		'title' => 'Impressum',
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'legal',
-			'fr' => 'mentions-légales'
+			'de' => 'impressum'
 		),
 		'content' => array(
 			'owner' => array(
-				'title' => 'Prioritaire',
-				'name' => 'Nom:',
+				'title' => 'Priorität',
+				'name' => 'Nachname:',
 				'address' => 'Adresse:',
 				'status' => 'Status:'
 			),
 			'business' => array(
-				'title' => 'Siège Social',
-				'name' => 'Nom:',
+				'title' => 'Der Hauptsitz',
+				'name' => 'Nachname:',
 				'address' => 'Adresse:',
 				'status' => 'Status:'
 			),
 			'hosting' => array(
-				'title' => 'Hébergeur',
+				'title' => 'Gastgeber',
 				'address' => 'Adresse:',
-				'name' => 'Nom:'
+				'name' => 'Nachname:'
 			),
 			'server' => array(
-				'title' => 'Cloud computing',
+				'title' => 'Cloud Computing',
 				'address' => 'Adresse:',
-				'name' => 'Nom:'
+				'name' => 'Nachname:'
 			),
 			'credits' => array(
-				'title' => 'Honeur',
-				'developper' => 'Développeur web:',
+				'title' => 'Ehre',
+				'developper' => 'Webentwickler:',
 				'designer' => 'Designer:',
-				'webmaster' => 'Webmestre:',
-				'marketing' => 'Marketeur:',
-				'image' => 'Image:',
-				'photographer' => 'Photograph:',
+				'webmaster' => 'Webmaster:',
+				'marketing' => 'Marketer:',
+				'image' => 'Bild:',
+				'photographer' => 'Foto:',
 				'video' => 'Vidéo:',
 				'webdesigner' => 'WebDesigner:'
 			),
 			'status' => array(
-				'particular' => 'Particulier',
-				'association' => 'Association',
-				'small' => 'Micro Entrepreneur',
+				'particular' => 'Besondere',
+				'association' => 'Verband',
+				'small' => 'kleinstunternehmer',
 				'medium' => 'TPE',
 				'big' => 'PME'
 			),
 			'software' => array(
 				'wp' => 'WebJet',
-				'title' => 'Logiciel'
+				'title' => 'Software'
 			)
 			/*custom your own*/
 		),
@@ -157,12 +157,12 @@ $law = array(
 		)
 	),
 	'policy-privacy' => array(
-		'title' => 'Politique de confidentialité',
+		'title' => 'Datenschutz-Bestimmungen',
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'privacy-policy',
-			'fr' => 'politique-de-confidentialité'
+			'de' => 'datenschutz-Bestimmungen'
 		),
 		'content' => array(
 			'' => ''
@@ -179,7 +179,7 @@ $law = array(
 		'keyword' => '',
 		'url' => array(
 			'default' => 'grpd',
-			'fr' => 'rgpd'
+			'de' => 'rgpd'
 		),
 		'content' => array(
 			'' => ''

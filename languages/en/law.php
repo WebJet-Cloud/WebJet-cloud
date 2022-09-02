@@ -145,7 +145,7 @@ $law = array(
 				'big' => 'Big business'
 			),
 			'software' => array(
-				'wp' => 'Website Project (WP)',
+				'wp' => 'WebJet',
 				'title' => 'Software'
 			)
 			/*custom your own*/

@@ -3,21 +3,21 @@
 $law = array(
 	'full' => array(
 		'content' => array(
-			'footer' => 'Tous Droits Réservés.',
-			'developper' => 'Développeur par',
-			'designer' => 'Designer par',
-			'distributed' => 'Distributé par',
-			'powered' => 'Propulsé par'
+			'footer' => 'Все права защищены.',
+			'developper' => 'Разработчик',
+			'designer' => 'Дизайнер',
+			'distributed' => 'Кем распространяется',
+			'powered' => 'Приведено в действие'
 		)
 	),
 	###################PAGE URL#####################
 	'pages' => array(
-		'title' => 'Règles',
+		'title' => 'Правила',
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'rules',
-			'fr' => 'règles'
+			'ru' => 'rules'
 		),
 		'content' => array(
 			'' => ''
@@ -29,12 +29,12 @@ $law = array(
 		)
 	),
 	'cookies' => array(
-		'title' => 'Cookies',
+		'title' => 'Печенье',
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'cookies',
-			'fr' => 'cookies'
+			'ru' => 'cookies'
 		),
 		'content' => array(
 			'' => ''
@@ -46,12 +46,12 @@ $law = array(
 		)
 	),
 	'cgu' => array(
-		'title' => 'Conditions générales d\'utilisation',
+		'title' => 'условия обслуживания',
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'cgu',
-			'fr' => 'conditions-générales-utilisation'
+			'ru' => 'conditions-générales-utilisation'
 		),
 		'content' => array(
 			'' => ''
@@ -63,12 +63,12 @@ $law = array(
 		)
 	),
 	'cgv' => array(
-		'title' => 'Conditions générales de vente',
+		'title' => 'Условия продажи',
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'cgv',
-			'fr' => 'conditions-générales-de-vente'
+			'ru' => 'conditions-générales-de-vente'
 		),
 		'content' => array(
 			'' => ''
@@ -85,7 +85,7 @@ $law = array(
 		'keyword' => '',
 		'url' => array(
 			'default' => 'dmca',
-			'fr' => 'dmca'
+			'ru' => 'dmca'
 		),
 		'content' => array(
 			'' => ''
@@ -97,57 +97,57 @@ $law = array(
 		)
 	),
 	'legal' => array(
-		'title' => 'Mentions légales',
+		'title' => 'Официальное уведомление',
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'legal',
-			'fr' => 'mentions-légales'
+			'ru' => 'legal'
 		),
 		'content' => array(
 			'owner' => array(
-				'title' => 'Prioritaire',
-				'name' => 'Nom:',
-				'address' => 'Adresse:',
-				'status' => 'Status:'
+				'title' => 'приоритет',
+				'name' => 'Фамилия:',
+				'address' => 'Адрес:',
+				'status' => 'Статус:'
 			),
 			'business' => array(
-				'title' => 'Siège Social',
-				'name' => 'Nom:',
-				'address' => 'Adresse:',
-				'status' => 'Status:'
+				'title' => 'Головной офис',
+				'name' => 'Фамилия:',
+				'address' => 'Адрес:',
+				'status' => 'Статус:'
 			),
 			'hosting' => array(
-				'title' => 'Hébergeur',
-				'address' => 'Adresse:',
-				'name' => 'Nom:'
+				'title' => 'Хозяин',
+				'address' => 'Адрес:',
+				'name' => 'Фамилия:'
 			),
 			'server' => array(
 				'title' => 'Cloud computing',
-				'address' => 'Adresse:',
-				'name' => 'Nom:'
+				'address' => 'Адрес:',
+				'name' => 'Фамилия:'
 			),
 			'credits' => array(
-				'title' => 'Honeur',
-				'developper' => 'Développeur web:',
-				'designer' => 'Designer:',
-				'webmaster' => 'Webmestre:',
-				'marketing' => 'Marketeur:',
-				'image' => 'Image:',
-				'photographer' => 'Photograph:',
-				'video' => 'Vidéo:',
-				'webdesigner' => 'WebDesigner:'
+				'title' => 'Честь',
+				'developper' => 'Веб-разработчик:',
+				'designer' => 'Обозначить:',
+				'webmaster' => 'Веб-мастер:',
+				'marketing' => 'Маркетолог:',
+				'image' => 'Изображение:',
+				'photographer' => 'Фотография:',
+				'video' => 'Видео:',
+				'webdesigner' => 'веб-дизайнер:'
 			),
 			'status' => array(
-				'particular' => 'Particulier',
-				'association' => 'Association',
-				'small' => 'Micro Entrepreneur',
+				'particular' => 'Особый',
+				'association' => 'Ассоциация',
+				'small' => 'Микропредприниматель',
 				'medium' => 'TPE',
 				'big' => 'PME'
 			),
 			'software' => array(
 				'wp' => 'WebJet',
-				'title' => 'Logiciel'
+				'title' => 'Программного обеспечения'
 			)
 			/*custom your own*/
 		),
@@ -157,12 +157,12 @@ $law = array(
 		)
 	),
 	'policy-privacy' => array(
-		'title' => 'Politique de confidentialité',
+		'title' => 'Политика конфиденциальности',
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'privacy-policy',
-			'fr' => 'politique-de-confidentialité'
+			'ru' => 'privacy-policy'
 		),
 		'content' => array(
 			'' => ''
@@ -179,7 +179,7 @@ $law = array(
 		'keyword' => '',
 		'url' => array(
 			'default' => 'grpd',
-			'fr' => 'rgpd'
+			'ru' => 'rgpd'
 		),
 		'content' => array(
 			'' => ''
