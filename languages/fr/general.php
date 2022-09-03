@@ -1,6 +1,7 @@
 <?php
 # $general['index']['content']['pricing']['blocks']['small']['']    ['']
 # $general['pages']['full']['footer-os']['blocks']['small']['']    ['']
+# $general['aboutus']['content']['container']['title']
 $general = array(
 	'full' => array(
 		'there-is-him' => 'Il a',
@@ -209,7 +210,12 @@ $general = array(
 			'fr' => 'a-propos'
 		),
 		'content' => array(
-			/*custom your own*/
+			'container' => array(
+				'title' => 'Le créateur de WebJet',
+				'description' => 'Je crée ce projet et en même temps je me représente.'
+			),
+			'presentation' => 'Bonjour, mon nom est Alexon Balangue, la trentaine est le créateur de ce projet d\'application web réalisé en PHP. Pour aider les plus novices d\'entre vous à débuter dans le développement web le plus simplement possible, alors j\'avais appris depuis des années en autodidacte qu\'il faudra avoir ce type de concept très simple. Après avoir un site web qui est à la fois professionnel, et à la fois personnel pour pouvoir créer un CV par exemple, il est possible de créer un prêt de pages et ce projet ne nécessite aucune base de données MySQL également aucune fonctionnalité d\'un framework MVC de basse. Les fichiers et les dossiers ont une bonne structure a été bien pensé pour chaque domaine d\'activité différents tels que : WebDesign, Designer, Webmaster, Rédacteur, Marketing et Développeur. En général, il est très important que vous ayez une bonne structure de vos fichiers et dossiers. De cette façon, vous pouvez facilement trouver ce dont vous avez besoin lorsque vous travaillez sur le site et éviter tout problème ultérieur.'
+			
 		),
 		'sitemap' => array(
 			'images' => 'block/error.jpg',

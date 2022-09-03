@@ -1,11 +1,12 @@
 <?php
 # exemple $images['dir']
-# exemple $images['manager']['logo']['normal']
+# exemple $images['manager']['logo']['creator']
 
 $images = array(
 	'manager' => array(
 		/*Manager Images for Template */
 		'logo' => array(
+			'creator' => 'themes/moi-creator-alexonb.png',
 			'icon' => 'pinned/favicon.ico', /*ICO recommended oversize */
 			'normal' => 'themes/logo-normal.png', /*size recommended ~60x60 */
 			'small' => 'pinned/favicon-32x32.png', /*size recommended ~32x32 = favicon on PNG */

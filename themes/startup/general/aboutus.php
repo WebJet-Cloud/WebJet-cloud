@@ -104,3 +104,40 @@
         </div>
     </div>
     <!-- Team End -->
+
+
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase"><?php echo $general['aboutus']['content']['container']['title']; ?></h5>
+                <h1 class="mb-0"><?php echo $general['aboutus']['content']['container']['description']; ?></h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['logo']['creator']; ?>" alt="Alexon Balangue">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://www.linkedin.com/in/alexonbalangue/"><i class="fab fa-linkedin fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Alexon Balangue</h4>
+                            <p class="text-uppercase m-0"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="text-center py-4">
+                            <p class="text-uppercase m-0"><?php echo $general['aboutus']['content']['presentation']; ?></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->

@@ -209,7 +209,12 @@ $general = array(
 			'de' => 'um'
 		),
 		'content' => array(
-			/*custom your own*/
+			'container' => array(
+				'title' => 'Der Schöpfer von WebJet',
+				'description' => 'Ich kreiere dieses Projekt und repräsentiere mich gleichzeitig.'
+			),
+			'presentation' => 'Hallo, mein Name ist Alexon Balangue, in den Dreißigern, der Schöpfer dieses in PHP erstellten Webanwendungsprojekts. Um den Anfängern unter Ihnen zu helfen, so einfach wie möglich in die Webentwicklung einzusteigen, hatte ich jahrelang selbst gelernt, dass es notwendig sein wird, ein so einfaches Konzept zu haben. Nachdem Sie eine Website haben, die sowohl professionell als auch persönlich ist, um beispielsweise einen Lebenslauf erstellen zu können, ist es möglich, Seiten auszuleihen, und dieses Projekt erfordert keine MySQL-Datenbank und auch keine Funktionalität eines Bass-MVC-Frameworks. Dateien und Ordner haben eine gut durchdachte Struktur für die einzelnen Tätigkeitsbereiche wie: WebDesign, Designer, Webmaster, Redakteur, Marketing und Entwickler. Generell ist es sehr wichtig, dass Sie eine gute Struktur Ihrer Dateien und Ordner haben. Auf diese Weise können Sie während der Arbeit auf der Website leicht finden, was Sie brauchen, und spätere Probleme vermeiden.'
+			
 		),
 		'sitemap' => array(
 			'images' => 'block/error.jpg',

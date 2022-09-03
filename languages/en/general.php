@@ -208,7 +208,12 @@ $general = array(
 			'en' => 'aboutus'
 		),
 		'content' => array(
-			/*custom your own*/
+			'container' => array(
+				'title' => 'The creator of WebJet',
+				'description' => 'I create this project and at the same time I represent myself.'
+			),
+			'presentation' => 'Hello, my name is Alexon Balangue, in his thirties, is the creator of this web application project made in PHP. To help the most novice among you to start in web development as simply as possible, then I had learned for years on my own that it will be necessary to have this type of very simple concept. After having a website that is both professional, and both personal to be able to create a CV for example, it is possible to create a loan of pages and this project does not require any MySQL database also no functionality of a bass MVC framework. Files and folders have a good structure has been well thought out for each different activity area such as: WebDesign, Designer, Webmaster, Editor, Marketing and Developer. In general, it is very important that you have a good structure of your files and folders. This way, you can easily find what you need while working on the site and avoid any problems later.'
+			
 		),
 		'sitemap' => array(
 			'images' => 'block/error.jpg',

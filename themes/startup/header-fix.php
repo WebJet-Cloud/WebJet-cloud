@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <?php if(!empty($title)){ ?>
-	<title><?php echo htmlentities($sites['name'].' - '.$title); ?></title>
+	<title><?php echo htmlentities($sites['name'].' - '.$title.' '.$general['pages']['full']['footer-os']); ?></title>
   <?php } else { ?>
 	<title><?php echo htmlentities($sites['name']); ?></title>
   <?php } ?>
