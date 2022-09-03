@@ -130,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
+                <div class="col-lg-9 wow slideInUp" data-wow-delay="0.6s">
                     <div class="team-item bg-light rounded overflow-hidden">
                         <div class="text-center py-4">
                             <p class="text-uppercase m-0"><?php echo $general['aboutus']['content']['presentation']; ?></p>
