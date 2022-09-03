@@ -135,7 +135,7 @@
         "symfony/polyfill-mbstring": "^1.18",
         "giggsey/libphonenumber-for-php": "^8.12",
         "icamys/php-sitemap-generator": "^4.4",
-        "joomla/utilities": "^1.6",
+        "joomla/utilities": "^2.0",
 		"google/recaptcha": "^1.2",
         "visualappeal/php-ssllabs-api": "^1.0",
         "giggsey/locale": "^2.2",
