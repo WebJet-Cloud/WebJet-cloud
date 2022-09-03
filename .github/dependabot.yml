@@ -11,3 +11,19 @@ updates:
       interval: "monthly"
     allow: 
       - dependency-type: "production"
+    commit-message:
+      prefix: "Composer update"
+      include: "scope"
+      time: "03:00"
+      timezone: "Europe/Paris"
+  - package-ecosystem: "docker" 
+    directory: "/" 
+    schedule:
+      interval: "monthly"
+    allow: 
+      - dependency-type: "production"
+    commit-message:
+      prefix: "docker update"
+      include: "scope"
+      time: "04:00"
+      timezone: "Europe/Paris"
