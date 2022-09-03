@@ -126,14 +126,14 @@
                         </div>
                         <div class="text-center py-4">
                             <h4 class="text-primary">Alexon Balangue</h4>
-                            <p class="text-uppercase m-0"></p>
+                            <p class="text-uppercase m-0"><a href="<?php echo $protocols.'://alexonb.studio'; ?>" rel="dofollow">alexonb.studio</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-9 wow slideInUp" data-wow-delay="0.6s">
                     <div class="team-item bg-light rounded overflow-hidden">
                         <div class="text-center py-4">
-                            <p class="text-uppercase m-0"><?php echo $general['aboutus']['content']['presentation']; ?></p>
+                            <p class="m-0"><?php echo $general['aboutus']['content']['presentation']; ?></p>
                         </div>
                     </div>
                 </div>
