@@ -5,7 +5,7 @@ ENV COMPOSER_ALLOW_SUPERUSER=1
 
 EXPOSE 80
 WORKDIR /app
-
+# need php extention: mysqlnd, pdo_mysql, pdo_sqlite, xmlwriter, fileinfo, pdo, xsl, dom, gd, mbstring, phar, sqlite3, tidy, zip, imap, mysqli, sockets, xmlreader
 # git, unzip & zip are for composer
 RUN apt-get update -qq && \
     apt-get install -qy \
@@ -17,7 +17,7 @@ RUN apt-get update -qq && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # PHP Extensions
-RUN docker-php-ext-install -j$(nproc) opcache
+RUN docker-php-ext-install -j$(nproc) opcache mysqlnd, pdo_mysql, pdo_sqlite, xmlwriter, fileinfo, pdo, xsl, dom, gd, mbstring, phar, sqlite3, tidy, zip, imap, mysqli, sockets, xmlreader
 COPY conf/php.ini /usr/local/etc/php/conf.d/app.ini
 
 # Apache
