@@ -12,11 +12,11 @@ $business = array(
 		'city' => 'Paris',
 		'region' => 'Paris',
 		'contry' => 'France',
-		'status' => 'SASU', /*Special status on france SASU, SARL, SAS, etc...*/
+		'status' => 'particulier', /*Special status on france SASU, SARL, SAS, etc...*/
 		'geo' => array(
 		/*Pratical for use Google map JS/Mapbox or other*/
-			'latitude' => '',
-			'longitude' => ''
+			'latitude' => '48.8588897',
+			'longitude' => '2.3200410217200766'
 		),
 		'mobile' => array(
 			'code' => '+33',
