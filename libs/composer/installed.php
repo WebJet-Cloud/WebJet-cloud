@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'webjet-cloud/webjet-cloud',
-        'pretty_version' => '2.2.1',
-        'version' => '2.2.1.0',
+        'pretty_version' => '2.2.2',
+        'version' => '2.2.2.0',
         'reference' => NULL,
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
@@ -119,8 +119,8 @@
             'dev_requirement' => false,
         ),
         'webjet-cloud/webjet-cloud' => array(
-            'pretty_version' => '2.2.1',
-            'version' => '2.2.1.0',
+            'pretty_version' => '2.2.2',
+            'version' => '2.2.2.0',
             'reference' => NULL,
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
