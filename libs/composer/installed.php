@@ -1,6 +1,6 @@
 <?php return array(
     'root' => array(
-        'name' => 'alexonbstudio/webjet-cloud',
+        'name' => 'webjet-cloud/webjet-cloud',
         'pretty_version' => '2.2.1',
         'version' => '2.2.1.0',
         'reference' => NULL,
@@ -10,15 +10,6 @@
         'dev' => true,
     ),
     'versions' => array(
-        'alexonbstudio/webjet-cloud' => array(
-            'pretty_version' => '2.2.1',
-            'version' => '2.2.1.0',
-            'reference' => NULL,
-            'type' => 'project',
-            'install_path' => __DIR__ . '/../../',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'giggsey/libphonenumber-for-php' => array(
             'pretty_version' => '8.12.54',
             'version' => '8.12.54.0',
@@ -124,6 +115,15 @@
             'reference' => '51d5d6fab1613620ca7f5c3f88ce4d9936716435',
             'type' => 'library',
             'install_path' => __DIR__ . '/../visualappeal/php-ssllabs-api',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'webjet-cloud/webjet-cloud' => array(
+            'pretty_version' => '2.2.1',
+            'version' => '2.2.1.0',
+            'reference' => NULL,
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
