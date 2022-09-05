@@ -56,9 +56,9 @@
             'dev_requirement' => false,
         ),
         'joomla/utilities' => array(
-            'pretty_version' => '1.6.2',
-            'version' => '1.6.2.0',
-            'reference' => '9f7d9fda537ca005f7467de68f92506d48f348f5',
+            'pretty_version' => '2.0.1',
+            'version' => '2.0.1.0',
+            'reference' => 'ab1660fd22184700306b932c39410ba955dc82e1',
             'type' => 'joomla-package',
             'install_path' => __DIR__ . '/../joomla/utilities',
             'aliases' => array(),
