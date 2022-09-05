@@ -50,7 +50,7 @@ The owner is Alexon Balangue
 </script>
 <noscript><p><img src="//<?php echo $apiexternal['matomo']['url']; ?>/matomo.php?idsite=<?php echo $apiexternal['matomo']['id']; ?>&amp;rec=1" style="border:0;" alt="matomo" /></p>
 <!-- Matomo Image Tracker-->
-<img referrerpolicy="no-referrer-when-downgrade" src="https://<?php echo $apiexternal['matomo']['url']; ?>/matomo.php?idsite=1&amp;rec=<?php echo $apiexternal['matomo']['id']; ?>&amp;action_name=images" style="border:0" alt="matomo" />
+<img referrerpolicy="no-referrer-when-downgrade" src="https://<?php echo $apiexternal['matomo']['url']; ?>/matomo.php?idsite=<?php echo $apiexternal['matomo']['id']; ?>&amp;rec=1&amp;action_name=images" style="border:0" alt="matomo" />
 <!-- End Matomo --></noscript>
 <!-- End Matomo Code -->
 
