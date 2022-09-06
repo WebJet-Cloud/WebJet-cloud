@@ -29,6 +29,16 @@ The owner is Alexon Balangue
                                         ▓▓░░▓░      
 
 -->
+<?php if(!empty($apiexternal['clarity.ms'])) { ?>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dj2sgs7t7r");
+</script>
+<?php } ?>
+<?php if(!empty($apiexternal['matomo']['id'])) { ?>
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
@@ -53,7 +63,7 @@ The owner is Alexon Balangue
 <img referrerpolicy="no-referrer-when-downgrade" src="https://<?php echo $apiexternal['matomo']['url']; ?>/matomo.php?idsite=<?php echo $apiexternal['matomo']['id']; ?>&amp;rec=1&amp;action_name=images" style="border:0" alt="matomo" />
 <!-- End Matomo --></noscript>
 <!-- End Matomo Code -->
-
+<?php } ?>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <?php if(!empty($title)){ ?>

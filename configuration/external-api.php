@@ -19,7 +19,8 @@ $apiexternal = array(
 	'matomo' => array(
 		'url' => 'traffic.alexonb.studio',
 		'id' => '4'
-	)	
+	),
+	'clarity.ms' => 'dj2sgs7t7r'	
 );
 
 $JE_apiexternal = json_encode($apiexternal);
