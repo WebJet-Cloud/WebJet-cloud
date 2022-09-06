@@ -8,7 +8,7 @@ $marketing = array(
 		'key' => ''
 	),
 	'awin' => array(
-		'key' => '510459'
+		'key' => ''
 	),
 	'33Across' => array(
 		'key' => ''

@@ -18,8 +18,8 @@ $seo = array(
 		'token' => ''
 	),
 	'google' => array(
-		'analystics' => 'G-J3FZXM3YKJ',
-		'tag-manager' => 'GTM-N4WXMFG'
+		'analystics' => '',
+		'tag-manager' => ''
 	),
 	'shareaholic' => array(
 		'key' => ''
