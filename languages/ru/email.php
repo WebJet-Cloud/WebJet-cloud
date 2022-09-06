@@ -3,8 +3,8 @@
 $email = array(
 	'index' => array(
 		'title' => 'Связаться с нами',
-		'description' => '',
-		'keyword' => '',
+		'description' => 'Не стесняйтесь обращаться к нашей команде, чтобы помочь вам',
+		'keyword' => 'контакт, команда, у вас есть, нужна информация',
 		'url' => array(
 			'default' => 'contact',
 			'ru' => 'contact'
@@ -55,8 +55,8 @@ $email = array(
 	),
 	'ask-quotes' => array(
 		'title' => 'Спросите цену',
-		'description' => '',
-		'keyword' => '',
+		'description' => 'Не стесняйтесь обращаться к нам за бесплатной цитатой',
+		'keyword' => 'запрос цитаты, команда, работа, фриланс, бесплатно',
 		'url' => array(
 			'default' => 'ask-quote',
 			'ru' => 'ask-quote'

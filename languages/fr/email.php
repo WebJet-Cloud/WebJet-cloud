@@ -3,8 +3,8 @@
 $email = array(
 	'index' => array(
 		'title' => 'Contactez',
-		'description' => '',
-		'keyword' => '',
+		'description' => 'N\'hésitez pas à prendre contact notre équipe pour vous aidez',
+		'keyword' => 'contact, équipe, vous aidez, besoin information',
 		'url' => array(
 			'default' => 'contact',
 			'fr' => 'contactez'
@@ -55,8 +55,8 @@ $email = array(
 	),
 	'ask-quotes' => array(
 		'title' => 'Demander un Devis',
-		'description' => '',
-		'keyword' => '',
+		'description' => 'N\'hésitez pas de nous demander votre devis gratuitement',
+		'keyword' => 'demande du devis, equipe, travaille, freelance, gratuit',
 		'url' => array(
 			'default' => 'ask-quote',
 			'fr' => 'demande-devis'
