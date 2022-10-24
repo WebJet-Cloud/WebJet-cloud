@@ -1,4 +1,4 @@
-<?php #ob_start("native_html_output"); ?>
+<?php ob_start("native_html_output"); ?>
 <!doctype html>
 <html lang="<?php echo $DefineTranslateLang; ?>">
 <head>
@@ -600,9 +600,9 @@ if(!empty($seo['shareaholic']['key'])){
 
 
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <!--<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner"></div>
-    </div>
+    </div>-->
     <!-- Spinner End -->
 
 
