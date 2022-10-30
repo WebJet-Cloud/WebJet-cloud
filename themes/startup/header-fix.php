@@ -2,6 +2,24 @@
 <!doctype html>
 <html lang="<?php echo $DefineTranslateLang; ?>">
 <head>
+    <lien rel="dns-prefetch" href="//<?php echo $sites['sub-domain']; ?>/">
+    <lien rel="dns-prefetch" href="//clarity.ms/">
+    <lien rel="dns-prefetch" href="//googletagmanager.com/">
+    <lien rel="dns-prefetch" href="//cdn.jsdelivr.net/">
+    <lien rel="dns-prefetch" href="//mc.yandex.ru/">
+    <lien rel="dns-prefetch" href="//quantcast.mgr.consensu.org/">
+    <lien rel="dns-prefetch" href="//cdn.tynt.com/">
+    <lien rel="dns-prefetch" href="//www.dwin2.com/">
+    <lien rel="dns-prefetch" href="//pagead2.googlesyndication.com/">
+    <lien rel="dns-prefetch" href="//www.googletagmanager.com/">
+    <lien rel="dns-prefetch" href="//cdn.shareaholic.net/">
+    <lien rel="dns-prefetch" href="//fonts.googleapis.com/">
+    <lien rel="dns-prefetch" href="//fonts.gstatic.com/">
+    <lien rel="dns-prefetch" href="//s7.addthis.com/">
+    <lien rel="dns-prefetch" href="//client.crisp.chat/">
+    <lien rel="dns-prefetch" href="//w.likebtn.com/">
+    <lien rel="dns-prefetch" href="//code.tidio.co/">
+    <lien rel="dns-prefetch" href="//connect.facebook.net/">
 <!--
   WebJet.Cloud is Open-Source PHP community available on github create by @ alexonbstudio
 The owner is Alexon Balangue
