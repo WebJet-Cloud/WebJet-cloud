@@ -7,6 +7,9 @@ $seo = array(
 	'tidio' => array(
 		'key' => '' 
 	),
+	'fb-pexel' => array(
+		'key' => '' 
+	),
 	'quantcast' => array(
 		'key' => '' /*gH0YrwXWXWWS3*/
 	),

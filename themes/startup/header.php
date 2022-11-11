@@ -2,6 +2,44 @@
 <!doctype html>
 <html lang="<?php echo $DefineTranslateLang; ?>">
 <head>
+    <lien rel="dns-prefetch" href="//<?php echo $sites['sub-domain']; ?>/">
+    <lien rel="dns-prefetch" href="//clarity.ms/">
+    <lien rel="dns-prefetch" href="//googletagmanager.com/">
+    <lien rel="dns-prefetch" href="//cdn.jsdelivr.net/">
+    <lien rel="dns-prefetch" href="//mc.yandex.ru/">
+    <lien rel="dns-prefetch" href="//quantcast.mgr.consensu.org/">
+    <lien rel="dns-prefetch" href="//cdn.tynt.com/">
+    <lien rel="dns-prefetch" href="//www.dwin2.com/">
+    <lien rel="dns-prefetch" href="//pagead2.googlesyndication.com/">
+    <lien rel="dns-prefetch" href="//www.googletagmanager.com/">
+    <lien rel="dns-prefetch" href="//cdn.shareaholic.net/">
+    <lien rel="dns-prefetch" href="//fonts.googleapis.com/">
+    <lien rel="dns-prefetch" href="//fonts.gstatic.com/">
+    <lien rel="dns-prefetch" href="//s7.addthis.com/">
+    <lien rel="dns-prefetch" href="//client.crisp.chat/">
+    <lien rel="dns-prefetch" href="//w.likebtn.com/">
+    <lien rel="dns-prefetch" href="//code.tidio.co/">
+    <lien rel="dns-prefetch" href="//connect.facebook.net/">
+
+<?php if(!empty($seo['fb-pexel']['key'])){ ?>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '<?php echo $seo['fb-pexel']['key']; ?>');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=<?php echo $seo['fb-pexel']['key']; ?>&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<?php } ?>
 <!--
   WebJet.Cloud is Open-Source PHP community available on github create by @ alexonbstudio
 The owner is Alexon Balangue
