@@ -638,6 +638,18 @@ if(!empty($seo['shareaholic']['key'])){
 
 </head>
 <body>
+<?php
+
+if(!empty($seo['google']['tag-manager'])){
+	echo '<!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id='.$seo['google']['tag-manager'].'"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->';
+}
+
+?>
+
+  
 
 
     <!-- Spinner Start -->
