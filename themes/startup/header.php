@@ -2,26 +2,28 @@
 <!doctype html>
 <html lang="<?php echo $DefineTranslateLang; ?>">
 <head>
-    <lien rel="dns-prefetch" href="//<?php echo $sites['sub-domain']; ?>/">
+<lien rel="dns-prefetch" href="//<?php echo $CDNdomainURL; ?>/" />
+    <lien rel="dns-prefetch" href="//traffic.alexonb.studio/" />
     <lien rel="dns-prefetch" href="//clarity.ms/">
-    <lien rel="dns-prefetch" href="//googletagmanager.com/">
-    <lien rel="dns-prefetch" href="//cdn.jsdelivr.net/">
-    <lien rel="dns-prefetch" href="//mc.yandex.ru/">
-    <lien rel="dns-prefetch" href="//quantcast.mgr.consensu.org/">
-    <lien rel="dns-prefetch" href="//cdn.tynt.com/">
-    <lien rel="dns-prefetch" href="//www.dwin2.com/">
-    <lien rel="dns-prefetch" href="//pagead2.googlesyndication.com/">
-    <lien rel="dns-prefetch" href="//www.googletagmanager.com/">
-    <lien rel="dns-prefetch" href="//cdn.shareaholic.net/">
-    <lien rel="dns-prefetch" href="//fonts.googleapis.com/">
-    <lien rel="dns-prefetch" href="//fonts.gstatic.com/">
-    <lien rel="dns-prefetch" href="//s7.addthis.com/">
-    <lien rel="dns-prefetch" href="//client.crisp.chat/">
-    <lien rel="dns-prefetch" href="//w.likebtn.com/">
-    <lien rel="dns-prefetch" href="//code.tidio.co/">
-    <lien rel="dns-prefetch" href="//connect.facebook.net/">
+    <lien rel="dns-prefetch" href="//googletagmanager.com/" />
+    <lien rel="dns-prefetch" href="//cdn.jsdelivr.net/" />
+    <lien rel="dns-prefetch" href="//mc.yandex.ru/" />
+    <lien rel="dns-prefetch" href="//quantcast.mgr.consensu.org/" />
+    <lien rel="dns-prefetch" href="//cdn.tynt.com/" />
+    <lien rel="dns-prefetch" href="//www.dwin2.com/" />
+    <lien rel="dns-prefetch" href="//pagead2.googlesyndication.com/" />
+    <lien rel="dns-prefetch" href="//www.googletagmanager.com/" />
+    <lien rel="dns-prefetch" href="//cdn.shareaholic.net/" />
+    <lien rel="dns-prefetch" href="//fonts.googleapis.com/" />
+    <lien rel="dns-prefetch" href="//fonts.gstatic.com/" />
+    <lien rel="dns-prefetch" href="//s7.addthis.com/" />
+    <lien rel="dns-prefetch" href="//client.crisp.chat/" />
+    <lien rel="dns-prefetch" href="//w.likebtn.com/" />
+    <lien rel="dns-prefetch" href="//code.tidio.co/" />
+    <lien rel="dns-prefetch" href="//connect.facebook.net/" />
 
-<?php if(!empty($seo['fb-pexel']['key'])){ ?>
+
+    <?php if(!empty($seo['fb-pexel']['key'])){ ?>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -40,40 +42,13 @@ src="https://www.facebook.com/tr?id=<?php echo $seo['fb-pexel']['key']; ?>&ev=Pa
 /></noscript>
 <!-- End Meta Pixel Code -->
 <?php } ?>
-<!--
-  WebJet.Cloud is Open-Source PHP community available on github create by @ alexonbstudio
-The owner is Alexon Balangue
-                                                                               
-                                     ▓▓▒  ▓▓  ▓▓                                
-                                   ▓▓    ▓  ▓    ▓                              
-                                  ▓     ▒    ▓    ▓▒                            
-                                ▒▓    ▒▓      ▒    ▓░▒                          
-                          ░▓▓         ▓        ▓         ▓▓                     
-                         ▓            ▓  ░▓▓   ▓           ▒▓                   
-                        ▓             ▓ ░   ▓  ▓            ░▓                  
- ▓▓▓▓ ▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓  ░░ ▓        ▓ ▓▓     ▒▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-  ▓ ▓░▓   ▓▓ ▓▓▓  ▓▓▓▓▓▓ ▓  ▓▓▓  ▓▓   ▓        ▓   ▒    ▒▓ ▓ ▓▒ ▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓
-  ▓  ▓ ░▓ ▓▒ ▓ ▓      ▓▒▓▒      ▓▓▓   ▓        ▓   ▓    ▒▓ ▓ ▓      ▒    ▓  ▓   
-  ▒░   ▓▓    ▓ ▓  ▓     ▒░  ░ ▒▓ ░▓  ▒▓  ▓▓▓░  ▓▓  ░▓░░░▓  ▓▓▓  ▓        ▓  ▓   
-   ▓  ▓▓░▓  ▓  ▓       ▓ ░▓▓    ▒▓░   ▓▒▒▓▒▒▓▒▒▓  ░▒▒▓    ▓▓ ▓       ▓   ▓  ▓   
-                             ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                       
-                                   ▓    ▓ ▓▓ ░    ▓                             
-                                   ▓    ▓ ▓▓ ░    ▓                             
-                                   ▓    ▓ ▓░ ░    ▓                             
-                      ░▓▓▓         ▓ ▓    ▓░    ▓ ▓        ▓▓▓▓░                
-                     ▓░   ▓░░░░░░▒░▓      ▓░      ▓▒▓░░░░░▒░   ▒░               
-                     ▓▓  ▓▓              ▓▓▓▓              ▓   ▓                
-                                        ▓    ▓                                  
-                                        ▓▓░░▓░      
-
--->
 <?php if(!empty($apiexternal['clarity.ms'])) { ?>
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "dj2sgs7t7r");
+    })(window, document, "clarity", "script", "<?php echo $apiexternal['clarity.ms']; ?>");
 </script>
 <?php } ?>
 <?php if(!empty($apiexternal['matomo']['id'])) { ?>
@@ -102,6 +77,34 @@ The owner is Alexon Balangue
 <!-- End Matomo --></noscript>
 <!-- End Matomo Code -->
 <?php } ?>
+<!--
+  WebJet.Cloud is Open-Source PHP community available on github create by @ alexonbstudio
+The owner is Alexon Balangue
+                                                                               
+                                     ▓▓▒  ▓▓  ▓▓                                
+                                   ▓▓    ▓  ▓    ▓                              
+                                  ▓     ▒    ▓    ▓▒                            
+                                ▒▓    ▒▓      ▒    ▓░▒                          
+                          ░▓▓         ▓        ▓         ▓▓                     
+                         ▓            ▓  ░▓▓   ▓           ▒▓                   
+                        ▓             ▓ ░   ▓  ▓            ░▓                  
+ ▓▓▓▓ ▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓  ░░ ▓        ▓ ▓▓     ▒▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+  ▓ ▓░▓   ▓▓ ▓▓▓  ▓▓▓▓▓▓ ▓  ▓▓▓  ▓▓   ▓        ▓   ▒    ▒▓ ▓ ▓▒ ▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓
+  ▓  ▓ ░▓ ▓▒ ▓ ▓      ▓▒▓▒      ▓▓▓   ▓        ▓   ▓    ▒▓ ▓ ▓      ▒    ▓  ▓   
+  ▒░   ▓▓    ▓ ▓  ▓     ▒░  ░ ▒▓ ░▓  ▒▓  ▓▓▓░  ▓▓  ░▓░░░▓  ▓▓▓  ▓        ▓  ▓   
+   ▓  ▓▓░▓  ▓  ▓       ▓ ░▓▓    ▒▓░   ▓▒▒▓▒▒▓▒▒▓  ░▒▒▓    ▓▓ ▓       ▓   ▓  ▓   
+                             ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                       
+                                   ▓    ▓ ▓▓ ░    ▓                             
+                                   ▓    ▓ ▓▓ ░    ▓                             
+                                   ▓    ▓ ▓░ ░    ▓                             
+                      ░▓▓▓         ▓ ▓    ▓░    ▓ ▓        ▓▓▓▓░                
+                     ▓░   ▓░░░░░░▒░▓      ▓░      ▓▒▓░░░░░▒░   ▒░               
+                     ▓▓  ▓▓              ▓▓▓▓              ▓   ▓                
+                                        ▓    ▓                                  
+                                        ▓▓░░▓░      
+
+-->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <?php if(!empty($title)){ ?>
