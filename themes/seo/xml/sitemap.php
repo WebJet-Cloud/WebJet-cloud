@@ -5,11 +5,11 @@
 		<lastmod><?php echo $sites['update']['xml']['date'].'T'.$sites['update']['xml']['time'];?>+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc><?php echo $protocols.'://'.$sites['domain'].'/sitemap-'.$translate['manual']['frontend']['french'].'.xml'; ?></loc>
+		<loc><?php echo $protocols.'://'.$sites['domain'].'/sitemap-fr.xml'; ?></loc>
 		<lastmod><?php echo $sites['update']['xml']['date'].'T'.$sites['update']['xml']['time'];?>+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc><?php echo $protocols.'://'.$sites['domain'].'/sitemap-'.$translate['manual']['frontend']['english'].'.xml'; ?></loc>
+		<loc><?php echo $protocols.'://'.$sites['domain'].'/sitemap-en.xml'; ?></loc>
 		<lastmod><?php echo $sites['update']['xml']['date'].'T'.$sites['update']['xml']['time'];?>+00:00</lastmod>
 	</sitemap>
 </sitemapindex>
