@@ -1,7 +1,7 @@
 {
     "name": "webjet-cloud/webjet-cloud",
     "type": "project",
-    "version": "2.2.2",
+    "version": "2.2.3",
     "description": "WebJet | No DB requirement",
     "keywords": [
 		"website project", 
@@ -132,8 +132,8 @@
 		"ext-json": "*",
 		"ext-mbstring": "*",
         "phpmailer/phpmailer": "^6.6",
-        "symfony/polyfill-mbstring": "^1.18",
-        "giggsey/libphonenumber-for-php": "^8.12",
+        "symfony/polyfill-mbstring": "^1.27",
+        "giggsey/libphonenumber-for-php": "^8.13",
         "icamys/php-sitemap-generator": "^4.4",
         "joomla/utilities": "~2.0",
 		"google/recaptcha": "^1.2",

@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'webjet-cloud/webjet-cloud',
-        'pretty_version' => '2.2.2',
-        'version' => '2.2.2.0',
+        'pretty_version' => '2.2.3',
+        'version' => '2.2.3.0',
         'reference' => NULL,
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'giggsey/libphonenumber-for-php' => array(
-            'pretty_version' => '8.12.57',
-            'version' => '8.12.57.0',
-            'reference' => '033a7285fd1102c13c4415e300734b7ce7ca0ae0',
+            'pretty_version' => '8.13.0',
+            'version' => '8.13.0.0',
+            'reference' => 'eb1cea72dc8d020e149062371a2c6717457cf561',
             'type' => 'library',
             'install_path' => __DIR__ . '/../giggsey/libphonenumber-for-php',
             'aliases' => array(),
@@ -101,9 +101,9 @@
             'dev_requirement' => false,
         ),
         'symfony/polyfill-mbstring' => array(
-            'pretty_version' => 'v1.26.0',
-            'version' => '1.26.0.0',
-            'reference' => '9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e',
+            'pretty_version' => 'v1.27.0',
+            'version' => '1.27.0.0',
+            'reference' => '8ad114f6b39e2c98a8b0e3bd907732c207c2b534',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/polyfill-mbstring',
             'aliases' => array(),
@@ -119,8 +119,8 @@
             'dev_requirement' => false,
         ),
         'webjet-cloud/webjet-cloud' => array(
-            'pretty_version' => '2.2.2',
-            'version' => '2.2.2.0',
+            'pretty_version' => '2.2.3',
+            'version' => '2.2.3.0',
             'reference' => NULL,
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
