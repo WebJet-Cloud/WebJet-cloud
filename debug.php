@@ -120,7 +120,7 @@ if(isset($_GET['lang'])){
 					$title = $debug['index']['title'];
 					$description = $debug['index']['description'];
 					$keyword = $debug['index']['keyword'];
-					$urls = $debug['index']['url']['default'];
+					$urls = $debug['index']['url'][$DefineTranslateLang];
 					$imgs = $debug['index']['sitemap']['images'];
 					$vdos = $debug['index']['sitemap']['video'];
 					define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$debug['index']['url'][$DefineTranslateLang]);
@@ -141,7 +141,7 @@ if(isset($_GET['lang'])){
 		exit();
 	}
 } else {
-	header('Location: '.$protocols.'://'.$sites['domain'].'/'.$debug['index']['url']['default']);
+	header('Location: '.$protocols.'://'.$sites['domain'].'/'.$debug['index']['url'][$DefineTranslateLang]);
 	exit();
 }
 

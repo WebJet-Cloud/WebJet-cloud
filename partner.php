@@ -99,7 +99,7 @@ if(isset($_GET['lang'])){
 				$title = $partner['index']['title'];
 				$description = $partner['index']['description'];
 				$keyword = $partner['index']['keyword'];
-				$urls = $partner['index']['url']['default'];
+				$urls = $partner['index']['url'][$DefineTranslateLang];
 				$imgs = $partner['index']['sitemap']['images'];
 				$vdos = $partner['index']['sitemap']['video'];
 				define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$partner['index']['url'][$DefineTranslateLang]);

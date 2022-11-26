@@ -102,7 +102,7 @@ if(isset($_GET['lang'])){
 						$title = $law['cgu']['title'];
 						$description = $law['cgu']['description'];
 						$keyword = $law['cgu']['keyword'];
-						$urls = $law['cgu']['url']['default'];
+						$urls = $law['cgu']['url'][$DefineTranslateLang];
 						$imgs = $law['cgu']['sitemap']['images'];
 						$vdos = $law['cgu']['sitemap']['video'];
 						define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$law['cgu']['url'][$DefineTranslateLang]);
@@ -113,7 +113,7 @@ if(isset($_GET['lang'])){
 						$title = $law['cgv']['title'];
 						$description = $law['cgv']['description'];
 						$keyword = $law['cgv']['keyword'];
-						$urls = $law['cgv']['url']['default'];
+						$urls = $law['cgv']['url'][$DefineTranslateLang];
 						$imgs = $law['cgv']['sitemap']['images'];
 						$vdos = $law['cgv']['sitemap']['video'];
 						define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$law['cgv']['url'][$DefineTranslateLang]);
@@ -124,7 +124,7 @@ if(isset($_GET['lang'])){
 						$title = $law['dmca']['title'];
 						$description = $law['dmca']['description'];
 						$keyword = $law['dmca']['keyword'];
-						$urls = $law['dmca']['url']['default'];
+						$urls = $law['dmca']['url'][$DefineTranslateLang];
 						$imgs = $law['dmca']['sitemap']['images'];
 						$vdos = $law['dmca']['sitemap']['video'];
 						define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$law['dmca']['url'][$DefineTranslateLang]);
@@ -135,7 +135,7 @@ if(isset($_GET['lang'])){
 						$title = $law['legal']['title'];
 						$description = $law['legal']['description'];
 						$keyword = $law['legal']['keyword'];
-						$urls = $law['legal']['url']['default'];
+						$urls = $law['legal']['url'][$DefineTranslateLang];
 						$imgs = $law['legal']['sitemap']['images'];
 						$vdos = $law['legal']['sitemap']['video'];
 						define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$law['legal']['url'][$DefineTranslateLang]);
@@ -146,7 +146,7 @@ if(isset($_GET['lang'])){
 						$title = $law['policy-privacy']['title'];
 						$description = $law['policy-privacy']['description'];
 						$keyword = $law['policy-privacy']['keyword'];
-						$urls = $law['policy-privacy']['url']['default'];
+						$urls = $law['policy-privacy']['url'][$DefineTranslateLang];
 						$imgs = $law['policy-privacy']['sitemap']['images'];
 						$vdos = $law['policy-privacy']['sitemap']['video'];
 						define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$law['policy-privacy']['url'][$DefineTranslateLang]);
@@ -157,7 +157,7 @@ if(isset($_GET['lang'])){
 						$title = $law['cookies']['title'];
 						$description = $law['cookies']['description'];
 						$keyword = $law['cookies']['keyword'];
-						$urls = $law['cookies']['url']['default'];
+						$urls = $law['cookies']['url'][$DefineTranslateLang];
 						$imgs = $law['cookies']['sitemap']['images'];
 						$vdos = $law['cookies']['sitemap']['video'];
 						define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$law['cookies']['url'][$DefineTranslateLang]);
@@ -168,7 +168,7 @@ if(isset($_GET['lang'])){
 						$title = $law['rgpd']['title'];
 						$description = $law['rgpd']['description'];
 						$keyword = $law['rgpd']['keyword'];
-						$urls = $law['rgpd']['url']['default'];
+						$urls = $law['rgpd']['url'][$DefineTranslateLang];
 						$imgs = $law['rgpd']['sitemap']['images'];
 						$vdos = $law['rgpd']['sitemap']['video'];
 						define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$law['rgpd']['url'][$DefineTranslateLang]);
@@ -183,7 +183,7 @@ if(isset($_GET['lang'])){
 					$title = $law['pages']['title'];
 					$description = $law['pages']['description'];
 					$keyword = $law['pages']['keyword'];
-					$urls = $law['pages']['url']['default'];
+					$urls = $law['pages']['url'][$DefineTranslateLang];
 					$imgs = $law['pages']['sitemap']['images'];
 					$vdos = $law['pages']['sitemap']['video'];
 					define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$law['pages']['url'][$DefineTranslateLang]);

@@ -125,7 +125,7 @@ if(isset($_GET['lang'])){
 				$title = $email['index']['title'];
 				$description = $email['index']['description'];
 				$keyword = $email['index']['keyword'];
-				$urls = $email['index']['url']['default'];
+				$urls = $email['index']['url'][$DefineTranslateLang];
 				$imgs = $email['index']['sitemap']['images'];
 				$vdos = $email['index']['sitemap']['video'];
 
@@ -256,11 +256,11 @@ if(isset($_GET['lang'])){
 							#Solution 0 = basic
 							$mail->Body = '
 							<h2>'.$email['index']['title'].': '.$domainTLD.'</h2>
-							<h4>'.$email['index']['content']['default']['subject'].' - '.$_POST['subject'].'</h4>
-							<strong>'.$email['index']['content']['default']['email'].':</strong> '.$_POST['email'].'<br />
-							<strong>'.$email['index']['content']['default']['name'].':</strong> '.$_POST['name'].'<br />
-							<strong>'.$email['index']['content']['default']['phone'].':</strong> (Type:'.$PhoneGetType.'/'.$PhoneVerify.')='.$phone.' | +('.$PhoneRegionCodeNumbers.') <a href="'.$PhoneformatE164Numbers.'">'.$PhoneformatINTERNATIONALNumbers.'</a> <strong>(info: '.$PhonecarrerNumbers.')</strong><br /><br />
-							<strong>'.$email['index']['content']['default']['message'].':</strong> '.$_POST['message'];
+							<h4>'.$email['index']['content'][$DefineTranslateLang]['subject'].' - '.$_POST['subject'].'</h4>
+							<strong>'.$email['index']['content'][$DefineTranslateLang]['email'].':</strong> '.$_POST['email'].'<br />
+							<strong>'.$email['index']['content'][$DefineTranslateLang]['name'].':</strong> '.$_POST['name'].'<br />
+							<strong>'.$email['index']['content'][$DefineTranslateLang]['phone'].':</strong> (Type:'.$PhoneGetType.'/'.$PhoneVerify.')='.$phone.' | +('.$PhoneRegionCodeNumbers.') <a href="'.$PhoneformatE164Numbers.'">'.$PhoneformatINTERNATIONALNumbers.'</a> <strong>(info: '.$PhonecarrerNumbers.')</strong><br /><br />
+							<strong>'.$email['index']['content'][$DefineTranslateLang]['message'].':</strong> '.$_POST['message'];
 					//$Gresponse = $GRecaptcha->setExpectedHostname($domainTLD)->verify($GRecaptchaResponse, IpHelper::getIp());
 
 					# anti spam with HCAPTCHA
@@ -268,14 +268,14 @@ if(isset($_GET['lang'])){
 					$hcaptcha_RData = json_decode($hcaptcha_VResponse);
 
 					if (!$mail->send() AND $hcaptcha_RData->success) {
-					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url']['default']);
+					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url'][$DefineTranslateLang]);
 					   exit();
 					} else {
-					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['success']['url']['default']);
+					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['success']['url'][$DefineTranslateLang]);
 					   exit();
 					}
 				} else {
-					header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url']['default']);
+					header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url'][$DefineTranslateLang]);
 					exit();
 
 				}
@@ -289,7 +289,7 @@ if(isset($_GET['lang'])){
 				$title = $email['ask-quotes']['title'];
 				$description = $email['ask-quotes']['description'];
 				$keyword = $email['ask-quotes']['keyword'];
-				$urls = $email['ask-quotes']['url']['default'];
+				$urls = $email['ask-quotes']['url'][$DefineTranslateLang];
 				$imgs = $email['ask-quotes']['sitemap']['images'];
 				$vdos = $email['ask-quotes']['sitemap']['video'];
 
@@ -429,11 +429,11 @@ if(isset($_GET['lang'])){
 							#Solution 0 = basic
 							$mail->Body = '
 							<h2>'.$email['ask-quotes']['title'].': '.$domainTLD.'</h2>
-							<h4>'.$email['ask-quotes']['content']['default']['subject'].' - '.$_POST['subject'].'</h4>
-							<strong>'.$email['ask-quotes']['content']['default']['email'].':</strong> '.$_POST['email'].'<br />
-							<strong>'.$email['ask-quotes']['content']['default']['name'].':</strong> '.$_POST['name'].'<br />
-							<strong>'.$email['ask-quotes']['content']['default']['phone'].':</strong> (Type:'.$PhoneGetType.'/'.$PhoneVerify.')='.$phone.' | +('.$PhoneRegionCodeNumbers.') <a href="'.$PhoneformatE164Numbers.'">'.$PhoneformatINTERNATIONALNumbers.'</a> <strong>(info: '.$PhonecarrerNumbers.')</strong><br /><br />
-							<strong>'.$email['ask-quotes']['content']['default']['message'].':</strong> '.$_POST['message'];
+							<h4>'.$email['ask-quotes']['content'][$DefineTranslateLang]['subject'].' - '.$_POST['subject'].'</h4>
+							<strong>'.$email['ask-quotes']['content'][$DefineTranslateLang]['email'].':</strong> '.$_POST['email'].'<br />
+							<strong>'.$email['ask-quotes']['content'][$DefineTranslateLang]['name'].':</strong> '.$_POST['name'].'<br />
+							<strong>'.$email['ask-quotes']['content'][$DefineTranslateLang]['phone'].':</strong> (Type:'.$PhoneGetType.'/'.$PhoneVerify.')='.$phone.' | +('.$PhoneRegionCodeNumbers.') <a href="'.$PhoneformatE164Numbers.'">'.$PhoneformatINTERNATIONALNumbers.'</a> <strong>(info: '.$PhonecarrerNumbers.')</strong><br /><br />
+							<strong>'.$email['ask-quotes']['content'][$DefineTranslateLang]['message'].':</strong> '.$_POST['message'];
 					//$Gresponse = $GRecaptcha->setExpectedHostname($domainTLD)->verify($GRecaptchaResponse, IpHelper::getIp());
 
 					# anti spam with HCAPTCHA
@@ -441,14 +441,14 @@ if(isset($_GET['lang'])){
 					$hcaptcha_RData = json_decode($hcaptcha_VResponse);
 
 					if (!$mail->send() AND $hcaptcha_RData->success) {
-					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url']['default']);
+					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url'][$DefineTranslateLang]);
 					   exit();
 					} else {
-					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['success']['url']['default']);
+					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['success']['url'][$DefineTranslateLang]);
 					   exit();
 					}
 				} else {
-					header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url']['default']);
+					header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url'][$DefineTranslateLang]);
 					exit();
 
 				}

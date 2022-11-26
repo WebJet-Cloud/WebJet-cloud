@@ -100,7 +100,7 @@ if(isset($_GET['lang'])){
 				$title = $general['index']['title'];
 				$description = $general['index']['description'];
 				$keyword = $general['index']['keyword'];
-				$urls = $general['index']['url']['default'];
+				$urls = $general['index']['url'][$DefineTranslateLang];
 				$imgs = $general['index']['sitemap']['images'];
 				$vdos = $general['index']['sitemap']['video'];
 				define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$general['index']['url'][$DefineTranslateLang]);
@@ -111,7 +111,7 @@ if(isset($_GET['lang'])){
 				$title = $general['aboutus']['title'];
 				$description = $general['aboutus']['description'];
 				$keyword = $general['aboutus']['keyword'];
-				$urls = $general['aboutus']['url']['default'];
+				$urls = $general['aboutus']['url'][$DefineTranslateLang];
 				$imgs = $general['aboutus']['sitemap']['images'];
 				$vdos = $general['aboutus']['sitemap']['video'];
 				define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$general['aboutus']['url'][$DefineTranslateLang]);
@@ -122,7 +122,7 @@ if(isset($_GET['lang'])){
 				$title = $general['services']['title'];
 				$description = $general['services']['description'];
 				$keyword = $general['services']['keyword'];
-				$urls = $general['services']['url']['default'];
+				$urls = $general['services']['url'][$DefineTranslateLang];
 				$imgs = $general['services']['sitemap']['images'];
 				$vdos = $general['services']['sitemap']['video'];
 				define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$general['services']['url'][$DefineTranslateLang]);
@@ -133,7 +133,7 @@ if(isset($_GET['lang'])){
 				$title = $teams['index']['title'];
 				$description = $teams['index']['description'];
 				$keyword = $teams['index']['keyword'];
-				$urls = $teams['index']['url']['default'];
+				$urls = $teams['index']['url'][$DefineTranslateLang];
 				$imgs = $teams['index']['sitemap']['images'];
 				$vdos = $teams['index']['sitemap']['video'];
 				define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$teams['index']['url'][$DefineTranslateLang]);

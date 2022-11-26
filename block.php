@@ -98,7 +98,7 @@ if(isset($_GET['lang'])){
 				$title = $block['success']['title'];
 				$description = $block['success']['description'];
 				$keyword = $block['success']['keyword'];
-				$urls = $block['success']['url']['default'];
+				$urls = $block['success']['url'][$DefineTranslateLang];
 				$imgs = $block['success']['sitemap']['images'];
 				$vdos = $block['success']['sitemap']['video'];
 				define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$block['success']['url'][$DefineTranslateLang]);
@@ -109,7 +109,7 @@ if(isset($_GET['lang'])){
 				$title = $block['error']['title'];
 				$description = $block['error']['description'];
 				$keyword = $block['error']['keyword'];
-				$urls = $block['error']['url']['default'];
+				$urls = $block['error']['url'][$DefineTranslateLang];
 				$imgs = $block['error']['sitemap']['images'];
 				$vdos = $block['error']['sitemap']['video'];
 				define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]);
