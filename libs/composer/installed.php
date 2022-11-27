@@ -10,6 +10,15 @@
         'dev' => true,
     ),
     'versions' => array(
+        'gargron/fileupload' => array(
+            'pretty_version' => 'v1.4.5',
+            'version' => '1.4.5.0',
+            'reference' => 'fd2b79c9b868b9987925e098f5562231e691ce7d',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../gargron/fileupload',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'giggsey/libphonenumber-for-php' => array(
             'pretty_version' => '8.13.0',
             'version' => '8.13.0.0',

@@ -114,8 +114,38 @@ class ComposerStaticInitf66e3dc9976ffb8aa6844bf40e698532
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'F' => 
+        array (
+            'FileUpload\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/gargron/fileupload/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'FileUpload\\File' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/File.php',
+        'FileUpload\\FileNameGenerator\\Custom' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/FileNameGenerator/Custom.php',
+        'FileUpload\\FileNameGenerator\\FileNameGenerator' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/FileNameGenerator/FileNameGenerator.php',
+        'FileUpload\\FileNameGenerator\\MD5' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/FileNameGenerator/MD5.php',
+        'FileUpload\\FileNameGenerator\\Random' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/FileNameGenerator/Random.php',
+        'FileUpload\\FileNameGenerator\\Simple' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/FileNameGenerator/Simple.php',
+        'FileUpload\\FileNameGenerator\\Slug' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/FileNameGenerator/Slug.php',
+        'FileUpload\\FileSystem\\FileSystem' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/FileSystem/FileSystem.php',
+        'FileUpload\\FileSystem\\Mock' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/FileSystem/Mock.php',
+        'FileUpload\\FileSystem\\Simple' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/FileSystem/Simple.php',
+        'FileUpload\\FileUpload' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/FileUpload.php',
+        'FileUpload\\FileUploadFactory' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/FileUploadFactory.php',
+        'FileUpload\\PathResolver\\PathResolver' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/PathResolver/PathResolver.php',
+        'FileUpload\\PathResolver\\Simple' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/PathResolver/Simple.php',
+        'FileUpload\\Util' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/Util.php',
+        'FileUpload\\Validator\\DimensionValidator' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/Validator/DimensionValidator.php',
+        'FileUpload\\Validator\\MimeTypeValidator' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/Validator/MimeTypeValidator.php',
+        'FileUpload\\Validator\\Simple' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/Validator/Simple.php',
+        'FileUpload\\Validator\\SizeValidator' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/Validator/SizeValidator.php',
+        'FileUpload\\Validator\\Validator' => __DIR__ . '/..' . '/gargron/fileupload/src/FileUpload/Validator/Validator.php',
         'Giggsey\\Locale\\Locale' => __DIR__ . '/..' . '/giggsey/locale/src/Locale.php',
         'Icamys\\SitemapGenerator\\Extensions\\GoogleImageExtension' => __DIR__ . '/..' . '/icamys/php-sitemap-generator/src/Extensions/GoogleImageExtension.php',
         'Icamys\\SitemapGenerator\\Extensions\\GoogleVideoExtension' => __DIR__ . '/..' . '/icamys/php-sitemap-generator/src/Extensions/GoogleVideoExtension.php',
@@ -198,6 +228,7 @@ class ComposerStaticInitf66e3dc9976ffb8aa6844bf40e698532
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitf66e3dc9976ffb8aa6844bf40e698532::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitf66e3dc9976ffb8aa6844bf40e698532::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf66e3dc9976ffb8aa6844bf40e698532::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitf66e3dc9976ffb8aa6844bf40e698532::$classMap;
 
         }, null, ClassLoader::class);

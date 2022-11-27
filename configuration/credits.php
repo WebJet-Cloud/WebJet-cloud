@@ -39,6 +39,10 @@ $credits = array(
 		'symfony' => array(
 			'name' => 'Symfony',
 			'url' => 'symfony.com'
+		),
+		'gargon' => array(
+			'name' => 'Eugen Rochko',
+			'url' => 'zeonfederated.com"'
 		)
 	),
 	'designer' => array(
