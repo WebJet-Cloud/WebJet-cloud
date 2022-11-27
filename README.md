@@ -11,4 +11,5 @@ Please read our https://docs.webjet.cloud
 * https://alexonb.studio
 * https://vapecoin.club
 * https://The-familly.com
-* https://www.atelier-carpentier.com/
+* https://1troc1.site
+* https://1Euro1.agency
