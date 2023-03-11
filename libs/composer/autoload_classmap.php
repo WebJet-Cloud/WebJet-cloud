@@ -44,6 +44,7 @@ return array(
     'MatthiasMullie\\PathConverter\\Converter' => $vendorDir . '/matthiasmullie/path-converter/src/Converter.php',
     'MatthiasMullie\\PathConverter\\ConverterInterface' => $vendorDir . '/matthiasmullie/path-converter/src/ConverterInterface.php',
     'MatthiasMullie\\PathConverter\\NoConverter' => $vendorDir . '/matthiasmullie/path-converter/src/NoConverter.php',
+    'PHPMailer\\PHPMailer\\DSNConfigurator' => $vendorDir . '/phpmailer/phpmailer/src/DSNConfigurator.php',
     'PHPMailer\\PHPMailer\\Exception' => $vendorDir . '/phpmailer/phpmailer/src/Exception.php',
     'PHPMailer\\PHPMailer\\OAuth' => $vendorDir . '/phpmailer/phpmailer/src/OAuth.php',
     'PHPMailer\\PHPMailer\\OAuthTokenProvider' => $vendorDir . '/phpmailer/phpmailer/src/OAuthTokenProvider.php',
