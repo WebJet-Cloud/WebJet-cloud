@@ -161,7 +161,7 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'privacy-policy',
+			'default' => 'policy-privacy',
 			'de' => 'datenschutz-Bestimmungen'
 		),
 		'content' => array(

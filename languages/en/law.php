@@ -160,8 +160,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'privacy-policy',
-			'en' => 'privacy-policy'
+			'default' => 'policy-privacy',
+			'en' => 'policy-privacy'
 		),
 		'content' => array(
 			'' => ''
