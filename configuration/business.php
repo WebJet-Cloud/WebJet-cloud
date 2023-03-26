@@ -3,25 +3,27 @@
 $business = array(
 	'local' => array(
 		'born' => '', /*exemple Day/Month/Year number only indicate age */
-		'name' => 'WebJet',/*IF empty variable output not show public/not use*/
+		'name' => 'WebJetClouds',/*IF empty variable output not show public/not use*/
 		'siret' => '',
-		'tva' => '',
-		'vat' => '',
-		'address' => '',
-		'postal' => '75000',
+		'tva' => '', //TVA NUM
+		'vat' => 'TVA XXXXX',
+		'rcs-number' => '',
+		'capital-euro' => '',
+		'address' => '6 Rue d\'Armaillé,',
+		'postal' => '75017',
 		'city' => 'Paris',
-		'region' => 'Paris',
+		'region' => 'Île-De-France',
 		'contry' => 'France',
-		'status' => 'particulier', /*Special status on france SASU, SARL, SAS, etc...*/
+		'status' => 'SASU', /*Special status on france SASU, SARL, SAS, etc...*/
 		'geo' => array(
 		/*Pratical for use Google map JS/Mapbox or other*/
-			'latitude' => '48.8588897',
-			'longitude' => '2.3200410217200766'
+			'latitude' => '48.878089904785156',
+			'longitude' => '2.291578531265259'
 		),
 		'mobile' => array(
 			'code' => '+33',
 			'normal' => '0',
-			'number' => '',
+			'number' => '756934140',
 		),
 		'phone' => array(
 			'code' => '+33',
