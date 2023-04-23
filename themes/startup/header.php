@@ -711,7 +711,7 @@ if(!empty($seo['google']['tag-manager'])){
                     <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$general['index']['url']['default']; ?>" class="nav-item nav-link active"><?php echo $general['index']['title']; ?></a>
                     <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$general['aboutus']['url']['default']; ?>" class="nav-item nav-link"><?php echo $general['aboutus']['title']; ?></a>
                     <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$general['services']['url']['default']; ?>" class="nav-item nav-link"><?php echo $general['services']['title']; ?></a>
-                    <a href="<?php echo $protocols.'://lives.'.$sites['domain']; ?>/blog " class="nav-item nav-link"><?php echo $general['pages']['menu']['undermenu']['blog']; ?></a>
+                    <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>" class="nav-item nav-link"><?php echo $general['pages']['menu']['undermenu']['boutique']; ?></a>
                     <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$teams['index']['url']['default']; ?>" class="nav-item nav-link"><?php echo $teams['index']['title']; ?></a>
                     <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$email['index']['url']['default']; ?>" class="nav-item nav-link"><?php echo $email['index']['title']; ?></a>
                 </div>

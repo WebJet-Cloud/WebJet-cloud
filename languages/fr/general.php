@@ -31,7 +31,8 @@ $general = array(
 				'forum-c' => 'Forum / Communauté',
 				'v' => 'Version',
 				'blog' => 'Blog',
-				'licences' => 'Licences'
+				'licences' => 'Licences',
+				'boutique' => 'Boutiques'
 			),
 			'header' => array(
 				'creative' => 'Créative',
