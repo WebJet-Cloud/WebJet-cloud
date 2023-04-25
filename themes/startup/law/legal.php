@@ -12,15 +12,27 @@
       <div class="col-lg-12">
 	  .	<?php if(!empty($business['local']['name'])){ ?>
            <h3><?php echo $law['legal']['content']['business']['title']; ?></h3>
-		   <p>
-				<strong><?php echo $law['legal']['content']['business']['name']; ?></strong> <?php echo $business['local']['name']; ?><br />
-					<?php if(!empty($business['local']['tva'])){ ?><strong>TVA</strong>: <?php echo $business['local']['tva'].'<br />'; } ?>
-					<?php if(!empty($business['local']['vat'])){ ?><strong>VAT</strong>: <?php echo $business['local']['vat'].'<br />'; } ?>
-					<?php if(!empty($business['local']['siret'])){ ?><strong>SIRET</strong>: <?php echo $business['local']['siret'].'<br />'; } ?>
-				<strong><?php echo $law['legal']['content']['business']['address']; ?></strong> <?php echo $business['local']['address'].' '.$business['local']['postal'].' '.$business['local']['city'].' '.$business['local']['contry']; ?> <br />
-				<strong><?php echo $law['legal']['content']['business']['status']; ?></strong> <?php echo $law['legal']['content']['status']['medium']; ?><?php if(!empty($business['local']['status'])){ echo ' - '.$business['local']['status']; } ?>
-				
-			</p>
+		   Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site WebJetClouds l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.
+
+<h3>Edition du site </h3>
+
+  Le présent site, accessible à l’URL <?php echo $sites['auto']['domain']; ?> (le « Site »), est édité par :
+  <?php echo $business['local']['name']; ?>, société au capital de <?php echo $business['local']['capital-euro']; ?>, inscrite au R.C.S. de <?php echo $business['local']['city']; ?> sous le numéro RCS <?php echo $business['local']['rcs-number']; ?>, dont le siège social est situé au <?php echo $business['local']['address'].' '.$business['local']['postal'].' '.$business['local']['address'].' '.$business['local']['city']; ?>, représenté(e) par Alexon Balangue dûment habilité(e)
+
+  <h4><strong>Le numéro individuel TVA de l’éditeur est :</strong> <?php echo $business['local']['vat']; ?><h4>
+
+  <strong>Les présents sites, également accessible aux autres URL :</strong>
+  <ul>
+  <li>Store.WebJet.Cloud</li>
+  <li>1Troc1.Site & Subscribe.1Troc1.Site</li>
+  <li>1Euro1.Agency</li>
+  <li>Boost-Vos-Achat.Fr & Boost-Vos-Achat.Be</li>
+  <li>Alexonb.Studio</li>
+  <li>Roxannes-Skin.Store</li>
+  <li>TripEco.Tech & TripEcoTech.Blog</li>
+  <li>The-familly.com</li>
+  <li>Nature-et-4-sabots.fr</li>
+  </ul>
 		
 	    <?php } else { ?>
            <h3><?php echo $law['legal']['content']['owner']['title']; ?></h3>
