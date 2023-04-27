@@ -17,7 +17,7 @@
 <h3>Edition du site </h3>
 
   Le présent site, accessible à l’URL <?php echo $sites['auto']['domain']; ?> (le « Site »), est édité par :
-  <?php echo $business['local']['name']; ?>, société au capital de <?php echo $business['local']['capital-euro']; ?>, inscrite au R.C.S. de <?php echo $business['local']['city']; ?> sous le numéro RCS <?php echo $business['local']['rcs-number']; ?>, dont le siège social est situé au <?php echo $business['local']['address'].' '.$business['local']['postal'].' '.$business['local']['address'].' '.$business['local']['city']; ?>, représenté(e) par Alexon Balangue dûment habilité(e)
+  <?php echo $business['local']['name']; ?>, société au capital de <?php echo $business['local']['capital-euro']; ?>, inscrite au R.C.S. de <?php echo $business['local']['city']; ?> sous le numéro RCS <?php echo $business['local']['rcs-number']; ?>, dont le siège social est situé au <?php echo $business['local']['address'].' '.$business['local']['postal'].' '.$business['local']['city']; ?>, représenté(e) par Alexon Balangue dûment habilité(e)
 
   <h4><strong>Le numéro individuel TVA de l’éditeur est :</strong> <?php echo $business['local']['vat']; ?><h4>
 

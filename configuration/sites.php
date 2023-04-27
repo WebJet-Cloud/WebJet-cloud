@@ -6,7 +6,7 @@ exemple $sites['tarifs']['plan'][''];
 
 */
 $sites = array(
-	'name' => 'WebJet',
+	'name' => 'WebJetClouds',
 	'domain' => 'webjet.cloud', /*domain: exemple.tld*/
 	'acceptlang' => 'fr',
 	'auto' => array(
@@ -34,9 +34,9 @@ $sites = array(
 	'tarifs' => array(
 		'money' => '€',
 		'plan' => array(
-			'basic' => '10',
-			'standard' => '81',
-			'premium' => '162'
+			'basic' => '19',
+			'standard' => '88',
+			'premium' => '138'
 		)
 	)
 );

@@ -1,35 +1,5 @@
 
 
-
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5 mb-5">
-            <div class="bg-white">
-                <div class="owl-carousel vendor-carousel">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/bing.svg" alt="bing">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/bootstrap.svg" alt="bootstrap">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/composer.svg" alt="composer PHP">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/facebook.svg" alt="facebook">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/fontawesome.svg" alt="fontawesome">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/github.svg" alt="github">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/json-ld.svg" alt="json-ld">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/json.svg" alt="json">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/letsencrypt.svg" alt="letsencrypt">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/linux.svg" alt="linux">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/ovh.svg" alt="ovh">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/php.svg" alt="php">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/planethoster.svg" alt="planethoster">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/stripe.svg" alt="stripe">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/vistaprint.png" alt="vistaprint">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/yandex.svg" alt="yandex">
-                    <img width="150" height="50" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/slacker/microsoft.svg" alt="microsoft">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Vendor End -->
-    
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
@@ -61,7 +31,7 @@
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0"><?php echo $private['phone']['code'].' '.$private['phone']['number']; ?></p>
+                                <p class="mb-0"><?php echo $business['local']['mobile']['code'].' '.$business['local']['mobile']['number']; ?></p>
                             </div>
                             <div class="d-flex mt-4">
                                 <?php if(!empty($social['facebook']['name'])){ ?><a class="btn btn-primary btn-square me-2" href="<?php echo $social['facebook']['url']; ?>" data-toggle="tooltip" title="<?php echo $general['pages']['full']['follow-us']; ?> FACEBOOK"><i class="fab fa-facebook-f fw-normal"></i></a> <?php } ?>

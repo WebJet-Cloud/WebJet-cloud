@@ -699,7 +699,7 @@ if(!empty($seo['shareaholic']['key'])){
                     <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$general['index']['url']['default']; ?>" class="nav-item nav-link active"><?php echo $general['index']['title']; ?></a>
                     <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$general['aboutus']['url']['default']; ?>" class="nav-item nav-link"><?php echo $general['aboutus']['title']; ?></a>
                     <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$general['services']['url']['default']; ?>" class="nav-item nav-link"><?php echo $general['services']['title']; ?></a>
-                    <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>" class="nav-item nav-link"><?php echo $general['pages']['menu']['undermenu']['boutiques']; ?></a>
+                    <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>" class="nav-item nav-link"><?php echo $general['pages']['menu']['undermenu']['boutique']; ?></a>
                     <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$teams['index']['url']['default']; ?>" class="nav-item nav-link"><?php echo $teams['index']['title']; ?></a>
                     <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$email['index']['url']['default']; ?>" class="nav-item nav-link"><?php echo $email['index']['title']; ?></a>
                 </div>
