@@ -322,11 +322,11 @@
                                     <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$email['index']['url']['default']; ?>" class="btn btn-dark w-100 py-3"><?php echo $email['index']['title']; ?></a>
                                 </div>
                                 <div class="col-12">
-                                    <!-- Calendly link widget begin -->
+                                        <!-- Début de widget de lien Calendly -->
                                         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                                         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/webjetclouds/1h-services?hide_event_type_details=1&hide_gdpr_banner=1'});return false;" class="btn btn-dark w-100 py-3"><?php echo $email['index']['content']['container']['calendly']; ?></a>
-                                        <!-- Calendly link widget end -->
+                                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/webjetclouds?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;" class="btn btn-dark w-100 py-3"><?php echo $email['index']['content']['container']['calendly']; ?></a>
+                                        <!-- Fin de widget de lien Calendly -->
                                 </div>    
                             </div>
                     </div>

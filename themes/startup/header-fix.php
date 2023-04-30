@@ -653,7 +653,7 @@ if(!empty($seo['shareaholic']['key'])){
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
                     <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i><?php echo $private['city'].', '.$private['contry']; ?></small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i><?php echo $private['phone']['code'].' '.$private['phone']['number']; ?></small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i><?php echo $business['local']['mobile']['code'].' '.$business['local']['mobile']['number']; ?></small>
                     <small class="text-light"><i class="fa fa-envelope-open me-2"></i><?php echo $private['mail']['public'].'[AT]'.$sites['domain']; ?></small>
                 </div>
             </div>

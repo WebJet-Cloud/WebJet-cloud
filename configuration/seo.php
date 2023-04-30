@@ -5,7 +5,7 @@ $seo = array(
 		'key' => '' 
 	),
 	'tidio' => array(
-		'key' => '' 
+		'key' => 'hqtz8xoeoocivqmra3si7m6feopljlyb' 
 	),
 	'fb-pexel' => array(
 		'key' => '' 
