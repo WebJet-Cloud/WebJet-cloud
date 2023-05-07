@@ -14,7 +14,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2"><?php echo $email['index']['content']['container']['blocks']['1']; ?></h5>
-                            <h4 class="text-primary mb-0"><?php echo $private['phone']['code'].' '.$private['phone']['number']; ?></h4>
+                            <h4 class="text-primary mb-0"><?php echo $business['local']['mobile']['code'].' '.$business['local']['mobile']['number']; ?></h4>
                         </div>
                     </div>
                 </div>

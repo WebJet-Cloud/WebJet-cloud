@@ -24,14 +24,13 @@
   <strong>Les présents sites, également accessible aux autres URL :</strong>
   <ul>
   <li>Store.WebJet.Cloud</li>
-  <li>1Troc1.Site & Subscribe.1Troc1.Site</li>
+  <li>1Troc1.Site</li>
   <li>1Euro1.Agency</li>
   <li>Boost-Vos-Achat.Fr & Boost-Vos-Achat.Be</li>
   <li>Alexonb.Studio</li>
   <li>Roxannes-Skin.Store</li>
   <li>TripEco.Tech & TripEcoTech.Blog</li>
   <li>The-familly.com</li>
-  <li>Nature-et-4-sabots.fr</li>
   </ul>
 		
 	    <?php } else { ?>
@@ -90,6 +89,19 @@
 			License: GNU GPL V3.0
 		   </p>
 		   
+
+		   <h3> Directeur de publication </h3><br />
+			<p>Le Directeur de la publication du Site est Alexon Balangue. (www.alexonb.studio)
+			<br /><br />
+			Nous contacter <br />
+			Par téléphone : <?php echo $business['local']['mobile']['code'].' '.$business['local']['mobile']['number']; ?><br />
+			Par email : services@webjet.cloud<br />
+			Par courrier : <?php echo $business['local']['address'].' '.$business['local']['postal'].' '.$business['local']['city']; ?><br /><br /></p>
+
+			<h3>Données personnelles</h3>
+			<br />
+			<p>Le traitement de vos données à caractère personnel est régi par notre Charte du respect de la vie privée, disponible depuis la section "Charte de Protection des Données Personnelles", conformément au Règlement Général sur la Protection des Données 2016/679 du 27 avril 2016 («RGPD»).</p>
+				
       </div>
         </div>
 

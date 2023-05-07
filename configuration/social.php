@@ -6,11 +6,11 @@ $social = array(
 	'facebook' => array(
 		'sites' => 'facebook',
 		'name' => 'webjetclouds',
-		'url' => $social_http_sites.'://fb.me/webjetclouds',
-		'admins' => '103042234555592',
-		'profile-id' => '100000686899395',
-		'app-id' => '215266456206074',
-		'page-id' => '103207239191211'
+		'url' => $social_http_sites.'://facebook.com/webjet.cloud',
+		'admins' => '',
+		'profile-id' => '',
+		'app-id' => '',
+		'page-id' => ''
 	),
 	'twitter' => array(
 		'sites' => 'twitter',
