@@ -130,6 +130,10 @@ $general = array(
 					'5' => array(
 						'title' => 'Natürliche Referenz',
 						'description' => 'Alle Codes sind maximal in die Standardvorlagen integriert'
+					),
+					'6' => array(
+						'title' => 'IT Berater',
+						'description' => 'Ich rate Ihnen, IT-Dienstleistungen gemäß Ihren begrenzten Budgets einzubringen'
 					)
 				)
 			),

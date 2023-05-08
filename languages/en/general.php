@@ -129,6 +129,10 @@ $general = array(
 					'5' => array(
 						'title' => 'SEO',
 						'description' => 'All codes are integrated into the default templates to the maximum'
+					),
+					'6' => array(
+						'title' => 'IT consulting',
+						'description' => 'I advise you to bring in IT services according to your limited budgets'
 					)
 				)
 			),

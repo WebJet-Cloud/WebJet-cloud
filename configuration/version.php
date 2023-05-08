@@ -91,15 +91,15 @@ $version = array(
 	'external' => array(
 		/*CDNJ*/
 		'bootstrap' => array(
-			'css' => $cdn_vendor.'twitter-bootstrap/5.0.0/css/bootstrap.min.css',
-			'js' => $cdn_vendor.'twitter-bootstrap/5.0.0/js/bootstrap.bundle.min.js'
+			'css' => $cdn_vendor.'twitter-bootstrap/5.2.3/css/bootstrap.min.css',
+			'js' => $cdn_vendor.'twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js'
 		),
 		'bootstrap-icons' => array(
 			'css' => $cdn_vendor.'bootstrap-icons/1.9.1/font/bootstrap-icons.min.css'
 		),
 		'fontawesome' => array(
-			'css' => $cdn_vendor.'font-awesome/6.1.2/css/all.min.css',
-			'js' => $cdn_vendor.'font-awesome/6.1.2/js/all.min.js'
+			'css' => $cdn_vendor.'font-awesome/6.4.0/css/all.min.css',
+			'js' => $cdn_vendor.'font-awesome/6.4.0/js/all.min.js'
 		),
 		'jquery' => array(
 			'js' => $cdn_vendor.'jquery/3.4.1/jquery.min.js'

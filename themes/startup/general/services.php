@@ -130,9 +130,16 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
-                      
-                        <p class="mt-3 mb-4"><a href=""></a><img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/Web_Jet-logo.png" class="img-fluid"></a></p>
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-info text-white"></i>
+                        </div>
+                        <h4 class="mb-3"><?php echo $general['index']['content']['services']['blocks']['6']['title']; ?></h4>
+                        <p class="m-0"><?php echo $general['index']['content']['services']['blocks']['6']['description']; ?></p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                        
                     </div>
                 </div>
             </div>

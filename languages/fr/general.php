@@ -131,6 +131,10 @@ $general = array(
 					'5' => array(
 						'title' => 'Référencement Naturel',
 						'description' => 'Toutes les codes sont intégrées aux templates par défaut aux maximium'
+					),
+					'6' => array(
+						'title' => 'Consultant Informatique',
+						'description' => 'Je vous conseille pour apporter dans les services informatique selon vos budgets limités'
 					)
 				)
 			),
