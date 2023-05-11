@@ -277,7 +277,7 @@
                             <div class="d-flex justify-content-between mb-3"><span><?php echo $general['index']['content']['pricing']['blocks']['3']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $general['index']['content']['pricing']['blocks']['4']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $general['index']['content']['pricing']['blocks']['5']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>/all/numerique/creation-de-e-commerce/ class="btn btn-primary py-2 px-4 mt-4"><?php echo $general['index']['content']['pricing']['blocks']['btn']['3']; ?></a>
+                            <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>/all/numerique/creation-de-e-commerce/" class="btn btn-primary py-2 px-4 mt-4"><?php echo $general['index']['content']['pricing']['blocks']['btn']['3']; ?></a>
                         </div>
                     </div>
                 </div>
