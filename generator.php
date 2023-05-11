@@ -71,6 +71,8 @@ $others = json_decode($JE_translate_others, true);
 $debug = json_decode($JE_translate_debug, true);
 $tools_utilities = json_decode($JE_translate_tools, true);
 $docs = json_decode($JE_translate_docs, true);
+$teams = json_decode($JE_translate_teams, true);
+$services = json_decode($JE_translate_services, true);
 
 #Email contact form PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
@@ -106,11 +108,19 @@ if(isset($_GET['sitemaps'])){
 	} else if($_GET['sitemaps'] == 'fr'){
 		// sitemap file name
 		$generator->setSitemapFileName("sitemap-fr.xml");
-		include_once('themes/automate/sitemap-'.$translate['manual']['frontend']['french'].'.php');	
+		include_once('themes/automate/sitemap-fr.php');	
 	} else if($_GET['sitemaps'] == 'en'){
 		// sitemap file name
 		$generator->setSitemapFileName("sitemap-en.xml");
-		include_once('themes/automate/sitemap-'.$translate['manual']['frontend']['english'].'.php');	
+		include_once('themes/automate/sitemap-en.php');	
+	} else if($_GET['sitemaps'] == 'de'){
+		// sitemap file name
+		$generator->setSitemapFileName("sitemap-de.xml");
+		include_once('themes/automate/sitemap-de.php');	
+	} else if($_GET['sitemaps'] == 'ru'){
+		// sitemap file name
+		$generator->setSitemapFileName("sitemap-ru.xml");
+		include_once('themes/automate/sitemap-ru.php');	
 	} else {
 		header('Location: '.$protocols.'://'.$domainTLD);
 		exit();

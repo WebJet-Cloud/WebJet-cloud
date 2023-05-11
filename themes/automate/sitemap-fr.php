@@ -4,6 +4,12 @@
 # Preparing integrated on the sitemap
 $generator->addURL('/fr/'.$general['index']['url']['fr'], new DateTime(), 'monthly', 0.5, null);
 $generator->addURL('/fr/'.$general['services']['url']['fr'], new DateTime(), 'monthly', 0.5, null);
+$generator->addURL('/fr/'.$services['cybersecurity']['url']['fr'], new DateTime(), 'weekly', 1, null);
+$generator->addURL('/fr/'.$services['marketing']['url']['fr'], new DateTime(), 'weekly', 1, null);
+$generator->addURL('/fr/'.$services['webmaster']['url']['fr'], new DateTime(), 'weekly', 1, null);
+$generator->addURL('/fr/'.$services['developper']['url']['fr'], new DateTime(), 'weekly', 1, null);
+$generator->addURL('/fr/'.$services['seo']['url']['fr'], new DateTime(), 'weekly', 1, null);
+$generator->addURL('/fr/'.$services['consulting']['url']['fr'], new DateTime(), 'weekly', 1, null);
 $generator->addURL('/fr/'.$about['index']['url']['fr'], new DateTime(), 'weekly', 1, null);
 $generator->addURL('/fr/'.$email['index']['url']['fr'], new DateTime(), 'weekly', 1, null);
 $generator->addURL('/fr/'.$email['ask-quotes']['url']['fr'], new DateTime(), 'weekly', 1, null);

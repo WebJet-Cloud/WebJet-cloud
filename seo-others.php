@@ -64,6 +64,7 @@ $email = json_decode($JE_translate_email, true);
 $block = json_decode($JE_translate_block, true);
 $sitemap = json_decode($JE_translate_sitemap, true);
 $teams = json_decode($JE_translate_teams, true);
+$services = json_decode($JE_translate_services, true);
 
 #Email contact form PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;

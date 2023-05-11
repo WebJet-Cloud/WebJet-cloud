@@ -83,17 +83,17 @@ use MatthiasMullie\Minify;
 
 #frontend
 
-$generator->setSitemapFileName("sitemap-en.xml");
+$generator->setSitemapFileName("sitemap-ru.xml");
 
 $alternates = [
     ['hreflang' => 'de', 'href' => $protocols.'://'.$sites['domain'].'/de'],
     ['hreflang' => 'fr', 'href' => $protocols.'://'.$sites['domain'].'/fr'],
-    ['hreflang' => 'ru', 'href' => $protocols.'://'.$sites['domain'].'/ru']
+    ['hreflang' => 'en', 'href' => $protocols.'://'.$sites['domain'].'/en']
 ];
 
 # Preparing integrated on the sitemap
-$generator->addURL('/en/'.$general['index']['url']['en'], new DateTime(), 'monthly', 0.5, $alternates);
-include_once('themes/automate/sitemap-en.php');	
+$generator->addURL('/ru/'.$general['index']['url']['ru'], new DateTime(), 'monthly', 0.5, $alternates);
+include_once('themes/automate/sitemap-ru.php');	
 #include_once('themes/automate/sitemap-index.php');
 
 $generator->flush();

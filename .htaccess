@@ -1689,6 +1689,8 @@ CacheKeyModify -qs:_ga
     RewriteRule ^automate/generator/sitemap-index$ seo-others.php?sitemap=index [L]
     RewriteRule ^automate/generator/sitemap-fr$ seo-others.php?sitemap=fr [L]
     RewriteRule ^automate/generator/sitemap-en$ seo-others.php?sitemap=en [L]
+    RewriteRule ^automate/generator/sitemap-de$ seo-others.php?sitemap=de [L]
+    RewriteRule ^automate/generator/sitemap-ru$ seo-others.php?sitemap=ru [L]
 
     #RewriteRule ^automate/generator/sitemap-test$ sitemap-php.php [L]
 

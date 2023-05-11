@@ -62,6 +62,7 @@ $block = json_decode($JE_translate_block, true);
 $sitemap = json_decode($JE_translate_sitemap, true);
 $debug = json_decode($JE_translate_debug, true);
 $teams = json_decode($JE_translate_teams, true);
+$services = json_decode($JE_translate_services, true);
 
 
 
@@ -88,7 +89,7 @@ $alternates = [
     ['hreflang' => 'de', 'href' => $protocols.'://'.$sites['domain'].'/de'],
     ['hreflang' => 'fr', 'href' => $protocols.'://'.$sites['domain'].'/fr'],
     ['hreflang' => 'en', 'href' => $protocols.'://'.$sites['domain'].'/en'],
-    ['hreflang' => 'ru', 'href' => $protocols.'://'.$sites['domain'].'/ru'],
+    ['hreflang' => 'ru', 'href' => $protocols.'://'.$sites['domain'].'/ru']
 ];
 
 # Preparing integrated on the sitemap

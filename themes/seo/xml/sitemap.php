@@ -12,4 +12,12 @@
 		<loc><?php echo $protocols.'://'.$sites['domain'].'/sitemap-en.xml'; ?></loc>
 		<lastmod><?php echo $sites['update']['xml']['date'].'T'.$sites['update']['xml']['time'];?>+00:00</lastmod>
 	</sitemap>
+	<sitemap>
+		<loc><?php echo $protocols.'://'.$sites['domain'].'/sitemap-ru.xml'; ?></loc>
+		<lastmod><?php echo $sites['update']['xml']['date'].'T'.$sites['update']['xml']['time'];?>+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><?php echo $protocols.'://'.$sites['domain'].'/sitemap-de.xml'; ?></loc>
+		<lastmod><?php echo $sites['update']['xml']['date'].'T'.$sites['update']['xml']['time'];?>+00:00</lastmod>
+	</sitemap>
 </sitemapindex>
