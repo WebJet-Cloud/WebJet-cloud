@@ -1,6 +1,6 @@
 <?php
 # exemple $images['dir']
-# exemple $images['manager']['logo']['creator']
+# exemple $images['manager']['services']['consultant']['']
 
 $images = array(
 	'manager' => array(
@@ -33,9 +33,14 @@ $images = array(
 			's:152x152' => 'pinned/apple-touch-icon-152x152.png'
 		),
 		/*Manager Images */
-		'category' => array(
-			'hwc' => array(
-				'hwv' => '*name*.jpg'
+		'services' => array(
+			'consultant' => array(
+				'1' => 'services/consultant/Consultant-strategie.jpg',
+				'2' => 'services/consultant/Consultant-management.jpg',
+				'3' => 'services/consultant/Consultant-informatique.jpg',
+				'4' => 'services/consultant/Consultant-marketing.jpg',
+				'5' => 'services/consultant/Consultant-finance.jpg',
+				'6' => 'services/consultant/assistant-informatique.jpg'
 			)
 			/*Custom your own*/
 		)

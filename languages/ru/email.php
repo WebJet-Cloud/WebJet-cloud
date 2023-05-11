@@ -10,6 +10,12 @@ $email = array(
 			'ru' => 'contact'
 		),
 		'content' => array(
+			'sebservices' => array(
+				'developper' => 'разработчик',
+				'webmaster' => 'веб-мастер',
+				'services-it' => 'Услуги ИТ',
+				'consulting' => 'Консалтинг'
+			),
 			'container' => array(
 				'slogan' => 'Если у вас есть какие-либо вопросы, не стесняйтесь обращаться к нам',
 				'blocks' => array(
@@ -17,7 +23,7 @@ $email = array(
 					'2' => 'Электронная почта для бесплатной цитаты',
 					'3' => 'Посетите наш офис'
 				),
-				'calendly' => 'Prévoyez du temps avec moi'
+				'calendly' => 'запланируй время со мной'
 			),
 			'mail' => array(
 				'contact' => 'Контакт',

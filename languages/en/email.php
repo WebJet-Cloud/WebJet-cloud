@@ -10,6 +10,12 @@ $email = array(
 			'en' => 'contact'
 		),
 		'content' => array(
+			'sebservices' => array(
+				'developper' => 'developper',
+				'webmaster' => 'Webmaster',
+				'services-it' => 'Services IT',
+				'consulting' => 'Consulting'
+			),
 			'container' => array(
 				'slogan' => 'If You Have Any Query, Feel Free To Contact Us',
 				'blocks' => array(

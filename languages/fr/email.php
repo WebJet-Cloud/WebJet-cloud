@@ -65,7 +65,17 @@ $email = array(
 			'sebservices' => array(
 				'developper' => 'développeur',
 				'webmaster' => 'Webmestre',
-				'services-it' => 'Services IT'
+				'services-it' => 'Services IT',
+				'consulting' => 'Consultant'
+			),
+			'container' => array(
+				'slogan' => 'Si vous avez des questions, n\'hésitez pas à nous contacter',
+				'blocks' => array(
+					'1' => 'Appelez pour poser n\'importe quelle question',
+					'2' => 'E-mail pour obtenir un devis gratuit',
+					'3' => 'Visitez notre bureau'
+				),
+				'calendly' => 'Prévoyez du temps avec moi'  
 			),
 			'mail' => array(
 				'contact' => 'Contact',

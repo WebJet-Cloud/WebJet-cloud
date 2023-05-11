@@ -263,6 +263,7 @@
 								    <option value="developper"><?php echo $email['ask-quotes']['content']['sebservices']['developper']; ?></option>
 								    <option value="webmaster"><?php echo $email['ask-quotes']['content']['sebservices']['webmaster']; ?></option>
 								    <option value="service-it"><?php echo $email['ask-quotes']['content']['sebservices']['service-it']; ?></option>
+								    <option value="service-it"><?php echo $email['ask-quotes']['content']['sebservices']['consulting']; ?></option>
                                 </select>
                             </div>
                         </div>

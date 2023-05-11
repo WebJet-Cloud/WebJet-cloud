@@ -10,6 +10,21 @@ $email = array(
 			'de' => 'kontakt'
 		),
 		'content' => array(
+			'sebservices' => array(
+				'developper' => 'Entwickler',
+				'webmaster' => 'Webmaster',
+				'services-it' => 'Dienstleistungen IT',
+				'consulting' => 'Beratung'
+			),
+			'container' => array(
+				'slogan' => 'Wenn Sie Fragen haben, können Sie uns gerne kontaktieren',
+				'blocks' => array(
+					'1' => 'Rufen Sie an, um Fragen zu stellen',
+					'2' => 'E-Mail, um ein kostenloses Angebot zu erhalten',
+					'3' => 'Besuchen Sie unser Büro'
+				),
+				'calendly' => 'Vereinbaren Sie einen Termin mit mir'                                                                                                                                                                                                                                                                                                                                                                         
+			),
 			'mail' => array(
 				'contact' => 'Kontakt',
 				'support' => 'Unterstützung',

@@ -233,7 +233,7 @@
                         <div class="p-5 pt-0">
                             <h1 class="display-5 mb-3">
                                 <small class="align-top" style="font-size: 22px; line-height: 45px;"><?php echo $sites['tarifs']['money']; ?></small><?php echo $sites['tarifs']['plan']['basic']; ?><small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ <?php echo $general['index']['content']['pricing']['blocks']['small']['ho']; ?></small>
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;"> HT/ <?php echo $general['index']['content']['pricing']['blocks']['small']['ho']; ?></small>
                             </h1>
                             <div class="d-flex justify-content-between mb-3"><span><?php echo $general['index']['content']['pricing']['blocks']['1']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-3"><span><?php echo $general['index']['content']['pricing']['blocks']['2']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
@@ -252,7 +252,7 @@
                         <div class="p-5 pt-0">
                             <h1 class="display-5 mb-3">
                                 <small class="align-top" style="font-size: 22px; line-height: 45px;"><?php echo $sites['tarifs']['money']; ?></small><?php echo $sites['tarifs']['plan']['standard']; ?><small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ <?php echo $general['index']['content']['pricing']['blocks']['small']['ho']; ?></small>
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;"> HT/ <?php echo $general['index']['content']['pricing']['blocks']['small']['ho']; ?></small>
                             </h1>
                             <div class="d-flex justify-content-between mb-3"><span><?php echo $general['index']['content']['pricing']['blocks']['1']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-3"><span><?php echo $general['index']['content']['pricing']['blocks']['2']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
@@ -271,7 +271,7 @@
                         <div class="p-5 pt-0">
                             <h1 class="display-5 mb-3">
                                 <small class="align-top" style="font-size: 22px; line-height: 45px;"><?php echo $sites['tarifs']['money']; ?></small><?php echo $sites['tarifs']['plan']['premium']; ?><small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ <?php echo $general['index']['content']['pricing']['blocks']['small']['ho']; ?></small>
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;"> HT/ <?php echo $general['index']['content']['pricing']['blocks']['small']['ho']; ?></small>
                             </h1>
                             <div class="d-flex justify-content-between mb-3"><span><?php echo $general['index']['content']['pricing']['blocks']['1']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-3"><span><?php echo $general['index']['content']['pricing']['blocks']['2']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
