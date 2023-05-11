@@ -34,9 +34,9 @@ $sites = array(
 	'tarifs' => array(
 		'money' => '€',
 		'plan' => array(
-			'basic' => '19',
-			'standard' => '88',
-			'premium' => '138'
+			'basic' => '20',
+			'standard' => '80',
+			'premium' => '149'
 		)
 	)
 );

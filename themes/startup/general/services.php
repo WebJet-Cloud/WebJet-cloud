@@ -71,7 +71,7 @@
                         </div>
                         <h4 class="mb-3"><?php echo $general['index']['content']['services']['blocks']['1']['title']; ?></h4>
                         <p class="m-0"><?php echo $general['index']['content']['services']['blocks']['1']['description']; ?></p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <a class="btn btn-lg btn-primary rounded" href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['cybersecurity']['url']['default']; ?>">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                         
@@ -84,7 +84,7 @@
                         </div>
                         <h4 class="mb-3"><?php echo $general['index']['content']['services']['blocks']['2']['title']; ?></h4>
                         <p class="m-0"><?php echo $general['index']['content']['services']['blocks']['2']['description']; ?></p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <a class="btn btn-lg btn-primary rounded" href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['marketing']['url']['default']; ?>">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                         
@@ -97,7 +97,7 @@
                         </div>
                         <h4 class="mb-3"><?php echo $general['index']['content']['services']['blocks']['3']['title']; ?></h4>
                         <p class="m-0"><?php echo $general['index']['content']['services']['blocks']['3']['description']; ?></p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <a class="btn btn-lg btn-primary rounded" href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['webmaster']['url']['default']; ?>">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                         
@@ -110,7 +110,7 @@
                         </div>
                         <h4 class="mb-3"><?php echo $general['index']['content']['services']['blocks']['4']['title']; ?></h4>
                         <p class="m-0"><?php echo $general['index']['content']['services']['blocks']['4']['description']; ?></p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <a class="btn btn-lg btn-primary rounded" href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['developper']['url']['default']; ?>">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                         
@@ -123,7 +123,7 @@
                         </div>
                         <h4 class="mb-3"><?php echo $general['index']['content']['services']['blocks']['5']['title']; ?></h4>
                         <p class="m-0"><?php echo $general['index']['content']['services']['blocks']['5']['description']; ?></p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <a class="btn btn-lg btn-primary rounded" href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['seo']['url']['default']; ?>">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                         
@@ -136,7 +136,7 @@
                         </div>
                         <h4 class="mb-3"><?php echo $general['index']['content']['services']['blocks']['6']['title']; ?></h4>
                         <p class="m-0"><?php echo $general['index']['content']['services']['blocks']['6']['description']; ?></p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <a class="btn btn-lg btn-primary rounded" href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['consulting']['url']['default']; ?>">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                         
