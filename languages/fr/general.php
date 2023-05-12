@@ -204,7 +204,7 @@ $general = array(
 			
 		),
 		'sitemap' => array(
-			'images' => 'themes/bg-alexonbstudio.png',
+			'images' => 'startup/Web_Jet-logo.png',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	),
