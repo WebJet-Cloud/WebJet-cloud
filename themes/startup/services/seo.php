@@ -131,7 +131,7 @@
             </div>
             <div class="col-lg-5" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['consultant']['1']; ?>" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['seo']['1']; ?>" style="object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -146,7 +146,7 @@
         <div class="row g-5">
             <div class="col-lg-5" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['consultant']['2']; ?>" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['seo']['2']; ?>" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-7">
@@ -178,7 +178,7 @@
             </div>
             <div class="col-lg-5" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['consultant']['3']; ?>" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['seo']['3']; ?>" style="object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -193,7 +193,7 @@
         <div class="row g-5">
             <div class="col-lg-5" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['consultant']['4']; ?>" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['seo']['4']; ?>" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-7">
@@ -227,7 +227,6 @@
                             <h1 class="display-5 mb-6">
                                 <small class="align-top" style="font-size: 22px; line-height: 45px;"> <?php echo $services['seo']['content']['pricing']['free']; ?></small>
                             </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>--</span></div>
                             <div class="d-flex justify-content-between mb-3"><span>--</span></div>
                             <div class="d-flex justify-content-between mb-3"><span>--</span></div>
                             <div class="d-flex justify-content-between mb-3"><span>--</span></div>
