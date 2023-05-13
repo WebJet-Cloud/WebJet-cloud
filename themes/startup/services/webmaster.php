@@ -24,12 +24,11 @@
             </div>
             <div class="row g-5">
                 <div class="table-responsive">
-                    <!--<table class="table table-striped align-middle">
+                    <table class="table table-striped align-middle">
                         <thead>
                             <tr class="align-middle">
                                 <th scope="col"><?php echo $services['webmaster']['content']['excel']['table']['head']['1']; ?></th>
                                 <th scope="col"><?php echo $services['webmaster']['content']['excel']['table']['head']['2']; ?></th>
-                                <th scope="col"><?php echo $services['webmaster']['content']['excel']['table']['head']['3']; ?></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -37,30 +36,33 @@
                             <tr class="align-middle">
                                 <td><?php echo $services['webmaster']['content']['excel']['table']['body']['1']['tr']['1']; ?></td>
                                 <td><?php echo $services['webmaster']['content']['excel']['table']['body']['1']['tr']['2']; ?></td>
-                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['1']['tr']['3']; ?></td>
                             </tr>
                             <tr class="align-middle">
                                 <td><?php echo $services['webmaster']['content']['excel']['table']['body']['2']['tr']['1']; ?></td>
                                 <td><?php echo $services['webmaster']['content']['excel']['table']['body']['2']['tr']['2']; ?></td>
-                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['2']['tr']['3']; ?></td>
                             </tr>
                             <tr class="align-middle">
                                 <td><?php echo $services['webmaster']['content']['excel']['table']['body']['3']['tr']['1']; ?></td>
                                 <td><?php echo $services['webmaster']['content']['excel']['table']['body']['3']['tr']['2']; ?></td>
-                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['3']['tr']['3']; ?></td>
                             </tr>
                             <tr class="align-middle">
                                 <td><?php echo $services['webmaster']['content']['excel']['table']['body']['4']['tr']['1']; ?></td>
                                 <td><?php echo $services['webmaster']['content']['excel']['table']['body']['4']['tr']['2']; ?></td>
-                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['4']['tr']['3']; ?></td>
                             </tr>
                             <tr class="align-middle">
                                 <td><?php echo $services['webmaster']['content']['excel']['table']['body']['5']['tr']['1']; ?></td>
                                 <td><?php echo $services['webmaster']['content']['excel']['table']['body']['5']['tr']['2']; ?></td>
-                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['5']['tr']['3']; ?></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['6']['tr']['1']; ?></td>
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['6']['tr']['2']; ?></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['7']['tr']['1']; ?></td>
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['7']['tr']['2']; ?></td>
                             </tr>
                         </tbody>
-                    </table>-->
+                    </table>
                 </div>
 
             </div>

@@ -29,16 +29,90 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => '',
-						'2' => '',
-						'3' => ''
+						'1' => 'Méthode',
+						'2' => 'Description',
+						'3' => 'Avantage',
+						'4' => 'Limitation'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => '',
-								'2' => '',
-								'3' => ''
+								'1' => 'Pare-feu',
+								'2' => 'Un pare-feu est un système de sécurité réseau qui contrôle et filtre le trafic entrant et sortant.',
+								'3' => 'Bloque les connexions non autorisées. Protège contre les attaques par déni de service (DDoS).',
+								'4' => 'Peut être contourné par des attaques de type "par-dessus" (overpassing). Nécessite une configuration et une maintenance régulières.'
+							)
+						),
+						'2' => array(
+							'tr' => array(
+								'1' => 'Antivirus',
+								'2' => 'Les logiciels antivirus détectent, bloquent et suppriment les logiciels malveillants tels que les virus, les vers et les chevaux de Troie.',
+								'3' => 'Identifie et élimine les menaces connues. Protège contre les fichiers infectés.',
+								'4' => 'Peut avoir des taux de détection moins élevés pour les nouvelles menaces. Peut causer des ralentissements du système lors de l\'analyse en temps réel.'
+							)
+						),
+						'3' => array(
+							'tr' => array(
+								'1' => 'Authentification à deux facteurs (2FA)',
+								'2' => 'L\'authentification à deux facteurs exige une deuxième forme de vérification, en plus du mot de passe, telle qu\'un code envoyé par SMS ou une application d\'authentification.',
+								'3' => 'Renforce la sécurité des comptes en ligne. Protège contre les attaques de phishing.',
+								'4' => 'Peut nécessiter un effort supplémentaire de la part des utilisateurs. Peut y avoir des problèmes de compatibilité avec certains systèmes.'
+							)
+						),
+						'4' => array(
+							'tr' => array(
+								'1' => 'Cryptage des données',
+								'2' => 'Le cryptage des données convertit les informations en un format illisible, à moins d\'avoir une clé de décryptage.',
+								'3' => 'Protège les données sensibles en cas de vol ou d\'accès non autorisé. Conforme aux réglementations en matière de protection des données.',
+								'4' => 'Peut entraîner une légère augmentation de la latence lors de l\'accès aux données cryptées. La perte de la clé de décryptage peut entraîner une perte permanente des données.'
+							)
+						),
+						'5' => array(
+							'tr' => array(
+								'1' => 'Formation à la sensibilisation à la sécurité',
+								'2' => 'La formation à la sensibilisation à la sécurité vise à éduquer les utilisateurs sur les meilleures pratiques en matière de cybersécurité, telles que l\'identification des e-mails de phishing et la gestion des mots de passe.',
+								'3' => 'Réduit les risques d\'erreurs humaines. Améliore la posture globale de sécurité de l\'organisation.',
+								'4' => 'Nécessite des mises à jour régulières pour suivre les nouvelles menaces. Peut y avoir une résistance initiale au changement de comportement des utilisateurs.'
+							)
+						),
+						'6' => array(
+							'tr' => array(
+								'1' => 'Gestion des correctifs',
+								'2' => 'La gestion des correctifs consiste à appliquer régulièrement les mises à jour de sécurité et les correctifs logiciels pour combler les vulnérabilités connues.',
+								'3' => 'Réduit les risques d\'exploitation des failles de sécurité connues. Protège contre les attaques basées sur des vulnérabilités logicielles connues.',
+								'4' => 'Nécessite une maintenance régulière pour appliquer les correctifs. Les correctifs peuvent entraîner des incompatibilités logicielles.'
+							)
+						),
+						'7' => array(
+							'tr' => array(
+								'1' => 'Surveillance du réseau',
+								'2' => 'La surveillance du réseau consiste à analyser en temps réel le trafic réseau afin de détecter les activités suspectes ou malveillantes.',
+								'3' => 'Identifie les comportements anormaux ou les attaques en cours. Permet une réponse rapide aux incidents de sécurité.',
+								'4' => 'Peut générer un grand volume de données à analyser. Nécessite des ressources de surveillance dédiées.'
+							)
+						),
+						'8' => array(
+							'tr' => array(
+								'1' => 'Protection contre les logiciels malveillants',
+								'2' => 'Les solutions de protection contre les logiciels malveillants utilisent des techniques telles que l\'analyse comportementale et la détection des signatures pour identifier et bloquer les logiciels malveillants.',
+								'3' => 'Protège contre les virus, les vers, les chevaux de Troie et autres malwares. Peut fournir une défense en temps réel contre les nouvelles menaces.',
+								'4' => 'Peut entraîner des faux positifs ou des faux négatifs. Nécessite des mises à jour régulières des définitions de logiciels malveillants.'
+							)
+						),
+						'9' => array(
+							'tr' => array(
+								'1' => 'Sécurité des e-mails',
+								'2' => 'Les solutions de sécurité des e-mails utilisent des filtres et des analyses pour bloquer les e-mails de phishing, les attaques de hameçonnage et les fichiers malveillants attachés.',
+								'3' => 'Protège contre les attaques basées sur les e-mails. Réduit les risques de compromission des comptes via des liens ou des pièces jointes malveillants.',
+								'4' => 'Peut entraîner des faux positifs, bloquant parfois des e-mails légitimes. Les techniques d\'ingénierie sociale sophistiquées peuvent contourner les filtres.'
+							)
+						),
+						'10' => array(
+							'tr' => array(
+								'1' => 'Gestion des accès',
+								'2' => 'La gestion des accès vise à contrôler et à limiter les droits d\'accès aux systèmes et aux données, en accordant uniquement les autorisations nécessaires à chaque utilisateur.',
+								'3' => 'Réduit les risques d\'accès non autorisés aux données sensibles. - Permet une traçabilité des actions des utilisateurs.',
+								'4' => 'Nécessite une gestion rigoureuse des droits d\'accès pour éviter les erreurs de configuration. - Les attaques par usurpation d\'identité peuvent contourner les contrôles d\'accès.'
 							)
 						)
 					)
@@ -74,16 +148,56 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => '',
-						'2' => '',
-						'3' => ''
+						'1' => 'Méthode',
+						'2' => 'Description'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => '',
-								'2' => '',
-								'3' => ''
+								'1' => 'Marketing traditionnel',
+								'2' => 'Utilisation de canaux de communication traditionnels tels que la publicité à la télévision, à la radio, dans les journaux, les magazines, les affiches, etc. pour atteindre le public cible.'
+							)
+						),
+						'2' => array(
+							'tr' => array(
+								'1' => 'Marketing digital',
+								'2' => 'Utilisation des canaux en ligne tels que les sites web, les médias sociaux, le marketing par e-mail, le référencement, la publicité en ligne, etc. pour promouvoir des produits ou services et atteindre une audience plus large.'
+							)
+						),
+						'3' => array(
+							'tr' => array(
+								'1' => 'Marketing de contenu',
+								'2' => 'Création et diffusion de contenu pertinent et de qualité, tels que des articles de blog, des vidéos, des infographies, des livres blancs, etc. pour attirer et engager un public cible, renforcer la crédibilité de la marque et générer des leads qualifiés.'
+							)
+						),
+						'4' => array(
+							'tr' => array(
+								'1' => 'Marketing des médias sociaux',
+								'2' => 'Utilisation des plateformes de médias sociaux telles que Facebook, Twitter, Instagram, LinkedIn, etc. pour interagir avec le public cible, promouvoir la marque, partager du contenu et générer de l\'engagement.'
+							)
+						),
+						'5' => array(
+							'tr' => array(
+								'1' => 'Marketing d\'influence',
+								'2' => 'Collaboration avec des influenceurs ou des personnalités connues pour promouvoir des produits ou services auprès de leur audience et bénéficier de leur crédibilité et de leur pouvoir de persuasion.'
+							)
+						),
+						'6' => array(
+							'tr' => array(
+								'1' => 'Marketing par e-mail',
+								'2' => 'Utilisation de campagnes d\'e-mails ciblées et personnalisées pour communiquer avec les clients potentiels et existants, leur fournir des informations pertinentes, des offres spéciales et les inciter à agir.'
+							)
+						),
+						'7' => array(
+							'tr' => array(
+								'1' => 'Marketing viral',
+								'2' => 'Création de contenu attrayant et partageable qui se propage rapidement sur Internet grâce aux partages des utilisateurs, permettant ainsi une exposition massive de la marque ou du produit sans investissement publicitaire important.'
+							)
+						),
+						'8' => array(
+							'tr' => array(
+								'1' => 'Marketing expérientiel',
+								'2' => 'Création d\'expériences uniques et mémorables pour les clients, en utilisant des événements, des démonstrations de produits, des échantillons gratuits, etc. pour susciter leur engagement émotionnel et favoriser la fidélisation.'
 							)
 						)
 					)
@@ -119,16 +233,50 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => '',
-						'2' => '',
-						'3' => ''
+						'1' => 'Méthode',
+						'2' => 'Description'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => '',
-								'2' => '',
-								'3' => ''
+								'1' => 'Conception de sites web',
+								'2' => 'Le webmaster est responsable de la conception et de l\'architecture des sites web. Il crée une structure logique pour le site et s\'assure que les pages sont bien organisées et faciles à naviguer.'
+							)
+						),
+						'2' => array(
+							'tr' => array(
+								'1' => 'Design et intégration',
+								'2' => 'Le webmaster s\'occupe de la conception visuelle du site, en créant des maquettes graphiques et en les intégrant au code HTML/CSS. Il s\'assure que le design est attrayant, convivial et conforme aux normes du web.'
+							)
+						),
+						'3' => array(
+							'tr' => array(
+								'1' => 'Gestion du contenu',
+								'2' => 'Le webmaster est chargé de la création, de la modification et de l\'organisation du contenu du site. Il ajoute des articles, des images, des vidéos, et veille à ce que le contenu soit pertinent, bien présenté et optimisé pour le référencement.'
+							)
+						),
+						'4' => array(
+							'tr' => array(
+								'1' => 'Maintenance technique',
+								'2' => 'Le webmaster gère les aspects techniques du site, tels que l\'hébergement, la sécurité, les mises à jour des logiciels et la résolution des problèmes techniques. Il s\'assure que le site fonctionne correctement et effectue des sauvegardes régulières.'
+							)
+						),
+						'5' => array(
+							'tr' => array(
+								'1' => 'Optimisation du référencement',
+								'2' => 'Le webmaster utilise des techniques d\'optimisation pour améliorer la visibilité du site dans les moteurs de recherche. Il effectue des recherches de mots-clés, optimise les balises HTML, améliore la structure du site et travaille sur l\'optimisation de la vitesse de chargement.'
+							)
+						),
+						'6' => array(
+							'tr' => array(
+								'1' => 'Analyse des performances',
+								'2' => 'Le webmaster utilise des outils d\'analyse pour surveiller les performances du site, tels que le nombre de visiteurs, les taux de conversion et les temps de chargement des pages. Il analyse ces données et effectue des ajustements pour améliorer l\'expérience utilisateur et les résultats du site.'
+							)
+						),
+						'7' => array(
+							'tr' => array(
+								'1' => 'Coordination avec les équipes',
+								'2' => 'Le webmaster travaille en étroite collaboration avec les équipes de développement, de design et de marketing pour s\'assurer que le site web répond aux objectifs et aux besoins de l\'entreprise. Il coordonne les efforts de ces équipes et communique efficacement avec elles.'
 							)
 						)
 					)
@@ -164,16 +312,56 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => '',
-						'2' => '',
-						'3' => ''
+						'1' => 'Méthode',
+						'2' => 'Description'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => '',
-								'2' => '',
-								'3' => ''
+								'1' => 'agile',
+								'2' => 'Approche de développement logiciel itérative et collaborative, favorisant la flexibilité, l\'adaptabilité aux changements et la livraison régulière de fonctionnalités.'
+							)
+						),
+						'2' => array(
+							'tr' => array(
+								'1' => 'en cascade',
+								'2' => 'Approche séquentielle et linéaire où chaque phase du développement est réalisée successivement, avec une planification détaillée dès le début du projet.'
+							)
+						),
+						'3' => array(
+							'tr' => array(
+								'1' => 'RAD (Rapid Application Development)',
+								'2' => 'Méthode de développement rapide d\'applications, basée sur des cycles courts et intensifs de développement, impliquant une interaction étroite avec les utilisateurs finaux.'
+							)
+						),
+						'4' => array(
+							'tr' => array(
+								'1' => 'TDD (Test-Driven Development)',
+								'2' => 'Approche centrée sur les tests, où les développeurs écrivent d\'abord les tests automatisés, puis le code pour satisfaire ces tests.'
+							)
+						),
+						'5' => array(
+							'tr' => array(
+								'1' => 'BDD (Behavior-Driven Development)',
+								'2' => 'Approche de développement axée sur le comportement, mettant l\'accent sur la collaboration entre les parties prenantes et l\'expression des exigences en termes de comportement attendu.'
+							)
+						),
+						'6' => array(
+							'tr' => array(
+								'1' => 'DevOps',
+								'2' => 'Intégration continue du développement logiciel et des opérations, visant à améliorer la collaboration, l\'efficacité et la qualité des produits logiciels.'
+							)
+						),
+						'7' => array(
+							'tr' => array(
+								'1' => 'Lean',
+								'2' => 'Approche de développement axée sur l\'élimination des gaspillages et la maximisation de la valeur pour le client, en favorisant une gestion efficace des ressources.'
+							)
+						),
+						'8' => array(
+							'tr' => array(
+								'1' => 'SCRUM',
+								'2' => 'Cadre de travail agile qui structure le développement en itérations appelées "sprints", avec des réunions régulières pour la planification, la révision et la rétrospective.'
 							)
 						)
 					)

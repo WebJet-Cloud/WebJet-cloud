@@ -30,16 +30,90 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => '',
-						'2' => '',
-						'3' => ''
+						'1' => 'Méthode',
+						'2' => 'Description',
+						'3' => 'Avantage',
+						'4' => 'Limitation'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => '',
-								'2' => '',
-								'3' => ''
+								'1' => 'Pare-feu',
+								'2' => 'Un pare-feu est un système de sécurité réseau qui contrôle et filtre le trafic entrant et sortant.',
+								'3' => 'Bloque les connexions non autorisées. Protège contre les attaques par déni de service (DDoS).',
+								'4' => 'Peut être contourné par des attaques de type "par-dessus" (overpassing). Nécessite une configuration et une maintenance régulières.'
+							)
+						),
+						'2' => array(
+							'tr' => array(
+								'1' => 'Antivirus',
+								'2' => 'Les logiciels antivirus détectent, bloquent et suppriment les logiciels malveillants tels que les virus, les vers et les chevaux de Troie.',
+								'3' => 'Identifie et élimine les menaces connues. Protège contre les fichiers infectés.',
+								'4' => 'Peut avoir des taux de détection moins élevés pour les nouvelles menaces. Peut causer des ralentissements du système lors de l\'analyse en temps réel.'
+							)
+						),
+						'3' => array(
+							'tr' => array(
+								'1' => 'Authentification à deux facteurs (2FA)',
+								'2' => 'L\'authentification à deux facteurs exige une deuxième forme de vérification, en plus du mot de passe, telle qu\'un code envoyé par SMS ou une application d\'authentification.',
+								'3' => 'Renforce la sécurité des comptes en ligne. Protège contre les attaques de phishing.',
+								'4' => 'Peut nécessiter un effort supplémentaire de la part des utilisateurs. Peut y avoir des problèmes de compatibilité avec certains systèmes.'
+							)
+						),
+						'4' => array(
+							'tr' => array(
+								'1' => 'Cryptage des données',
+								'2' => 'Le cryptage des données convertit les informations en un format illisible, à moins d\'avoir une clé de décryptage.',
+								'3' => 'Protège les données sensibles en cas de vol ou d\'accès non autorisé. Conforme aux réglementations en matière de protection des données.',
+								'4' => 'Peut entraîner une légère augmentation de la latence lors de l\'accès aux données cryptées. La perte de la clé de décryptage peut entraîner une perte permanente des données.'
+							)
+						),
+						'5' => array(
+							'tr' => array(
+								'1' => 'Formation à la sensibilisation à la sécurité',
+								'2' => 'La formation à la sensibilisation à la sécurité vise à éduquer les utilisateurs sur les meilleures pratiques en matière de cybersécurité, telles que l\'identification des e-mails de phishing et la gestion des mots de passe.',
+								'3' => 'Réduit les risques d\'erreurs humaines. Améliore la posture globale de sécurité de l\'organisation.',
+								'4' => 'Nécessite des mises à jour régulières pour suivre les nouvelles menaces. Peut y avoir une résistance initiale au changement de comportement des utilisateurs.'
+							)
+						),
+						'6' => array(
+							'tr' => array(
+								'1' => 'Gestion des correctifs',
+								'2' => 'La gestion des correctifs consiste à appliquer régulièrement les mises à jour de sécurité et les correctifs logiciels pour combler les vulnérabilités connues.',
+								'3' => 'Réduit les risques d\'exploitation des failles de sécurité connues. Protège contre les attaques basées sur des vulnérabilités logicielles connues.',
+								'4' => 'Nécessite une maintenance régulière pour appliquer les correctifs. Les correctifs peuvent entraîner des incompatibilités logicielles.'
+							)
+						),
+						'7' => array(
+							'tr' => array(
+								'1' => 'Surveillance du réseau',
+								'2' => 'La surveillance du réseau consiste à analyser en temps réel le trafic réseau afin de détecter les activités suspectes ou malveillantes.',
+								'3' => 'Identifie les comportements anormaux ou les attaques en cours. Permet une réponse rapide aux incidents de sécurité.',
+								'4' => 'Peut générer un grand volume de données à analyser. Nécessite des ressources de surveillance dédiées.'
+							)
+						),
+						'8' => array(
+							'tr' => array(
+								'1' => 'Protection contre les logiciels malveillants',
+								'2' => 'Les solutions de protection contre les logiciels malveillants utilisent des techniques telles que l\'analyse comportementale et la détection des signatures pour identifier et bloquer les logiciels malveillants.',
+								'3' => 'Protège contre les virus, les vers, les chevaux de Troie et autres malwares. Peut fournir une défense en temps réel contre les nouvelles menaces.',
+								'4' => 'Peut entraîner des faux positifs ou des faux négatifs. Nécessite des mises à jour régulières des définitions de logiciels malveillants.'
+							)
+						),
+						'9' => array(
+							'tr' => array(
+								'1' => 'Sécurité des e-mails',
+								'2' => 'Les solutions de sécurité des e-mails utilisent des filtres et des analyses pour bloquer les e-mails de phishing, les attaques de hameçonnage et les fichiers malveillants attachés.',
+								'3' => 'Protège contre les attaques basées sur les e-mails. Réduit les risques de compromission des comptes via des liens ou des pièces jointes malveillants.',
+								'4' => 'Peut entraîner des faux positifs, bloquant parfois des e-mails légitimes. Les techniques d\'ingénierie sociale sophistiquées peuvent contourner les filtres.'
+							)
+						),
+						'10' => array(
+							'tr' => array(
+								'1' => 'Gestion des accès',
+								'2' => 'La gestion des accès vise à contrôler et à limiter les droits d\'accès aux systèmes et aux données, en accordant uniquement les autorisations nécessaires à chaque utilisateur.',
+								'3' => 'Réduit les risques d\'accès non autorisés aux données sensibles. - Permet une traçabilité des actions des utilisateurs.',
+								'4' => 'Nécessite une gestion rigoureuse des droits d\'accès pour éviter les erreurs de configuration. - Les attaques par usurpation d\'identité peuvent contourner les contrôles d\'accès.'
 							)
 						)
 					)
@@ -75,16 +149,56 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => '',
-						'2' => '',
-						'3' => ''
+						'1' => 'Méthode',
+						'2' => 'Description'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => '',
-								'2' => '',
-								'3' => ''
+								'1' => 'Marketing traditionnel',
+								'2' => 'Utilisation de canaux de communication traditionnels tels que la publicité à la télévision, à la radio, dans les journaux, les magazines, les affiches, etc. pour atteindre le public cible.'
+							)
+						),
+						'2' => array(
+							'tr' => array(
+								'1' => 'Marketing digital',
+								'2' => 'Utilisation des canaux en ligne tels que les sites web, les médias sociaux, le marketing par e-mail, le référencement, la publicité en ligne, etc. pour promouvoir des produits ou services et atteindre une audience plus large.'
+							)
+						),
+						'3' => array(
+							'tr' => array(
+								'1' => 'Marketing de contenu',
+								'2' => 'Création et diffusion de contenu pertinent et de qualité, tels que des articles de blog, des vidéos, des infographies, des livres blancs, etc. pour attirer et engager un public cible, renforcer la crédibilité de la marque et générer des leads qualifiés.'
+							)
+						),
+						'4' => array(
+							'tr' => array(
+								'1' => 'Marketing des médias sociaux',
+								'2' => 'Utilisation des plateformes de médias sociaux telles que Facebook, Twitter, Instagram, LinkedIn, etc. pour interagir avec le public cible, promouvoir la marque, partager du contenu et générer de l\'engagement.'
+							)
+						),
+						'5' => array(
+							'tr' => array(
+								'1' => 'Marketing d\'influence',
+								'2' => 'Collaboration avec des influenceurs ou des personnalités connues pour promouvoir des produits ou services auprès de leur audience et bénéficier de leur crédibilité et de leur pouvoir de persuasion.'
+							)
+						),
+						'6' => array(
+							'tr' => array(
+								'1' => 'Marketing par e-mail',
+								'2' => 'Utilisation de campagnes d\'e-mails ciblées et personnalisées pour communiquer avec les clients potentiels et existants, leur fournir des informations pertinentes, des offres spéciales et les inciter à agir.'
+							)
+						),
+						'7' => array(
+							'tr' => array(
+								'1' => 'Marketing viral',
+								'2' => 'Création de contenu attrayant et partageable qui se propage rapidement sur Internet grâce aux partages des utilisateurs, permettant ainsi une exposition massive de la marque ou du produit sans investissement publicitaire important.'
+							)
+						),
+						'8' => array(
+							'tr' => array(
+								'1' => 'Marketing expérientiel',
+								'2' => 'Création d\'expériences uniques et mémorables pour les clients, en utilisant des événements, des démonstrations de produits, des échantillons gratuits, etc. pour susciter leur engagement émotionnel et favoriser la fidélisation.'
 							)
 						)
 					)
@@ -120,16 +234,50 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => '',
-						'2' => '',
-						'3' => ''
+						'1' => 'Метод',
+						'2' => 'Описание'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => '',
-								'2' => '',
-								'3' => ''
+								'1' => 'Дизайн сайта',
+								'2' => 'Веб-мастер отвечает за дизайн и архитектуру веб-сайтов. Он создает логическую структуру сайта и обеспечивает хорошую организацию страниц и удобство навигации.'
+							)
+						),
+						'2' => array(
+							'tr' => array(
+								'1' => 'Дизайн и интеграция',
+								'2' => 'Веб-мастер заботится о визуальном оформлении сайта, создавая графические модели и интегрируя их в код HTML/CSS. Он следит за тем, чтобы дизайн был привлекательным, удобным для пользователя и соответствовал веб-стандартам.'
+							)
+						),
+						'3' => array(
+							'tr' => array(
+								'1' => 'Управление контентом',
+								'2' => 'Веб-мастер отвечает за создание, изменение и организацию содержания сайта. Он добавляет статьи, изображения, видео и следит за тем, чтобы контент был релевантным, хорошо представленным и оптимизированным для SEO.'
+							)
+						),
+						'4' => array(
+							'tr' => array(
+								'1' => 'Техническое обслуживание',
+								'2' => 'Веб-мастер управляет техническими аспектами сайта, такими как хостинг, безопасность, обновления программного обеспечения и решение технических проблем. Он следит за правильной работой сайта и регулярно выполняет резервное копирование.'
+							)
+						),
+						'5' => array(
+							'tr' => array(
+								'1' => 'SEO-оптимизация',
+								'2' => 'Веб-мастер использует методы оптимизации, чтобы улучшить видимость сайта в поисковых системах. Он выполняет исследование ключевых слов, оптимизирует теги HTML, улучшает структуру сайта и работает над оптимизацией скорости загрузки.'
+							)
+						),
+						'6' => array(
+							'tr' => array(
+								'1' => 'Анализ производительности',
+								'2' => 'Веб-мастер использует инструменты аналитики для мониторинга производительности сайта, например количества посетителей, коэффициента конверсии и времени загрузки страницы. Он анализирует эти данные и вносит коррективы для улучшения пользовательского опыта и результатов сайта.'
+							)
+						),
+						'7' => array(
+							'tr' => array(
+								'1' => 'Координация с командами',
+								'2' => 'Веб-мастер тесно сотрудничает с командами разработчиков, дизайнеров и маркетологов, чтобы обеспечить соответствие веб-сайта целям и потребностям бизнеса. Он координирует усилия этих команд и эффективно взаимодействует с ними.'
 							)
 						)
 					)
@@ -165,16 +313,56 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => '',
-						'2' => '',
-						'3' => ''
+						'1' => 'Метод',
+						'2' => 'Описание'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => '',
-								'2' => '',
-								'3' => ''
+								'1' => 'подвижный',
+								'2' => 'Итеративный и совместный подход к разработке программного обеспечения, обеспечивающий гибкость, адаптируемость к изменениям и регулярное предоставление функций.'
+							)
+						),
+						'2' => array(
+							'tr' => array(
+								'1' => 'каскадный',
+								'2' => 'Последовательный и линейный подход, при котором каждая фаза разработки выполняется последовательно, с подробным планированием с самого начала проекта.'
+							)
+						),
+						'3' => array(
+							'tr' => array(
+								'1' => 'RAD (быстрая разработка приложений)',
+								'2' => 'Метод быстрой разработки приложений, основанный на коротких и интенсивных циклах разработки, предполагающий тесное взаимодействие с конечными пользователями.'
+							)
+						),
+						'4' => array(
+							'tr' => array(
+								'1' => 'TDD (Разработка через тестирование)',
+								'2' => 'Подход, ориентированный на тестирование, при котором разработчики сначала пишут автоматизированные тесты, а затем пишут код для выполнения этих тестов.'
+							)
+						),
+						'5' => array(
+							'tr' => array(
+								'1' => 'BDD (Разработка, основанная на поведении)',
+								'2' => 'Подход к разработке, основанный на поведении, с акцентом на сотрудничество между заинтересованными сторонами и выражением требований в терминах ожидаемого поведения.'
+							)
+						),
+						'6' => array(
+							'tr' => array(
+								'1' => 'DevOps',
+								'2' => 'Непрерывная интеграция разработки программного обеспечения и операций, направленная на улучшение совместной работы, эффективности и качества программных продуктов.'
+							)
+						),
+						'7' => array(
+							'tr' => array(
+								'1' => 'Бережливый',
+								'2' => 'Подход к разработке, направленный на устранение потерь и максимизацию ценности для клиента за счет содействия эффективному управлению ресурсами.'
+							)
+						),
+						'8' => array(
+							'tr' => array(
+								'1' => 'СКРУМ',
+								'2' => 'Структура Agile, которая структурирует разработку в виде итераций, называемых "спринтами", с регулярными встречами для планирования, обзора и ретроспективы.'
 							)
 						)
 					)
