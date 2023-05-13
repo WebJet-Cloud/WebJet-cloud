@@ -34,6 +34,12 @@ $images = array(
 		),
 		/*Manager Images */
 		'services' => array(
+			'seo' => array(
+				'1' => 'services/seo/search-engine.jpg',
+				'2' => 'services/seo/community-manager.jpg',
+				'3' => 'services/seo/local-business.jpg',
+				'4' => 'services/seo/association.jpg'
+			),
 			'consultant' => array(
 				'1' => 'services/consultant/Consultant-strategie.jpg',
 				'2' => 'services/consultant/Consultant-management.jpg',

@@ -84,7 +84,125 @@ $services = array(
 			'de' => 'dienstleistungen/naturliche-referenz'
 		),
 		'content' => array(
-			/*custom your own*/
+			'intro' => array(
+				'title' => 'Präsentation',
+				'description' => '',
+				'text' => 'Sie gibt einen Überblick über die Funktionsweise von Suchmaschinen, die Techniken der Suchmaschinenoptimierung (SEO) und die wichtigsten Faktoren, die das Ranking von Websites beeinflussen, und betont die Bedeutung der Suche nach relevanten Schlüsselwörtern, der Optimierung des Inhalts, der Struktur der Website, hochwertiger eingehender Links und der Benutzererfahrung. Außerdem wird der Einfluss der natürlichen Suchmaschinenoptimierung auf die Generierung von organischem Traffic, die Steigerung der Konversionsrate und den Aufbau einer starken und dauerhaften Online-Präsenz hervorgehoben.'
+			),
+			'excel' => array(
+				'title' => 'Les différents méthodes',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => 'Methode',
+						'2' => 'Beschreibung',
+						'3' => 'Vorteil'
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => 'Stichwortsuche',
+								'2' => 'Identifizierung relevanter und beliebter Schlüsselwörter im Zusammenhang mit der Aktivität, um sie in den Inhalt zu integrieren.',
+								'3' => 'Verbesserte Sichtbarkeit in den Suchergebnissen.'
+							)
+						),
+						'2' => array(
+							'tr' => array(
+								'1' => 'Inhaltsoptimierung',
+								'2' => 'Qualität, originelle und optimierte Inhalte durch natürliche Integration von Schlüsselwörtern schreiben.',
+								'3' => 'Verbesserte Suchmaschinen-Rankings.'
+							)
+						),
+						'3' => array(
+							'tr' => array(
+								'1' => 'Site-Struktur',
+								'2' => 'Einrichtung einer klaren und logischen Site-Struktur mit benutzerfreundlichen URLs und Meta-Tags.',
+								'3' => 'Verbesserte Site-Indizierung und Navigation.'
+							)
+						),
+						'4' => array(
+							'tr' => array(
+								'1' => 'Qualität eingehender Links',
+								'2' => 'Links von seriösen und relevanten Websites erhalten, um die Glaubwürdigkeit der Website zu erhöhen.',
+								'3' => 'Erhöhte Site-Autorität und Sichtbarkeit.'
+							)
+						),
+						'5' => array(
+							'tr' => array(
+								'1' => 'Benutzererfahrung',
+								'2' => 'Verbesserte Benutzerfreundlichkeit der Website, Ladegeschwindigkeit, intuitive Navigation und Design.',
+								'3' => 'Reduzierte Absprungrate und verbesserte Bindung.'
+							)
+						),
+						'6' => array(
+							'tr' => array(
+								'1' => 'Mobile Optimierung',
+								'2' => 'Anpassung der Seite für ein optimales Erlebnis auf mobilen Geräten.',
+								'3' => 'Verbesserte Sichtbarkeit auf Mobilgeräten.'
+							)
+						),
+						'7' => array(
+							'tr' => array(
+								'1' => 'Ansprechender Inhalt',
+								'2' => 'Ansprechende Inhalte (Blogbeiträge, Videos, Infografiken) erstellen, um das Engagement der Benutzer zu fördern.',
+								'3' => 'Verstärkte Interaktion und Teilen in sozialen Netzwerken.'
+							)
+						),
+						'8' => array(
+							'tr' => array(
+								'1' => 'Strukturiertes Markup',
+								'2' => 'Verwendung von strukturiertem Markup (schema.org), um Suchmaschinen das Verständnis von Inhalten zu erleichtern.',
+								'3' => 'Rich Snippets und Sichtbarkeit verbessert.'
+							)
+						),
+						'9' => array(
+							'tr' => array(
+								'1' => 'Bildoptimierung',
+								'2' => 'Bilder mithilfe von Alt-Tags optimieren, komprimieren und bei Bedarf in der Größe ändern.',
+								'3' => 'Verbesserte Ladezeit und Zugänglichkeit.'
+							)
+						),
+						'10' => array(
+							'tr' => array(
+								'1' => 'Tracking und Analyse',
+								'2' => 'Verwendung von Analysetools (Google Analytics, Search Console) zur Überwachung der Leistung und Anpassung der Strategie.',
+								'3' => 'Die Wirksamkeit von Maßnahmen messen und datengesteuerte Entscheidungen treffen.'
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'Meine Ausbildung und mein beruflicher Werdegang',
+				'description' => '',
+				'text' => 'Als Autodidakt im Bereich Suchmaschinenoptimierung habe ich mir die Grundlagen der Suchmaschinenoptimierung angeeignet, darunter die Recherche von Schlüsselwörtern, die Optimierung von Inhalten, die Struktur der Website, den Linkaufbau und die Leistungsanalyse. Ich bin in der Lage, effektive SEO-Techniken einzusetzen, um die Online-Sichtbarkeit zu verbessern, organischen Traffic zu generieren und das Ranking von Websites in Suchmaschinen zu erhöhen. Mein Werdegang als Autodidakt zeigt Ihre Leidenschaft für die Suchmaschinenoptimierung und meine Fähigkeit, selbstständig zu lernen, um ein kompetenter Fachmann in diesem Bereich zu werden.'
+			),
+			'secteur' => array(
+				'1' => array(
+					'h5' => 'Natürliche Referenz',
+					'h1' => 'Suchmaschine',
+					'text' => 'Natürliche Referenzierung (SEO) in Suchmaschinen ist eine Reihe von Techniken, die darauf abzielen, die Sichtbarkeit und Positionierung einer Website in organischen Suchergebnissen zu verbessern. Durch die Betreuung zukünftiger Kunden kann SEO eine entscheidende Rolle dabei spielen, die Online-Sichtbarkeit ihres Unternehmens zu erhöhen, qualifizierten Traffic zu generieren und die Markenbekanntheit zu steigern.<br /><br />Durch Methoden wie die Recherche relevanter Schlüsselwörter, die Optimierung von Inhalten, die Verbesserung der Website-Struktur, Durch den Aufbau hochwertiger Links, die Optimierung von Meta-Tags und der Mobilfreundlichkeit zielt SEO darauf ab, eine Website für Suchmaschinen attraktiver zu machen. Dadurch gewinnt die Website an Sichtbarkeit bei Benutzern, die Suchanfragen im Zusammenhang mit dem Unternehmen des Kunden durchführen.<br /><br />Zu den Vorteilen von SEO gehören erhöhter organischer Traffic, die Möglichkeit, sich als Autorität auf diesem Gebiet zu positionieren, bessere Benutzererfahrung, größere Glaubwürdigkeit und langfristige Kapitalrendite. „Durch die Bereitstellung eines strategischen Ansatzes und die effektive Umsetzung von SEO können zukünftige Kunden von einer stärkeren Online-Präsenz, größerer Wettbewerbspräsenz und nachhaltigem Geschäftswachstum profitieren.'
+				),
+				'2' => array(
+					'h5' => 'Natürliche Referenz',
+					'h1' => 'Community Manager',
+					'text' => 'Suchmaschinenoptimierung spielt eine wichtige Rolle in der Arbeit eines Community-Managers, indem sie zukünftigen Kunden dabei hilft, ihre Online-Präsenz organisch auszubauen. Als Community-Manager kann SEO zur Optimierung von auf sozialen Plattformen veröffentlichten Inhalten wie Blogs, Videos und Social-Media-Beiträgen eingesetzt werden, um deren Sichtbarkeit in Suchergebnissen zu verbessern. br /><br />Der Community-Manager kann nach relevanten Schlüsselwörtern suchen einen Bezug zur Branche oder Marke des Kunden herstellen und diese Schlüsselwörter dann auf natürliche Weise in die von ihm veröffentlichten Inhalte integrieren. Durch den Einsatz von Inhaltsoptimierungstechniken, geeigneten Tags und gut geschriebenen Beschreibungen kann der Community-Manager die Sichtbarkeit von Inhalten in Suchmaschinen erhöhen.<br /><br />Durch die Verbesserung der natürlichen Referenzierung geteilter Inhalte trägt der Community-Manager zur Generierung organischer Inhalte bei Traffic auf den sozialen Plattformen des Kunden steigern, das Nutzerengagement steigern und die Online-Präsenz der Marke stärken. SEO trägt auch dazu bei, einen soliden digitalen Fußabdruck für die Marke zu schaffen, ihre Online-Reputation zu verbessern und ein qualifiziertes Publikum anzulocken.<br /><br />Durch die Kombination von Community-Management-Fähigkeiten mit einer verständnisvollen natürlichen Referenzierung kann der Community-Manager künftigen Kunden ein effektives Angebot bieten Content-Strategie und erhöhte Sichtbarkeit in Suchmaschinen, was das Wachstum ihrer Online-Community und das Erreichen ihrer Geschäftsziele fördert.'
+				),
+				'3' => array(
+					'h5' => 'Natürliche Referenz',
+					'h1' => 'Lokales Unternehmen',
+					'text' => 'SEO spielt eine entscheidende Rolle für lokale Unternehmen, indem es zukünftigen Kunden hilft, ihre lokale Online-Sichtbarkeit zu erhöhen. Durch den Einsatz spezifischer Techniken kann SEO dazu beitragen, dass lokale Unternehmen in Suchergebnissen angezeigt werden, die für ihren geografischen Standort relevant sind.<br /><br />Für lokale Unternehmen umfasst SEO die Optimierung für beispielsweise Google My Business-Einträge, lokale Verzeichniseinträge, Kundenrezensionen usw. standortbasierte Schlüsselwörter und Standort-Tags. Durch die strategische Integration dieser Elemente können zukünftige Kunden eine bessere Sichtbarkeit erlangen, wenn ein Benutzer Suchanfragen mit Bezug zu ihrem Standort durchführt.<br /><br />Durch die Verbesserung der SEO eines lokalen Unternehmens ist es möglich, den gezielten organischen Traffic zu erhöhen und qualifizierte Kunden anzuziehen Kunden vor Ort, verbessern die Sichtbarkeit im Wettbewerb und stärken die Markenbekanntheit in der lokalen Gemeinschaft. Es kann auch dazu beitragen, Online- oder Offline-Konvertierungen voranzutreiben, positive Kundenbewertungen zu fördern und einen guten Ruf in der Region aufzubauen.<br /><br />Durch die Bereitstellung von SEO-Strategien, die auf lokale Unternehmen zugeschnitten sind, können zukünftige Kunden von einer soliden Online-Präsenz profitieren. mehr qualifizierten Verkehr, bessere Sichtbarkeit in ihrer Region und nachhaltiges Wachstum ihres lokalen Geschäfts.'
+				),
+				'4' => array(
+					'h5' => 'Natürliche Referenz',
+					'h1' => 'Gemeinnützige Organisation',
+					'text' => 'SEO spielt eine wichtige Rolle für gemeinnützige Organisationen, indem es ihnen hilft, ihre Online-Sichtbarkeit zu erhöhen, ihre Zielgruppe zu erreichen und ihre Initiativen zu fördern. Durch den Einsatz spezifischer Techniken kann SEO dazu beitragen, dass Wohltätigkeitsorganisationen in Suchergebnissen, die für ihre Anliegen und Aktivitäten relevant sind, einen guten Rang einnehmen.<br /><br />Für gemeinnützige Organisationen umfasst SEO die Optimierung von Website-Inhalten, die Recherche von Schlüsselwörtern im Zusammenhang mit ihren Aktionsbereichen, Erstellung hochwertiger Links zu anderen relevanten Websites und Optimierung der Präsenz in sozialen Netzwerken. Durch die Umsetzung dieser Strategien können zukünftige Kunden ihre Online-Sichtbarkeit verbessern, mehr Besucher auf ihre Website locken und ihre Wirkung steigern.<br /><br />Durch die Verbesserung ihrer SEO können gemeinnützige Organisationen von einer Steigerung des qualifizierten organischen Traffics profitieren in der Öffentlichkeit bekannt machen, mehr Unterstützung mobilisieren und Spenden sammeln, um ihre Aktionen zu finanzieren. Natürliche Referenzierung trägt auch dazu bei, die Glaubwürdigkeit des Vereins online zu stärken und stärkere Partnerschaften mit anderen Akteuren in der Branche aufzubauen.<br /><br />Durch die Bereitstellung geeigneter natürlicher Referenzierungsstrategien für gemeinnützige Organisationen können zukünftige Kunden von einer größeren Sichtbarkeit ihrer Organisationen profitieren Anliegen, stärkeres Engagement bei ihrer Zielgruppe, effektiveres Fundraising und größerer Einfluss in ihrem Aktionsbereich. Dadurch können sie ihre Wirkung maximieren und ihre Ziele für das Gemeinwohl erreichen.'
+				)
+			),
+			'pricing' => array(
+				'free' => 'Kostenlos',
+				'fees-seo' => 'Optionale Betriebskosten von 1400 € zzgl. Steuern pro Jahr'
+			)
 		),
 		'sitemap' => array(
 			'images' => '',
