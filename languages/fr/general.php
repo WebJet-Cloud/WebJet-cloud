@@ -2,6 +2,7 @@
 # $general['index']['content']['pricing']['blocks']['small']['']    ['']
 # $general['pages']['full']['footer-os']['blocks']['small']['']    ['']
 # $general['aboutus']['content']['container']['title']
+# $general['full']['clock']['']
 $general = array(
 	'full' => array(
 		'there-is-him' => 'Il a',
@@ -9,7 +10,12 @@ $general = array(
 		'there-iam' => 'J\'ai',
 		'year' => 'Ans',
 		'website-exist' => 'le site existe depuis plus de',
-		'entreprise-exist' => 'la société existe depuis plus de'
+		'entreprise-exist' => 'la société existe depuis plus de',
+		'clock' => array(
+			'1' => 'Mardi, Mercredi et Vendredi: 17h à 20h',
+			'2' => 'Lundi et Jeudi: 10h à 20h',
+			'3' => 'Samedi et Dimanche (Férié): Fermé'
+		)
 	),
 	'pages' => array(
 		'full' => array(

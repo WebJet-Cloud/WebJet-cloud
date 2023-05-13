@@ -8,7 +8,12 @@ $general = array(
         'there-iam' => 'ich habe',
 		'year' => 'Jahre',
 		'website-exist' => 'die Seite existiert seit mehr als',
-		'entreprise-exist' => 'das Unternehmen existiert seit mehr als'
+		'entreprise-exist' => 'das Unternehmen existiert seit mehr als',
+		'clock' => array(
+			'1' => 'Dienstag, Mittwoch und Freitag: 17.00 bis 20.00 Uhr',
+			'2' => 'Montag und Donnerstag: 10 bis 20 Uhr',
+			'3' => 'Samstag und Sonntag (Feiertag): Geschlossen'
+		)
 	),
 	'pages' => array(
 		'full' => array(

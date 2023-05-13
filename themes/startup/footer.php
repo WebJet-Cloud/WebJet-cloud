@@ -33,6 +33,10 @@
                                 <i class="bi bi-telephone text-primary me-2"></i>
                                 <p class="mb-0"><?php echo $business['local']['mobile']['code'].' '.$business['local']['mobile']['number']; ?></p>
                             </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-clock text-primary me-2"></i>
+                                <p class="mb-0"><?php echo $general['full']['clock']['1'].'<br />'.$general['full']['clock']['2'].'<br />'.$general['full']['clock']['3']; ?></p>
+                            </div>
                             <div class="d-flex mt-4">
                                 <?php if(!empty($social['facebook']['name'])){ ?><a class="btn btn-primary btn-square me-2" href="<?php echo $social['facebook']['url']; ?>" data-toggle="tooltip" title="<?php echo $general['pages']['full']['follow-us']; ?> FACEBOOK"><i class="fab fa-facebook-f fw-normal"></i></a> <?php } ?>
                                 <?php if(!empty($social['twitter']['name'])){ ?><a class="btn btn-primary btn-square me-2" href="<?php echo $social['twitter']['url']; ?>" data-toggle="tooltip" title="<?php echo $general['pages']['full']['follow-us']; ?> TWITTER"><i class="fab fa-twitter fw-normal"></i></a> <?php } ?>
