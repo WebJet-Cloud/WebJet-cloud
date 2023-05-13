@@ -248,7 +248,7 @@
                             <div class="d-flex justify-content-between mb-3"><span><?php echo $services['seo']['content']['secteur']['3']['h1']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['seo']['content']['secteur']['4']['h1']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['seo']['content']['pricing']['fees-seo']; ?></span></div>
-                            <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>/#" class="btn btn-primary py-2 px-4 mt-4"><?php echo $services['seo']['content']['secteur']['5']['h5']; ?></a>
+                            <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>/all/numerique/referencement-naturel/" class="btn btn-primary py-2 px-4 mt-4"><?php echo $services['seo']['content']['secteur']['1']['h5']; ?></a>
                         </div>
                     </div>
                 </div>

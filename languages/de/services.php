@@ -10,7 +10,6 @@ $services = array(
 		'ru' => '<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/3a9HoYIuaaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
 		'de' => '<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/iptn5TPxpD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
 	),
-	
 	'cybersecurity' => array(
 		'title' => 'Dienstleistungen - Internet-Sicherheit',
 		'description' => '',
@@ -20,7 +19,36 @@ $services = array(
 			'de' => 'dienstleistungen/internet-sicherheit'
 		),
 		'content' => array(
-			/*custom your own*/
+			'intro' => array(
+				'title' => 'Präsentation',
+				'description' => '',
+				'text' => 'Die Präsentation zur Cybersicherheit unterstreicht die entscheidende Bedeutung des Schutzes von Computersystemen und Daten vor Online-Bedrohungen. Es befasst sich mit wichtigen Risiken wie Phishing-Angriffen, Malware und Datenschutzverletzungen. Es werden wichtige Sicherheitsmaßnahmen vorgestellt, darunter die Verwendung sicherer Passwörter, Sicherheitsbewusstsein, Patch-Management und der Einsatz fortschrittlicher Sicherheitslösungen. Mit einem Schwerpunkt auf der Prävention, Erkennung und Reaktion von Vorfällen unterstreicht die Präsentation die Notwendigkeit der Cybersicherheit für Einzelpersonen, Unternehmen und Organisationen.'
+			),
+			'excel' => array(
+				'title' => 'Die verschiedenen Berufe',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => '',
+						'2' => '',
+						'3' => ''
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => '',
+								'2' => '',
+								'3' => ''
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'Meine Ausbildung und mein beruflicher Werdegang',
+				'description' => '',
+				'text' => 'Als Autodidakt im Bereich Cybersicherheit haben Sie die Initiative ergriffen, Ihr Wissen in diesem wichtigen Bereich zu erlernen und weiterzuentwickeln. Sie haben sich mit verschiedenen Themen wie den Grundlagen der Computersicherheit, häufigen Schwachstellen, Angriffsarten, Erkennungs- und Präventionstechniken sowie bewährten Sicherheitspraktiken befasst. Sie haben Online-Ressourcen, Kurse, Tutorials und vielleicht sogar Zertifizierungen genutzt, um praktische Fähigkeiten im Umgang mit Passwörtern, dem Schutz von Netzwerken, der Sicherung von Betriebssystemen und der Sensibilisierung für Sicherheit zu erlernen. Als Autodidakt haben Sie große Motivation, intellektuelle Neugier und die Fähigkeit zum selbstständigen Lernen im komplexen Bereich der Cybersicherheit bewiesen.'
+			)
 		),
 		'sitemap' => array(
 			'images' => '',
@@ -36,7 +64,36 @@ $services = array(
 			'de' => 'dienstleistungen/marketing'
 		),
 		'content' => array(
-			/*custom your own*/
+			'intro' => array(
+				'title' => 'Präsentation',
+				'description' => '',
+				'text' => 'Der Marketingvortrag unterstreicht, wie wichtig es ist, die Bedürfnisse der Verbraucher zu verstehen, relevante Marktsegmente zu identifizieren und zielgerichtete Strategien zu entwickeln. Sie hebt außerdem die Auswirkungen neuer Technologien auf das Marketing hervor, wobei der Schwerpunkt auf sozialen Medien, Personalisierung und Kundenerlebnis liegt. Abschließend wird hervorgehoben, wie wichtig es ist, Daten zu messen und zu analysieren, um die Wirksamkeit von Marketingkampagnen zu bewerten und Strategien entsprechend anzupassen.'
+			),
+			'excel' => array(
+				'title' => 'Die verschiedenen Berufe',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => '',
+						'2' => '',
+						'3' => ''
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => '',
+								'2' => '',
+								'3' => ''
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'Meine Ausbildung und mein beruflicher Werdegang',
+				'description' => '',
+				'text' => 'Als Autodidakt im Marketing haben Sie die Initiative ergriffen, Ihr Wissen in diesem wichtigen Bereich zu erlernen und weiterzuentwickeln. Sie haben wahrscheinlich verschiedene Themen wie Marketinggrundlagen, Verbraucherpsychologie, Marktsegmentierungsstrategien, digitales Marketing, Content-Marketing, Social-Media-Marketing, E-Mail-Marketing, SEO usw. studiert Darüber hinaus haben Sie ein Verständnis für die Tools und Plattformen des modernen Marketings gewonnen. Durch Ihre Lernbereitschaft und unabhängige Recherche haben Sie wertvolle Fähigkeiten entwickelt, um Produkte oder Dienstleistungen effektiv zu bewerben, eine Zielgruppe zu erreichen und wirkungsvolle Marketingkampagnen zu erstellen.'
+			)
 		),
 		'sitemap' => array(
 			'images' => '',
@@ -52,7 +109,36 @@ $services = array(
 			'de' => 'dienstleistungen/webmaster'
 		),
 		'content' => array(
-			/*custom your own*/
+			'intro' => array(
+				'title' => 'Präsentation',
+				'description' => '',
+				'text' => 'Die Präsentation über den Webmaster unterstreicht die wesentliche Rolle dieses Fachmanns bei der Erstellung, Verwaltung und Pflege von Websites.“ Der Webmaster ist für die Konzeption der Website, ihre Architektur, ihr Design und ihre Gesamtfunktion verantwortlich. Er kümmert sich auch um die Integration von Inhalten und Funktionalitäten und stellt sicher, dass die Website benutzerfreundlich und reaktionsfähig ist.<br /><br />Der Webmaster verwaltet die technischen Aspekte der Website, wie Hosting, Sicherheit und Aktualisierung der Software und die Lösung technischer Probleme. Außerdem überwacht es die Leistung der Website, analysiert Statistiken und nimmt Anpassungen vor, um die Benutzererfahrung und SEO zu verbessern.<br /><br />Darüber hinaus spielt der Webmaster eine Schlüsselrolle bei der Inhaltsverwaltung. Er erstellt, bearbeitet und organisiert Seiten, Beiträge, Bilder und Videos und stellt sicher, dass sie relevant und gut präsentiert sind und den Webstandards entsprechen. Möglicherweise ist er auch für die Optimierung von Inhalten für SEO verantwortlich, um die Sichtbarkeit der Website in Suchmaschinen zu verbessern.<br /><br />Der Webmaster arbeitet eng mit den Entwicklungsteams, dem Design und dem Marketing zusammen, um sicherzustellen, dass die Website den Zielen entspricht und Bedürfnisse des Unternehmens oder der Organisation. Seine Vielseitigkeit und sein Wissen über verschiedene Webtechnologien ermöglichen es ihm, diese Bemühungen effektiv zu koordinieren und das ordnungsgemäße Funktionieren der Website sicherzustellen.<br /><br />Zusammenfassend ist der Webmaster ein wichtiger Fachmann bei der Erstellung und Verwaltung von Websites. „Es vereint technische Kompetenz und Marketingwissen, um eine leistungsstarke und attraktive Website zu gewährleisten, die den Erwartungen von Nutzern und Unternehmen entspricht.'
+			),
+			'excel' => array(
+				'title' => 'Die verschiedenen Berufe',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => '',
+						'2' => '',
+						'3' => ''
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => '',
+								'2' => '',
+								'3' => ''
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'Meine Ausbildung und mein beruflicher Werdegang',
+				'description' => '',
+				'text' => 'Als Autodidakt im Bereich Webmastering erlernen Sie selbstständig die erforderlichen Fähigkeiten zum Erstellen, Verwalten und Pflegen von Websites. Dies kann durch das Befolgen von Online-Tutorials, das Lesen spezieller Ressourcen und aktives Üben erreicht werden. Als Autodidakt ist es wichtig, Programmiersprachen wie HTML, CSS und JavaScript sowie Webdesign und SEO-Konzepte zu beherrschen. Es ist außerdem wichtig, mit gängigen CMS wie WordPress vertraut zu sein und die Grundlagen von Webhosting, Sicherheit und Leistungsanalyse zu verstehen. Der Autodidakt muss motiviert, ausdauernd und neugierig sein und ständig versuchen, über die neuesten Trends und Webmaster-Techniken auf dem Laufenden zu bleiben.'
+			)
 		),
 		'sitemap' => array(
 			'images' => '',
@@ -68,7 +154,36 @@ $services = array(
 			'de' => 'dienstleistungen/entwickler'
 		),
 		'content' => array(
-			/*custom your own*/
+			'intro' => array(
+				'title' => 'Präsentation',
+				'description' => '',
+				'text' => 'Der Entwickler ist ein Fachmann, der mithilfe von Programmiersprachen und Computertools Software, Anwendungen und Websites erstellt. Er ist für den Entwurf, die Entwicklung, die Implementierung und die Wartung dieser Computersysteme verantwortlich. Der Entwickler verfügt über ausgeprägte technische Fähigkeiten und fundierte Kenntnisse in Programmiersprachen wie Java, Python, C++ oder JavaScript. Er arbeitet häufig im Team, arbeitet mit Designern und IT-Spezialisten zusammen und passt sich den technologischen Entwicklungen an, um innovative und effektive Lösungen bereitzustellen. Der Entwickler sollte außerdem über gute Fähigkeiten zur Problemlösung verfügen und sich schnell auf neue Technologien und Anforderungen einstellen können.'
+			),
+			'excel' => array(
+				'title' => 'Die verschiedenen Berufe',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => '',
+						'2' => '',
+						'3' => ''
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => '',
+								'2' => '',
+								'3' => ''
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'Meine Ausbildung und mein beruflicher Werdegang',
+				'description' => '',
+				'text' => 'Als Autodidakt lerne ich selbst die notwendigen Fähigkeiten, um Software zu entwerfen, zu entwickeln und zu warten. Ich nutze eine Vielzahl von Online-Ressourcen wie Tutorials, Online-Kurse, Bücher und Programmierforen, um Programmierkenntnisse und -fähigkeiten zu erlernen. Durch regelmäßiges Experimentieren und Üben entwickle ich meine Fähigkeit, Probleme zu lösen und Lösungen zu finden. Ich kann auch an persönlichen oder gemeinschaftlichen Projekten teilnehmen, um praktische Erfahrungen zu sammeln. Und motiviert, diszipliniert und ausdauernd.'
+			)
 		),
 		'sitemap' => array(
 			'images' => '',
@@ -90,7 +205,7 @@ $services = array(
 				'text' => 'Sie gibt einen Überblick über die Funktionsweise von Suchmaschinen, die Techniken der Suchmaschinenoptimierung (SEO) und die wichtigsten Faktoren, die das Ranking von Websites beeinflussen, und betont die Bedeutung der Suche nach relevanten Schlüsselwörtern, der Optimierung des Inhalts, der Struktur der Website, hochwertiger eingehender Links und der Benutzererfahrung. Außerdem wird der Einfluss der natürlichen Suchmaschinenoptimierung auf die Generierung von organischem Traffic, die Steigerung der Konversionsrate und den Aufbau einer starken und dauerhaften Online-Präsenz hervorgehoben.'
 			),
 			'excel' => array(
-				'title' => 'Les différents méthodes',
+				'title' => 'Die verschiedenen Berufe',
 				'description' => '',
 				'table' => array(
 					'head' => array(

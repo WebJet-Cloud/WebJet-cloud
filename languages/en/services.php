@@ -20,7 +20,36 @@ $services = array(
 			'en' => 'services/cybersecurity'
 		),
 		'content' => array(
-			/*custom your own*/
+			'intro' => array(
+				'title' => 'Introduction',
+				'description' => '',
+				'text' => 'Cybersecurity presentation highlights the critical importance of protecting computer systems and data from online threats. It addresses key risks such as phishing attacks, malware, and data breaches. Key security measures are presented, including the use of strong passwords, security awareness, patch management, and the use of advanced security solutions. With a focus on incident prevention, detection, and response, the presentation highlights the imperative of cybersecurity for individuals, businesses, and organizations.'
+			),
+			'excel' => array(
+				'title' => 'The different methods',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => '',
+						'2' => '',
+						'3' => ''
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => '',
+								'2' => '',
+								'3' => ''
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'My education and career path',
+				'description' => '',
+				'text' => 'As an autodidact in cybersecurity, you have taken the initiative to learn and develop your knowledge in this critical area. You have explored various topics such as the basics of computer security, common vulnerabilities, types of attacks, detection and prevention techniques, and security best practices. You\'ve used online resources, courses, tutorials, and maybe even certifications to learn practical skills in managing passwords, protecting networks, securing operating systems, and building awareness. Security. As an autodidact, you have demonstrated great motivation, intellectual curiosity and an ability to learn independently in the complex field of cybersecurity.'
+			)
 		),
 		'sitemap' => array(
 			'images' => '',
@@ -36,7 +65,36 @@ $services = array(
 			'en' => 'services/marketing'
 		),
 		'content' => array(
-			/*custom your own*/
+			'intro' => array(
+				'title' => 'Introduction',
+				'description' => '',
+				'text' => 'The marketing presentation highlights the importance of understanding consumer needs, identifying relevant market segments and developing targeted strategies. She also highlights the impact of new technologies on marketing, with a focus on social media, personalization and customer experience. Finally, it highlights the importance of measuring and analyzing data to assess the effectiveness of marketing campaigns and adjust strategies accordingly.'
+			),
+			'excel' => array(
+				'title' => 'The different methods',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => '',
+						'2' => '',
+						'3' => ''
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => '',
+								'2' => '',
+								'3' => ''
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'My education and career path',
+				'description' => '',
+				'text' => 'As an autodidact in marketing, you have taken the initiative to learn and develop your knowledge in this essential field. You have probably studied various topics such as Marketing Basics, Consumer Psychology, Market Segmentation Strategies, Digital Marketing, Content Marketing, Social Media Marketing, Email Marketing, SEO, etc You also gained an understanding of the tools and platforms used in modern marketing. Through your willingness to learn and independent research, you have developed valuable skills to effectively promote products or services, reach a target audience and create impactful marketing campaigns.'
+			)
 		),
 		'sitemap' => array(
 			'images' => '',
@@ -52,7 +110,36 @@ $services = array(
 			'en' => 'services/webmaster'
 		),
 		'content' => array(
-			/*custom your own*/
+			'intro' => array(
+				'title' => 'Introduction',
+				'description' => '',
+				'text' => 'The presentation on the webmaster highlights the essential role of this professional in the creation, management and maintenance of websites. The webmaster is responsible for the conception of the site, its architecture, its design and its overall functioning. He also takes care of the integration of content and functionalities, ensuring that the site is user-friendly and responsive.<br /><br />The webmaster manages the technical aspects of the site, such as the hosting, security, updating software and resolving technical issues. It also monitors site performance, analyzing statistics and making adjustments to improve user experience and SEO.<br /><br />In addition, the webmaster plays a key role in content management . He creates, edits and organizes pages, posts, images and videos, ensuring that they are relevant, well presented and comply with web standards. He may also be responsible for optimizing content for SEO to improve the visibility of the site in search engines.<br /><br />The webmaster works closely with the development teams, design and marketing to ensure that the website meets the objectives and needs of the business or organization. His versatility and knowledge of different web technologies allow him to effectively coordinate these efforts and ensure the proper functioning of the site.<br /><br />In summary, the webmaster is a key professional in the creation and management of websites. It combines technical skills and marketing knowledge to guarantee a high-performance, attractive site that meets the expectations of users and companies.'
+			),
+			'excel' => array(
+				'title' => 'The different methods',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => '',
+						'2' => '',
+						'3' => ''
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => '',
+								'2' => '',
+								'3' => ''
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'My education and career path',
+				'description' => '',
+				'text' => 'Being self-taught in the field of webmastering involves learning on your own the skills necessary to create, manage and maintain websites. This can be done by following online tutorials, reading specialized resources and actively practicing. As an autodidact, it is important to master programming languages such as HTML, CSS and JavaScript, as well as web design and SEO concepts. It is also crucial to be familiar with popular CMS such as WordPress and to understand the basics of web hosting, security and performance analysis. The autodidact must be motivated, persevering and curious, constantly seeking to keep abreast of the latest trends and webmaster techniques.'
+			)
 		),
 		'sitemap' => array(
 			'images' => '',
@@ -68,7 +155,36 @@ $services = array(
 			'en' => 'services/developper'
 		),
 		'content' => array(
-			/*custom your own*/
+			'intro' => array(
+				'title' => 'Introduction',
+				'description' => '',
+				'text' => 'The developer is a professional who creates software, applications and websites using programming languages and computer tools. He is responsible for the design, development, implementation and maintenance of these computer systems. The developer has strong technical skills and in-depth knowledge of programming languages such as Java, Python, C++ or JavaScript. He often works in a team, collaborates with designers and IT specialists, and adapts to technological developments to provide innovative and effective solutions. The developer should also have good problem-solving skills and be able to quickly adapt to new technologies and requirements.'
+			),
+			'excel' => array(
+				'title' => 'The different methods',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => '',
+						'2' => '',
+						'3' => ''
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => '',
+								'2' => '',
+								'3' => ''
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'My education and career path',
+				'description' => '',
+				'text' => 'As an autodidact, I learn by myself the skills necessary to design, develop and maintain software. I use a variety of online resources, such as tutorials, online courses, books, and programming forums, to learn programming knowledge and skills. I develop my ability to solve problems and find solutions, by experimenting and practicing regularly. I can also participate in personal or collaborative projects to develop practical experience. And motivated, disciplined and persevering.'
+			)
 		),
 		'sitemap' => array(
 			'images' => '',
@@ -272,7 +388,7 @@ $services = array(
 				)
 			),
 			'for-pro' => array(
-				'title' => 'My education and professional background',
+				'title' => 'My education and career path',
 				'description' => '',
 				'text' => 'As a self-taught individual, I can demonstrate a strong ability to learn and adapt, which is essential to becoming a consultant. My various research, problem-solving and time management skills allow me to quickly acquire new knowledge and apply it in various contexts. In addition, my initiative and creativity help me propose innovative and customized solutions to meet the specific needs of each company. These skills, combined with my professional experience and expertise in one or more of the relevant fields.'
 			),

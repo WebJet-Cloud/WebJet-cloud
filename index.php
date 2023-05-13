@@ -155,7 +155,7 @@ if(isset($_GET['pages'])){
 				$imgs = $services['cybersecurity']['sitemap']['images'];
 				$vdos = $services['cybersecurity']['sitemap']['video'];
 				define('__WP_'.$DefineMajLang.'_URL', $DefineTranslateLang.'/'.$services['cybersecurity']['url'][$DefineTranslateLang]);
-				include('themes/'.$sites['template'].'/header-fix.php');
+				include('themes/'.$sites['template'].'/header.php');
 				include_once('themes/'.$sites['template'].'/services/cybersecurity.php');
 				include('themes/'.$sites['template'].'/footer.php');	
 			} else if($_GET['activities'] == 'marketing'){

@@ -1,4 +1,89 @@
 
+    
+<!-- intro -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['webmaster']['content']['intro']['title']; ?></h5>
+                <h1 class="mb-0"><?php echo $services['webmaster']['content']['intro']['description']; ?></h1>
+            </div>
+            <div class="row g-5">
+                <p>
+                <?php echo $services['webmaster']['content']['intro']['text']; ?>
+                </p>
+            </div>
+        </div>
+    </div>
+        
+<!-- excel -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['webmaster']['content']['excel']['title']; ?></h5>
+                <h1 class="mb-0"><?php echo $services['webmaster']['content']['excel']['description']; ?></h1>
+            </div>
+            <div class="row g-5">
+                <div class="table-responsive">
+                    <!--<table class="table table-striped align-middle">
+                        <thead>
+                            <tr class="align-middle">
+                                <th scope="col"><?php echo $services['webmaster']['content']['excel']['table']['head']['1']; ?></th>
+                                <th scope="col"><?php echo $services['webmaster']['content']['excel']['table']['head']['2']; ?></th>
+                                <th scope="col"><?php echo $services['webmaster']['content']['excel']['table']['head']['3']; ?></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                
+                            <tr class="align-middle">
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['1']['tr']['1']; ?></td>
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['1']['tr']['2']; ?></td>
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['1']['tr']['3']; ?></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['2']['tr']['1']; ?></td>
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['2']['tr']['2']; ?></td>
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['2']['tr']['3']; ?></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['3']['tr']['1']; ?></td>
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['3']['tr']['2']; ?></td>
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['3']['tr']['3']; ?></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['4']['tr']['1']; ?></td>
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['4']['tr']['2']; ?></td>
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['4']['tr']['3']; ?></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['5']['tr']['1']; ?></td>
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['5']['tr']['2']; ?></td>
+                                <td><?php echo $services['webmaster']['content']['excel']['table']['body']['5']['tr']['3']; ?></td>
+                            </tr>
+                        </tbody>
+                    </table>-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+<!-- Ma Formation et mon parcours professionnel -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['webmaster']['content']['for-pro']['title']; ?></h5>
+                <h1 class="mb-0"><?php echo $services['webmaster']['content']['for-pro']['description']; ?></h1>
+            </div>
+            <div class="row g-5">
+                <p>
+                <?php echo $services['webmaster']['content']['for-pro']['text']; ?>
+                </p>
+            </div>
+        </div>
+</div>
+        
 
     <!-- Service Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -80,7 +165,7 @@
                         </div>
                         <h4 class="mb-3"><?php echo $general['index']['content']['services']['blocks']['6']['title']; ?></h4>
                         <p class="m-0"><?php echo $general['index']['content']['services']['blocks']['6']['description']; ?></p>
-                        <a class="btn btn-lg btn-primary rounded" href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['consulting']['url']['default']; ?>">
+                        <a class="btn btn-lg btn-primary rounded" href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['webmaster']['url']['default']; ?>">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                         

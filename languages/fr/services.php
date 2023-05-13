@@ -10,7 +10,6 @@ $services = array(
 		'ru' => '<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/3a9HoYIuaaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
 		'de' => '<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/iptn5TPxpD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
 	),
-	
 	'cybersecurity' => array(
 		'title' => 'Prestation de Services en cyber securité',
 		'description' => '',
@@ -20,7 +19,36 @@ $services = array(
 			'fr' => 'services/cyber-securite'
 		),
 		'content' => array(
-			/*custom your own*/
+			'intro' => array(
+				'title' => 'Présentation',
+				'description' => '',
+				'text' => 'La présentation sur la cybersécurité met en lumière l\'importance critique de la protection des systèmes informatiques et des données contre les menaces en ligne. Elle aborde les principaux risques tels que les attaques de phishing, les logiciels malveillants et les violations de données. Les mesures de sécurité clés sont présentées, notamment l\'utilisation de mots de passe robustes, la sensibilisation à la sécurité, la gestion des correctifs et l\'utilisation de solutions de sécurité avancées. En mettant l\'accent sur la prévention, la détection et la réponse aux incidents, la présentation souligne l\'impératif de la cybersécurité pour les individus, les entreprises et les organisations.'
+			),
+			'excel' => array(
+				'title' => 'Les différents méthodes',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => '',
+						'2' => '',
+						'3' => ''
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => '',
+								'2' => '',
+								'3' => ''
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'Ma Formation et mon parcours professionnel',
+				'description' => '',
+				'text' => 'En tant qu\'autodidacte en cybersécurité, vous avez pris l\'initiative d\'apprendre et de développer vos connaissances dans ce domaine critique. Vous avez exploré divers sujets tels que les principes de base de la sécurité informatique, les vulnérabilités courantes, les types d\'attaques, les techniques de détection et de prévention, ainsi que les bonnes pratiques de sécurité. Vous avez utilisé des ressources en ligne, des cours, des tutoriels et peut-être même des certifications pour acquérir des compétences pratiques en matière de gestion des mots de passe, de protection des réseaux, de sécurisation des systèmes d\'exploitation et de sensibilisation à la sécurité. En tant qu\'autodidacte, vous avez démontré une grande motivation, une curiosité intellectuelle et une capacité à apprendre de manière autonome dans le domaine complexe de la cybersécurité.'
+			)
 		),
 		'sitemap' => array(
 			'images' => '',
@@ -36,7 +64,36 @@ $services = array(
 			'fr' => 'services/marketing'
 		),
 		'content' => array(
-			/*custom your own*/
+			'intro' => array(
+				'title' => 'Présentation',
+				'description' => '',
+				'text' => 'La présentation sur le marketing met en évidence l\'importance de comprendre les besoins des consommateurs, d\'identifier les segments de marché pertinents et de développer des stratégies ciblées. Elle souligne également l\'impact des nouvelles technologies sur le marketing, en mettant l\'accent sur les médias sociaux, la personnalisation et l\'expérience client. Enfin, elle met en avant l\'importance de la mesure et de l\'analyse des données pour évaluer l\'efficacité des campagnes marketing et ajuster les stratégies en conséquence.'
+			),
+			'excel' => array(
+				'title' => 'Les différents méthodes',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => '',
+						'2' => '',
+						'3' => ''
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => '',
+								'2' => '',
+								'3' => ''
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'Ma Formation et mon parcours professionnel',
+				'description' => '',
+				'text' => 'En tant qu\'autodidacte en marketing, vous avez pris l\'initiative d\'apprendre et de développer vos connaissances dans ce domaine essentiel. Vous avez probablement étudié divers sujets tels que les bases du marketing, la psychologie du consommateur, les stratégies de segmentation de marché, le marketing numérique, le marketing de contenu, le marketing des médias sociaux, le marketing par e-mail, le référencement, etc. Vous avez également acquis une compréhension des outils et des plateformes utilisés dans le marketing moderne. Grâce à votre volonté d\'apprendre et à votre recherche autonome, vous avez développé des compétences précieuses pour promouvoir efficacement des produits ou services, atteindre un public cible et créer des campagnes marketing impactantes.'
+			)
 		),
 		'sitemap' => array(
 			'images' => '',
@@ -52,7 +109,36 @@ $services = array(
 			'fr' => 'services/webmestre'
 		),
 		'content' => array(
-			/*custom your own*/
+			'intro' => array(
+				'title' => 'Présentation',
+				'description' => '',
+				'text' => 'La présentation sur le webmaster met en lumière le rôle essentiel de ce professionnel dans la création, la gestion et la maintenance de sites web. Le webmaster est responsable de la conception du site, de son architecture, de son design et de son fonctionnement global. Il s\'occupe également de l\'intégration des contenus et des fonctionnalités, en veillant à ce que le site soit convivial et réactif.<br /><br />Le webmaster gère les aspects techniques du site, tels que l\'hébergement, la sécurité, la mise à jour des logiciels et la résolution des problèmes techniques. Il surveille également les performances du site, en analysant les statistiques et en réalisant des ajustements pour améliorer l\'expérience utilisateur et le référencement.<br /><br />En outre, le webmaster joue un rôle clé dans la gestion du contenu. Il crée, modifie et organise les pages, les articles, les images et les vidéos, en veillant à ce qu\'ils soient pertinents, bien présentés et conformes aux normes du web. Il peut également être responsable de l\'optimisation du contenu pour le référencement afin d\'améliorer la visibilité du site dans les moteurs de recherche.<br /><br />Le webmaster travaille en étroite collaboration avec les équipes de développement, de design et de marketing pour s\'assurer que le site web répond aux objectifs et aux besoins de l\'entreprise ou de l\'organisation. Sa polyvalence et sa connaissance des différentes technologies web lui permettent de coordonner efficacement ces efforts et d\'assurer le bon fonctionnement du site.<br /><br />En résumé, le webmaster est un professionnel clé dans la création et la gestion de sites web. Il allie compétences techniques et connaissances en marketing pour garantir un site performant, attractif et conforme aux attentes des utilisateurs et des entreprises.'
+			),
+			'excel' => array(
+				'title' => 'Les différents méthodes',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => '',
+						'2' => '',
+						'3' => ''
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => '',
+								'2' => '',
+								'3' => ''
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'Ma Formation et mon parcours professionnel',
+				'description' => '',
+				'text' => 'Être autodidacte dans le domaine du webmaster implique d\'apprendre par soi-même les compétences nécessaires pour créer, gérer et maintenir des sites web. Cela peut se faire en suivant des tutoriels en ligne, en lisant des ressources spécialisées et en pratiquant activement. En tant qu\'autodidacte, il est important de maîtriser les langages de programmation tels que HTML, CSS et JavaScript, ainsi que les concepts de conception web et d\'optimisation du référencement. Il est également crucial de se familiariser avec les CMS populaires tels que WordPress et de comprendre les bases de l\'hébergement web, de la sécurité et de l\'analyse des performances. L\'autodidacte doit être motivé, persévérant et curieux, en cherchant constamment à se tenir au courant des dernières tendances et techniques du webmaster.'
+			)
 		),
 		'sitemap' => array(
 			'images' => '',
@@ -68,7 +154,36 @@ $services = array(
 			'fr' => 'services/developpeur'
 		),
 		'content' => array(
-			/*custom your own*/
+			'intro' => array(
+				'title' => 'Présentation',
+				'description' => '',
+				'text' => 'Le développeur est un professionnel qui crée des logiciels, des applications et des sites web en utilisant des langages de programmation et des outils informatiques. Il est responsable de la conception, du développement, de la mise en œuvre et de la maintenance de ces systèmes informatiques. Le développeur possède des compétences techniques solides et une connaissance approfondie des langages de programmation tels que Java, Python, C++ ou JavaScript. Il travaille souvent en équipe, collabore avec des concepteurs et des spécialistes en informatique, et s\'adapte aux évolutions technologiques pour fournir des solutions innovantes et efficaces. Le développeur doit également avoir de bonnes compétences en résolution de problèmes et être capable de s\'adapter rapidement à de nouvelles technologies et exigences.'
+			),
+			'excel' => array(
+				'title' => 'Les différents méthodes',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => '',
+						'2' => '',
+						'3' => ''
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => '',
+								'2' => '',
+								'3' => ''
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'Ma Formation et mon parcours professionnel',
+				'description' => '',
+				'text' => 'En tant qu\'autodidacte, j\'apprend par moi même les compétences nécessaires pour concevoir, développer et maintenir des logiciels. j\'utilise une variété de ressources en ligne, telles que des tutoriels, des cours en ligne, des livres et des forums de programmation, pour acquérir des connaissances et des compétences en programmation. Je développe ma capacité à résoudre des problèmes et à trouver des solutions, en expérimentant et en pratiquant régulièrement. Je peut également participer à des projets personnels ou collaboratifs pour développer son expérience pratique. Et motivé, discipliné et persévérant.'
+			)
 		),
 		'sitemap' => array(
 			'images' => '',
