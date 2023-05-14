@@ -49,13 +49,13 @@ $images = array(
 				'6' => 'services/consultant/assistant-informatique.jpg'
 			),
 			'webmaster' => array(
-				'1' => 'services/webmaster/',
-				'2' => 'services/webmaster/',
-				'3' => 'services/webmaster/',
-				'4' => 'services/webmaster/',
-				'5' => 'services/webmaster/',
-				'6' => 'services/webmaster/',
-				'7' => 'services/webmaster/',
+				'1' => 'services/webmaster/site-vitrine.jpg',
+				'2' => 'services/webmaster/blog.jpg',
+				'3' => 'services/webmaster/shop.jpg',
+				'4' => 'services/webmaster/lms.jpg',
+				'5' => 'services/webmaster/freelancer.jpg',
+				'6' => 'services/webmaster/booking.jpg',
+				'7' => 'services/webmaster/social.jpg',
 			)
 			/*Custom your own*/
 		)
