@@ -643,7 +643,12 @@ $services = array(
 				)
 			),
 			'pricing' => array(
-				'free' => 'Бесплатно'
+				'free' => 'Бесплатно',
+				'fees-pro' => 'Дополнительные транспортные расходы Зона Париж 17ᵉ: Бесплатно, Зона Париж: 40 евро HT и Международная зона: Требуется запрос котировок.'
+			),
+			'footer' => array(
+				'credit-impot' => 'Profitez de - 50% sur nos tarifs, grâce à la déduction fiscale.',
+				'n-agree' => 'N° Agrément SAP '
 			)
 		),
 		'sitemap' => array(

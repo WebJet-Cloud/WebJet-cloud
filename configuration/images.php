@@ -46,7 +46,8 @@ $images = array(
 				'3' => 'services/consultant/Consultant-informatique.jpg',
 				'4' => 'services/consultant/Consultant-marketing.jpg',
 				'5' => 'services/consultant/Consultant-finance.jpg',
-				'6' => 'services/consultant/assistant-informatique.jpg'
+				'6' => 'services/consultant/assistant-informatique.jpg',
+				'salp' => 'services/consultant/salp.png'
 			),
 			'webmaster' => array(
 				'1' => 'services/webmaster/site-vitrine.jpg',

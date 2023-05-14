@@ -87,6 +87,10 @@
                                         <b><?php echo $JE_DSslLabsOut->endpoints['0']->grade; ?></b>
                                     </a>
                                 </div>
+                                <br>
+                                <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['consultant']['salp']; ?>" style="object-fit: cover;"><br>
+                                <span><?php echo $services['consulting']['content']['footer']['credit-impot']; ?></span><br>
+                                <span><?php echo $services['consulting']['content']['footer']['n-agree'].' '.$business['local']['salp']; ?></span>
                             </div>
                         </div>
                     </div>

@@ -652,7 +652,12 @@ $services = array(
 				)
 			),
 			'pricing' => array(
-				'free' => 'Kostenlos'
+				'free' => 'Kostenlos',
+				'fees-pro' => 'Optionale Reisekosten Zone Paris 17ᵉ: Kostenlos, Zone Paris: 40 € HT und Zone International: Angebotsanfrage erforderlich.'
+			),
+			'footer' => array(
+				'credit-impot' => 'Profitez de - 50% sur nos tarifs, grâce à la déduction fiscale.',
+				'n-agree' => 'N° Agrément SAP '
 			)
 		),
 		'sitemap' => array(

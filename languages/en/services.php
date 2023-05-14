@@ -652,7 +652,12 @@ $services = array(
 				)
 			),
 			'pricing' => array(
-				'free' => 'Free'
+				'free' => 'Free',
+				'fees-pro' => 'Optional travel expenses Zone Paris 17ᵉ: Free, Zone Paris: €40 HT and Zone International: Request for quote required.'
+			),
+			'footer' => array(
+				'credit-impot' => 'Profitez de - 50% sur nos tarifs, grâce à la déduction fiscale.',
+				'n-agree' => 'N° Agrément SAP '
 			)
 		),
 		'sitemap' => array(

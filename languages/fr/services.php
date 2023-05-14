@@ -652,7 +652,12 @@ $services = array(
 				)
 			),
 			'pricing' => array(
-				'free' => 'Gratuit'
+				'free' => 'Gratuit',
+				'fees-pro' => 'En Option frais de déplacement Zone Paris 17ᵉ : Gratuit, Zone Paris : €40 HT et Zone International: Requise un demande de devis.'
+			),
+			'footer' => array(
+				'credit-impot' => 'Profitez de - 50% sur nos tarifs, grâce à la déduction fiscale.',
+				'n-agree' => 'N° Agrément SAP '
 			)
 		),
 		'sitemap' => array(

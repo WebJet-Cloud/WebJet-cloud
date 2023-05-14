@@ -248,6 +248,7 @@
                             <div class="d-flex justify-content-between mb-3"><span>--</span></div>
                             <div class="d-flex justify-content-between mb-3"><span>--</span></div>
                             <div class="d-flex justify-content-between mb-3"><span>--</span></div>
+                            <div class="d-flex justify-content-between mb-2"><span><?php echo $services['consulting']['content']['pricing']['fees-pro']; ?></span></div>
                             <a href="<?php echo $protocols.'://'.$sites['domain'].'/'.$email['ask-quotes']['url']['default']; ?>" class="btn btn-primary py-2 px-4 mt-4"><?php echo $general['index']['content']['quotes']['container']['title']; ?></a>
                         </div>
                     </div>
@@ -265,6 +266,7 @@
                             <div class="d-flex justify-content-between mb-3"><span><?php echo $services['consulting']['content']['secteur']['3']['h1']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['consulting']['content']['secteur']['4']['h1']; ?></span><i class="fa fa-times text-danger pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['consulting']['content']['secteur']['5']['h1']; ?></span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span><?php echo $services['consulting']['content']['pricing']['fees-pro']; ?></span></div>
                             <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>/all/numerique/assistant-informatique/" class="btn btn-primary py-2 px-4 mt-4"><?php echo $services['consulting']['content']['secteur']['6']['h5']; ?></a>
                         </div>
                     </div>
@@ -281,6 +283,7 @@
                             <div class="d-flex justify-content-between mb-3"><span><?php echo $services['consulting']['content']['secteur']['3']['h1']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['consulting']['content']['secteur']['4']['h1']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['consulting']['content']['secteur']['5']['h1']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span><?php echo $services['consulting']['content']['pricing']['fees-pro']; ?></span></div>
                             <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>/all/numerique/consultant/" class="btn btn-primary py-2 px-4 mt-4"><?php echo $services['consulting']['content']['secteur']['5']['h5']; ?></a>
                         </div>
                     </div>
