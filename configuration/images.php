@@ -34,6 +34,13 @@ $images = array(
 		),
 		/*Manager Images */
 		'services' => array(
+			'developper' => array(
+				'1' => 'services/developper/developper.jpg',
+				'2' => 'services/developper/dev-framework.png',
+				'3' => 'services/developper/dev-web.jpg',
+				'4' => 'services/developper/dev-mobile.jpg',
+				'5' => 'services/developper/dev-gaming.jpg'
+			),
 			'seo' => array(
 				'1' => 'services/seo/search-engine.jpg',
 				'2' => 'services/seo/community-manager.jpg',

@@ -82,13 +82,12 @@
                                 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                                 <br>
                                 <div class="grade grade-<?php echo strtolower(substr($JE_DSslLabsOut->endpoints['0']->grade,0,1)); ?>">
-                                    <a target="_blank" href="https://www.ssllabs.com/ssltest/analyze.html?d=<?php echo $JE_DSslLabsOut->host; ?>&s=<?php echo $JE_DSslLabsOut->endpoints['0']->ipAddress
-                                    ; ?>">
+                                    <a target="_blank" href="https://www.ssllabs.com/ssltest/analyze.html?d=<?php echo $JE_DSslLabsOut->host; ?>&s=<?php echo $JE_DSslLabsOut->endpoints['0']->ipAddress; ?>">
                                         <b><?php echo $JE_DSslLabsOut->endpoints['0']->grade; ?></b>
                                     </a>
                                 </div>
                                 <br>
-                                <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['consultant']['salp']; ?>" style="object-fit: cover;"><br>
+                                <a href="https://www.servicesalapersonne.gouv.fr/files_sap/files/publications/les-sap-pour-tout-savoir.pdf"><img class="img-fluid" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['consultant']['salp']; ?>"></a><br>
                                 <span><?php echo $services['consulting']['content']['footer']['credit-impot']; ?></span><br>
                                 <span><?php echo $services['consulting']['content']['footer']['n-agree'].' '.$business['local']['salp']; ?></span>
                             </div>
