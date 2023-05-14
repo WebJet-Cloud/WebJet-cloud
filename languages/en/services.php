@@ -286,6 +286,43 @@ $services = array(
 				'title' => 'My education and career path',
 				'description' => '',
 				'text' => 'Being self-taught in the field of webmastering involves learning on your own the skills necessary to create, manage and maintain websites. This can be done by following online tutorials, reading specialized resources and actively practicing. As an autodidact, it is important to master programming languages such as HTML, CSS and JavaScript, as well as web design and SEO concepts. It is also crucial to be familiar with popular CMS such as WordPress and to understand the basics of web hosting, security and performance analysis. The autodidact must be motivated, persevering and curious, constantly seeking to keep abreast of the latest trends and webmaster techniques.'
+			),
+			'secteur' => array(
+				'1' => array(
+					'h5' => 'Webmaster',
+					'h1' => 'Site Showcast',
+					'text' => ''
+				),
+				'2' => array(
+					'h5' => 'Webmaster',
+					'h1' => 'Blog',
+					'text' => ''
+				),
+				'3' => array(
+					'h5' => 'Webmaster',
+					'h1' => 'E-Commerce',
+					'text' => ''
+				),
+				'4' => array(
+					'h5' => 'Webmaster',
+					'h1' => 'LMS',
+					'text' => ''
+				),
+				'5' => array(
+					'h5' => 'Webmaster',
+					'h1' => 'Freelancer',
+					'text' => ''
+				),
+				'6' => array(
+					'h5' => 'Webmaster',
+					'h1' => 'Booking',
+					'text' => ''
+				),
+				'7' => array(
+					'h5' => 'Webmaster',
+					'h1' => 'Social Network',
+					'text' => ''
+				)
 			)
 		),
 		'sitemap' => array(

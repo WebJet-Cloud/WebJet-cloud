@@ -47,6 +47,15 @@ $images = array(
 				'4' => 'services/consultant/Consultant-marketing.jpg',
 				'5' => 'services/consultant/Consultant-finance.jpg',
 				'6' => 'services/consultant/assistant-informatique.jpg'
+			),
+			'webmaster' => array(
+				'1' => 'services/webmaster/',
+				'2' => 'services/webmaster/',
+				'3' => 'services/webmaster/',
+				'4' => 'services/webmaster/',
+				'5' => 'services/webmaster/',
+				'6' => 'services/webmaster/',
+				'7' => 'services/webmaster/',
 			)
 			/*Custom your own*/
 		)

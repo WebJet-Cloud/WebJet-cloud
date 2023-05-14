@@ -286,6 +286,43 @@ $services = array(
 				'title' => 'Ma Formation et mon parcours professionnel',
 				'description' => '',
 				'text' => 'Être autodidacte dans le domaine du webmaster implique d\'apprendre par soi-même les compétences nécessaires pour créer, gérer et maintenir des sites web. Cela peut se faire en suivant des tutoriels en ligne, en lisant des ressources spécialisées et en pratiquant activement. En tant qu\'autodidacte, il est important de maîtriser les langages de programmation tels que HTML, CSS et JavaScript, ainsi que les concepts de conception web et d\'optimisation du référencement. Il est également crucial de se familiariser avec les CMS populaires tels que WordPress et de comprendre les bases de l\'hébergement web, de la sécurité et de l\'analyse des performances. L\'autodidacte doit être motivé, persévérant et curieux, en cherchant constamment à se tenir au courant des dernières tendances et techniques du webmaster.'
+			),
+			'secteur' => array(
+				'1' => array(
+					'h5' => 'Webmestre',
+					'h1' => 'Site vitrine',
+					'text' => ''
+				),
+				'2' => array(
+					'h5' => 'Webmestre',
+					'h1' => 'Blog',
+					'text' => ''
+				),
+				'3' => array(
+					'h5' => 'Webmestre',
+					'h1' => 'E-Commerce',
+					'text' => ''
+				),
+				'4' => array(
+					'h5' => 'Webmestre',
+					'h1' => 'LMS',
+					'text' => ''
+				),
+				'5' => array(
+					'h5' => 'Webmestre',
+					'h1' => 'Freelancer',
+					'text' => ''
+				),
+				'6' => array(
+					'h5' => 'Webmestre',
+					'h1' => 'Réservation',
+					'text' => ''
+				),
+				'7' => array(
+					'h5' => 'Webmestre',
+					'h1' => 'Réseaux Sociaux',
+					'text' => ''
+				)
 			)
 		),
 		'sitemap' => array(

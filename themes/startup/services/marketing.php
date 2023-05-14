@@ -171,7 +171,7 @@
                         </div>
                         <h4 class="mb-3"><?php echo $general['index']['content']['services']['blocks']['6']['title']; ?></h4>
                         <p class="m-0"><?php echo $general['index']['content']['services']['blocks']['6']['description']; ?></p>
-                        <a class="btn btn-lg btn-primary rounded" href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['marketing']['url']['default']; ?>">
+                        <a class="btn btn-lg btn-primary rounded" href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['consulting']['url']['default']; ?>">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                         

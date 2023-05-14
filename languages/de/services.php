@@ -286,6 +286,43 @@ $services = array(
 				'title' => 'Meine Ausbildung und mein beruflicher Werdegang',
 				'description' => '',
 				'text' => 'Als Autodidakt im Bereich Webmastering erlernen Sie selbstständig die erforderlichen Fähigkeiten zum Erstellen, Verwalten und Pflegen von Websites. Dies kann durch das Befolgen von Online-Tutorials, das Lesen spezieller Ressourcen und aktives Üben erreicht werden. Als Autodidakt ist es wichtig, Programmiersprachen wie HTML, CSS und JavaScript sowie Webdesign und SEO-Konzepte zu beherrschen. Es ist außerdem wichtig, mit gängigen CMS wie WordPress vertraut zu sein und die Grundlagen von Webhosting, Sicherheit und Leistungsanalyse zu verstehen. Der Autodidakt muss motiviert, ausdauernd und neugierig sein und ständig versuchen, über die neuesten Trends und Webmaster-Techniken auf dem Laufenden zu bleiben.'
+			),
+			'Secteur' => Array(
+				'1' => Array(
+					'h5' => 'Webmaster',
+					'h1' => 'Site Showcast',
+					'text' => ''
+				),
+				'2' => Array(
+					'h5' => 'Webmaster',
+					'h1' => 'Blog',
+					'text' => ''
+				),
+				'3' => Array(
+					'h5' => 'Webmaster',
+					'h1' => 'E-Commerce',
+					'text' => ''
+				),
+				'4' => Array(
+					'h5' => 'Webmaster',
+					'h1' => 'LMS',
+					'text' => ''
+				),
+				'5' => Array(
+					'h5' => 'Webmaster',
+					'h1' => 'Freiberufler',
+					'text' => ''
+				),
+				'6' => Array(
+					'h5' => 'Webmaster',
+					'h1' => 'Buchung',
+					'text' => ''
+				),
+				'7' => Array(
+					'h5' => 'Webmaster',
+					'h1' => 'Soziale Netzwerke',
+					'text' => ''
+				)
 			)
 		),
 		'sitemap' => array(
