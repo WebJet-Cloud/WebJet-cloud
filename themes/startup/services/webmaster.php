@@ -277,7 +277,8 @@
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['webmaster']['content']['secteur']['5']['h1']; ?></span><i class="fa fa-times text-danger pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['webmaster']['content']['secteur']['6']['h1']; ?></span><i class="fa fa-times text-danger pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['webmaster']['content']['secteur']['7']['h1']; ?></span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>/all/numerique/creation-de-site-vitrine/" class="btn btn-primary py-2 px-4 mt-4"><?php echo $general['index']['content']['quotes']['container']['title']; ?></a>
+                            <div class="d-flex justify-content-between mb-2"><span><?php echo $services['webmaster']['content']['pricing']['fees-seo']; ?></span></div>
+                            <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>/all/numerique/creation-de-site-vitrine/" class="btn btn-primary py-2 px-4 mt-4"><?php echo $services['webmaster']['content']['secteur']['1']['h1']; ?></a>
                         </div>
                     </div>
                 </div>
@@ -296,7 +297,8 @@
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['webmaster']['content']['secteur']['5']['h1']; ?></span><i class="fa fa-times text-danger pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['webmaster']['content']['secteur']['6']['h1']; ?></span><i class="fa fa-times text-danger pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['webmaster']['content']['secteur']['7']['h1']; ?></span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>/all/numerique/creation-de-blog/" class="btn btn-primary py-2 px-4 mt-4"><?php echo $services['webmaster']['content']['secteur']['6']['h5']; ?></a>
+                            <div class="d-flex justify-content-between mb-2"><span><?php echo $services['webmaster']['content']['pricing']['fees-seo']; ?></span></div>
+                            <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>/all/numerique/creation-de-blog/" class="btn btn-primary py-2 px-4 mt-4"><?php echo $services['webmaster']['content']['secteur']['2']['h1']; ?></a>
                         </div>
                     </div>
                 </div>
@@ -314,7 +316,8 @@
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['webmaster']['content']['secteur']['5']['h1']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['webmaster']['content']['secteur']['6']['h1']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
                             <div class="d-flex justify-content-between mb-2"><span><?php echo $services['webmaster']['content']['secteur']['7']['h1']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>/all/numerique/creation-de-e-commerce/" class="btn btn-primary py-2 px-4 mt-4"><?php echo $services['webmaster']['content']['secteur']['5']['h5']; ?></a>
+                            <div class="d-flex justify-content-between mb-2"><span><?php echo $services['webmaster']['content']['pricing']['fees-seo']; ?></span></div>
+                            <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>/all/numerique/creation-de-e-commerce/" class="btn btn-primary py-2 px-4 mt-4"><?php echo $services['webmaster']['content']['secteur']['3']['h1']; ?></a>
                         </div>
                     </div>
                 </div>
