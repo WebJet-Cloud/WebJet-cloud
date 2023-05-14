@@ -30,90 +30,90 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => 'Méthode',
-						'2' => 'Description',
-						'3' => 'Avantage',
-						'4' => 'Limitation'
+						'1' => 'Метод',
+						'2' => 'Описание',
+						'3' => 'Преимущество',
+						'4' => 'Ограничение'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => 'Pare-feu',
-								'2' => 'Un pare-feu est un système de sécurité réseau qui contrôle et filtre le trafic entrant et sortant.',
-								'3' => 'Bloque les connexions non autorisées. Protège contre les attaques par déni de service (DDoS).',
-								'4' => 'Peut être contourné par des attaques de type "par-dessus" (overpassing). Nécessite une configuration et une maintenance régulières.'
+								'1' => 'Брандмауэр',
+								'2' => 'Брандмауэр — это система сетевой безопасности, которая контролирует и фильтрует входящий и исходящий трафик.',
+								'3' => 'Блокировать несанкционированные подключения. Защищает от атак типа «отказ в обслуживании» (DDoS).',
+								'4' => 'Можно обойти путем обхода атак. Требует регулярной настройки и обслуживания.'
 							)
 						),
 						'2' => array(
 							'tr' => array(
-								'1' => 'Antivirus',
-								'2' => 'Les logiciels antivirus détectent, bloquent et suppriment les logiciels malveillants tels que les virus, les vers et les chevaux de Troie.',
-								'3' => 'Identifie et élimine les menaces connues. Protège contre les fichiers infectés.',
-								'4' => 'Peut avoir des taux de détection moins élevés pour les nouvelles menaces. Peut causer des ralentissements du système lors de l\'analyse en temps réel.'
+								'1' => 'Антивирус',
+								'2' => 'Антивирусное программное обеспечение обнаруживает, блокирует и удаляет вредоносные программы, такие как вирусы, черви и троянские кони.',
+								'3' => 'Выявление и удаление известных угроз. Защищает от зараженных файлов.',
+								'4' => 'Может иметь более низкую скорость обнаружения новых угроз. Может вызвать замедление работы системы во время сканирования в реальном времени.'
 							)
 						),
 						'3' => array(
 							'tr' => array(
-								'1' => 'Authentification à deux facteurs (2FA)',
-								'2' => 'L\'authentification à deux facteurs exige une deuxième forme de vérification, en plus du mot de passe, telle qu\'un code envoyé par SMS ou une application d\'authentification.',
-								'3' => 'Renforce la sécurité des comptes en ligne. Protège contre les attaques de phishing.',
-								'4' => 'Peut nécessiter un effort supplémentaire de la part des utilisateurs. Peut y avoir des problèmes de compatibilité avec certains systèmes.'
+								'1' => 'Двухфакторная аутентификация (2FA)',
+								'2' => 'Двухфакторная аутентификация требует второй формы проверки в дополнение к паролю, такой как код, отправленный по SMS или приложение для проверки подлинности.',
+								'3' => 'Повысить безопасность онлайн-аккаунтов. Защищает от фишинговых атак.',
+								'4' => 'Может потребоваться дополнительная работа со стороны пользователей. Могут возникнуть проблемы совместимости с некоторыми системами.'
 							)
 						),
 						'4' => array(
 							'tr' => array(
-								'1' => 'Cryptage des données',
-								'2' => 'Le cryptage des données convertit les informations en un format illisible, à moins d\'avoir une clé de décryptage.',
-								'3' => 'Protège les données sensibles en cas de vol ou d\'accès non autorisé. Conforme aux réglementations en matière de protection des données.',
-								'4' => 'Peut entraîner une légère augmentation de la latence lors de l\'accès aux données cryptées. La perte de la clé de décryptage peut entraîner une perte permanente des données.'
+								'1' => 'Шифрование данных',
+								'2' => 'Шифрование данных преобразует информацию в нечитаемый формат, если у вас нет ключа дешифрования.',
+								'3' => 'Защитите конфиденциальные данные от кражи или несанкционированного доступа. Соответствует правилам защиты данных.',
+								'4' => 'Может вызвать небольшое увеличение задержки при доступе к зашифрованным данным. Потеря ключа дешифрования может привести к необратимой потере данных.'
 							)
 						),
 						'5' => array(
 							'tr' => array(
-								'1' => 'Formation à la sensibilisation à la sécurité',
-								'2' => 'La formation à la sensibilisation à la sécurité vise à éduquer les utilisateurs sur les meilleures pratiques en matière de cybersécurité, telles que l\'identification des e-mails de phishing et la gestion des mots de passe.',
-								'3' => 'Réduit les risques d\'erreurs humaines. Améliore la posture globale de sécurité de l\'organisation.',
-								'4' => 'Nécessite des mises à jour régulières pour suivre les nouvelles menaces. Peut y avoir une résistance initiale au changement de comportement des utilisateurs.'
+								'1' => 'Обучение по безопасности',
+								'2' => 'Обучение по вопросам безопасности направлено на обучение пользователей передовым методам кибербезопасности, таким как выявление фишинговых сообщений электронной почты и управление паролями.',
+								'3' => 'Снижает риск человеческой ошибки. Улучшает общее состояние безопасности организации.',
+								'4' => 'Требуются регулярные обновления, чтобы не отставать от новых угроз. Может быть первоначальным сопротивлением изменению поведения пользователя.'
 							)
 						),
 						'6' => array(
 							'tr' => array(
-								'1' => 'Gestion des correctifs',
-								'2' => 'La gestion des correctifs consiste à appliquer régulièrement les mises à jour de sécurité et les correctifs logiciels pour combler les vulnérabilités connues.',
-								'3' => 'Réduit les risques d\'exploitation des failles de sécurité connues. Protège contre les attaques basées sur des vulnérabilités logicielles connues.',
-								'4' => 'Nécessite une maintenance régulière pour appliquer les correctifs. Les correctifs peuvent entraîner des incompatibilités logicielles.'
+								'1' => 'Управление исправлениями',
+								'2' => 'Управление исправлениями — это регулярное применение обновлений безопасности и программных исправлений для устранения известных уязвимостей.',
+								'3' => 'Снижает риск использования известных уязвимостей безопасности. Защищает от атак, основанных на известных уязвимостях программного обеспечения.',
+								'4' => 'Для установки исправлений требуется регулярное обслуживание. Исправления могут привести к несовместимости программного обеспечения.'
 							)
 						),
 						'7' => array(
 							'tr' => array(
-								'1' => 'Surveillance du réseau',
-								'2' => 'La surveillance du réseau consiste à analyser en temps réel le trafic réseau afin de détecter les activités suspectes ou malveillantes.',
-								'3' => 'Identifie les comportements anormaux ou les attaques en cours. Permet une réponse rapide aux incidents de sécurité.',
-								'4' => 'Peut générer un grand volume de données à analyser. Nécessite des ressources de surveillance dédiées.'
+								'1' => 'Мониторинг сети',
+								'2' => 'Мониторинг сети — это анализ сетевого трафика в режиме реального времени для обнаружения подозрительной или вредоносной активности.',
+								'3' => 'Определяет ненормальное поведение или продолжающиеся атаки. Обеспечивает быстрое реагирование на инциденты безопасности.',
+								'4' => 'Может генерировать большой объем данных для анализа. Требуются выделенные ресурсы для мониторинга.'
 							)
 						),
 						'8' => array(
 							'tr' => array(
-								'1' => 'Protection contre les logiciels malveillants',
-								'2' => 'Les solutions de protection contre les logiciels malveillants utilisent des techniques telles que l\'analyse comportementale et la détection des signatures pour identifier et bloquer les logiciels malveillants.',
-								'3' => 'Protège contre les virus, les vers, les chevaux de Troie et autres malwares. Peut fournir une défense en temps réel contre les nouvelles menaces.',
-								'4' => 'Peut entraîner des faux positifs ou des faux négatifs. Nécessite des mises à jour régulières des définitions de logiciels malveillants.'
+								'1' => 'Защита от вредоносных программ',
+								'2' => 'Решения для защиты от вредоносных программ используют такие методы, как анализ поведения и обнаружение сигнатур, для выявления и блокировки вредоносных программ.',
+								'3' => 'Защищает от вирусов, червей, троянских коней и других вредоносных программ. Может обеспечить защиту от новых угроз в режиме реального времени.',
+								'4' => 'Может привести к ложным срабатываниям или ложным отрицательным результатам. Требуются регулярные обновления определений вредоносных программ.'
 							)
 						),
 						'9' => array(
 							'tr' => array(
-								'1' => 'Sécurité des e-mails',
-								'2' => 'Les solutions de sécurité des e-mails utilisent des filtres et des analyses pour bloquer les e-mails de phishing, les attaques de hameçonnage et les fichiers malveillants attachés.',
-								'3' => 'Protège contre les attaques basées sur les e-mails. Réduit les risques de compromission des comptes via des liens ou des pièces jointes malveillants.',
-								'4' => 'Peut entraîner des faux positifs, bloquant parfois des e-mails légitimes. Les techniques d\'ingénierie sociale sophistiquées peuvent contourner les filtres.'
+								'1' => 'Безопасность электронной почты',
+								'2' => 'Решения для защиты электронной почты используют фильтры и сканирование для блокировки фишинговых писем, фишинговых атак и вредоносных вложенных файлов.',
+								'3' => 'Защищает от атак по электронной почте. Снижает риск компрометации учетной записи с помощью вредоносных ссылок или вложений.',
+								'4' => 'Может вызывать ложные срабатывания, иногда блокируя законные электронные письма. Сложные методы социальной инженерии могут обойти фильтры.'
 							)
 						),
 						'10' => array(
 							'tr' => array(
-								'1' => 'Gestion des accès',
-								'2' => 'La gestion des accès vise à contrôler et à limiter les droits d\'accès aux systèmes et aux données, en accordant uniquement les autorisations nécessaires à chaque utilisateur.',
-								'3' => 'Réduit les risques d\'accès non autorisés aux données sensibles. - Permet une traçabilité des actions des utilisateurs.',
-								'4' => 'Nécessite une gestion rigoureuse des droits d\'accès pour éviter les erreurs de configuration. - Les attaques par usurpation d\'identité peuvent contourner les contrôles d\'accès.'
+								'1' => 'Управление доступом',
+								'2' => 'Управление доступом направлено на контроль и ограничение прав доступа к системам и данным, предоставляя каждому пользователю только необходимые разрешения.',
+								'3' => 'Снижает риск несанкционированного доступа к конфиденциальным данным. - Позволяет отслеживать действия пользователя.',
+								'4' => 'Требуется строгое управление правами доступа, чтобы избежать ошибок конфигурации. - Атаки спуфинга могут обойти контроль доступа.'
 							)
 						)
 					)
@@ -149,56 +149,56 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => 'Méthode',
-						'2' => 'Description'
+						'1' => 'Метод',
+						'2' => 'Описание'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => 'Marketing traditionnel',
-								'2' => 'Utilisation de canaux de communication traditionnels tels que la publicité à la télévision, à la radio, dans les journaux, les magazines, les affiches, etc. pour atteindre le public cible.'
+								'1' => 'Традиционный маркетинг',
+								'2' => 'Использование традиционных каналов коммуникации, таких как реклама на телевидении, радио, в газетах, журналах, на плакатах и ​​т. д. достичь целевой аудитории.'
 							)
 						),
 						'2' => array(
 							'tr' => array(
-								'1' => 'Marketing digital',
-								'2' => 'Utilisation des canaux en ligne tels que les sites web, les médias sociaux, le marketing par e-mail, le référencement, la publicité en ligne, etc. pour promouvoir des produits ou services et atteindre une audience plus large.'
+								'1' => 'Цифровой маркетинг',
+								'2' => 'Использование онлайн-каналов, таких как веб-сайты, социальные сети, электронный маркетинг, SEO, онлайн-реклама и т. д. для продвижения товаров или услуг и охвата более широкой аудитории.'
 							)
 						),
 						'3' => array(
 							'tr' => array(
-								'1' => 'Marketing de contenu',
-								'2' => 'Création et diffusion de contenu pertinent et de qualité, tels que des articles de blog, des vidéos, des infographies, des livres blancs, etc. pour attirer et engager un public cible, renforcer la crédibilité de la marque et générer des leads qualifiés.'
+								'1' => 'Контент-маркетинг',
+								'2' => 'Создание и распространение релевантного и качественного контента, такого как сообщения в блогах, видео, инфографика, официальные документы и т. д. для привлечения и вовлечения целевой аудитории, укрепления доверия к бренду и получения квалифицированных лидов.'
 							)
 						),
 						'4' => array(
 							'tr' => array(
-								'1' => 'Marketing des médias sociaux',
-								'2' => 'Utilisation des plateformes de médias sociaux telles que Facebook, Twitter, Instagram, LinkedIn, etc. pour interagir avec le public cible, promouvoir la marque, partager du contenu et générer de l\'engagement.'
+								'1' => 'Маркетинг в социальных сетях',
+								'2' => 'Использование социальных сетей, таких как Facebook, Twitter, Instagram, LinkedIn и т. д. для взаимодействия с целевой аудиторией, продвижения бренда, обмена контентом и вовлечения.'
 							)
 						),
 						'5' => array(
 							'tr' => array(
-								'1' => 'Marketing d\'influence',
-								'2' => 'Collaboration avec des influenceurs ou des personnalités connues pour promouvoir des produits ou services auprès de leur audience et bénéficier de leur crédibilité et de leur pouvoir de persuasion.'
+								'1' => "Маркетинг влияния",
+								'2' => 'Сотрудничество с влиятельными лицами или известными личностями для продвижения продуктов или услуг среди их аудитории и получения выгоды от их авторитета и силы убеждения.'
 							)
 						),
 						'6' => array(
 							'tr' => array(
-								'1' => 'Marketing par e-mail',
-								'2' => 'Utilisation de campagnes d\'e-mails ciblées et personnalisées pour communiquer avec les clients potentiels et existants, leur fournir des informations pertinentes, des offres spéciales et les inciter à agir.'
+								'1' => 'Электронный маркетинг',
+								'2' => 'Используйте целевые и персонализированные кампании по электронной почте, чтобы общаться с потенциальными и существующими клиентами, предоставлять им актуальную информацию, специальные предложения и вдохновлять их на действия.'
 							)
 						),
 						'7' => array(
 							'tr' => array(
-								'1' => 'Marketing viral',
-								'2' => 'Création de contenu attrayant et partageable qui se propage rapidement sur Internet grâce aux partages des utilisateurs, permettant ainsi une exposition massive de la marque ou du produit sans investissement publicitaire important.'
+								'1' => "Вирусный маркетинг",
+								'2' => 'Создание привлекательного контента, которым можно поделиться, который быстро распространяется в Интернете посредством репостов пользователей, что позволяет массово представить бренд или продукт без значительных затрат на рекламу.'
 							)
 						),
 						'8' => array(
 							'tr' => array(
-								'1' => 'Marketing expérientiel',
-								'2' => 'Création d\'expériences uniques et mémorables pour les clients, en utilisant des événements, des démonstrations de produits, des échantillons gratuits, etc. pour susciter leur engagement émotionnel et favoriser la fidélisation.'
+								'1' => 'Экспериментальный маркетинг',
+								'2' => 'Создание уникальных и запоминающихся впечатлений для клиентов, использование мероприятий, демонстраций продуктов, бесплатных образцов и т. д. чтобы вызвать эмоциональную вовлеченность и укрепить лояльность.'
 							)
 						)
 					)

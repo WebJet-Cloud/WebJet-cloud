@@ -29,90 +29,90 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => 'Méthode',
+						'1' => 'Method',
 						'2' => 'Description',
-						'3' => 'Avantage',
-						'4' => 'Limitation'
+						'3' => 'Advantage',
+						'4' => 'Limit'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => 'Pare-feu',
-								'2' => 'Un pare-feu est un système de sécurité réseau qui contrôle et filtre le trafic entrant et sortant.',
-								'3' => 'Bloque les connexions non autorisées. Protège contre les attaques par déni de service (DDoS).',
-								'4' => 'Peut être contourné par des attaques de type "par-dessus" (overpassing). Nécessite une configuration et une maintenance régulières.'
+								'1' => 'Firewall',
+								'2' => 'A firewall is a network security system that controls and filters incoming and outgoing traffic.',
+								'3' => 'Block unauthorized connections. Protects against Denial of Service (DDoS) attacks.',
+								'4' => 'Can be bypassed by overpassing attacks. Requires regular setup and maintenance.'
 							)
 						),
 						'2' => array(
 							'tr' => array(
 								'1' => 'Antivirus',
-								'2' => 'Les logiciels antivirus détectent, bloquent et suppriment les logiciels malveillants tels que les virus, les vers et les chevaux de Troie.',
-								'3' => 'Identifie et élimine les menaces connues. Protège contre les fichiers infectés.',
-								'4' => 'Peut avoir des taux de détection moins élevés pour les nouvelles menaces. Peut causer des ralentissements du système lors de l\'analyse en temps réel.'
+								'2' => 'Antivirus software detects, blocks, and removes malicious software such as viruses, worms, and Trojans.',
+								'3' => 'Identify and remove known threats. Protects against infected files.',
+								'4' => 'May have lower detection rates for new threats. May cause system slowdowns during real-time scanning.'
 							)
 						),
 						'3' => array(
 							'tr' => array(
-								'1' => 'Authentification à deux facteurs (2FA)',
-								'2' => 'L\'authentification à deux facteurs exige une deuxième forme de vérification, en plus du mot de passe, telle qu\'un code envoyé par SMS ou une application d\'authentification.',
-								'3' => 'Renforce la sécurité des comptes en ligne. Protège contre les attaques de phishing.',
-								'4' => 'Peut nécessiter un effort supplémentaire de la part des utilisateurs. Peut y avoir des problèmes de compatibilité avec certains systèmes.'
+								'1' => 'Two-factor authentication (2FA)',
+								'2' => 'Two-factor authentication requires a second form of verification, in addition to the password, such as a code sent by SMS or an authenticator app.',
+								'3' => 'Reinforce the security of online accounts. Protects against phishing attacks.',
+								'4' => 'May require additional effort from users. May have compatibility issues with some systems.'
 							)
 						),
 						'4' => array(
 							'tr' => array(
-								'1' => 'Cryptage des données',
-								'2' => 'Le cryptage des données convertit les informations en un format illisible, à moins d\'avoir une clé de décryptage.',
-								'3' => 'Protège les données sensibles en cas de vol ou d\'accès non autorisé. Conforme aux réglementations en matière de protection des données.',
-								'4' => 'Peut entraîner une légère augmentation de la latence lors de l\'accès aux données cryptées. La perte de la clé de décryptage peut entraîner une perte permanente des données.'
+								'1' => 'Datenverschlüsselung',
+								'2' => 'Datenverschlüsselung wandelt Informationen in ein unlesbares Format um, es sei denn, Sie haben einen Entschlüsselungsschlüssel.',
+								'3' => 'Sensible Daten vor Diebstahl oder unbefugtem Zugriff schützen. Entspricht den Datenschutzbestimmungen.',
+								'4' => 'Kann zu einer leichten Erhöhung der Latenz beim Zugriff auf verschlüsselte Daten führen. Der Verlust des Entschlüsselungsschlüssels kann zu einem dauerhaften Datenverlust führen.'
 							)
 						),
 						'5' => array(
 							'tr' => array(
-								'1' => 'Formation à la sensibilisation à la sécurité',
-								'2' => 'La formation à la sensibilisation à la sécurité vise à éduquer les utilisateurs sur les meilleures pratiques en matière de cybersécurité, telles que l\'identification des e-mails de phishing et la gestion des mots de passe.',
-								'3' => 'Réduit les risques d\'erreurs humaines. Améliore la posture globale de sécurité de l\'organisation.',
-								'4' => 'Nécessite des mises à jour régulières pour suivre les nouvelles menaces. Peut y avoir une résistance initiale au changement de comportement des utilisateurs.'
+								'1' => 'Security Awareness Training',
+								'2' => 'Security awareness training aims to educate users on cybersecurity best practices, such as identifying phishing emails and managing passwords.',
+								'3' => 'Reduces the risk of human error. Improves the overall security posture of the organization.',
+								'4' => 'Requires regular updates to keep up with new threats. May be initial resistance to changing user behavior.'
 							)
 						),
 						'6' => array(
 							'tr' => array(
-								'1' => 'Gestion des correctifs',
-								'2' => 'La gestion des correctifs consiste à appliquer régulièrement les mises à jour de sécurité et les correctifs logiciels pour combler les vulnérabilités connues.',
-								'3' => 'Réduit les risques d\'exploitation des failles de sécurité connues. Protège contre les attaques basées sur des vulnérabilités logicielles connues.',
-								'4' => 'Nécessite une maintenance régulière pour appliquer les correctifs. Les correctifs peuvent entraîner des incompatibilités logicielles.'
+								'1' => 'Patch management',
+								'2' => 'Patch management is the regular application of security updates and software patches to address known vulnerabilities.',
+								'3' => 'Reduces the risk of exploiting known security vulnerabilities. Protects against attacks based on known software vulnerabilities.',
+								'4' => 'Requires regular maintenance to apply patches. Patches may cause software incompatibilities.'
 							)
 						),
 						'7' => array(
 							'tr' => array(
-								'1' => 'Surveillance du réseau',
-								'2' => 'La surveillance du réseau consiste à analyser en temps réel le trafic réseau afin de détecter les activités suspectes ou malveillantes.',
-								'3' => 'Identifie les comportements anormaux ou les attaques en cours. Permet une réponse rapide aux incidents de sécurité.',
-								'4' => 'Peut générer un grand volume de données à analyser. Nécessite des ressources de surveillance dédiées.'
+								'1' => 'Network monitoring',
+								'2' => 'Network monitoring is the real-time analysis of network traffic to detect suspicious or malicious activity.',
+								'3' => 'Identifies abnormal behavior or ongoing attacks. Enables rapid response to security incidents.',
+								'4' => 'Can generate a large volume of data to analyze. Requires dedicated monitoring resources.'
 							)
 						),
 						'8' => array(
 							'tr' => array(
-								'1' => 'Protection contre les logiciels malveillants',
-								'2' => 'Les solutions de protection contre les logiciels malveillants utilisent des techniques telles que l\'analyse comportementale et la détection des signatures pour identifier et bloquer les logiciels malveillants.',
-								'3' => 'Protège contre les virus, les vers, les chevaux de Troie et autres malwares. Peut fournir une défense en temps réel contre les nouvelles menaces.',
-								'4' => 'Peut entraîner des faux positifs ou des faux négatifs. Nécessite des mises à jour régulières des définitions de logiciels malveillants.'
+								'1' => 'Malware Protection',
+								'2' => 'Malware protection solutions use techniques such as behavioral analysis and signature detection to identify and block malware.',
+								'3' => 'Protects against viruses, worms, Trojan horses and other malware. Can provide real-time defense against new threats.',
+								'4' => 'May result in false positives or false negatives. Requires regular malware definition updates.'
 							)
 						),
 						'9' => array(
 							'tr' => array(
-								'1' => 'Sécurité des e-mails',
-								'2' => 'Les solutions de sécurité des e-mails utilisent des filtres et des analyses pour bloquer les e-mails de phishing, les attaques de hameçonnage et les fichiers malveillants attachés.',
-								'3' => 'Protège contre les attaques basées sur les e-mails. Réduit les risques de compromission des comptes via des liens ou des pièces jointes malveillants.',
-								'4' => 'Peut entraîner des faux positifs, bloquant parfois des e-mails légitimes. Les techniques d\'ingénierie sociale sophistiquées peuvent contourner les filtres.'
+								'1' => 'Email Security',
+								'2' => 'Email security solutions use filters and scans to block phishing emails, phishing attacks and malicious file attachments.',
+								'3' => 'Protects against email-based attacks. Reduces the risk of account compromise via malicious links or attachments.',
+								'4' => 'May cause false positives, sometimes blocking legitimate emails. Sophisticated social engineering techniques can circumvent filters.'
 							)
 						),
 						'10' => array(
 							'tr' => array(
-								'1' => 'Gestion des accès',
-								'2' => 'La gestion des accès vise à contrôler et à limiter les droits d\'accès aux systèmes et aux données, en accordant uniquement les autorisations nécessaires à chaque utilisateur.',
-								'3' => 'Réduit les risques d\'accès non autorisés aux données sensibles. - Permet une traçabilité des actions des utilisateurs.',
-								'4' => 'Nécessite une gestion rigoureuse des droits d\'accès pour éviter les erreurs de configuration. - Les attaques par usurpation d\'identité peuvent contourner les contrôles d\'accès.'
+								'1' => 'Access management',
+								'2' => 'Access management aims to control and limit access rights to systems and data, granting only the necessary permissions to each user.',
+								'3' => 'Reduces the risk of unauthorized access to sensitive data. - Allows traceability of user actions.',
+								'4' => 'Requires strict management of access rights to avoid configuration errors. - Spoofing attacks can bypass access controls.'
 							)
 						)
 					)
@@ -148,56 +148,56 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => 'Méthode',
+						'1' => 'Method',
 						'2' => 'Description'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => 'Marketing traditionnel',
-								'2' => 'Utilisation de canaux de communication traditionnels tels que la publicité à la télévision, à la radio, dans les journaux, les magazines, les affiches, etc. pour atteindre le public cible.'
+								'1' => 'Traditional marketing',
+								'2' => 'Use of traditional communication channels such as advertising on television, radio, newspapers, magazines, posters, etc. to reach the target audience.'
 							)
 						),
 						'2' => array(
 							'tr' => array(
-								'1' => 'Marketing digital',
-								'2' => 'Utilisation des canaux en ligne tels que les sites web, les médias sociaux, le marketing par e-mail, le référencement, la publicité en ligne, etc. pour promouvoir des produits ou services et atteindre une audience plus large.'
+								'1' => 'Digital Marketing',
+								'2' => 'Use of online channels such as websites, social media, email marketing, SEO, online advertising, etc. to promote products or services and reach a wider audience.'
 							)
 						),
 						'3' => array(
 							'tr' => array(
-								'1' => 'Marketing de contenu',
-								'2' => 'Création et diffusion de contenu pertinent et de qualité, tels que des articles de blog, des vidéos, des infographies, des livres blancs, etc. pour attirer et engager un public cible, renforcer la crédibilité de la marque et générer des leads qualifiés.'
+								'1' => 'Content Marketing',
+								'2' => 'Creation and dissemination of relevant and quality content, such as blog posts, videos, infographics, white papers, etc. to attract and engage a target audience, build brand credibility and generate qualified leads.'
 							)
 						),
 						'4' => array(
 							'tr' => array(
-								'1' => 'Marketing des médias sociaux',
-								'2' => 'Utilisation des plateformes de médias sociaux telles que Facebook, Twitter, Instagram, LinkedIn, etc. pour interagir avec le public cible, promouvoir la marque, partager du contenu et générer de l\'engagement.'
+								'1' => 'Social Media Marketing',
+								'2' => 'Use of social media platforms such as Facebook, Twitter, Instagram, LinkedIn, etc. to interact with the target audience, promote the brand, share content and generate engagement.'
 							)
 						),
 						'5' => array(
 							'tr' => array(
-								'1' => 'Marketing d\'influence',
-								'2' => 'Collaboration avec des influenceurs ou des personnalités connues pour promouvoir des produits ou services auprès de leur audience et bénéficier de leur crédibilité et de leur pouvoir de persuasion.'
+								'1' => 'Influencer Marketing',
+								'2' => 'Collaboration with influencers or well-known personalities to promote products or services to their audience and benefit from their credibility and their power of persuasion.'
 							)
 						),
 						'6' => array(
 							'tr' => array(
-								'1' => 'Marketing par e-mail',
-								'2' => 'Utilisation de campagnes d\'e-mails ciblées et personnalisées pour communiquer avec les clients potentiels et existants, leur fournir des informations pertinentes, des offres spéciales et les inciter à agir.'
+								'1' => 'Email Marketing',
+								'2' => 'Use targeted and personalized email campaigns to communicate with potential and existing customers, provide them with relevant information, special offers and inspire them to take action.'
 							)
 						),
 						'7' => array(
 							'tr' => array(
-								'1' => 'Marketing viral',
-								'2' => 'Création de contenu attrayant et partageable qui se propage rapidement sur Internet grâce aux partages des utilisateurs, permettant ainsi une exposition massive de la marque ou du produit sans investissement publicitaire important.'
+								'1' => 'Viral Marketing',
+								'2' => 'Creating engaging, shareable content that spreads quickly across the internet through user shares, allowing massive exposure of the brand or product without significant advertising investment.'
 							)
 						),
 						'8' => array(
 							'tr' => array(
-								'1' => 'Marketing expérientiel',
-								'2' => 'Création d\'expériences uniques et mémorables pour les clients, en utilisant des événements, des démonstrations de produits, des échantillons gratuits, etc. pour susciter leur engagement émotionnel et favoriser la fidélisation.'
+								'1' => 'Experiential Marketing',
+								'2' => 'Creating unique and memorable experiences for customers, using events, product demonstrations, free samples, etc. to elicit emotional engagement and foster loyalty.'
 							)
 						)
 					)

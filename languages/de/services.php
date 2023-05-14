@@ -29,90 +29,90 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => 'Méthode',
-						'2' => 'Description',
-						'3' => 'Avantage',
-						'4' => 'Limitation'
+						'1' => 'Methode',
+						'2' => 'Beschreibung',
+						'3' => 'Vorteil',
+						'4' => 'Limit'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => 'Pare-feu',
-								'2' => 'Un pare-feu est un système de sécurité réseau qui contrôle et filtre le trafic entrant et sortant.',
-								'3' => 'Bloque les connexions non autorisées. Protège contre les attaques par déni de service (DDoS).',
-								'4' => 'Peut être contourné par des attaques de type "par-dessus" (overpassing). Nécessite une configuration et une maintenance régulières.'
-							)
+								'1' => 'Firewall',
+								'2' => 'Eine Firewall ist ein Netzwerksicherheitssystem, das den ein- und ausgehenden Datenverkehr kontrolliert und filtert.',
+								'3' => 'Nicht autorisierte Verbindungen blockieren. Schützt vor Denial-of-Service-Angriffen (DDoS).',
+								'4' => 'Kann durch Überholangriffe umgangen werden. Erfordert regelmäßige Einrichtung und Wartung.'
+								)
 						),
 						'2' => array(
 							'tr' => array(
 								'1' => 'Antivirus',
-								'2' => 'Les logiciels antivirus détectent, bloquent et suppriment les logiciels malveillants tels que les virus, les vers et les chevaux de Troie.',
-								'3' => 'Identifie et élimine les menaces connues. Protège contre les fichiers infectés.',
-								'4' => 'Peut avoir des taux de détection moins élevés pour les nouvelles menaces. Peut causer des ralentissements du système lors de l\'analyse en temps réel.'
+								'2' => 'Antivirensoftware erkennt, blockiert und entfernt schädliche Software wie Viren, Würmer und Trojaner.',
+								'3' => 'Bekannte Bedrohungen identifizieren und entfernen. Schützt vor infizierten Dateien.',
+								'4' => 'Möglicherweise niedrigere Erkennungsraten für neue Bedrohungen. Kann beim Echtzeit-Scannen zu Systemverlangsamungen führen.'
 							)
 						),
 						'3' => array(
 							'tr' => array(
-								'1' => 'Authentification à deux facteurs (2FA)',
-								'2' => 'L\'authentification à deux facteurs exige une deuxième forme de vérification, en plus du mot de passe, telle qu\'un code envoyé par SMS ou une application d\'authentification.',
-								'3' => 'Renforce la sécurité des comptes en ligne. Protège contre les attaques de phishing.',
-								'4' => 'Peut nécessiter un effort supplémentaire de la part des utilisateurs. Peut y avoir des problèmes de compatibilité avec certains systèmes.'
+								'1' => 'Zwei-Faktor-Authentifizierung (2FA)',
+								'2' => 'Die Zwei-Faktor-Authentifizierung erfordert zusätzlich zum Passwort eine zweite Form der Verifizierung, z. B. einen per SMS gesendeten Code oder eine Authentifizierungs-App.',
+								'3' => 'Verstärken Sie die Sicherheit von Online-Konten. Schützt vor Phishing-Angriffen.',
+								'4' => 'Erfordert möglicherweise zusätzlichen Aufwand seitens der Benutzer. Möglicherweise gibt es Kompatibilitätsprobleme mit einigen Systemen.'
 							)
 						),
 						'4' => array(
 							'tr' => array(
-								'1' => 'Cryptage des données',
-								'2' => 'Le cryptage des données convertit les informations en un format illisible, à moins d\'avoir une clé de décryptage.',
-								'3' => 'Protège les données sensibles en cas de vol ou d\'accès non autorisé. Conforme aux réglementations en matière de protection des données.',
-								'4' => 'Peut entraîner une légère augmentation de la latence lors de l\'accès aux données cryptées. La perte de la clé de décryptage peut entraîner une perte permanente des données.'
+								'1' => 'Data encryption',
+								'2' => 'Data encryption converts information into an unreadable format unless you have a decryption key.',
+								'3' => 'Protect sensitive data from theft or unauthorized access. Complies with data protection regulations.',
+								'4' => 'May cause a slight increase in latency when accessing encrypted data. Loss of the decryption key may result in permanent data loss.'
 							)
 						),
 						'5' => array(
 							'tr' => array(
-								'1' => 'Formation à la sensibilisation à la sécurité',
-								'2' => 'La formation à la sensibilisation à la sécurité vise à éduquer les utilisateurs sur les meilleures pratiques en matière de cybersécurité, telles que l\'identification des e-mails de phishing et la gestion des mots de passe.',
-								'3' => 'Réduit les risques d\'erreurs humaines. Améliore la posture globale de sécurité de l\'organisation.',
-								'4' => 'Nécessite des mises à jour régulières pour suivre les nouvelles menaces. Peut y avoir une résistance initiale au changement de comportement des utilisateurs.'
+								'1' => 'Schulung zum Sicherheitsbewusstsein',
+								'2' => 'Sicherheitsbewusstseinsschulung zielt darauf ab, Benutzer über Best Practices im Bereich Cybersicherheit aufzuklären, wie z. B. die Identifizierung von Phishing-E-Mails und die Verwaltung von Passwörtern.',
+								'3' => 'Reduziert das Risiko menschlicher Fehler. Verbessert die allgemeine Sicherheitslage der Organisation.',
+								'4' => 'Erfordert regelmäßige Updates, um mit neuen Bedrohungen Schritt zu halten. Kann ein anfänglicher Widerstand gegen eine Änderung des Benutzerverhaltens sein.'
 							)
 						),
 						'6' => array(
 							'tr' => array(
-								'1' => 'Gestion des correctifs',
-								'2' => 'La gestion des correctifs consiste à appliquer régulièrement les mises à jour de sécurité et les correctifs logiciels pour combler les vulnérabilités connues.',
-								'3' => 'Réduit les risques d\'exploitation des failles de sécurité connues. Protège contre les attaques basées sur des vulnérabilités logicielles connues.',
-								'4' => 'Nécessite une maintenance régulière pour appliquer les correctifs. Les correctifs peuvent entraîner des incompatibilités logicielles.'
+								'1' => 'Patch-Verwaltung',
+								'2' => 'Patch-Management ist die regelmäßige Anwendung von Sicherheitsupdates und Software-Patches zur Behebung bekannter Schwachstellen.',
+								'3' => 'Reduziert das Risiko der Ausnutzung bekannter Sicherheitslücken. Schützt vor Angriffen, die auf bekannten Software-Schwachstellen basieren.',
+								'4' => 'Erfordert regelmäßige Wartung, um Patches anzuwenden. Patches können zu Software-Inkompatibilitäten führen.'
 							)
 						),
 						'7' => array(
 							'tr' => array(
-								'1' => 'Surveillance du réseau',
-								'2' => 'La surveillance du réseau consiste à analyser en temps réel le trafic réseau afin de détecter les activités suspectes ou malveillantes.',
-								'3' => 'Identifie les comportements anormaux ou les attaques en cours. Permet une réponse rapide aux incidents de sécurité.',
-								'4' => 'Peut générer un grand volume de données à analyser. Nécessite des ressources de surveillance dédiées.'
+								'1' => 'Netzwerküberwachung',
+								'2' => 'Netzwerküberwachung ist die Echtzeitanalyse des Netzwerkverkehrs, um verdächtige oder böswillige Aktivitäten zu erkennen.',
+								'3' => 'Identifiziert ungewöhnliches Verhalten oder anhaltende Angriffe. Ermöglicht eine schnelle Reaktion auf Sicherheitsvorfälle.',
+								'4' => 'Kann eine große Datenmenge zur Analyse generieren. Erfordert dedizierte Überwachungsressourcen.'
 							)
 						),
 						'8' => array(
 							'tr' => array(
-								'1' => 'Protection contre les logiciels malveillants',
-								'2' => 'Les solutions de protection contre les logiciels malveillants utilisent des techniques telles que l\'analyse comportementale et la détection des signatures pour identifier et bloquer les logiciels malveillants.',
-								'3' => 'Protège contre les virus, les vers, les chevaux de Troie et autres malwares. Peut fournir une défense en temps réel contre les nouvelles menaces.',
-								'4' => 'Peut entraîner des faux positifs ou des faux négatifs. Nécessite des mises à jour régulières des définitions de logiciels malveillants.'
+								'1' => 'Malware-Schutz',
+								'2' => 'Malware-Schutzlösungen nutzen Techniken wie Verhaltensanalyse und Signaturerkennung, um Malware zu identifizieren und zu blockieren.',
+								'3' => 'Schützt vor Viren, Würmern, Trojanern und anderer Malware. Kann Echtzeit-Verteidigung gegen neue Bedrohungen bieten.',
+								'4' => 'Kann zu falsch-positiven oder falsch-negativen Ergebnissen führen. Erfordert regelmäßige Updates der Malware-Definition.'
 							)
 						),
 						'9' => array(
 							'tr' => array(
-								'1' => 'Sécurité des e-mails',
-								'2' => 'Les solutions de sécurité des e-mails utilisent des filtres et des analyses pour bloquer les e-mails de phishing, les attaques de hameçonnage et les fichiers malveillants attachés.',
-								'3' => 'Protège contre les attaques basées sur les e-mails. Réduit les risques de compromission des comptes via des liens ou des pièces jointes malveillants.',
-								'4' => 'Peut entraîner des faux positifs, bloquant parfois des e-mails légitimes. Les techniques d\'ingénierie sociale sophistiquées peuvent contourner les filtres.'
+								'1' => 'E-Mail-Sicherheit',
+								'2' => 'E-Mail-Sicherheitslösungen verwenden Filter und Scans, um Phishing-E-Mails, Phishing-Angriffe und bösartige Dateianhänge zu blockieren.',
+								'3' => 'Schützt vor E-Mail-basierten Angriffen. Reduziert das Risiko einer Kontokompromittierung durch bösartige Links oder Anhänge.',
+								'4' => 'Kann zu Fehlalarmen führen und manchmal legitime E-Mails blockieren. Ausgeklügelte Social-Engineering-Techniken können Filter umgehen.'
 							)
 						),
 						'10' => array(
 							'tr' => array(
-								'1' => 'Gestion des accès',
-								'2' => 'La gestion des accès vise à contrôler et à limiter les droits d\'accès aux systèmes et aux données, en accordant uniquement les autorisations nécessaires à chaque utilisateur.',
-								'3' => 'Réduit les risques d\'accès non autorisés aux données sensibles. - Permet une traçabilité des actions des utilisateurs.',
-								'4' => 'Nécessite une gestion rigoureuse des droits d\'accès pour éviter les erreurs de configuration. - Les attaques par usurpation d\'identité peuvent contourner les contrôles d\'accès.'
+								'1' => 'Zugriffsverwaltung',
+								'2' => 'Zugriffsverwaltung zielt darauf ab, Zugriffsrechte auf Systeme und Daten zu kontrollieren und einzuschränken und jedem Benutzer nur die erforderlichen Berechtigungen zu gewähren.',
+								'3' => 'Reduziert das Risiko eines unbefugten Zugriffs auf sensible Daten. - Ermöglicht die Rückverfolgbarkeit von Benutzeraktionen.',
+								'4' => 'Erfordert eine strikte Verwaltung der Zugriffsrechte, um Konfigurationsfehler zu vermeiden. „Spoofing-Angriffe können Zugangskontrollen umgehen.'
 							)
 						)
 					)
@@ -148,56 +148,56 @@ $services = array(
 				'description' => '',
 				'table' => array(
 					'head' => array(
-						'1' => 'Méthode',
-						'2' => 'Description'
+						'1' => 'Methode',
+						'2' => 'Beschreibung'
 					),
 					'body' => array(
 						'1' => array(
 							'tr' => array(
-								'1' => 'Marketing traditionnel',
-								'2' => 'Utilisation de canaux de communication traditionnels tels que la publicité à la télévision, à la radio, dans les journaux, les magazines, les affiches, etc. pour atteindre le public cible.'
+								'1' => 'Traditionelles Marketing',
+								'2' => 'Nutzung traditioneller Kommunikationskanäle wie Werbung im Fernsehen, Radio, Zeitungen, Zeitschriften, Plakaten usw. um die Zielgruppe zu erreichen.'
 							)
 						),
 						'2' => array(
 							'tr' => array(
-								'1' => 'Marketing digital',
-								'2' => 'Utilisation des canaux en ligne tels que les sites web, les médias sociaux, le marketing par e-mail, le référencement, la publicité en ligne, etc. pour promouvoir des produits ou services et atteindre une audience plus large.'
+								'1' => 'Digitales Marketing',
+								'2' => 'Nutzung von Online-Kanälen wie Websites, Social Media, E-Mail-Marketing, SEO, Online-Werbung usw. um Produkte oder Dienstleistungen zu bewerben und ein breiteres Publikum zu erreichen.'
 							)
 						),
 						'3' => array(
 							'tr' => array(
-								'1' => 'Marketing de contenu',
-								'2' => 'Création et diffusion de contenu pertinent et de qualité, tels que des articles de blog, des vidéos, des infographies, des livres blancs, etc. pour attirer et engager un public cible, renforcer la crédibilité de la marque et générer des leads qualifiés.'
+								'1' => 'Content-Marketing',
+								'2' => 'Erstellung und Verbreitung relevanter und hochwertiger Inhalte, wie Blogbeiträge, Videos, Infografiken, Whitepapers usw. eine Zielgruppe anzuziehen und zu binden, die Glaubwürdigkeit der Marke aufzubauen und qualifizierte Leads zu generieren.'
 							)
 						),
 						'4' => array(
 							'tr' => array(
-								'1' => 'Marketing des médias sociaux',
-								'2' => 'Utilisation des plateformes de médias sociaux telles que Facebook, Twitter, Instagram, LinkedIn, etc. pour interagir avec le public cible, promouvoir la marque, partager du contenu et générer de l\'engagement.'
+								'1' => 'Social Media Marketing',
+								'2' => 'Nutzung von Social-Media-Plattformen wie Facebook, Twitter, Instagram, LinkedIn usw. um mit der Zielgruppe zu interagieren, die Marke zu bewerben, Inhalte zu teilen und Engagement zu generieren.'
 							)
 						),
 						'5' => array(
 							'tr' => array(
-								'1' => 'Marketing d\'influence',
-								'2' => 'Collaboration avec des influenceurs ou des personnalités connues pour promouvoir des produits ou services auprès de leur audience et bénéficier de leur crédibilité et de leur pouvoir de persuasion.'
+								'1' => 'Influencer-Marketing',
+								'2' => 'Zusammenarbeit mit Influencern oder bekannten Persönlichkeiten, um Produkte oder Dienstleistungen bei ihrem Publikum zu bewerben und von deren Glaubwürdigkeit und Überzeugungskraft zu profitieren.'
 							)
 						),
 						'6' => array(
 							'tr' => array(
-								'1' => 'Marketing par e-mail',
-								'2' => 'Utilisation de campagnes d\'e-mails ciblées et personnalisées pour communiquer avec les clients potentiels et existants, leur fournir des informations pertinentes, des offres spéciales et les inciter à agir.'
+								'1' => 'E-Mail-Marketing',
+								'2' => 'Mit gezielten und personalisierten E-Mail-Kampagnen mit potenziellen und bestehenden Kunden kommunizieren, sie mit relevanten Informationen und Sonderangeboten versorgen und zum Handeln anregen.'
 							)
 						),
 						'7' => array(
 							'tr' => array(
-								'1' => 'Marketing viral',
-								'2' => 'Création de contenu attrayant et partageable qui se propage rapidement sur Internet grâce aux partages des utilisateurs, permettant ainsi une exposition massive de la marque ou du produit sans investissement publicitaire important.'
+								'1' => 'Virales Marketing',
+								'2' => 'Erstellen ansprechender, teilbarer Inhalte, die sich durch Benutzerfreigaben schnell im Internet verbreiten und eine massive Bekanntheit der Marke oder des Produkts ohne nennenswerte Werbeinvestitionen ermöglichen.'
 							)
 						),
 						'8' => array(
 							'tr' => array(
-								'1' => 'Marketing expérientiel',
-								'2' => 'Création d\'expériences uniques et mémorables pour les clients, en utilisant des événements, des démonstrations de produits, des échantillons gratuits, etc. pour susciter leur engagement émotionnel et favoriser la fidélisation.'
+								'1' => 'Erlebnismarketing',
+								'2' => 'Einzigartige und unvergessliche Erlebnisse für Kunden schaffen, indem Veranstaltungen, Produktvorführungen, kostenlose Muster usw. genutzt werden. um emotionales Engagement hervorzurufen und Loyalität zu fördern.'
 							)
 						)
 					)
