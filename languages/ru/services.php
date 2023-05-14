@@ -330,7 +330,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => '',
+			'images' => 'services/webmaster/site-vitrine.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
@@ -539,7 +539,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => '',
+			'images' => 'services/seo/local-business.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
@@ -647,7 +647,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => '',
+			'images' => 'services/consultant/Consultant-management.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     )
