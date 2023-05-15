@@ -34,6 +34,19 @@ $images = array(
 		),
 		/*Manager Images */
 		'services' => array(
+			'marketing' => array(
+				'1' => 'services/marketing/cpm.jpg',
+				'2' => 'services/marketing/cpa.png',
+				'3' => 'services/marketing/cpl.jpg',
+				'4' => 'services/marketing/cpc.jpg',
+				'5' => 'services/marketing/ctr.jpg',
+				'6' => 'services/marketing/cpv.png',
+				'7' => 'services/marketing/cpi.jpg',
+				'8' => 'services/marketing/roi.jpg',
+				'9' => 'services/marketing/ppc.jpg',
+				'10' => 'services/marketing/kpi.png',
+				'page' => 'services/marketing/marketing.png'
+			),
 			'developper' => array(
 				'1' => 'services/developper/developper.jpg',
 				'2' => 'services/developper/dev-framework.png',

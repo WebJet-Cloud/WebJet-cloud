@@ -91,6 +91,248 @@
 </div>
         
 
+
+    
+    
+<!-- secteur 1 -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+                    <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['marketing']['content']['secteur']['1']['h5']; ?></h5>
+                    <h1 class="mb-0"><?php echo $services['marketing']['content']['secteur']['1']['h1']; ?></h1>
+                </div>
+                <p class="mb-4"></p>
+                <?php echo $services['marketing']['content']['secteur']['1']['text']; ?>
+            </div>
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['marketing']['1']; ?>" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+ 
+    
+<!-- secteur 2 -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['marketing']['2']; ?>" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+                    <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['marketing']['content']['secteur']['2']['h5']; ?></h5>
+                    <h1 class="mb-0"><?php echo $services['marketing']['content']['secteur']['2']['h1']; ?></h1>
+                </div>
+                <p class="mb-4"></p>
+                <?php echo $services['marketing']['content']['secteur']['2']['text']; ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+    
+<!-- secteur 3 -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+
+                    <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['marketing']['content']['secteur']['3']['h5']; ?></h5>
+                    <h1 class="mb-0"><?php echo $services['marketing']['content']['secteur']['3']['h1']; ?></h1>
+                </div>
+                <p class="mb-4"></p>
+                <?php echo $services['marketing']['content']['secteur']['3']['text']; ?>
+            </div>
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['marketing']['3']; ?>" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+    
+<!-- secteur 4 -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['marketing']['4']; ?>" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+
+                 <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['marketing']['content']['secteur']['4']['h5']; ?></h5>
+                    <h1 class="mb-0"><?php echo $services['marketing']['content']['secteur']['4']['h1']; ?></h1>
+                </div>
+                <p class="mb-4"></p>
+                <?php echo $services['marketing']['content']['secteur']['4']['text']; ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+    
+<!-- secteur 5 -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+
+                    <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['marketing']['content']['secteur']['5']['h5']; ?></h5>
+                    <h1 class="mb-0"><?php echo $services['marketing']['content']['secteur']['5']['h1']; ?></h1>
+                </div>
+                <p class="mb-4"></p>
+                <?php echo $services['marketing']['content']['secteur']['5']['text']; ?>
+            </div>
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['marketing']['5']; ?>" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+<!-- secteur 4 -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['marketing']['6']; ?>" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+
+                 <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['marketing']['content']['secteur']['6']['h5']; ?></h5>
+                    <h1 class="mb-0"><?php echo $services['marketing']['content']['secteur']['6']['h1']; ?></h1>
+                </div>
+                <p class="mb-4"></p>
+                <?php echo $services['marketing']['content']['secteur']['6']['text']; ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+    
+<!-- secteur 5 -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+
+                    <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['marketing']['content']['secteur']['7']['h5']; ?></h5>
+                    <h1 class="mb-0"><?php echo $services['marketing']['content']['secteur']['7']['h1']; ?></h1>
+                </div>
+                <p class="mb-4"></p>
+                <?php echo $services['marketing']['content']['secteur']['7']['text']; ?>
+            </div>
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['marketing']['7']; ?>" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<!-- secteur 4 -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['marketing']['8']; ?>" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+
+                 <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['marketing']['content']['secteur']['8']['h5']; ?></h5>
+                    <h1 class="mb-0"><?php echo $services['marketing']['content']['secteur']['8']['h1']; ?></h1>
+                </div>
+                <p class="mb-4"></p>
+                <?php echo $services['marketing']['content']['secteur']['8']['text']; ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+    
+<!-- secteur 4 -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['marketing']['9']; ?>" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+
+                 <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['marketing']['content']['secteur']['9']['h5']; ?></h5>
+                    <h1 class="mb-0"><?php echo $services['marketing']['content']['secteur']['9']['h1']; ?></h1>
+                </div>
+                <p class="mb-4"></p>
+                <?php echo $services['marketing']['content']['secteur']['9']['text']; ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+    
+<!-- secteur 5 -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+
+                    <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['marketing']['content']['secteur']['10']['h5']; ?></h5>
+                    <h1 class="mb-0"><?php echo $services['marketing']['content']['secteur']['10']['h1']; ?></h1>
+                </div>
+                <p class="mb-4"></p>
+                <?php echo $services['marketing']['content']['secteur']['10']['text']; ?>
+            </div>
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['marketing']['10']; ?>" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
     <!-- Service Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -145,7 +387,7 @@
                         </div>
                         <h4 class="mb-3"><?php echo $general['index']['content']['services']['blocks']['4']['title']; ?></h4>
                         <p class="m-0"><?php echo $general['index']['content']['services']['blocks']['4']['description']; ?></p>
-                        <a class="btn btn-lg btn-primary rounded" href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['developper']['url']['default']; ?>">
+                        <a class="btn btn-lg btn-primary rounded" href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['marketing']['url']['default']; ?>">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                         

@@ -207,10 +207,62 @@ $services = array(
 				'title' => 'Ma Formation et mon parcours professionnel',
 				'description' => '',
 				'text' => 'En tant qu\'autodidacte en marketing, vous avez pris l\'initiative d\'apprendre et de développer vos connaissances dans ce domaine essentiel. Vous avez probablement étudié divers sujets tels que les bases du marketing, la psychologie du consommateur, les stratégies de segmentation de marché, le marketing numérique, le marketing de contenu, le marketing des médias sociaux, le marketing par e-mail, le référencement, etc. Vous avez également acquis une compréhension des outils et des plateformes utilisés dans le marketing moderne. Grâce à votre volonté d\'apprendre et à votre recherche autonome, vous avez développé des compétences précieuses pour promouvoir efficacement des produits ou services, atteindre un public cible et créer des campagnes marketing impactantes.'
+			),
+			'secteur' => array(
+				'1' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CPM',
+					'text' => 'Le marketing d\'un CPM (Coût Pour Mille) vise à promouvoir les avantages et les opportunités qu\'offre cette méthode publicitaire aux futurs clients. En mettant l\'accent sur la rentabilité, il met en avant le fait que les annonceurs ne paient que pour mille impressions (affichages) de leurs publicités, ce qui permet un meilleur contrôle des coûts et une utilisation plus efficace du budget publicitaire. Il met également en évidence la portée étendue de cette approche, permettant aux annonceurs d\'atteindre un large public tout en bénéficiant d\'une tarification transparente basée sur les impressions réelles. En soulignant la précision du ciblage et les avantages de la personnalisation possible des publicités, le marketing d\'un CPM met en confiance les futurs clients en démontrant les résultats probants que cette méthode peut apporter à leurs campagnes publicitaires.'
+				),
+				'2' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CPA',
+					'text' => 'Le marketing d\'un CPA (Coût Par Action) vise à présenter les avantages de cette méthode publicitaire aux futurs clients. Il met l\'accent sur le fait que les annonceurs ne paient que lorsque les utilisateurs effectuent une action spécifique prédéfinie, telle qu\'un achat, une inscription ou un téléchargement, ce qui permet une meilleure maîtrise du retour sur investissement. En mettant en avant la mesure précise des résultats, le marketing d\'un CPA rassure les futurs clients en leur fournissant des données tangibles sur les performances de leurs campagnes publicitaires. Il souligne également la capacité à cibler spécifiquement les utilisateurs les plus susceptibles d\'effectuer l\'action souhaitée, ce qui améliore l\'efficacité de la publicité et réduit les dépenses inutiles. En résumé, le marketing d\'un CPA met en valeur la performance, la rentabilité et la précision du ciblage de cette méthode publicitaire, offrant ainsi aux futurs clients la confiance nécessaire pour investir dans des campagnes publicitaires plus efficaces.'
+				),
+				'3' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CPL',
+					'text' => 'Le marketing d\'un CPL (Coût Par Lead) vise à mettre en avant les avantages de cette méthode publicitaire pour les futurs clients. Il met l\'accent sur le fait que les annonceurs ne paient que pour les leads (contacts qualifiés) générés par leurs campagnes, ce qui permet un contrôle précis des dépenses marketing. En mettant en avant la qualité des leads obtenus, le marketing d\'un CPL rassure les futurs clients en leur assurant que leur budget publicitaire est consacré à des prospects réellement intéressés par leurs produits ou services. Il souligne également la possibilité de personnaliser les campagnes pour atteindre des segments de marché spécifiques, ce qui améliore la pertinence des messages et augmente les chances de conversion. En résumé, le marketing d\'un CPL met en valeur l\'efficacité, la rentabilité et la qualité des leads obtenus, offrant aux futurs clients la confiance nécessaire pour investir dans des campagnes publicitaires orientées vers la génération de prospects qualifiés.'
+				),
+				'4' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CPC',
+					'text' => 'Le marketing d\'un CPC (Coût Par Clic) vise à mettre en évidence les avantages de cette méthode publicitaire pour les futurs clients. Il met l\'accent sur le fait que les annonceurs ne paient que lorsque les utilisateurs cliquent réellement sur leurs annonces, ce qui garantit une utilisation efficace du budget publicitaire en ne facturant que les interactions concrètes. En mettant en avant la capacité à mesurer précisément le nombre de clics et à analyser les performances, le marketing d\'un CPC offre aux futurs clients une visibilité claire sur le retour sur investissement de leurs campagnes publicitaires. Il souligne également la possibilité d\'optimiser les annonces en fonction des performances, en ajustant les mots-clés, les cibles et les messages pour maximiser la pertinence et les résultats. En résumé, le marketing d\'un CPC met en valeur la transparence, la maîtrise des coûts et la possibilité d\'ajuster les campagnes en temps réel, offrant ainsi aux futurs clients un moyen efficace de promouvoir leurs produits ou services tout en contrôlant leurs dépenses publicitaires.'
+				),
+				'5' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CTR',
+					'text' => 'Le marketing d\'un CTR (taux de clics) vise à mettre en avant les avantages de cette mesure pour les futurs clients. Il met l\'accent sur le fait que le CTR permet de mesurer l\'efficacité des annonces en indiquant le pourcentage d\'utilisateurs qui ont cliqué sur une publicité par rapport au nombre total d\'impressions. En soulignant l\'importance d\'un CTR élevé, le marketing d\'un CTR met en avant la pertinence et l\'attrait des annonces, en offrant aux futurs clients un moyen de juger de l\'efficacité de leurs campagnes publicitaires. Il souligne également la possibilité d\'optimiser les annonces en fonction du CTR, en ajustant les éléments visuels, les messages et les ciblages pour améliorer l\'engagement et générer davantage de clics. En résumé, le marketing d\'un CTR met en valeur la mesure de l\'efficacité publicitaire, offrant aux futurs clients des informations précieuses pour évaluer et améliorer leurs campagnes, en vue d\'obtenir des résultats plus probants et d\'optimiser leur retour sur investissement publicitaire.'
+				),
+				'6' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CPV',
+					'text' => 'Le marketing d\'un CPV (Coût Par Vue) vise à mettre en avant les avantages de cette méthode publicitaire pour les futurs clients. Il met l\'accent sur le fait que les annonceurs ne paient que lorsque leurs annonces sont réellement vues par les utilisateurs, ce qui garantit une utilisation efficace du budget publicitaire en ne facturant que les impressions visibles. En mettant en avant la possibilité de maximiser la visibilité de la marque, le marketing d\'un CPV souligne la capacité à atteindre un large public et à générer une exposition significative. Il souligne également la possibilité de cibler spécifiquement les utilisateurs les plus susceptibles d\'être intéressés par les annonces, ce qui améliore la pertinence et l\'impact de la publicité. En résumé, le marketing d\'un CPV met en valeur la garantie de visibilité, la maîtrise des coûts et la capacité à toucher un public ciblé, offrant aux futurs clients un moyen efficace de promouvoir leur marque et d\'obtenir une exposition accrue de leurs produits ou services.'
+				),
+				'7' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CPI',
+					'text' => 'Le marketing d\'un CPI (Coût Par Installation) vise à mettre en avant les avantages de cette méthode publicitaire pour les futurs clients. Il met l\'accent sur le fait que les annonceurs ne paient que lorsque leurs applications mobiles sont réellement installées par les utilisateurs, ce qui garantit un coût efficace pour acquérir de nouveaux utilisateurs. En mettant en avant la mesure précise des installations d\'applications, le marketing d\'un CPI rassure les futurs clients en leur fournissant des données tangibles sur les performances de leurs campagnes publicitaires. Il souligne également la possibilité de cibler des utilisateurs spécifiques en fonction de leurs intérêts, de leur emplacement géographique et d\'autres critères démographiques, ce qui permet d\'atteindre un public plus qualifié et d\'augmenter les chances de conversion. En résumé, le marketing d\'un CPI met en valeur l\'efficacité, la rentabilité et la capacité à obtenir des installations d\'applications de qualité, offrant ainsi aux futurs clients la confiance nécessaire pour investir dans des campagnes publicitaires visant à développer leur base d\'utilisateurs mobiles.'
+				),
+				'8' => array(
+					'h5' => 'Marketing',
+					'h1' => 'ROI',
+					'text' => 'Le marketing d\'un ROI (Return on Investment) vise à mettre en avant les avantages de cette mesure pour les futurs clients. Il met l\'accent sur le fait que le ROI permet de mesurer le retour sur investissement d\'une campagne marketing en comparant les bénéfices générés par rapport aux coûts engagés. En soulignant l\'importance d\'un ROI élevé, le marketing d\'un ROI met en avant la rentabilité des investissements publicitaires, offrant aux futurs clients un moyen de quantifier l\'efficacité de leurs efforts marketing. Il souligne également la possibilité d\'optimiser les stratégies marketing en fonction du ROI, en allouant les ressources de manière plus efficace et en ajustant les tactiques pour maximiser les rendements. En résumé, le marketing d\'un ROI met en valeur la mesure de la performance et de la rentabilité des campagnes marketing, offrant aux futurs clients des informations clés pour évaluer et améliorer leurs stratégies, afin de maximiser leur retour sur investissement et d\'atteindre leurs objectifs commerciaux.'
+				),
+				'9' => array(
+					'h5' => 'Marketing',
+					'h1' => 'PPC',
+					'text' => 'Le marketing d\'un PPC (Pay-Per-Click) vise à mettre en avant les avantages de cette méthode publicitaire pour les futurs clients. Il met l\'accent sur le fait que les annonceurs ne paient que lorsque leurs annonces sont effectivement cliquées par les utilisateurs, ce qui garantit un coût contrôlé et une utilisation efficace du budget publicitaire. En mettant en avant la capacité à cibler spécifiquement les utilisateurs pertinents en fonction de mots-clés, d\'intérêts ou de comportements, le marketing d\'un PPC souligne la pertinence et la précision de la publicité, en permettant aux futurs clients d\'atteindre leur public cible de manière plus efficace. Il met également en évidence la possibilité de mesurer les performances en temps réel, d\'ajuster les campagnes et d\'optimiser les résultats pour maximiser le retour sur investissement. En résumé, le marketing d\'un PPC met en valeur le contrôle des coûts, le ciblage précis et la capacité à obtenir des résultats mesurables, offrant aux futurs clients un moyen efficace de promouvoir leur entreprise, d\'augmenter leur visibilité et de générer du trafic qualifié vers leur site web.'
+				),
+				'10' => array(
+					'h5' => 'Marketing',
+					'h1' => 'KPI',
+					'text' => 'Le marketing d\'un KPI (Key Performance Indicator) vise à mettre en avant les avantages de cette mesure pour les futurs clients. Il met l\'accent sur le fait que les KPI permettent de définir et de suivre des indicateurs clés de performance spécifiques aux objectifs marketing. En soulignant l\'importance des KPI dans la mesure des résultats, le marketing d\'un KPI offre aux futurs clients un moyen de quantifier et d\'évaluer les performances de leurs initiatives marketing. Il met également en évidence la possibilité d\'ajuster les stratégies et les tactiques en fonction des KPI pour améliorer l\'efficacité et atteindre les objectifs commerciaux. En résumé, le marketing d\'un KPI met en valeur la mesure de la performance, la capacité à évaluer les résultats et à prendre des décisions éclairées, offrant aux futurs clients des informations clés pour optimiser leurs efforts marketing et obtenir des résultats plus probants.'
+				)
 			)
 		),
 		'sitemap' => array(
-			'images' => '',
+			'images' => 'services/marketing/marketing.png',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),

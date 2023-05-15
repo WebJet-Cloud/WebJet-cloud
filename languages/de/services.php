@@ -207,10 +207,62 @@ $services = array(
 				'title' => 'Meine Ausbildung und mein beruflicher Werdegang',
 				'description' => '',
 				'text' => 'Als Autodidakt im Marketing haben Sie die Initiative ergriffen, Ihr Wissen in diesem wichtigen Bereich zu erlernen und weiterzuentwickeln. Sie haben wahrscheinlich verschiedene Themen wie Marketinggrundlagen, Verbraucherpsychologie, Marktsegmentierungsstrategien, digitales Marketing, Content-Marketing, Social-Media-Marketing, E-Mail-Marketing, SEO usw. studiert Darüber hinaus haben Sie ein Verständnis für die Tools und Plattformen des modernen Marketings gewonnen. Durch Ihre Lernbereitschaft und unabhängige Recherche haben Sie wertvolle Fähigkeiten entwickelt, um Produkte oder Dienstleistungen effektiv zu bewerben, eine Zielgruppe zu erreichen und wirkungsvolle Marketingkampagnen zu erstellen.'
+			),
+			'secteur' => array(
+				'1' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CPM',
+					'text' => 'Die Vermarktung eines CPM (Cost Per Mille) zielt darauf ab, die Vorteile und Chancen, die diese Werbemethode künftigen Kunden bietet, zu fördern. Mit Fokus auf die Rentabilität wird die Tatsache hervorgehoben, dass Werbetreibende nur pro tausend Impressionen (Aufrufe) ihrer Anzeigen zahlen, was eine bessere Kostenkontrolle und eine effizientere Nutzung des Werbebudgets ermöglicht. Es unterstreicht auch die große Reichweite dieses Ansatzes, der es Werbetreibenden ermöglicht, ein großes Publikum zu erreichen und gleichzeitig von transparenten Preisen auf der Grundlage tatsächlicher Impressionen zu profitieren. Durch die Betonung der Präzision des Targetings und der Vorteile einer möglichen Personalisierung von Werbung gibt das Marketing eines CPM künftigen Kunden Vertrauen, indem es die überzeugenden Ergebnisse demonstriert, die diese Methode bei ihren Werbekampagnen erzielen kann.'
+				),
+				'2' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CPA',
+					'text' => 'Die Vermarktung eines CPA (Cost Per Action) zielt darauf ab, zukünftigen Kunden die Vorteile dieser Werbemethode vorzustellen. Darin wird betont, dass Werbetreibende nur zahlen, wenn Nutzer eine bestimmte, vordefinierte Aktion durchführen, etwa einen Kauf, eine Anmeldung oder einen Download, was eine bessere Kontrolle über den ROI ermöglicht. Durch die Betonung der präzisen Messung der Ergebnisse beruhigt das Marketing eines CPA künftige Kunden, indem es ihnen greifbare Daten über die Leistung ihrer Werbekampagnen liefert. Es unterstreicht auch die Fähigkeit, gezielt die Benutzer anzusprechen, die mit der größten Wahrscheinlichkeit die gewünschte Aktion ausführen, was die Werbewirksamkeit verbessert und verschwenderische Ausgaben reduziert. Zusammenfassend lässt sich sagen, dass die Vermarktung eines CPA die Leistung, Rentabilität und Zielgenauigkeit dieser Werbemethode unter Beweis stellt und zukünftigen Kunden das Vertrauen gibt, in effektivere Werbekampagnen zu investieren.'
+				),
+				'3' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CPL',
+					'text' => 'Die Vermarktung eines CPL (Cost Per Lead) zielt darauf ab, die Vorteile dieser Werbemethode für zukünftige Kunden hervorzuheben. Darin wird betont, dass Werbetreibende nur für die Leads (qualifizierte Kontakte) bezahlen, die durch ihre Kampagnen generiert werden, was eine genaue Kontrolle der Marketingausgaben ermöglicht. Durch die Hervorhebung der Qualität der gewonnenen Leads beruhigt CPL-Marketing künftige Kunden, indem es ihnen versichert, dass ihr Werbebudget für Interessenten bestimmt ist, die wirklich an ihren Produkten oder Dienstleistungen interessiert sind. Es unterstreicht auch die Möglichkeit, Kampagnen so anzupassen, dass sie bestimmte Marktsegmente erreichen, was die Relevanz der Botschaft verbessert und die Chance auf eine Konvertierung erhöht. Zusammenfassend lässt sich sagen, dass bei der Vermarktung eines CPL die Effizienz, Rentabilität und Qualität der gewonnenen Leads im Vordergrund stehen und künftigen Kunden das Vertrauen gegeben wird, in Werbekampagnen zu investieren, die auf die Generierung qualifizierter Leads ausgerichtet sind.'
+				),
+				'4' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CPC',
+					'text' => 'Ziel des CPC-Marketings (Pay Per Click) ist es, künftigen Kunden die Vorteile dieser Werbemethode zu verdeutlichen. Darin wird betont, dass Werbetreibende nur dann zahlen, wenn Nutzer tatsächlich auf ihre Anzeigen klicken, wodurch eine effiziente Nutzung des Werbebudgets gewährleistet wird, indem nur tatsächliche Interaktionen in Rechnung gestellt werden. Durch die Betonung der Fähigkeit, die Anzahl der Klicks genau zu messen und die Leistung zu analysieren, bietet CPC-Marketing künftigen Kunden klare Einblicke in den Return on Investment ihrer Werbekampagnen. Es unterstreicht auch die Möglichkeit, Anzeigen hinsichtlich der Leistung zu optimieren, indem Schlüsselwörter, Ziele und Nachrichten angepasst werden, um Relevanz und Ergebnisse zu maximieren. Zusammenfassend legt CPC-Marketing Wert auf Transparenz, Kostenkontrolle und die Möglichkeit, Kampagnen in Echtzeit anzupassen, um zukünftigen Kunden eine effektive Möglichkeit zu bieten, ihre Produkte oder Dienstleistungen zu bewerben und gleichzeitig ihre Werbeausgaben zu kontrollieren.'
+				),
+				'5' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CTR',
+					'text' => 'Durch die Vermarktung einer CTR (Click-Through-Rate) soll der Nutzen dieser Kennzahl für zukünftige Kunden hervorgehoben werden. Darin wird betont, dass die CTR ein Maß für die Werbewirksamkeit ist, indem sie den Prozentsatz der Nutzer angibt, die auf eine Anzeige geklickt haben, bezogen auf die Gesamtzahl der Impressionen. Durch die Betonung der Bedeutung einer hohen CTR unterstreicht das CTR-Marketing die Relevanz und Attraktivität von Anzeigen und gibt zukünftigen Kunden die Möglichkeit, die Wirksamkeit ihrer Kampagnen zu beurteilen. Es unterstreicht auch die Möglichkeit, Anzeigen hinsichtlich der CTR zu optimieren, indem visuelle Elemente, Nachrichten und Targeting angepasst werden, um das Engagement zu verbessern und mehr Klicks zu erzielen. Zusammenfassend lässt sich sagen, dass die Vermarktung einer CTR die Messung der Werbewirksamkeit verbessert und zukünftigen Kunden wertvolle Informationen zur Bewertung und Verbesserung ihrer Kampagnen liefert, um überzeugendere Ergebnisse zu erzielen und ihre Rendite auf Werbeinvestitionen zu optimieren.'
+				),
+				'6' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CPV',
+					'text' => 'Die Vermarktung eines CPV (Cost Per View) zielt darauf ab, die Vorteile dieser Werbemethode für zukünftige Kunden hervorzuheben. Darin wird betont, dass Werbetreibende nur dann zahlen, wenn ihre Anzeigen tatsächlich von Nutzern gesehen werden, wodurch eine effiziente Nutzung des Werbebudgets gewährleistet wird, indem nur sichtbare Impressionen berechnet werden. Durch die Betonung der Fähigkeit, die Markensichtbarkeit zu maximieren, betont CPV-Marketing die Fähigkeit, ein großes Publikum zu erreichen und eine sinnvolle Präsenz zu generieren. Es unterstreicht auch die Möglichkeit, gezielt Nutzer anzusprechen, die am wahrscheinlichsten an Anzeigen interessiert sind, was die Relevanz und Wirkung der Werbung verbessert. Zusammenfassend lässt sich sagen, dass bei der Vermarktung eines CPV der Schwerpunkt auf garantierter Sichtbarkeit, Kostenkontrolle und der Fähigkeit liegt, ein Zielpublikum zu erreichen, wodurch künftigen Kunden eine effektive Möglichkeit geboten wird, ihre Marke zu bewerben und eine größere Bekanntheit ihrer Produkte oder Dienstleistungen zu erzielen.'
+				),
+				'7' => array(
+					'h5' => 'Marketing',
+					'h1' => 'CPI',
+					'text' => 'Die Vermarktung eines CPI (Cost Per Install) zielt darauf ab, die Vorteile dieser Werbemethode für zukünftige Kunden hervorzuheben. Darin wird betont, dass Werbetreibende nur zahlen, wenn ihre mobilen Apps tatsächlich von Nutzern installiert werden, wodurch eine kosteneffiziente Akquise neuer Nutzer gewährleistet wird. Durch die Hervorhebung der präzisen Messung von App-Installationen beruhigt das CPI-Marketing künftige Kunden, indem es ihnen greifbare Daten über die Leistung ihrer Werbekampagnen liefert. Es unterstreicht auch die Möglichkeit, bestimmte Benutzer basierend auf ihren Interessen, ihrem geografischen Standort und anderen demografischen Kriterien anzusprechen, was dazu beiträgt, ein qualifizierteres Publikum zu erreichen und die Conversion-Chancen zu erhöhen. Zusammenfassend lässt sich sagen, dass beim CPI-Marketing Effizienz, Kosteneffizienz und die Fähigkeit zur Erzielung qualitativ hochwertiger App-Installationen im Vordergrund stehen, um künftigen Kunden das Vertrauen zu geben, in Werbekampagnen zu investieren, die darauf abzielen, ihre mobile Nutzerbasis zu vergrößern.'
+				),
+				'8' => array(
+					'h5' => 'Marketing',
+					'h1' => 'ROI',
+					'text' => 'Die Vermarktung eines ROI (Return on Investment) zielt darauf ab, die Vorteile dieser Maßnahme für zukünftige Kunden hervorzuheben. Darin wird betont, dass der ROI ein Maß für den Return on Investment einer Marketingkampagne ist, indem der erzielte Nutzen mit den anfallenden Kosten verglichen wird. Durch die Betonung der Bedeutung eines hohen ROI hebt ROI-Marketing die Rendite der Werbeausgaben hervor und bietet zukünftigen Kunden die Möglichkeit, die Wirksamkeit ihrer Marketingbemühungen zu quantifizieren. Es unterstreicht auch die Möglichkeit, Marketingstrategien auf der Grundlage des ROI zu optimieren, Ressourcen effizienter zuzuweisen und Taktiken anzupassen, um den Ertrag zu maximieren. Zusammenfassend legt ROI-Marketing den Schwerpunkt auf die Messung der Leistung und Rentabilität von Marketingkampagnen und liefert zukünftigen Kunden wichtige Informationen zur Bewertung und Verbesserung ihrer Strategien, um ihren Return on Investment zu maximieren und ihre Geschäftsziele zu erreichen.'
+				),
+				'9' => array(
+					'h5' => 'Marketing',
+					'h1' => 'PPC',
+					'text' => 'Die Vermarktung eines PPC (Pay-Per-Click) zielt darauf ab, die Vorteile dieser Werbemethode für zukünftige Kunden hervorzuheben. Darin wird betont, dass Werbetreibende nur dann zahlen, wenn ihre Anzeigen tatsächlich von Nutzern angeklickt werden, wodurch Kostenkontrolle und eine effiziente Nutzung des Werbebudgets gewährleistet werden. Durch die Betonung der Fähigkeit, relevante Benutzer anhand von Schlüsselwörtern, Interessen oder Verhaltensweisen gezielt anzusprechen, betont PPC-Marketing die Relevanz und Genauigkeit der Werbung und ermöglicht es zukünftigen Kunden, ihre Zielgruppe effektiver zu erreichen. Es unterstreicht außerdem die Möglichkeit, die Leistung in Echtzeit zu messen, Kampagnen anzupassen und Ergebnisse zu optimieren, um den ROI zu maximieren. Zusammenfassend legt PPC-Marketing Wert auf Kostenkontrolle, präzises Targeting und die Fähigkeit, messbare Ergebnisse zu erzielen, und bietet zukünftigen Kunden eine effektive Möglichkeit, ihr Unternehmen zu bewerben, ihre Sichtbarkeit zu erhöhen und qualifizierten Traffic auf ihre Website zu lenken.'
+				),
+				'10' => array(
+					'h5' => 'Marketing',
+					'h1' => 'KPI',
+					'text' => 'Die Vermarktung eines KPI (Key Performance Indicator) zielt darauf ab, die Vorteile dieser Kennzahl für zukünftige Kunden aufzuzeigen. Es wird betont, dass KPIs dabei helfen, wichtige Leistungsindikatoren zu definieren und zu verfolgen, die für Marketingziele spezifisch sind. Durch die Betonung der Bedeutung von KPIs bei der Messung von Ergebnissen bietet die Vermarktung eines KPI zukünftigen Kunden eine Möglichkeit, die Leistung ihrer Marketinginitiativen zu quantifizieren und zu bewerten. Es unterstreicht auch die Fähigkeit, Strategien und Taktiken basierend auf KPIs anzupassen, um die Effizienz zu verbessern und Geschäftsziele zu erreichen. Zusammenfassend lässt sich sagen, dass bei der Vermarktung eines KPI die Leistungsmessung, die Fähigkeit, Ergebnisse auszuwerten und fundierte Entscheidungen zu treffen, im Vordergrund steht und künftigen Kunden wichtige Erkenntnisse zur Optimierung ihrer Marketingbemühungen und zur Erzielung besserer Ergebnisse geliefert werden.'
+				)
 			)
 		),
 		'sitemap' => array(
-			'images' => '',
+			'images' => 'services/marketing/marketing.png',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
