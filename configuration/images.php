@@ -34,6 +34,24 @@ $images = array(
 		),
 		/*Manager Images */
 		'services' => array(
+			'cybersecurity' => array(
+				'1' => 'services/cybersecurity/security-computer.jpg',
+				'2' => 'services/cybersecurity/security-server.jpg',
+				'3' => 'services/cybersecurity/security-mobile.jpeg',
+				'4' => 'services/cybersecurity/security-hacking.jpg',
+				'5' => 'services/cybersecurity/security-networks.jpg',
+				'6' => 'services/cybersecurity/security-inject.jpeg',
+				'7' => 'services/cybersecurity/security-bruteforce.jpeg',
+				'8' => 'services/cybersecurity/security-phishing.jpeg',
+				'9' => 'services/cybersecurity/security-ramsoware.jpeg',
+				'10' => 'services/cybersecurity/security-osint.jpeg',
+				'11' => 'services/cybersecurity/security-hijack.jpeg',
+				'12' => 'services/cybersecurity/security-rootkit.jpg',
+				'13' => 'services/cybersecurity/security-malware.jpeg',
+				'14' => 'services/cybersecurity/security-spyware.jpeg',
+				'15' => 'services/cybersecurity/security-update.jpg',
+				'page' => 'services/cybersecurity/cybersecurity.png'
+			),
 			'marketing' => array(
 				'1' => 'services/marketing/cpm.jpg',
 				'2' => 'services/marketing/cpa.png',
@@ -46,7 +64,7 @@ $images = array(
 				'9' => 'services/marketing/ppc.jpg',
 				'10' => 'services/marketing/kpi.png',
 				'page' => 'services/marketing/marketing.png'
-			),
+			)
 			'developper' => array(
 				'1' => 'services/developper/developper.jpg',
 				'2' => 'services/developper/dev-framework.png',
