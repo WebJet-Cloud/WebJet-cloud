@@ -64,7 +64,7 @@ $images = array(
 				'9' => 'services/marketing/ppc.jpg',
 				'10' => 'services/marketing/kpi.png',
 				'page' => 'services/marketing/marketing.png'
-			)
+			),
 			'developper' => array(
 				'1' => 'services/developper/developper.jpg',
 				'2' => 'services/developper/dev-framework.png',

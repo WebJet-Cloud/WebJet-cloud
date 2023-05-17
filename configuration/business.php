@@ -2,12 +2,12 @@
 # $business['local']['salp']
 $business = array(
 	'local' => array(
-		'born' => '', /*exemple Day/Month/Year number only indicate age */
+		'born' => '16/05/2023', /*exemple Day/Month/Year number only indicate age */
 		'name' => 'WebJetClouds',/*IF empty variable output not show public/not use*/
-		'siret' => '',
+		'siret' => '952 460 152',
 		'tva' => '', //TVA NUM
-		'vat' => 'TVA XXXXX',
-		'rcs-number' => '',
+		'vat' => 'FR 589 5246 0152',
+		'rcs-number' => '952 460 152 RCS Paris',
 		'salp' => 'en cours',//services à la personne N° agréer
 		'capital-euro' => '€100',
 		'address' => '6 Rue d\'Armaillé,',

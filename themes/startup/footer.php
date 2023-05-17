@@ -10,7 +10,28 @@
                         
                         <p class="mt-3 mb-4">
                             <a href="<?php echo $protocols.'://'.$domainTLD; ?>"></a><img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/Web_Jet-logo.png" class="img-fluid"></a><br>
-                            <?php echo 'www.'.$sites['domain'].' '.$general['pages']['full']['footer-os']; ?>
+                            <?php echo 'www.'.$sites['domain'].' '.$general['pages']['full']['footer-os']; ?><br />
+                            <!-- DÉBUT du code d'affichage du badge Google Avis clients -->
+                            <script src="https://apis.google.com/js/platform.js?onload=renderBadge"
+                            async defer>
+                            </script>
+
+                            <script>
+                            window.renderBadge = function() {
+                                var ratingBadgeContainer = document.createElement("div");
+                                document.body.appendChild(ratingBadgeContainer);
+                                window.gapi.load('ratingbadge', function() {
+                                    window.gapi.ratingbadge.render(
+                                    ratingBadgeContainer, {
+                                        // OBLIGATOIRE
+                                        "merchant_id": 666370362,
+                                        // FACULTATIF
+                                        "position": "INLINE"
+                                    });           
+                                });
+                            }
+                            </script>
+                            <!-- FIN du code d'affichage du badge Google Avis clients -->
                         </p>
                        
                     </div>

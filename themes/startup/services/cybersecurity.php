@@ -314,30 +314,6 @@
 
  
     
-<!-- secteur 4 -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-5" style="min-height: 500px;">
-                <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['cybersecurity']['9']; ?>" style="object-fit: cover;">
-                </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="section-title position-relative pb-3 mb-5">
-
-                 <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['cybersecurity']['content']['secteur']['9']['h5']; ?></h5>
-                    <h1 class="mb-0"><?php echo $services['cybersecurity']['content']['secteur']['9']['h1']; ?></h1>
-                </div>
-                <p class="mb-4"></p>
-                <?php echo $services['cybersecurity']['content']['secteur']['9']['text']; ?>
-            </div>
-        </div>
-    </div>
-</div>
-
- 
-    
 <!-- secteur 5 -->
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container py-5">
@@ -478,6 +454,30 @@
                 </div>
                 <p class="mb-4"></p>
                 <?php echo $services['cybersecurity']['content']['secteur']['15']['text']; ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+    
+<!-- secteur 4 -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+
+                 <h5 class="fw-bold text-primary text-uppercase"><?php echo $services['cybersecurity']['content']['secteur']['9']['h5']; ?></h5>
+                    <h1 class="mb-0"><?php echo $services['cybersecurity']['content']['secteur']['9']['h1']; ?></h1>
+                </div>
+                <p class="mb-4"></p>
+                <?php echo $services['cybersecurity']['content']['secteur']['9']['text']; ?>
+            </div>
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['cybersecurity']['9']; ?>" style="object-fit: cover;">
+                </div>
             </div>
         </div>
     </div>
