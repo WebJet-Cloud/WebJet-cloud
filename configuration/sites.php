@@ -2,7 +2,7 @@
 /*
 exemple $sites['name'];
 exemple $sites['update']['rdf'];
-exemple $sites['tarifs']['plan'][''];
+exemple $sites['auto']['domain'][''];
 
 */
 $sites = array(

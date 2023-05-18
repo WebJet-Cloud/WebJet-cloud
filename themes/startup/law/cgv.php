@@ -13,16 +13,16 @@
           <div class="col-lg-12">
               <h3>ARTICLE 1 - Champ d'application</h3>
               <p>
-              Les présentes Conditions Générales de Vente (dites « CGV ») s'appliquent, sans restriction ni réserve à l'ensemble des ventes conclues par le Vendeur auprès d'acheteurs non professionnels (« Les Clients ou le Client »), désirant acquérir les produits proposés à la vente (« Les Produits ») par le Vendeur sur le site https://webjet.cloud﻿. Les Produits proposés à la vente sur le site sont les suivants :
+              Les présentes Conditions Générales de Vente (dites « CGV ») s'appliquent, sans restriction ni réserve à l'ensemble des ventes conclues par le Vendeur auprès d'acheteurs non professionnels (« Les Clients ou le Client »), désirant acquérir les produits proposés à la vente (« Les Produits ») par le Vendeur sur le site  <?php echo $sites['auto']['domain']; ?>  . Les Produits proposés à la vente sur le site sont les suivants :
               <br /><br />
 T-Shirt, Débardeur, Mug, Bonnet, Casquette, chaussure, Prestation de services, Clef USB sécurisé, carte-cadeaux, Objet divers﻿
 <br /><br />
-Les caractéristiques principales des Produits et notamment les spécifications, illustrations et indications de dimensions ou de capacité des Produits, sont présentées sur le site https://webjet.cloud ce dont le client est tenu de prendre connaissance avant de commander.
+Les caractéristiques principales des Produits et notamment les spécifications, illustrations et indications de dimensions ou de capacité des Produits, sont présentées sur le site  <?php echo $sites['auto']['domain']; ?>   ce dont le client est tenu de prendre connaissance avant de commander.
 Le choix et l'achat d'un Produit sont de la seule responsabilité du Client.
 Les offres de Produits s'entendent dans la limite des stocks disponibles, tels que précisés lors de la passation de la commande.
 <br /><br />
-Ces CGV sont accessibles à tout moment sur le site https://webjet.cloud  et prévaudront sur toute autre document.
-Le Client déclare avoir pris connaissance des présentes CGV et les avoir acceptées en cochant la case prévue à cet effet avant la mise en œuvre de la procédure de commande en ligne du site https://webjet.cloud﻿.
+Ces CGV sont accessibles à tout moment sur le site  <?php echo $sites['auto']['domain']; ?>    et prévaudront sur toute autre document.
+Le Client déclare avoir pris connaissance des présentes CGV et les avoir acceptées en cochant la case prévue à cet effet avant la mise en œuvre de la procédure de commande en ligne du site  <?php echo $sites['auto']['domain']; ?>  .
 Sauf preuve contraire, les données enregistrées dans le système informatique du Vendeur constituent la preuve de l'ensemble des transactions conclues avec le Client.
 <br /><br />
 Les coordonnées du Vendeur sont les suivantes :<br />
@@ -34,7 +34,7 @@ Email : services@webjet.cloud<br />
 Téléphone : 0756934140<br />
 Numéro de TVA Intracommunautaire FR58952460152<br /><br />
 
-Les Produits présentés sur le site https://webjet.cloud sont proposés à la vente pour les territoires suivants :
+Les Produits présentés sur le site  <?php echo $sites['auto']['domain']; ?>   sont proposés à la vente pour les territoires suivants :
 Europe﻿.<br /><br />
 En cas de commande vers un pays autre que la France métropolitaine, le Client est l'importateur du ou des Produits concernés.
 Pour tous les Produits expédiés hors Union européenne et DOM-TOM, le prix sera calculé hors taxes automatiquement sur la facture.
@@ -44,9 +44,9 @@ Des droits de douane ou autres taxes locales ou droits d'importation ou taxes d'
 <h3>ARTICLE 2 - Prix</h3>
 
 <p>
-Les Produits sont fournis aux tarifs en vigueur figurant sur le site https://webjet.cloud﻿, lors de l'enregistrement de la commande par le Vendeur.
+Les Produits sont fournis aux tarifs en vigueur figurant sur le site  <?php echo $sites['auto']['domain']; ?>  , lors de l'enregistrement de la commande par le Vendeur.
 Les prix sont exprimés en Euros, HT et TTC.<br />
-Les tarifs tiennent compte d'éventuelles réductions qui seraient consenties par le Vendeur sur le site https://webjet.cloud﻿.
+Les tarifs tiennent compte d'éventuelles réductions qui seraient consenties par le Vendeur sur le site  <?php echo $sites['auto']['domain']; ?>  .
 Ces tarifs sont fermes et non révisables pendant leur période de validité mais le Vendeur se réserve le droit, hors période de validité, d’en modifier les prix à tout moment.
 <br /><br />
 Les prix ne comprennent pas les frais de traitement, d'expédition, de transport et de livraison, qui sont facturés en supplément, dans les conditions indiquées sur le site et calculés préalablement à la passation de la commande.
