@@ -225,7 +225,25 @@ $general = array(
 				'title' => 'Der Schöpfer von WebJet',
 				'description' => 'Ich kreiere dieses Projekt und repräsentiere mich gleichzeitig.'
 			),
-			'presentation' => 'Hallo, mein Name ist Alexon Balangue, in den Dreißigern, der Schöpfer dieses in PHP erstellten Webanwendungsprojekts. Um den Anfängern unter Ihnen zu helfen, so einfach wie möglich in die Webentwicklung einzusteigen, hatte ich jahrelang selbst gelernt, dass es notwendig sein wird, ein so einfaches Konzept zu haben. Nachdem Sie eine Website haben, die sowohl professionell als auch persönlich ist, um beispielsweise einen Lebenslauf erstellen zu können, ist es möglich, Seiten auszuleihen, und dieses Projekt erfordert keine MySQL-Datenbank und auch keine Funktionalität eines Bass-MVC-Frameworks. Dateien und Ordner haben eine gut durchdachte Struktur für die einzelnen Tätigkeitsbereiche wie: WebDesign, Designer, Webmaster, Redakteur, Marketing und Entwickler. Generell ist es sehr wichtig, dass Sie eine gute Struktur Ihrer Dateien und Ordner haben. Auf diese Weise können Sie während der Arbeit auf der Website leicht finden, was Sie brauchen, und spätere Probleme vermeiden.'
+			'presentation' => 'Hallo, mein Name ist Alexon Balangue, in den Dreißigern, der Schöpfer dieses in PHP erstellten Webanwendungsprojekts. Um den Anfängern unter Ihnen zu helfen, so einfach wie möglich in die Webentwicklung einzusteigen, hatte ich jahrelang selbst gelernt, dass es notwendig sein wird, ein so einfaches Konzept zu haben. Nachdem Sie eine Website haben, die sowohl professionell als auch persönlich ist, um beispielsweise einen Lebenslauf erstellen zu können, ist es möglich, Seiten auszuleihen, und dieses Projekt erfordert keine MySQL-Datenbank und auch keine Funktionalität eines Bass-MVC-Frameworks. Dateien und Ordner haben eine gut durchdachte Struktur für die einzelnen Tätigkeitsbereiche wie: WebDesign, Designer, Webmaster, Redakteur, Marketing und Entwickler. Generell ist es sehr wichtig, dass Sie eine gute Struktur Ihrer Dateien und Ordner haben. Auf diese Weise können Sie während der Arbeit auf der Website leicht finden, was Sie brauchen, und spätere Probleme vermeiden.',
+			'personnalite' => array(
+				'test' => array(
+					'title' => 'Persönlichkeitstest' ,
+					'expert' => 'Expertin',
+					'1' => array(
+						'title' => 'Relationale Intelligenz',
+						'text' => 'Herzlichen Glückwunsch, Sie konnten Ihre Beziehungsfähigkeiten weiterentwickeln und so einen qualitativen Austausch generieren, der Ihre Teamarbeit reibungslos und effizient macht! Ihre Aufgeschlossenheit und Ihre Kreativität garantieren den Erfolg Ihrer Zusammenarbeit! Es ist klar, dass uns die Zusammenarbeit mit Ihnen Spaß macht und wir Sie gerne in unserem Team haben möchten! Sie sind nur noch einen Schritt davon entfernt, als Führungskraft und absoluter Experte für relationale Intelligenz anerkannt zu werden! Unser Rat: Trauen Sie sich, Risiken einzugehen!'
+					),
+					'2' => array(
+						'title' => 'Emotionale Intelligenz',
+						'text' => 'Herzlichen Glückwunsch, Sie sind ein wahrer Experte für emotionale Intelligenz! Sie verfügen über eine ausgezeichnete Selbstbeherrschung und kennen wirksame Werkzeuge, um mit Ihren Emotionen umzugehen und auf die anderer zu reagieren. Sie haben nur noch einen kleinen Schritt vor sich, bevor Sie als absoluter Meister der emotionalen Intelligenz anerkannt werden. Dazu müssen Sie nun an Ihrer Führung arbeiten, um auch komplexere Situationen bewältigen zu können.'
+					),
+					'3' => array(
+						'title' => 'Stressmanagement',
+						'text' => 'Herzlichen Glückwunsch, Sie können Ihren Stress positiv leben! Du hast Spaß und jede Situation ist eine Herausforderung für dich! So wird zum Beispiel ein Einspruch für Sie zur Chance! Sie wissen, wie Sie Ihre Spannungen abbauen und Ihren Mitarbeitern dabei helfen können, dasselbe zu tun! Sind Sie häufig mit der Bewältigung komplexer Situationen betraut? Es ist völlig normal, Sie haben eine positive Einstellung, einen relevanten Schritt zurück und die Anpassungsfähigkeit, die Sie auszeichnet, ermöglicht es Ihnen, jede Situation zu lösen! Um ein absoluter Experte für Stressbewältigung zu werden, müssen Sie lediglich einige vorbeugende Maßnahmen ergreifen, um zu verhindern, dass Ihre Mitmenschen schwierige Zeiten durchmachen. Aber es besteht kein Zweifel, dass Sie der Herausforderung gewachsen sein werden!'
+					)
+				)
+			)
 			
 		),
 		'sitemap' => array(

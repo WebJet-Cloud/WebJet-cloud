@@ -224,7 +224,25 @@ $general = array(
 				'title' => 'The creator of WebJet',
 				'description' => 'I create this project and at the same time I represent myself.'
 			),
-			'presentation' => 'Hello, my name is Alexon Balangue, in his thirties, is the creator of this web application project made in PHP. To help the most novice among you to start in web development as simply as possible, then I had learned for years on my own that it will be necessary to have this type of very simple concept. After having a website that is both professional, and both personal to be able to create a CV for example, it is possible to create a loan of pages and this project does not require any MySQL database also no functionality of a bass MVC framework. Files and folders have a good structure has been well thought out for each different activity area such as: WebDesign, Designer, Webmaster, Editor, Marketing and Developer. In general, it is very important that you have a good structure of your files and folders. This way, you can easily find what you need while working on the site and avoid any problems later.'
+			'presentation' => 'Hello, my name is Alexon Balangue, in his thirties, is the creator of this web application project made in PHP. To help the most novice among you to start in web development as simply as possible, then I had learned for years on my own that it will be necessary to have this type of very simple concept. After having a website that is both professional, and both personal to be able to create a CV for example, it is possible to create a loan of pages and this project does not require any MySQL database also no functionality of a bass MVC framework. Files and folders have a good structure has been well thought out for each different activity area such as: WebDesign, Designer, Webmaster, Editor, Marketing and Developer. In general, it is very important that you have a good structure of your files and folders. This way, you can easily find what you need while working on the site and avoid any problems later.',
+			'personnalite' => array(
+				'test' => array(
+					'title' => 'personality test' ,
+					'expert' => 'Expert',
+					'1' => array(
+						'title' => 'Relational Intelligence',
+						'text' => 'Congratulations, you have been able to develop your relational skills, allowing you to generate qualitative exchanges, which makes your teamwork fluid and efficient! Your open-mindedness and your creativity guarantee the success of your collaborations! Clearly, we enjoy working with you and we want you on our team! You are only a step away from being recognized as a leader and absolute expert in relational intelligence! Our advice: dare to take risks!'
+					),				
+					'2' => array(
+						'title' => 'Emotional Intelligence',
+						'text' => 'Congratulations, you are a true expert in emotional intelligence! You have excellent self-control, and you know effective tools for managing your emotions and acting on those of others. You only have one small step left before you are recognized as an absolute master in emotional intelligence. To do this, you now need to work on your leadership to enable you to manage more complex situations.'
+					),
+					'3' => array(
+						'title' => 'Stress Management',
+					'text' => 'Congratulations, you are able to live your stress positively! You have fun, and each situation is a challenge for you! For example, an objection becomes an opportunity for you! You know how to evacuate your tensions and help your collaborators to do the same! Are you often entrusted with the management of complex situations? It\'s completely normal, you have a positive approach, a relevant step back and the adaptability that characterizes you allows you to solve any situation! To become an absolute expert in stress management, all you have to do is put in place a few preventive actions to prevent those around you from going through difficult times. But there\'s no doubt that you\'ll be up to the challenge!'
+					)
+				)
+			)
 			
 		),
 		'sitemap' => array(

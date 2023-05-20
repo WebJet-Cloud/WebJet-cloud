@@ -28,7 +28,7 @@
                             <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i><?php echo $general['index']['content']['about']['under']['right']['6']; ?></h5>
                         </div>
                     </div>
-                    <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Demander un Devis</a>
+                    <a href="<?php echo $protocols.'://'.$sites['domain'].'/'.$email['ask-quotes']['url']['default']; ?>" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s"><?php echo $general['index']['content']['quotes']['container']['title']; ?></a>
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
@@ -137,6 +137,38 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase"><?php echo $general['aboutus']['content']['personnalite']['test']['title']; ?></h5>
+                <h1 class="mb-0"><?php echo $general['aboutus']['content']['personnalite']['test']['expert']; ?></h1>
+            </div>
+            <div class="row">
+                <h4><?php echo $general['aboutus']['content']['personnalite']['test']['1']['title']; ?></h4> 
+
+                <p><?php echo $general['aboutus']['content']['personnalite']['test']['1']['text']; ?></p>
+
+                <h4><?php echo $general['aboutus']['content']['personnalite']['test']['2']['title']; ?></h4>  
+                
+                <p><?php echo $general['aboutus']['content']['personnalite']['test']['2']['text']; ?></p>
+
+                <h4><?php echo $general['aboutus']['content']['personnalite']['test']['3']['title']; ?></h4>  
+                
+                <p><?php echo $general['aboutus']['content']['personnalite']['test']['3']['text']; ?></p>
+
+
+
+
             </div>
         </div>
     </div>

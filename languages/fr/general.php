@@ -227,7 +227,25 @@ $general = array(
 				'title' => 'Le créateur de WebJet',
 				'description' => 'Je crée ce projet et en même temps je me représente.'
 			),
-			'presentation' => 'Bonjour, mon nom est Alexon Balangue, la trentaine est le créateur de ce projet d\'application web réalisé en PHP. Pour aider les plus novices d\'entre vous à débuter dans le développement web le plus simplement possible, alors j\'avais appris depuis des années en autodidacte qu\'il faudra avoir ce type de concept très simple. Après avoir un site web qui est à la fois professionnel, et à la fois personnel pour pouvoir créer un CV par exemple, il est possible de créer un prêt de pages et ce projet ne nécessite aucune base de données MySQL également aucune fonctionnalité d\'un framework MVC de basse. Les fichiers et les dossiers ont une bonne structure a été bien pensé pour chaque domaine d\'activité différents tels que : WebDesign, Designer, Webmaster, Rédacteur, Marketing et Développeur. En général, il est très important que vous ayez une bonne structure de vos fichiers et dossiers. De cette façon, vous pouvez facilement trouver ce dont vous avez besoin lorsque vous travaillez sur le site et éviter tout problème ultérieur.'
+			'presentation' => 'Bonjour, mon nom est Alexon Balangue, la trentaine est le créateur de ce projet d\'application web réalisé en PHP. Pour aider les plus novices d\'entre vous à débuter dans le développement web le plus simplement possible, alors j\'avais appris depuis des années en autodidacte qu\'il faudra avoir ce type de concept très simple. Après avoir un site web qui est à la fois professionnel, et à la fois personnel pour pouvoir créer un CV par exemple, il est possible de créer un prêt de pages et ce projet ne nécessite aucune base de données MySQL également aucune fonctionnalité d\'un framework MVC de basse. Les fichiers et les dossiers ont une bonne structure a été bien pensé pour chaque domaine d\'activité différents tels que : WebDesign, Designer, Webmaster, Rédacteur, Marketing et Développeur. En général, il est très important que vous ayez une bonne structure de vos fichiers et dossiers. De cette façon, vous pouvez facilement trouver ce dont vous avez besoin lorsque vous travaillez sur le site et éviter tout problème ultérieur.',
+			'personnalite' => array(
+				'test' => array(
+					'title' => 'Teste de personnalité' ,
+					'expert' => 'Expert',
+					'1' => array(
+						'title' => 'Intelligence relationnelle',
+						'text' => 'Félicitations, vous avez su développer vos aptitudes relationnelles, vous permettant ainsi de générer des échanges qualitatifs, ce qui rend vos travaux d’équipes fluides et efficaces ! Votre ouverture d’esprit et votre créativité garantissent le succès de vos collaborations ! En clair, on a plaisir à travailler avec vous et on vous veut dans son équipe ! Vous n’êtes qu’à deux doigts d’être reconnu comme leader et expert absolu en intelligence relationnelle ! Notre conseil : osez prendre des risques !' 
+					),
+					'2' => array(
+						'title' => 'Intelligence émotionnelle',
+						'text' => 'Félicitations, vous êtes un véritable expert en intelligence émotionnelle ! Vous avez une excellente maîtrise de vous-même, et vous connaissez des outils efficaces pour gérer vos émotions et agir sur celles des autres. Il ne vous reste plus qu’une petite étape avant d’être reconnu comme maître absolu en intelligence émotionnelle. Pour cela, il vous faut désormais travailler sur votre leadership afin de vous permettre de gérer des situations plus complexes.' 
+					),
+					'3' => array(
+						'title' => 'Gestion du stress',
+						'text' => 'Félicitations, vous êtes en capacité de vivre positivement votre stress ! Vous vous amusez, et chaque situation est pour vous un challenge ! Par exemple, une objection devient pour vous une opportunité ! Vous savez évacuer vos tensions et aider vos collaborateurs à en faire autant ! On vous confie souvent la gestion de situations complexes ? C’est tout à fait normal, vous avez une approche positive, une prise de recul pertinente et l’adaptabilité qui vous caractérise vous permet de solutionner n’importe quelle situation ! Pour devenir expert absolu en gestion du stress, il ne vous reste plus qu’à mettre en place quelques actions préventives afin d’éviter à votre entourage de vivre des moments difficiles. Mais aucun doute que vous saurez relever le défi !' 
+					)
+				)
+			)
 			
 		),
 		'sitemap' => array(
