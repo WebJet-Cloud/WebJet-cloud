@@ -96,6 +96,7 @@ Le prix est payé par voie de paiement sécurisé, selon les modalités suivante
   <li>ou paiement par chèque</li>
   <li>ou paiement par virement bancaire sur le compte bancaire du Vendeur (dont les coordonnées sont communiquées au Client lors de la passation de la commande)</li>
   <li>Paypal</li>
+  <li>Alma - Payer en plusieurs fois (2x/3x/4x)</li>
 </ul>
 
 <p>
@@ -109,6 +110,28 @@ La mise à l'encaissement du chèque est réalisée à réception.
 Les paiements effectués par le Client ne seront considérés comme définitifs qu'après encaissement effectif par le Vendeur des sommes dues.
 Le Vendeur ne sera pas tenu de procéder à la délivrance des Produits commandés par le Client si celui-ci ne lui en paye pas le prix en totalité dans les conditions ci-dessus indiquées.
 </p>
+
+<p>
+Le paiement en plusieurs fois/différé est disponible via notre partenaire Alma. La sécurisation des paiements est assurée par Alma et ses prestataires. Tous les paiements sont protégés par le 3D Secure.
+</p><br /><br /><br /><br />
+<h4>Montant des achats</h4><br />
+P2X : Seuls les achats entre 50 € et 2 000 € sont éligibles au paiement avec Alma.<br />
+P3X : Seuls les achats entre 50 € et 2 000 € sont éligibles au paiement avec Alma.<br />
+P4X : Seuls les achats entre 100 € et 2 000 € sont éligibles au paiement avec Alma.</p>
+<br /><br /><br /><br />
+<h4>Frais</h4>
+En payant en plusieurs fois avec Alma le Client ne paye pas de frais. Sauf pour les cas suivants :
+<br /><br /><br /><br />
+P2X : 0,65% par transaction<br />
+P3X : 1.31% par transaction<br />
+P4X : 1.95% par transaction
+Alma est gestionnaire de télé-paiement et délivre un certificat électronique qui vaudra preuve du montant et de la date de la transaction conformément aux dispositions des articles 1316 et suivants du code civil.
+</p><br /><br /><br /><br />
+<h4>Résiliation</h4>
+Toute résiliation des CGV qui lient le Vendeur et le client, entraine la résiliation des CGU entre Alma et le client.
+</p>
+
+
 
 <h3>ARTICLE 5 - Livraisons</h3>
 

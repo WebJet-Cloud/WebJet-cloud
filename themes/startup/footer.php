@@ -38,6 +38,13 @@
                 </div>
                 <div class="col-lg-8 col-md-6">
                     <div class="row gx-5">
+                        <div class="col-lg-12">
+                                <!-- TrustBox widget - Micro Review Count -->
+                                <div class="trustpilot-widget" data-locale="fr-FR" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="636fddaf92505cc8f792814c" data-style-height="24px" data-style-width="100%" data-theme="dark" data-min-review-count="0" data-style-alignment="center">
+                                <a href="https://fr.trustpilot.com/review/webjet.cloud" target="_blank" rel="noopener">Trustpilot</a>
+                                </div>
+                                <!-- End TrustBox widget -->
+                        </div>
                         <div class="col-lg-4 col-md-12 pt-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
                                 <h3 class="text-light mb-0"><?php echo $general['pages']['menu']['footer']['enter-contact']; ?></h3>

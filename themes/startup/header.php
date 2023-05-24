@@ -22,6 +22,10 @@
     <lien rel="dns-prefetch" href="//code.tidio.co/" />
     <lien rel="dns-prefetch" href="//connect.facebook.net/" />
 
+<!-- TrustBox script -->
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<!-- End TrustBox script -->
+
 
     <?php if(!empty($seo['fb-pexel']['key'])){ ?>
 <!-- Meta Pixel Code -->
