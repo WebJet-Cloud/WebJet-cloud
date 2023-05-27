@@ -467,3 +467,22 @@
     </div>
     <!-- Team End -->
 
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="row g-5">
+            <div class="col-12 col-lg-9">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.9891821126616!2d2.2895651763841434!3d48.87748277133474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f74e59e0bb3%3A0x29c81d7d11d0052f!2sWebJetClouds!5e0!3m2!1sfr!2sfr!4v1685191542958!5m2!1sfr!2sfr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-12 col-lg-3">
+           <img class="img-fluid" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['consultant']['salp']; ?>" alt="<?php echo $business['local']['salp']; ?>"><br>
+             <span><?php echo $services['consulting']['content']['footer']['n-agree'].' '.$business['local']['salp']; ?></span><br />
+           <img class="img-fluid" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['others']['assurup']; ?>" alt="Assurup"><br>
+           <span>N° RCP23052584222</span><br />
+           <a href="https://g.page/r/CS8F0BF9HcgpEBI/review" rel="dofollow"><img class="img-fluid" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['others']['g-advice']; ?>" alt="Google advice"></a><br>
+           
+            </div> 
+         </div> 
+     </div> 

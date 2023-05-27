@@ -114,10 +114,6 @@
                                         <b><?php echo $JE_DSslLabsOut->endpoints['0']->grade; ?></b>
                                     </a>
                                 </div>
-                                <br>
-                                <a href="https://www.servicesalapersonne.gouv.fr/files_sap/files/publications/les-sap-pour-tout-savoir.pdf"><img class="img-fluid" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['consultant']['salp']; ?>"></a><br>
-                                <span><?php echo $services['consulting']['content']['footer']['credit-impot']; ?></span><br>
-                                <span><?php echo $services['consulting']['content']['footer']['n-agree'].' '.$business['local']['salp']; ?></span>
                             </div>
                         </div>
                     </div>

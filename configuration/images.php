@@ -32,6 +32,10 @@ $images = array(
 			's:120x120' => 'pinned/apple-touch-icon-120x120.png',
 			's:152x152' => 'pinned/apple-touch-icon-152x152.png'
 		),
+		'others' => array(
+			'assurup' => 'others/assurup.725be7d.png',
+			'g-advice' => 'others/google-advice.png'
+		),
 		/*Manager Images */
 		'services' => array(
 			'cybersecurity' => array(
