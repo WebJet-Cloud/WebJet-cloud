@@ -480,7 +480,7 @@
            <img class="img-fluid" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['consultant']['salp']; ?>" alt="<?php echo $business['local']['salp']; ?>"><br>
              <span><?php echo $services['consulting']['content']['footer']['n-agree'].' '.$business['local']['salp']; ?></span><br />
            <img class="img-fluid" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['others']['assurup']; ?>" alt="Assurup"><br>
-           <span>N° RCP23052584222</span><br />
+           <span>Assuré N° RCP23052584222</span><br />
            <a href="https://g.page/r/CS8F0BF9HcgpEBI/review" rel="dofollow"><img class="img-fluid" data-wow-delay="0.9s" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['others']['g-advice']; ?>" alt="Google advice"></a><br>
            
             </div> 
