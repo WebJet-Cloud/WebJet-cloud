@@ -26,9 +26,9 @@ $private = array(
 	),
 	'mail' => array(
 		'public' => 'services', /*IF yes domain name or not indicate use mail private -> @ -> external = gamil.com*/
-		'private' => 'alexonbstudio', /* *@gmail.com down is gmail.com*/
+		'private' => 'services', /* *@gmail.com down is gmail.com*/
 		'@' => array(
-			'external' => 'protonmail.com'
+			'external' => 'webjet.cloud'
 		)
 	)
 );
