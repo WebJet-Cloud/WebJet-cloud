@@ -1,11 +1,11 @@
-# Apache Server Configs v4.0.0 | MIT License
+# Apache Server Configs v6.0.0 | MIT License
 # https://github.com/h5bp/server-configs-apache
 
 # (!) Using `.htaccess` files slows down Apache, therefore, if you have
-# access to the main server configuration file (which is usually called
-# `httpd.conf`), you should add this logic there.
+#     access to the main server configuration file (which is usually
+#     called `httpd.conf`), you should add this logic there.
 #
-# https://httpd.apache.org/docs/current/howto/htaccess.html
+#     https://httpd.apache.org/docs/current/howto/htaccess.html
 
 # ######################################################################
 # # CROSS-ORIGIN                                                       #
@@ -27,10 +27,16 @@
 #     allowing access based on (sub)domain:
 #
 #         Header set Access-Control-Allow-Origin "subdomain.example.com"
+#
+# (1) When `Access-Control-Allow-Origin` points to a specific rule rather
+#     than `*`, then `Vary: Origin` should be sent along with the response.
 
-# <IfModule mod_headers.c>
-#     Header set Access-Control-Allow-Origin "*"
-# </IfModule>
+ <IfModule mod_headers.c>
+     Header set Access-Control-Allow-Origin "*"
+
+     # (1)
+    Header append Vary Origin
+ </IfModule>
 
 # ----------------------------------------------------------------------
 # | Cross-origin images                                                |
@@ -43,7 +49,7 @@
 
 <IfModule mod_setenvif.c>
     <IfModule mod_headers.c>
-        <FilesMatch "\.(bmp|cur|gif|ico|jpe?g|a?png|svgz?|webp)$">
+        <FilesMatch "\.(avifs?|bmp|cur|gif|ico|jpe?g|jxl|a?png|svgz?|webp)$">
             SetEnvIf Origin ":" IS_CORS
             Header set Access-Control-Allow-Origin "*" env=IS_CORS
         </FilesMatch>
@@ -110,32 +116,6 @@
 Options -MultiViews
 
 # ######################################################################
-# # INTERNET EXPLORER                                                  #
-# ######################################################################
-
-# ----------------------------------------------------------------------
-# | Document modes                                                     |
-# ----------------------------------------------------------------------
-
-# Force Internet Explorer 8/9/10 to render pages in the highest mode
-# available in various cases when it may not.
-#
-# https://hsivonen.fi/doctype/#ie8
-#
-# (!) Starting with Internet Explorer 11, document modes are deprecated.
-#     If your business still relies on older web apps and services that were
-#     designed for older versions of Internet Explorer, you might want to
-#     consider enabling `Enterprise Mode` throughout your company.
-#
-# https://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode
-# https://blogs.msdn.microsoft.com/ie/2014/04/02/stay-up-to-date-with-enterprise-mode-for-internet-explorer-11/
-# https://msdn.microsoft.com/en-us/library/ff955275.aspx
-
-<IfModule mod_headers.c>
-    Header always set X-UA-Compatible "IE=edge" "expr=%{CONTENT_TYPE} =~ m#text/html#i"
-</IfModule>
-
-# ######################################################################
 # # MEDIA TYPES AND CHARACTER ENCODINGS                                #
 # ######################################################################
 
@@ -180,7 +160,9 @@ Options -MultiViews
 
     AddType audio/mp4                                   f4a f4b m4a
     AddType audio/ogg                                   oga ogg opus
+    AddType image/avif                                  avif avifs
     AddType image/bmp                                   bmp
+    AddType image/jxl                                   jxl
     AddType image/svg+xml                               svg svgz
     AddType image/webp                                  webp
     AddType video/mp4                                   f4v f4p m4v mp4
@@ -336,10 +318,10 @@ AddDefaultCharset utf-8
  <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{HTTPS} !=on
-    # (1)
-     RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/
-     RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[\w-]+$
-     RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+#    # (1)
+    RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/
+    RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[\w-]+$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
  </IfModule>
 
@@ -411,23 +393,23 @@ AddDefaultCharset utf-8
 # subdomains for certain parts of your website.
 
 # <IfModule mod_rewrite.c>
-#
+
 #     RewriteEngine On
-#
+
 #     # (1)
 #     RewriteCond %{HTTPS} =on
 #     RewriteRule ^ - [E=PROTO:https]
 #     RewriteCond %{HTTPS} !=on
 #     RewriteRule ^ - [E=PROTO:http]
-#
+
 #     # (2)
 #     # RewriteCond %{HTTPS} !=on
-#
+
 #     RewriteCond %{HTTP_HOST} !^www\. [NC]
 #     RewriteCond %{SERVER_ADDR} !=127.0.0.1
 #     RewriteCond %{SERVER_ADDR} !=::1
 #     RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-#
+
 # </IfModule>
 
 # ######################################################################
@@ -451,8 +433,7 @@ AddDefaultCharset utf-8
 #
 # Keep in mind that while you could send the `X-Frame-Options` header for all
 # of your website's pages, this has the potential downside that it forbids even
-# non-malicious framing of your content (e.g.: when users visit your website
-# using a Google Image Search results page).
+# non-malicious framing of your content.
 #
 # Nonetheless, you should ensure that you send the `X-Frame-Options` header for
 # all pages that allow a user to make a state-changing operation (e.g: pages
@@ -463,13 +444,16 @@ AddDefaultCharset utf-8
 # more than just clickjacking attacks.
 # https://cure53.de/xfo-clickjacking.pdf.
 #
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+# (!) The `Content-Security-Policy` header has a `frame-ancestors` directive
+#     which obsoletes this header for supporting browsers.
+#
 # https://tools.ietf.org/html/rfc7034
-# https://blogs.msdn.microsoft.com/ieinternals/2010/03/30/combating-clickjacking-with-x-frame-options/
-# https://www.owasp.org/index.php/Clickjacking
+# https://owasp.org/www-project-secure-headers/#x-frame-options
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+# https://docs.microsoft.com/archive/blogs/ieinternals/combating-clickjacking-with-x-frame-options
 
  <IfModule mod_headers.c>
-     Header always set X-Frame-Options "SAMEORIGIN" "expr=%{CONTENT_TYPE} =~ m#text/html#i"
+    Header always set X-Frame-Options "SAMEORIGIN" "expr=%{CONTENT_TYPE} =~ m#text/html#i"
  </IfModule>
 
 # ----------------------------------------------------------------------
@@ -479,7 +463,7 @@ AddDefaultCharset utf-8
 # Mitigate the risk of cross-site scripting and other content-injection
 # attacks.
 #
-# This can be done by setting a `Content Security Policy` which whitelists
+# This can be done by setting a Content Security Policy which permits
 # trusted sources of content for your website.
 #
 # There is no policy that fits all websites, you will have to modify the
@@ -515,10 +499,17 @@ AddDefaultCharset utf-8
 #      The `frame-ancestors` directive helps avoid "Clickjacking" attacks and
 #      is similar to the `X-Frame-Options` header.
 #
-#      Browsers that support the CSP header will ignore `X-Frame-Options` if
+#      Browsers that support the CSP header should ignore `X-Frame-Options` if
 #      `frame-ancestors` is also specified.
 #
-#  (5) Forces the browser to treat all the resources that are served over HTTP
+#  (5) Elements controlled by `object-src` are perhaps coincidentally
+#      considered legacy HTML elements and are not receiving new standardized
+#      features (such as the security attributes `sandbox` or `allow` for
+#      `<iframe>`).
+#      Therefore it is recommended to restrict this fetch-directive (e.g.,
+#      explicitly set `object-src 'none'` if possible).
+#
+#  (6) Forces the browser to treat all the resources that are served over HTTP
 #      as if they were loaded securely over HTTPS by setting the
 #      `upgrade-insecure-requests` directive.
 #
@@ -527,7 +518,7 @@ AddDefaultCharset utf-8
 #      loaded over HTTPS you must include the `Strict-Transport-Security`
 #      header.
 #
-#  (6) The `Content-Security-Policy` header is included in all responses
+#  (7) The `Content-Security-Policy` header is included in all responses
 #      that are able to execute scripting. This includes the commonly used
 #      file types: HTML, XML and PDF documents. Although Javascript files
 #      can not execute script in a "browsing context", they are still included
@@ -542,14 +533,15 @@ AddDefaultCharset utf-8
 # such as:
 # https://csp-evaluator.withgoogle.com
 #
-# https://csp.withgoogle.com/docs/
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
-# https://www.html5rocks.com/en/tutorials/security/content-security-policy/
 # https://www.w3.org/TR/CSP/
+# https://owasp.org/www-project-secure-headers/#content-security-policy
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
+# https://developers.google.com/web/fundamentals/security/csp
+# https://content-security-policy.com/
 
 # <IfModule mod_headers.c>
-#     #                                   (1)                 (2)              (3)                 (4)                     (5)                         (6)
-#     Header always set Content-Security-Policy "default-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests" "expr=%{CONTENT_TYPE} =~ m#text\/(html|javascript)|application\/pdf|xml#i"
+#     #                                          (1)                 (2)              (3)                 (4)                     (5)                (6)                                                 (7)
+#     Header always set Content-Security-Policy "default-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests" "expr=%{CONTENT_TYPE} =~ m#text\/(html|javascript)|application\/pdf|xml#i"
 # </IfModule>
 
 # ----------------------------------------------------------------------
@@ -642,15 +634,15 @@ AddDefaultCharset utf-8
 #     https://hstspreload.org/#deployment-recommendations
 #
 # https://tools.ietf.org/html/rfc6797#section-6.1
+# https://owasp.org/www-project-secure-headers/#http-strict-transport-security
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
 # https://www.html5rocks.com/en/tutorials/security/transport-layer-security/
-# https://blogs.msdn.microsoft.com/ieinternals/2014/08/18/strict-transport-security/
 # https://hstspreload.org/
 
  <IfModule mod_headers.c>
      # Header always set Strict-Transport-Security "max-age=16070400; includeSubDomains" "expr=%{HTTPS} == 'on'"
      # (1) Enable your site for HSTS preload inclusion.
-      Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" "expr=%{HTTPS} == 'on'"
+     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" "expr=%{HTTPS} == 'on'"
  </IfModule>
 
 # ----------------------------------------------------------------------
@@ -664,6 +656,7 @@ AddDefaultCharset utf-8
 # user-uploaded content or content that could potentially be treated as
 # executable by the browser.
 #
+# https://owasp.org/www-project-secure-headers/#x-content-type-options
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
 # https://blogs.msdn.microsoft.com/ie/2008/07/02/ie8-security-part-v-comprehensive-protection/
 # https://mimesniff.spec.whatwg.org/
@@ -671,48 +664,6 @@ AddDefaultCharset utf-8
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options "nosniff"
 </IfModule>
-
-# ----------------------------------------------------------------------
-# | Cross-Site Scripting (XSS) Protection                              |
-# ----------------------------------------------------------------------
-
-# Protect website reflected Cross-Site Scripting (XSS) attacks.
-#
-# (1) Try to re-enable the cross-site scripting (XSS) filter built into most
-#     web browsers.
-#
-#     The filter is usually enabled by default, but in some cases, it may be
-#     disabled by the user. However, in Internet Explorer, for example, it can be
-#     re-enabled just by sending the  `X-XSS-Protection` header with the value
-#     of `1`.
-#
-# (2) Prevent web browsers from rendering the web page if a potential reflected
-#     (a.k.a non-persistent) XSS attack is detected by the filter.
-#
-#     By default, if the filter is enabled and browsers detect a reflected XSS
-#     attack, they will attempt to block the attack by making the smallest
-#     possible modifications to the returned web page.
-#
-#     Unfortunately, in some browsers (e.g.: Internet Explorer), this default
-#     behavior may allow the XSS filter to be exploited. Therefore, it's better
-#     to inform browsers to prevent the rendering of the page altogether,
-#     instead of attempting to modify it.
-#
-#     https://hackademix.net/2009/11/21/ies-xss-filter-creates-xss-vulnerabilities
-#
-# (!) Do not rely on the XSS filter to prevent XSS attacks! Ensure that you are
-#     taking all possible measures to prevent XSS attacks, the most obvious
-#     being: validating and sanitizing your website's inputs.
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
-# https://blogs.msdn.microsoft.com/ie/2008/07/02/ie8-security-part-iv-the-xss-filter/
-# https://blogs.msdn.microsoft.com/ieinternals/2011/01/31/controlling-the-xss-filter/
-# https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29
-
- <IfModule mod_headers.c>
-     #                           (1)    (2)
-     Header always set X-XSS-Protection "1; mode=block" "expr=%{CONTENT_TYPE} =~ m#text/html#i"
- </IfModule>
 
 # ----------------------------------------------------------------------
 # | Referrer Policy                                                    |
@@ -733,12 +684,87 @@ AddDefaultCharset utf-8
 # https://securityheaders.com/
 # https://observatory.mozilla.org/
 #
-# https://scotthelme.co.uk/a-new-security-header-referrer-policy/
+# https://www.w3.org/TR/referrer-policy/
+# https://owasp.org/www-project-secure-headers/#referrer-policy
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+# https://scotthelme.co.uk/a-new-security-header-referrer-policy/
 
  <IfModule mod_headers.c>
-     #                                                             (1)
-     Header always set Referrer-Policy "strict-origin-when-cross-origin" "expr=%{CONTENT_TYPE} =~ m#text\/(css|html|javascript)|application\/pdf|xml#i"
+     #                                                                                              (1)
+     Header always set Referrer-Policy "same-origin" "expr=%{CONTENT_TYPE} =~ m#text\/(css|html|javascript)|application\/pdf|xml#i"
+ </IfModule>
+
+# ----------------------------------------------------------------------
+# | Cross Origin Policy                                                |
+# ----------------------------------------------------------------------
+
+# Set strict a Cross Origin Policy to mitigate information leakage.
+#
+# (1) Cross-Origin-Embedder-Policy prevents a document from loading any
+#     cross-origin resources that don’t explicitly grant the document
+#     permission.
+#     https://html.spec.whatwg.org/multipage/origin.html#coep
+#     https://owasp.org/www-project-secure-headers/#cross-origin-embedder-policy
+#     https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy
+#
+# (2) Cross-Origin-Opener-Policy allows you to ensure a top-level document does
+#     not share a browsing context group with cross-origin documents.
+#     https://html.spec.whatwg.org/multipage/origin.html#cross-origin-opener-policies
+#     https://owasp.org/www-project-secure-headers/#cross-origin-opener-policy
+#     https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy
+#
+# (3) Cross-Origin-Resource-Policy allows to define a policy that lets web
+#     sites and applications opt in to protection against certain requests from
+#     other origins, to mitigate speculative side-channel attacks.
+#     https://fetch.spec.whatwg.org/#cross-origin-resource-policy-header
+#     https://owasp.org/www-project-secure-headers/#cross-origin-resource-policy
+#     https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Resource-Policy
+#     https://resourcepolicy.fyi/
+#
+# To check your Cross Origin Policy, you can use an online service, such as:
+# https://securityheaders.com/
+# https://observatory.mozilla.org/
+#
+# https://web.dev/coop-coep/
+# https://web.dev/why-coop-coep/
+# https://web.dev/cross-origin-isolation-guide/
+# https://scotthelme.co.uk/coop-and-coep/
+
+ <IfModule mod_headers.c>
+     # (1)
+     Header always set Cross-Origin-Embedder-Policy "same-origin" "expr=%{CONTENT_TYPE} =~ m#text\/(html|javascript)|application\/pdf|xml#i"
+
+     # (2)
+     Header always set Cross-Origin-Opener-Policy "same-origin" "expr=%{CONTENT_TYPE} =~ m#text\/(html|javascript)|application\/pdf|xml#i"
+
+     # (3)
+     Header always set Cross-Origin-Resource-Policy "same-origin" "expr=%{CONTENT_TYPE} =~ m#text\/(html|javascript)|application\/pdf|xml#i"
+ </IfModule>
+
+# ----------------------------------------------------------------------
+# | Permissions Policy                                                 |
+# ----------------------------------------------------------------------
+
+# Set a strict Permissions Policy to mitigate access to browser features.
+#
+# The header uses a structured syntax, and allows sites to more tightly
+# restrict which origins can be granted access to features.
+# The list of available features: https://github.com/w3c/webappsec-permissions-policy/blob/main/features.md
+#
+# The example policy below aims to disable all features expect synchronous
+# `XMLHttpRequest` requests on the same origin.
+#
+# To check your Permissions Policy, you can use an online service, such as:
+# https://securityheaders.com/
+# https://observatory.mozilla.org/
+#
+# https://www.w3.org/TR/permissions-policy-1/
+# https://owasp.org/www-project-secure-headers/#permissions-policy
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy
+# https://scotthelme.co.uk/a-new-security-header-feature-policy/
+
+ <IfModule mod_headers.c>
+     Header always set Permissions-Policy "accelerometer=(),autoplay=(),camera=(),display-capture=(),document-domain=(),encrypted-media=(),fullscreen=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),screen-wake-lock=(),sync-xhr=(self),usb=(),web-share=(),xr-spatial-tracking=()" "expr=%{CONTENT_TYPE} =~ m#text\/(html|javascript)|application\/pdf|xml#i"
  </IfModule>
 
 # ----------------------------------------------------------------------
@@ -856,6 +882,7 @@ ServerSignature Off
                                       "image/bmp" \
                                       "image/svg+xml" \
                                       "image/vnd.microsoft.icon" \
+                                      "image/x-icon" \
                                       "text/cache-manifest" \
                                       "text/calendar" \
                                       "text/css" \
@@ -903,13 +930,21 @@ ServerSignature Off
 # (!) To make this part relevant, you need to generate encoded files by your
 #     own. Enabling this part will not auto-generate brotlied files.
 #
-# Note that some clients (eg. browsers) require a secure connection to request
+# (!) In special case of serving pre-compressed content only, note that
+#     `DirectoryIndex` directive adjustments could be required to change
+#     default resources priorities.
+#     https://httpd.apache.org/docs/current/mod/mod_dir.html#directoryindex
+#
+# (1) Remove default Content-Language header added for .br files.
+#     https://httpd.apache.org/docs/current/mod/mod_mime.html#multipleext
+#
+# Note that some clients (e.g. browsers) require a secure connection to request
 # brotli-compressed resources.
 # https://www.chromestatus.com/feature/5420797577396224
 #
 # https://httpd.apache.org/docs/current/mod/mod_brotli.html#precompressed
 
- <IfModule mod_headers.c>
+ <IfModule mod_rewrite.c>
 
      RewriteCond %{HTTP:Accept-Encoding} br
      RewriteCond %{REQUEST_FILENAME}\.br -f
@@ -921,6 +956,9 @@ ServerSignature Off
      <FilesMatch "\.br$">
 
          <IfModule mod_mime.c>
+             # (1)
+             RemoveLanguage .br
+
              # Serve correct content types
              AddType text/css              css.br
              AddType text/calendar         ics.br
@@ -936,15 +974,19 @@ ServerSignature Off
                               .json.br
          </IfModule>
 
-         # Force proxies to cache brotlied and non-brotlied files separately
-         Header append Vary Accept-Encoding
+         <IfModule mod_headers.c>
+             # Force proxies to cache brotlied and non-brotlied files separately
+             Header append Vary Accept-Encoding
+         </IfModule>
 
      </FilesMatch>
 
-     # Serve correct encoding type
-     AddEncoding br .br
+     <IfModule mod_mime.c>
+         # Serve correct encoding type
+         AddEncoding br .br
+     </IfModule>
 
- </IfModule>
+# </IfModule>
 
 # ----------------------------------------------------------------------
 # | GZip pre-compressed content                                        |
@@ -956,15 +998,20 @@ ServerSignature Off
 # (!) To make this part relevant, you need to generate encoded files by your
 #     own. Enabling this part will not auto-generate gziped files.
 #
-# https://httpd.apache.org/docs/current/mod/mod_deflate.html#precompressed
+# (!) In special case of serving pre-compressed content only, note that
+#     `DirectoryIndex` directive adjustments could be required to change
+#     default resources priorities.
+#     https://httpd.apache.org/docs/current/mod/mod_dir.html#directoryindex
 #
 # (1) Removing default MIME Type for .gz files allowing to add custom
 #     sub-types.
 #     You may prefer using less generic extensions such as .html_gz in order to
 #     keep the default behavior regarding .gz files.
 #     https://httpd.apache.org/docs/current/mod/mod_mime.html#removetype
+#
+# https://httpd.apache.org/docs/current/mod/mod_deflate.html#precompressed
 
- <IfModule mod_headers.c>
+ <IfModule mod_rewrite.c>
 
      RewriteCond %{HTTP:Accept-Encoding} gzip
      RewriteCond %{REQUEST_FILENAME}\.gz -f
@@ -975,11 +1022,9 @@ ServerSignature Off
 
      <FilesMatch "\.gz$">
 
-         # Serve correct content types
          <IfModule mod_mime.c>
              # (1)
              RemoveType gz
-
              # Serve correct content types
              AddType text/css              css.gz
              AddType text/calendar         ics.gz
@@ -995,13 +1040,169 @@ ServerSignature Off
                               .json.gz
          </IfModule>
 
-         # Force proxies to cache gzipped and non-gzipped files separately
-         Header append Vary Accept-Encoding
+         <IfModule mod_headers.c>
+             # Force proxies to cache gzipped and non-gzipped files separately
+             Header append Vary Accept-Encoding
+         </IfModule>
 
      </FilesMatch>
+     <IfModule mod_mime.c>
+         # Serve correct encoding type
+         AddEncoding gzip .gz
+     </IfModule>
 
-     # Serve correct encoding type
-     AddEncoding gzip .gz
+ </IfModule>
+
+# ----------------------------------------------------------------------
+# | ETags                                                              |
+# ----------------------------------------------------------------------
+
+# Remove `ETags` as resources are sent with far-future expires headers.
+#
+# Apache `ETags` might have an unexpected behavior if `DeflateAlterETag`
+# can't be changed (which is the case at `.htaccess` level).
+#
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag
+# https://developer.yahoo.com/performance/rules.html#etags
+# https://tools.ietf.org/html/rfc7232#section-2.3
+
+# `FileETag None` doesn't work in all cases.
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+
+FileETag None
+
+# ----------------------------------------------------------------------
+# | Cache expiration                                                   |
+# ----------------------------------------------------------------------
+
+# Serve resources with a far-future expiration date.
+#
+# (!) If you don't control versioning with filename-based cache busting, you
+#     should consider lowering the cache times to something like one week.
+#
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expires
+# https://httpd.apache.org/docs/current/mod/mod_expires.html
+
+<IfModule mod_expires.c>
+
+    ExpiresActive on
+
+    # Default: Fallback
+    ExpiresDefault                                      "access plus 1 year"
+
+    # Specific: Assets
+    ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
+    ExpiresByType image/x-icon                          "access plus 1 week"
+
+    # Specific: Manifests
+    ExpiresByType application/manifest+json             "access plus 1 week"
+    ExpiresByType application/x-web-app-manifest+json   "access"
+    ExpiresByType text/cache-manifest                   "access"
+
+    # Specific: Data interchange
+    ExpiresByType application/atom+xml                  "access plus 1 hour"
+    ExpiresByType application/rdf+xml                   "access plus 1 hour"
+    ExpiresByType application/rss+xml                   "access plus 1 hour"
+
+    # Specific: Documents
+    ExpiresByType text/html                             "access"
+    ExpiresByType text/markdown                         "access"
+    ExpiresByType text/calendar                         "access"
+
+    # Specific: Other
+    ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
+
+    # Generic: Data
+    ExpiresByType application/json                      "access"
+    ExpiresByType application/ld+json                   "access"
+    ExpiresByType application/schema+json               "access"
+    ExpiresByType application/geo+json                  "access"
+    ExpiresByType application/xml                       "access"
+    ExpiresByType text/xml                              "access"
+
+    # Generic: WebAssembly
+    ExpiresByType application/wasm                    "access plus 1 year" # default
+
+    # Generic: Assets
+     ExpiresByType application/javascript              "access plus 1 year" # default
+     ExpiresByType application/x-javascript            "access plus 1 year" # default
+     ExpiresByType text/javascript                     "access plus 1 year" # default
+     ExpiresByType text/css                            "access plus 1 year" # default
+
+    # Generic: Medias
+     ExpiresByType audio/*                             "access plus 1 year" # default
+     ExpiresByType image/*                             "access plus 1 year" # default
+     ExpiresByType video/*                             "access plus 1 year" # default
+     ExpiresByType font/*                              "access plus 1 year" # default
+
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | Cache Control                                                      |
+# ----------------------------------------------------------------------
+
+# Serve resources with appropriate cache control directives.
+#
+# The `Cache-Control` header field holds directives (instructions) that control
+# caching in browsers and shared caches (e.g. Proxies, CDNs).
+# Its use targets web performances improvement by specifying the expected
+# client and network caches behaviors.
+#
+# The usable cache directives are listed here:
+# https://www.iana.org/assignments/http-cache-directives/http-cache-directives.xml
+#
+# The cache directives are documented here:
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#response_directives
+#
+# (!) Enable and configure this configuration with care.
+#     Default values should embrace conformance for static files and simple
+#     apps, but cache control definition at backend level is highly preferred.
+#     Incorrect directives can lead to data leaks, or can degrade performances.
+#
+#     More specifically, in-depth understanding on `public` vs `private`
+#     directives meanings is highly recommended. A resource with `public` will
+#     be cached by shared caches like CDN, even if a user session is active.
+#
+# (!) The config directive `Header` must be used with the appropriate action.
+#     Depending on the need, `merge` keeps the current value, if any, of
+#     `Cache-Control` header, while `set` reset the value including the one
+#     added by `ExpiresByType` directive in the cache expiration config file
+#     h5bp/web_performance/cache_expiration.conf.
+#     https://httpd.apache.org/docs/current/mod/mod_headers.html#header
+#
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
+# https://www.rfc-editor.org/rfc/rfc9111.html
+# https://www.rfc-editor.org/rfc/rfc8246.html
+# https://www.rfc-editor.org/rfc/rfc5861.html
+# https://www.iana.org/assignments/http-cache-directives/http-cache-directives.xml
+# https://cache-tests.fyi/
+
+ <IfModule mod_headers.c>
+
+#     # Default
+     Header merge Cache-Control "public, immutable, stale-while-revalidate" "expr=%{resp:Cache-Control} == 'max-age=31536000'"
+
+#     # No content
+     Header merge Cache-Control "no-store"                                  "expr=-z %{CONTENT_TYPE}"
+
+#     # Manifest files
+     Header merge Cache-Control "public"                                    "expr=%{CONTENT_TYPE} =~ m#application/manifest\+json#i"
+     Header set   Cache-Control "no-cache"                                  "expr=%{CONTENT_TYPE} =~ m#text/cache-manifest#i"
+
+#     # Assets
+     Header merge Cache-Control "public, immutable, stale-while-revalidate" "expr=%{CONTENT_TYPE} =~ m#image/x-icon#i"
+
+#     # Data interchange
+     Header merge Cache-Control "public, stale-while-revalidate"            "expr=%{CONTENT_TYPE} =~ m#application/(atom|rdf|rss)\+xml#i"
+
+#     # Documents
+     Header set   Cache-Control "no-cache, private, must-revalidate"        "expr=%{CONTENT_TYPE} =~ m#text/(html|markdown|calendar)#i"
+
+#     # Data
+     Header set   Cache-Control "no-cache"                                  "expr=%{CONTENT_TYPE} =~ m#json|xml#i && %{CONTENT_TYPE} !~ m#/(atom|rdf|rss|manifest|svg)\+#i"
 
  </IfModule>
 
@@ -1011,7 +1212,8 @@ ServerSignature Off
 
 # Prevent intermediate caches or proxies (such as those used by mobile
 # network providers) and browsers data-saving features from modifying
-# the website's content using the `cache-control: no-transform` directive.
+# the website's content using the `no-transform` directive for
+# `Cache-Control` header.
 #
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
 # https://tools.ietf.org/html/rfc7234#section-5.2.2.4
@@ -1038,143 +1240,6 @@ ServerSignature Off
  </IfModule>
 
 # ----------------------------------------------------------------------
-# | ETags                                                              |
-# ----------------------------------------------------------------------
-
-# Remove `ETags` as resources are sent with far-future expires headers.
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag
-# https://developer.yahoo.com/performance/rules.html#etags
-# https://tools.ietf.org/html/rfc7232#section-2.3
-
-# `FileETag None` doesn't work in all cases.
-<IfModule mod_headers.c>
-    Header unset ETag
-</IfModule>
-
-FileETag None
-
-# ----------------------------------------------------------------------
-# | Cache expiration                                                   |
-# ----------------------------------------------------------------------
-
-# Serve resources with a far-future expiration date.
-#
-# (!) If you don't control versioning with filename-based cache busting, you
-# should consider lowering the cache times to something like one week.
-#
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expires
-# https://httpd.apache.org/docs/current/mod/mod_expires.html
-
-<IfModule mod_expires.c>
-
-    ExpiresActive on
-    ExpiresDefault                                      "access plus 1 month"
-
-  # CSS
-
-    ExpiresByType text/css                              "access plus 1 year"
-
-
-  # Data interchange
-
-    ExpiresByType application/atom+xml                  "access plus 1 hour"
-    ExpiresByType application/rdf+xml                   "access plus 1 hour"
-    ExpiresByType application/rss+xml                   "access plus 1 hour"
-
-    ExpiresByType application/json                      "access plus 0 seconds"
-    ExpiresByType application/ld+json                   "access plus 0 seconds"
-    ExpiresByType application/schema+json               "access plus 0 seconds"
-    ExpiresByType application/geo+json                  "access plus 0 seconds"
-    ExpiresByType application/xml                       "access plus 0 seconds"
-    ExpiresByType text/calendar                         "access plus 0 seconds"
-    ExpiresByType text/xml                              "access plus 0 seconds"
-
-
-  # Favicon (cannot be renamed!) and cursor images
-
-    ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
-    ExpiresByType image/x-icon                          "access plus 1 week"
-
-  # HTML
-
-    ExpiresByType text/html                             "access plus 0 seconds"
-
-
-  # JavaScript
-
-    ExpiresByType application/javascript                "access plus 1 year"
-    ExpiresByType application/x-javascript              "access plus 1 year"
-    ExpiresByType text/javascript                       "access plus 1 year"
-
-
-  # Manifest files
-
-    ExpiresByType application/manifest+json             "access plus 1 week"
-    ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
-    ExpiresByType text/cache-manifest                   "access plus 0 seconds"
-
-
-  # Markdown
-
-    ExpiresByType text/markdown                         "access plus 0 seconds"
-
-
-  # Media files
-
-    ExpiresByType audio/ogg                             "access plus 1 month"
-    ExpiresByType image/apng                            "access plus 1 month"
-    ExpiresByType image/bmp                             "access plus 1 month"
-    ExpiresByType image/gif                             "access plus 1 month"
-    ExpiresByType image/jpeg                            "access plus 1 month"
-    ExpiresByType image/png                             "access plus 1 month"
-    ExpiresByType image/svg+xml                         "access plus 1 month"
-    ExpiresByType image/webp                            "access plus 1 month"
-    ExpiresByType video/mp4                             "access plus 1 month"
-    ExpiresByType video/ogg                             "access plus 1 month"
-    ExpiresByType video/webm                            "access plus 1 month"
-
-
-  # WebAssembly
-
-    ExpiresByType application/wasm                      "access plus 1 year"
-
-
-  # Web fonts
-
-    # Collection
-    ExpiresByType font/collection                       "access plus 1 month"
-
-    # Embedded OpenType (EOT)
-    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
-    ExpiresByType font/eot                              "access plus 1 month"
-
-    # OpenType
-    ExpiresByType font/opentype                         "access plus 1 month"
-    ExpiresByType font/otf                              "access plus 1 month"
-
-    # TrueType
-    ExpiresByType application/x-font-ttf                "access plus 1 month"
-    ExpiresByType font/ttf                              "access plus 1 month"
-
-    # Web Open Font Format (WOFF) 1.0
-    ExpiresByType application/font-woff                 "access plus 1 month"
-    ExpiresByType application/x-font-woff               "access plus 1 month"
-    ExpiresByType font/woff                             "access plus 1 month"
-
-    # Web Open Font Format (WOFF) 2.0
-    ExpiresByType application/font-woff2                "access plus 1 month"
-    ExpiresByType font/woff2                            "access plus 1 month"
-
-
-  # Other
-
-    ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
-
-</IfModule>
-
-# ----------------------------------------------------------------------
 # | File concatenation                                                 |
 # ----------------------------------------------------------------------
 
@@ -1188,23 +1253,23 @@ FileETag None
 #
 # Apache will replace those lines with the content of the specified files.
 
-# <IfModule mod_include.c>
+ <IfModule mod_include.c>
 
-#     <FilesMatch "assets/combined/main\.js$">
-#         Options +Includes
-#         AddOutputFilterByType INCLUDES application/javascript \
-#                                        application/x-javascript \
-#                                        text/javascript
-#         SetOutputFilter INCLUDES
-#     </FilesMatch>
+     <FilesMatch "\.combined\.js$">
+         Options +Includes
+         AddOutputFilterByType INCLUDES application/javascript \
+                                        application/x-javascript \
+                                        text/javascript
+         SetOutputFilter INCLUDES
+     </FilesMatch>
 
-#     <FilesMatch "assets/combined/main\.css$">
-#         Options +Includes
-#         AddOutputFilterByType INCLUDES text/css
-#         SetOutputFilter INCLUDES
-#     </FilesMatch>
+     <FilesMatch "\.combined\.css$">
+         Options +Includes
+         AddOutputFilterByType INCLUDES text/css
+         SetOutputFilter INCLUDES
+     </FilesMatch>
 
-# </IfModule>
+ </IfModule>
 
 # ----------------------------------------------------------------------
 # | Filename-based cache busting                                       |
@@ -1220,46 +1285,98 @@ FileETag None
  <IfModule mod_rewrite.c>
      RewriteEngine On
      RewriteCond %{REQUEST_FILENAME} !-f
-     RewriteRule ^(.+)\.(\w+)\.(bmp|css|cur|gif|ico|jpe?g|m?js|a?png|svgz?|webp|webmanifest)$ $1.$3 [L]
+     RewriteRule ^(.+)\.(\w+)\.(avifs?|bmp|css|cur|gif|ico|jpe?g|jxl|m?js|a?png|svgz?|webp|webmanifest)$ $1.$3 [L]
  </IfModule>
 
 
 
-#INDEX frontend default
+
+# ----------------------------------------------------------------------
+# | Git security flaw                                                     |
+# ----------------------------------------------------------------------
+#
+# If your project merge to your site to production
+# is for block to know all information
+# pakagiste to your git server protection
+
+ <IfModule mod_rewrite.c>
+     RedirectMatch 404 "/\.git$"
+     RedirectMatch 404 "/\.git/"
+     RedirectMatch 404 "/\.gitignores$"
+     RedirectMatch 404 "/\.gitmodules$"
+     RedirectMatch 404 "/\.gitattributes$"
+     RedirectMatch 404 "/\.github/"
+ </IfModule>
+
+
+
+
+
+# BEGIN LSCACHE
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+<IfModule LiteSpeed>
+RewriteEngine on
+CacheLookup on
+RewriteRule .* - [E=Cache-Control:no-autoflush]
+RewriteRule \.litespeed_conf\.dat - [F,L]
+
+### marker CACHE RESOURCE start ###
+    # RewriteRule wp-content/.*/[^/]*(responsive|css|js|dynamic|loader|fonts)\.php - [E=cache-control:max-age=3600]
+    RewriteRule assets/.*/[^/]*(responsive|css|js|dynamic|loader|combined|production|custom|svg|fonts)\.php - [E=cache-control:max-age=3600]
+    RewriteRule images/.*/[^/]*(responsive|css|js|dynamic|loader|combined|production|custom|svg|fonts)\.php - [E=cache-control:max-age=3600]
+### marker CACHE RESOURCE end ###
+
+### marker FAVICON start ###
+RewriteRule favicon\.ico$ - [E=cache-control:max-age=86400]
+### marker FAVICON end ###
+
+### marker WEBP start ###
+RewriteCond %{HTTP_ACCEPT} "image/webp"
+RewriteRule .* - [E=Cache-Control:vary=%{ENV:LSCACHE_VARY_VALUE}+webp]
+RewriteCond %{HTTP_USER_AGENT} iPhone.*Version/(\d{2}).*Safari
+RewriteCond %1 >13
+RewriteRule .* - [E=Cache-Control:vary=%{ENV:LSCACHE_VARY_VALUE}+webp]
+### marker WEBP end ###
+
+### marker DROPQS start ###
+CacheKeyModify -qs:fbclid
+CacheKeyModify -qs:gclid
+CacheKeyModify -qs:utm*
+CacheKeyModify -qs:_ga
+### marker DROPQS end ###
+
+</IfModule>
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+# END LSCACHE
+# BEGIN NON_LSCACHE
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+# END NON_LSCACHE
+
+
+
 <IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	RewriteRule ^index$ index.php [L]
-	RewriteRule ^index$ index.php?pages=index [L]
-	RewriteRule ^cv-alexonbalangue$ index.php?pages=cv [L]
-	RewriteRule ^marketplace$ index.php?pages=shop [L]
-	RewriteRule ^server$ index.php?pages=server [L]
-	RewriteRule ^project$ index.php?pages=project [L]
-	RewriteRule ^invest$ index.php?pages=invest [L]
-	RewriteRule ^token-coin$ index.php?pages=crypto [L]
-	RewriteRule ^downloads$ index.php?pages=download [L]
-	RewriteRule ^donation$ index.php?pages=donation [L]
-	RewriteRule ^streaming$ index.php?pages=stream [L]
-
-#### INVEST   
-
-
-	RewriteRule ^invest/crypto$ index.php?pages=invest&all=crypto [L]
-	RewriteRule ^invest/bourse$ index.php?pages=invest&all=bourse [L]
-	RewriteRule ^invest/crowdfunding$ index.php?pages=invest&all=crowfunding [L]
-	RewriteRule ^invest/crowdlending$ index.php?pages=invest&all=crowlending [L]
+RewriteEngine on
+#INDEX frontend default
+RewriteRule ^index$ index.php [L]
+RewriteRule ^index$ index.php?pages=index [L]
+RewriteRule ^teams$ index.php?pages=teams [L]
 </IfModule>
 
-#Translate
+
 <IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	#Translate French
-	RewriteRule ^fr/accueil.html$ general.php?lang=fr&pages=index [L]
-
-	#											SPECIAL													#
-
-	########## debug - English ##########
+RewriteEngine on
+#Translate French
+RewriteRule ^fr/accueil$ general.php?lang=fr&pages=index [L]
+RewriteRule ^fr/equipes$ general.php?lang=fr&pages=teams [L]
+RewriteRule ^fr/a-propos$ general.php?lang=fr&pages=aboutus [L]
+RewriteRule ^fr/services$ general.php?lang=fr&pages=services [L]
+    RewriteRule ^fr/services/cyber-securite$ general.php?lang=fr&pages=services&activities=cybersecurity [L]
+    RewriteRule ^fr/services/marketing$ general.php?lang=fr&pages=services&activities=marketing [L]
+    RewriteRule ^fr/services/webmestre$ general.php?lang=fr&pages=services&activities=webmaster [L]
+    RewriteRule ^fr/services/developpeur$ general.php?lang=fr&pages=services&activities=developper [L]
+    RewriteRule ^fr/services/reference-naturel$ general.php?lang=fr&pages=services&activities=seo [L]
+    RewriteRule ^fr/services/consultant$ general.php?lang=fr&pages=services&activities=consulting [L]
 	RewriteRule ^fr/déboguer$ debug.php?lang=fr&pages=debug [L]
 	RewriteRule ^fr/api/sites\.json$ debug.php?lang=fr&pages=debug&json=sites [L]
 	RewriteRule ^fr/api/social\.json$ debug.php?lang=fr&pages=debug&json=social [L]
@@ -1269,30 +1386,6 @@ FileETag None
 	RewriteRule ^fr/api/partner\.json$ debug.php?lang=fr&pages=debug&json=partner [L]
 	RewriteRule ^fr/api/sponsor\.json$ debug.php?lang=fr&pages=debug&json=sponsor [L]
 	RewriteRule ^fr/api/credits\.json$ debug.php?lang=fr&pages=debug&json=credits [L]
-	
-	RewriteRule ^fr/curriculum-vitae-alexonbalangue$ general.php?lang=fr&pages=cv [L]
-	RewriteRule ^fr/boutiques$ general.php?lang=fr&pages=shop [L]
-	RewriteRule ^fr/serveur$ general.php?lang=fr&pages=server [L]
-	RewriteRule ^fr/equipment$ general.php?lang=fr&pages=equipment [L]
-	RewriteRule ^fr/projet$ general.php?lang=fr&pages=project [L]
-	RewriteRule ^fr/investissement$ general.php?lang=fr&pages=invest [L]
-	RewriteRule ^fr/token-coin$ general.php?lang=fr&pages=invest [L]
-	RewriteRule ^fr/téléchargé$ general.php?lang=fr&pages=download [L]
-	RewriteRule ^fr/faire-un-don$ general.php?lang=fr&pages=donation [L]
-	RewriteRule ^fr/streaming$ general.php?lang=fr&pages=stream [L]
-
-	########## Download - french ########## 
-	RewriteRule ^fr/téléchargé-joomla-component$ general.php?lang=fr&pages=download&joomla=component [L]
-	RewriteRule ^fr/téléchargé-joomla-module$ general.php?lang=fr&pages=download&joomla=module [L]
-	RewriteRule ^fr/téléchargé-joomla-plugin$ general.php?lang=fr&pages=download&joomla=plugin [L]
-	RewriteRule ^fr/téléchargé-joomla-template$ general.php?lang=fr&pages=download&joomla=template [L]
-	RewriteRule ^fr/téléchargé-bureautique-personnel$ general.php?lang=fr&pages=download&office=personnel [L]
-	RewriteRule ^fr/téléchargé-bureautique-professionnel$ general.php?lang=fr&pages=download&office=professionnel [L]
-	RewriteRule ^fr/téléchargé-bureautique-ebook$ general.php?lang=fr&pages=download&office=ebook [L]
-	RewriteRule ^fr/téléchargé-bureautique-audio-book$ general.php?lang=fr&pages=download&office=audio-book [L]
-	RewriteRule ^fr/téléchargé-php-website-project-wp$ general.php?lang=fr&pages=download&php=website-project-wp [L]
-
-	########## LAW - French ########## 
 	RewriteRule ^fr/règles$ law.php?lang=fr&pages=law [L]
 	RewriteRule ^fr/conditions-générales-utilisation$ law.php?lang=fr&pages=law&full=cgu [L]
 	RewriteRule ^fr/conditions-générales-de-vente$ law.php?lang=fr&pages=law&full=cgv [L]
@@ -1301,108 +1394,31 @@ FileETag None
 	RewriteRule ^fr/politique-de-confidentialité$ law.php?lang=fr&pages=law&full=policy-privacy [L]
 	RewriteRule ^fr/rgpd$ law.php?lang=fr&pages=law&full=rgpd [L]
 	RewriteRule ^fr/cookies$ law.php?lang=fr&pages=law&full=cookies [L]
-	RewriteRule ^fr/auteur$ law.php?lang=fr&pages=law&full=author [L]
-
-	########## FAQs - French ##########
-	RewriteRule ^fr/faqs$ faqs.php?lang=fr&pages=index [L]
-
-	########## POOL - French ##########
-	RewriteRule ^fr/pool$ pool-services.php?lang=fr&pages=index [L]
-	RewriteRule ^fr/pool/crypto-monnaie$ pool-services.php?lang=fr&pages=crypto [L]
-	RewriteRule ^fr/pool/photographe$ pool-services.php?lang=fr&pages=photo [L]
-	RewriteRule ^fr/pool/rencontre$ pool-services.php?lang=fr&pages=meet [L]
-	RewriteRule ^fr/pool/entrepreneur$ pool-services.php?lang=fr&pages=entrepreneur [L]
-	RewriteRule ^fr/pool/gameur$ pool-services.php?lang=fr&pages=gaming [L]
-	RewriteRule ^fr/pool/musique$ pool-services.php?lang=fr&pages=music [L]
-	RewriteRule ^fr/pool/hacker$ pool-services.php?lang=fr&pages=hacker [L]
-	RewriteRule ^fr/pool/développeur$ pool-services.php?lang=fr&pages=developper [L]
-	RewriteRule ^fr/pool/webmestre$ pool-services.php?lang=fr&pages=webmaster [L]
-	RewriteRule ^fr/pool/informatique$ pool-services.php?lang=fr&pages=informatique [L]
-	RewriteRule ^fr/pool/référencement-naturel$ pool-services.php?lang=fr&pages=seo [L]
-	RewriteRule ^fr/pool/autres-listes$ pool-services.php?lang=fr&pages=list [L]
-	RewriteRule ^fr/pool/formation$ pool-services.php?lang=fr&pages=formation [L]
-	RewriteRule ^fr/pool/animaux$ pool-services.php?lang=fr&pages=animal [L]
-	RewriteRule ^fr/pool/immobilier$ pool-services.php?lang=fr&pages=immo [L]
-	RewriteRule ^fr/pool/sport$ pool-services.php?lang=fr&pages=sport [L]
-	RewriteRule ^fr/pool/graphiste$ pool-services.php?lang=fr&pages=designer [L]
-	RewriteRule ^fr/pool/rédacteur$ pool-services.php?lang=fr&pages=editor [L]
-	RewriteRule ^fr/pool/traducteur$ pool-services.php?lang=fr&pages=translator [L]
-	RewriteRule ^fr/pool/avocat$ pool-services.php?lang=fr&pages=lawyer [L]
-	RewriteRule ^fr/pool/marketing$ pool-services.php?lang=fr&pages=marketing [L]		
-	RewriteRule ^fr/pool/artisanat$ pool-services.php?lang=fr&pages=pool&index=arts-and-crafts [L]
-	RewriteRule ^fr/pool/transport$ pool-services.php?lang=fr&pages=pool&index=transport [L]
-	RewriteRule ^fr/pool/tourisme$ pool-services.php?lang=fr&pages=pool&index=tourism [L]
-	RewriteRule ^fr/pool/santé$ pool-services.php?lang=fr&pages=pool&index=health [L]
-	RewriteRule ^fr/pool/mode-textile$ pool-services.php?lang=fr&pages=pool&index=textile-fashion [L]
-	RewriteRule ^fr/pool/restauration$ pool-services.php?lang=fr&pages=pool&index=restoration [L]
-	RewriteRule ^fr/pool/culture$ pool-services.php?lang=fr&pages=pool&index=culture [L]
-	RewriteRule ^fr/pool/assurance$ pool-services.php?lang=fr&pages=pool&index=insurance [L]
-	RewriteRule ^fr/pool/financière$ pool-services.php?lang=fr&pages=pool&index=financial [L]
-	RewriteRule ^fr/pool/automobile$ pool-services.php?lang=fr&pages=pool&index=automobile [L]
-	RewriteRule ^fr/pool/audio-visuel$ pool-services.php?lang=fr&pages=pool&index=audio-visual [L]
-	RewriteRule ^fr/pool/architecte$ pool-services.php?lang=fr&pages=pool&index=architect [L]
-	RewriteRule ^fr/pool/agrilculture$ pool-services.php?lang=fr&pages=pool&index=agrilculture [L]
-	RewriteRule ^fr/pool/diy$ pool-services.php?lang=fr&pages=pool&index=diy [L]
-	RewriteRule ^fr/pool/administratifs$ pool-services.php?lang=fr&pages=pool&index=administrative [L]
-	RewriteRule ^fr/pool/biologie$ pool-services.php?lang=fr&pages=pool&index=biology [L]
-	RewriteRule ^fr/pool/commerce$ pool-services.php?lang=fr&pages=pool&index=trade [L]
-	RewriteRule ^fr/pool/association$ pool-services.php?lang=fr&pages=pool&index=association [L]
-	RewriteRule ^fr/pool/hotel$ pool-services.php?lang=fr&pages=pool&index=hotel [L]
-	RewriteRule ^fr/pool/adulte$ pool-services.php?lang=fr&pages=pool&index=adult [L]
+RewriteRule ^fr/sponsorisé$ sponsor.php?lang=fr&pages=index [L]
+RewriteRule ^fr/partenaire$ partner.php?lang=fr&pages=index [L]
+RewriteRule ^fr/contactez$ email.php?lang=fr&pages=index [L]
+RewriteRule ^fr/demande-devis$ email.php?lang=fr&pages=ask-quotes [L]
+RewriteRule ^fr/plan-du-site$ sitemap.php?lang=fr&pages=index [L]
+RewriteRule ^fr/contact/success$ block.php?lang=fr&pages=success [L]
+RewriteRule ^fr/erreur$ block.php?lang=fr&pages=error [L]
 
 
-	########## PRICING - French ##########
-	RewriteRule ^fr/tarification$ pricing.php?lang=fr&pages=index [L]
-	RewriteRule ^fr/tarification-business$ pricing.php?lang=fr&pages=base [L]
-	RewriteRule ^fr/tarification-freelance$ pricing.php?lang=fr&pages=freelancer [L]
-	RewriteRule ^fr/tarification-demande-un-devis$ pricing.php?lang=fr&pages=devis [L]
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
 
-	########## SPONSOR - French ##########
-	RewriteRule ^fr/sponsorisé$ sponsor.php?lang=fr&pages=index [L]
-
-	########## PARTNER - French ##########
-	RewriteRule ^fr/partenaire$ partner.php?lang=fr&pages=index [L]
-
-	########## CONTACT - French ##########
-	RewriteRule ^fr/contactez$ email.php?lang=fr&pages=index [L]
-
-	########## SITEMAP - French ##########
-	RewriteRule ^fr/plan-du-site$ sitemap.php?lang=fr&pages=index [L]
-
-	########## ABOUT - French ##########
-	RewriteRule ^fr/a-propos-de-nous$ about.php?lang=fr&pages=index [L]
-	RewriteRule ^fr/portfolio$ about.php?lang=fr&pages=portfolio [L]
-
-	########## BLOCK - French ##########
-	RewriteRule ^fr/contact/success$ block.php?lang=fr&pages=success [L]
-	RewriteRule ^fr/erreur$ block.php?lang=fr&pages=error [L]
-	RewriteRule ^fr/presse$ others.php?lang=fr&pages=press [L]
-	RewriteRule ^fr/recrutement$ others.php?lang=fr&pages=career [L]
-
-	########## INVEST - French ##########
-	RewriteRule ^fr/investissement/crypto$ general.php?lang=fr&pages=invest&all=crypto [L]
-	RewriteRule ^fr/investissement/bourse$ general.php?lang=fr&pages=invest&all=bourse [L]
-	RewriteRule ^fr/investissement/financement-participatif$ general.php?lang=fr&pages=invest&all=crowfunding [L]
-	RewriteRule ^fr/investissement/pret-participatif$ general.php?lang=fr&pages=invest&all=crowlending [L]
-
-	####################################################################################################
-	#											SPECIAL													#
-
-	RewriteRule ^en/resume-alexonbalangue$ general.php?lang=en&pages=cv [L]
-	RewriteRule ^en/store$ general.php?lang=en&pages=shop [L]
-	RewriteRule ^en/server$ general.php?lang=en&pages=server [L]
-	RewriteRule ^en/equipment$ general.php?lang=en&pages=equipment [L]
-	RewriteRule ^en/project$ general.php?lang=en&pages=project [L]
-	RewriteRule ^en/investment$ general.php?lang=en&pages=invest [L]
-	RewriteRule ^en/downloads$ general.php?lang=en&pages=download [L]
-	RewriteRule ^en/token-coin$ general.php?lang=en&pages=crypto [L]
-	RewriteRule ^en/donate$ general.php?lang=en&pages=donation [L]
-	RewriteRule ^en/streaming$ general.php?lang=en&pages=stream [L]
-
-	#Translate English
-	RewriteRule ^en/home.html$ general.php?lang=en&pages=index [L]
-
-	########## debug - English ##########
+#Translate English
+    RewriteRule ^en/home$ general.php?lang=en&pages=index [L]
+    RewriteRule ^en/teams$ general.php?lang=en&pages=teams [L]
+    RewriteRule ^en/aboutus$ general.php?lang=en&pages=aboutus [L]
+    RewriteRule ^en/services$ general.php?lang=en&pages=services [L]
+    RewriteRule ^en/services/cybersecurity$ general.php?lang=en&pages=services&activities=cybersecurity [L]
+    RewriteRule ^en/services/marketing$ general.php?lang=en&pages=services&activities=marketing [L]
+    RewriteRule ^en/services/webmaster$ general.php?lang=en&pages=services&activities=webmaster [L]
+    RewriteRule ^en/services/developper$ general.php?lang=en&pages=services&activities=developper [L]
+    RewriteRule ^en/services/seo$ general.php?lang=en&pages=services&activities=seo [L]
+    RewriteRule ^en/services/consulting$ general.php?lang=en&pages=services&activities=consulting [L]
 	RewriteRule ^en/debug$ debug.php?lang=en&pages=debug [L]
 	RewriteRule ^en/api/sites\.json$ debug.php?lang=en&pages=debug&json=sites [L]
 	RewriteRule ^en/api/social\.json$ debug.php?lang=en&pages=debug&json=social [L]
@@ -1412,19 +1428,6 @@ FileETag None
 	RewriteRule ^en/api/partner\.json$ debug.php?lang=en&pages=debug&json=partner [L]
 	RewriteRule ^en/api/sponsor\.json$ debug.php?lang=en&pages=debug&json=sponsor [L]
 	RewriteRule ^en/api/credits\.json$ debug.php?lang=en&pages=debug&json=credits [L]
-	
-	########## Download - English ########## 
-	RewriteRule ^en/downloads-joomla-component$ general.php?lang=en&pages=download&joomla=component [L]
-	RewriteRule ^en/downloads-joomla-module$ general.php?lang=en&pages=download&joomla=module [L]
-	RewriteRule ^en/downloads-joomla-plugin$ general.php?lang=en&pages=download&joomla=plugin [L]
-	RewriteRule ^en/downloads-joomla-template$ general.php?lang=en&pages=download&joomla=template [L]
-	RewriteRule ^en/downloads-office-personnal$ general.php?lang=en&pages=download&office=personnel [L]
-	RewriteRule ^en/downloads-office-professionnal$ general.php?lang=en&pages=download&office=professionnel [L]
-	RewriteRule ^en/downloads-office-ebook$ general.php?lang=en&pages=download&office=ebook [L]
-	RewriteRule ^en/downloads-office-audio-book$ general.php?lang=en&pages=download&office=audio-book [L]
-	RewriteRule ^en/downloads-php-website-project-wp$ general.php?lang=en&pages=download&php=website-project-wp [L]
-	
-	########## LAW - English ########## 
 	RewriteRule ^en/rules$ law.php?lang=en&pages=law [L]
 	RewriteRule ^en/terms-and-conditions$ law.php?lang=en&pages=law&full=cgu [L]
 	RewriteRule ^en/terms-and-conditions-of-sale$ law.php?lang=en&pages=law&full=cgv [L]
@@ -1433,235 +1436,102 @@ FileETag None
 	RewriteRule ^en/policy-privacy$ law.php?lang=en&pages=law&full=policy-privacy [L]
 	RewriteRule ^en/grpd$ law.php?lang=en&pages=law&full=rgpd [L]
 	RewriteRule ^en/cookies$ law.php?lang=en&pages=law&full=cookies [L]
-	RewriteRule ^en/author$ law.php?lang=en&pages=law&full=author [L]
+    RewriteRule ^en/sponsor$ sponsor.php?lang=en&pages=index [L]
+    RewriteRule ^en/partner$ partner.php?lang=en&pages=index [L]
+    RewriteRule ^en/contact$ email.php?lang=en&pages=index [L]
+    RewriteRule ^en/ask-quote$ email.php?lang=en&pages=ask-quotes [L]
+    RewriteRule ^en/sitemap$ sitemap.php?lang=en&pages=index [L]
+    RewriteRule ^en/contact/success$ block.php?lang=en&pages=success [L]
+    RewriteRule ^en/error$ block.php?lang=en&pages=error [L]
 
-	########## POOL - English ##########
-	RewriteRule ^en/pool$ pool-services.php?lang=en&pages=index [L]
-	RewriteRule ^en/pool/crypto-currency$ pool-services.php?lang=en&pages=crypto [L]
-	RewriteRule ^en/pool/photographer$ pool-services.php?lang=en&pages=photo [L]
-	RewriteRule ^en/pool/meeting$ pool-services.php?lang=en&pages=meet [L]
-	RewriteRule ^en/pool/entrepreneur$ pool-services.php?lang=en&pages=entrepreneur [L]
-	RewriteRule ^en/pool/gaming$ pool-services.php?lang=en&pages=gaming [L]
-	RewriteRule ^en/pool/music$ pool-services.php?lang=en&pages=music [L]
-	RewriteRule ^en/pool/hacking$ pool-services.php?lang=en&pages=hacker [L]
-	RewriteRule ^en/pool/developper$ pool-services.php?lang=en&pages=developper [L]
-	RewriteRule ^en/pool/webmaster$ pool-services.php?lang=en&pages=webmaster [L]
-	RewriteRule ^en/pool/computing$ pool-services.php?lang=en&pages=informatique [L]
-	RewriteRule ^en/pool/natural-referencing$ pool-services.php?lang=en&pages=seo [L]
-	RewriteRule ^en/pool/others-list$ pool-services.php?lang=en&pages=list [L]
-	RewriteRule ^en/pool/training$ pool-services.php?lang=en&pages=formation [L]
-	RewriteRule ^en/pool/sport$ pool-services.php?lang=en&pages=sport [L]
-	RewriteRule ^en/pool/real-estate$ pool-services.php?lang=en&pages=immo [L]
-	RewriteRule ^en/pool/animal$ pool-services.php?lang=en&pages=animal [L]
-	RewriteRule ^en/pool/designer$ pool-services.php?lang=en&pages=designer [L]
-	RewriteRule ^en/pool/editor$ pool-services.php?lang=en&pages=editor [L]
-	RewriteRule ^en/pool/translator$ pool-services.php?lang=en&pages=translator [L]
-	RewriteRule ^en/pool/marketing$ pool-services.php?lang=en&pages=marketing [L]
-	RewriteRule ^en/pool/non-profit$ pool-services.php?lang=en&pages=association [L]
-	RewriteRule ^en/pool/hotel$ pool-services.php?lang=en&pages=hotel [L]	
-	RewriteRule ^en/pool/arts-and-crafts$ pool-services.php?lang=en&pages=pool&index=arts-and-crafts [L]
-	RewriteRule ^en/pool/transport$ pool-services.php?lang=en&pages=pool&index=transport [L]
-	RewriteRule ^en/pool/tourism$ pool-services.php?lang=en&pages=pool&index=tourism [L]
-	RewriteRule ^en/pool/health$ pool-services.php?lang=en&pages=pool&index=health [L]
-	RewriteRule ^en/pool/textile-fashion$ pool-services.php?lang=en&pages=pool&index=textile-fashion [L]
-	RewriteRule ^en/pool/restoration$ pool-services.php?lang=en&pages=pool&index=restoration [L]
-	RewriteRule ^en/pool/culture$ pool-services.php?lang=en&pages=pool&index=culture [L]
-	RewriteRule ^en/pool/insurance$ pool-services.php?lang=en&pages=pool&index=insurance [L]
-	RewriteRule ^en/pool/financial$ pool-services.php?lang=en&pages=pool&index=financial [L]
-	RewriteRule ^en/pool/automobile$ pool-services.php?lang=en&pages=pool&index=automobile [L]
-	RewriteRule ^en/pool/audio-visual$ pool-services.php?lang=en&pages=pool&index=audio-visual [L]
-	RewriteRule ^en/pool/architect$ pool-services.php?lang=en&pages=pool&index=architect [L]
-	RewriteRule ^en/pool/agrilculture$ pool-services.php?lang=en&pages=pool&index=agrilculture [L]
-	RewriteRule ^en/pool/diy$ pool-services.php?lang=en&pages=pool&index=diy [L]
-	RewriteRule ^en/pool/administrative$ pool-services.php?lang=en&pages=pool&index=administrative [L]
-	RewriteRule ^en/pool/biology$ pool-services.php?lang=en&pages=pool&index=biology [L]
-	RewriteRule ^en/pool/trade$ pool-services.php?lang=en&pages=pool&index=trade [L]
-	RewriteRule ^en/pool/adult$ pool-services.php?lang=en&pages=pool&index=adult [L]
 
-	########## FAQs - English ##########
-	RewriteRule ^en/q-and-as$ faqs.php?lang=en&pages=index [L]
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
 
-	########## PRICING - English ##########
-	RewriteRule ^en/pricing$ pricing.php?lang=en&pages=index [L]
-	RewriteRule ^en/pricing-ask-for-a-quote$ pricing.php?lang=en&pages=devis [L]
-	RewriteRule ^en/pricing-freelancer$ pricing.php?lang=en&pages=freelancer [L]
-	RewriteRule ^en/pricing-business$ pricing.php?lang=en&pages=base [L]
-
-	########## SPONSOR - English ##########
-	RewriteRule ^en/sponsor$ sponsor.php?lang=en&pages=index [L]
-
-	########## PARTNER - English ##########
-	RewriteRule ^en/partner$ partner.php?lang=en&pages=index [L]
-
-	########## CONTACT - English ##########
-	RewriteRule ^en/contact$ email.php?lang=en&pages=index [L]
-
-	########## ABOUT - English ##########
-	RewriteRule ^en/about-us$ about.php?lang=en&pages=index [L]
-	RewriteRule ^en/portfolio$ about.php?lang=en&pages=portfolio [L]
-
-	########## SITEMAP - English ##########
-	RewriteRule ^en/sitemap$ sitemap.php?lang=en&pages=index [L]
-
-	########## BLOCK - English ##########
-	RewriteRule ^en/contact/success$ block.php?lang=en&pages=success [L]
-	RewriteRule ^en/error$ block.php?lang=en&pages=error [L]
-	RewriteRule ^en/press$ others.php?lang=en&pages=press [L]
-	RewriteRule ^en/recrutment$ others.php?lang=en&pages=career [L]
+#Translate allemand
+RewriteRule ^de/startseite$ general.php?lang=de&pages=index [L]
+	RewriteRule ^de/debuggen$ general.php?lang=de&pages=debug [L]
+	RewriteRule ^de/uber-uns$ general.php?lang=de&pages=aboutus [L]
+	RewriteRule ^de/dienstleistungen$ general.php?lang=de&pages=services [L]
+    RewriteRule ^de/dienstleistungen/internet-sicherheit$ general.php?lang=de&pages=services&activities=cybersecurity [L]
+    RewriteRule ^de/dienstleistungen/marketing$ general.php?lang=de&pages=services&activities=marketing [L]
+    RewriteRule ^de/dienstleistungen/webmaster$ general.php?lang=de&pages=services&activities=webmaster [L]
+    RewriteRule ^de/dienstleistungen/entwickler$ general.php?lang=de&pages=services&activities=developper [L]
+    RewriteRule ^de/dienstleistungen/naturliche-referenz$ general.php?lang=de&pages=services&activities=seo [L]
+    RewriteRule ^de/dienstleistungen/beratung$ general.php?lang=de&pages=services&activities=consulting [L]
+	RewriteRule ^de/api/sites\.json$ debug.php?lang=de&pages=debug&json=sites [L]
+	RewriteRule ^de/api/social\.json$ debug.php?lang=de&pages=debug&json=social [L]
+	RewriteRule ^de/api/private\.json$ debug.php?lang=de&pages=debug&json=private [L]
+	RewriteRule ^de/api/business\.json$ debug.php?lang=de&pages=debug&json=business [L]
+	RewriteRule ^de/api/images\.json$ debug.php?lang=de&pages=debug&json=images [L]
+	RewriteRule ^de/api/partner\.json$ debug.php?lang=de&pages=debug&json=partner [L]
+	RewriteRule ^de/api/sponsor\.json$ debug.php?lang=de&pages=debug&json=sponsor [L]
+	RewriteRule ^de/api/credits\.json$ debug.php?lang=de&pages=debug&json=credits [L]
+	RewriteRule ^de/regeln$ law.php?lang=de&pages=law [L]
+	RewriteRule ^de/nutzungsbedingungen$ law.php?lang=de&pages=law&full=cgu [L]
+	RewriteRule ^de/verkaufsbedingungen$ law.php?lang=de&pages=law&full=cgv [L]
+	RewriteRule ^de/dmca$ law.php?lang=de&pages=law&full=dmca [L]
+	RewriteRule ^de/impressum$ law.php?lang=de&pages=law&full=legal [L]
+	RewriteRule ^de/datenschutz-bestimmungen$ law.php?lang=de&pages=law&full=policy-privacy [L]
+	RewriteRule ^de/grpd$ law.php?lang=de&pages=law&full=rgpd [L]
+	RewriteRule ^de/kekse$ law.php?lang=de&pages=law&full=cookies [L]
+RewriteRule ^de/sponsor$ sponsor.php?lang=de&pages=index [L]
+RewriteRule ^de/partner$ partner.php?lang=de&pages=index [L]
+RewriteRule ^de/kontakt$ email.php?lang=de&pages=index [L]
+RewriteRule ^de/angebotsanfrage$ email.php?lang=de&pages=ask-quotes [L]
+RewriteRule ^de/seitenverzeichnis$ sitemap.php?lang=de&pages=index [L]
+RewriteRule ^de/kontakt/erfolg$ block.php?lang=de&pages=success [L]
+RewriteRule ^de/fehler$ block.php?lang=de&pages=error [L]
 
 
 
-	########## INVEST - English ##########
-	RewriteRule ^en/iinvestment/crypto$ general.php?lang=en&pages=invest&all=crypto [L]
-	RewriteRule ^en/investment/bourse$ general.php?lang=en&pages=invest&all=bourse [L]
-	RewriteRule ^en/investment/crowdfunding$ general.php?lang=en&pages=invest&all=crowfunding [L]
-	RewriteRule ^en/investment/crowdlending$ general.php?lang=en&pages=invest&all=crowlending [L]
+
+####################################################################################################
+####################################################################################################
+####################################################################################################
+####################################################################################################
+
+#Translate Russe
+RewriteRule ^ru/home$ general.php?lang=ru&pages=index [L]
+	RewriteRule ^ru/debug$ debug.php?lang=ru&pages=debug [L]
+	RewriteRule ^ru/aboutus$ general.php?lang=ru&pages=aboutus [L]
+	RewriteRule ^ru/services$ general.php?lang=ru&pages=services [L]
+    RewriteRule ^ru/services/cybersecurity$ general.php?lang=ru&pages=services&activities=cybersecurity [L]
+    RewriteRule ^ru/services/marketing$ general.php?lang=ru&pages=services&activities=marketing [L]
+    RewriteRule ^ru/services/webmaster$ general.php?lang=ru&pages=services&activities=webmaster [L]
+    RewriteRule ^ru/services/developper$ general.php?lang=ru&pages=services&activities=developper [L]
+    RewriteRule ^ru/services/seo$ general.php?lang=ru&pages=services&activities=seo [L]
+    RewriteRule ^ru/services/consulting$ general.php?lang=ru&pages=services&activities=consulting [L]
+	RewriteRule ^ru/api/sites\.json$ debug.php?lang=ru&pages=debug&json=sites [L]
+	RewriteRule ^ru/api/social\.json$ debug.php?lang=ru&pages=debug&json=social [L]
+	RewriteRule ^ru/api/private\.json$ debug.php?lang=ru&pages=debug&json=private [L]
+	RewriteRule ^ru/api/business\.json$ debug.php?lang=ru&pages=debug&json=business [L]
+	RewriteRule ^ru/api/images\.json$ debug.php?lang=ru&pages=debug&json=images [L]
+	RewriteRule ^ru/api/partner\.json$ debug.php?lang=ru&pages=debug&json=partner [L]
+	RewriteRule ^ru/api/sponsor\.json$ debug.php?lang=ru&pages=debug&json=sponsor [L]
+	RewriteRule ^ru/api/credits\.json$ debug.php?lang=ru&pages=debug&json=credits [L]
+	RewriteRule ^ru/rules$ law.php?lang=ru&pages=law [L]
+	RewriteRule ^ru/terms-and-conditions$ law.php?lang=ru&pages=law&full=cgu [L]
+	RewriteRule ^ru/terms-and-conditions-of-sale$ law.php?lang=ru&pages=law&full=cgv [L]
+	RewriteRule ^ru/dmca$ law.php?lang=ru&pages=law&full=dmca [L]
+	RewriteRule ^ru/legal$ law.php?lang=ru&pages=law&full=legal [L]
+	RewriteRule ^ru/policy-privacy$ law.php?lang=ru&pages=law&full=policy-privacy [L]
+	RewriteRule ^ru/grpd$ law.php?lang=ru&pages=law&full=rgpd [L]
+	RewriteRule ^ru/cookies$ law.php?lang=ru&pages=law&full=cookies [L]
+  RewriteRule ^ru/sponsor$ sponsor.php?lang=ru&pages=index [L]
+  RewriteRule ^ru/partner$ partner.php?lang=ru&pages=index [L]
+  RewriteRule ^ru/contact$ email.php?lang=ru&pages=index [L]
+  RewriteRule ^ru/ask-quote$ email.php?lang=ru&pages=ask-quotes [L]
+  RewriteRule ^ru/sitemap$ sitemap.php?lang=ru&pages=index [L]
+  RewriteRule ^ru/contact/success$ block.php?lang=ru&pages=success [L]
+  RewriteRule ^ru/error$ block.php?lang=ru&pages=error [L]
+
 
 </IfModule>
 
-#contact
 
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	RewriteRule ^contact$ index.php?pages=email [L]
-</IfModule>
-
-#contact - message
-
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	RewriteRule ^contact/success$ index.php?pages=success [L]
-	RewriteRule ^error$ index.php?pages=error [L]
-</IfModule>
-
-#About
-
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	RewriteRule ^about$ index.php?pages=about [L]
-	RewriteRule ^portfolio$ index.php?pages=portfolio [L]
-	RewriteRule ^equipment$ index.php?pages=equipment [L]
-</IfModule>
-
-#Pool
-
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	RewriteRule ^pool$ index.php?pages=pool [L]
-	RewriteRule ^pool/crypto-currency$ index.php?pages=pool&index=crypto [L]
-	RewriteRule ^pool/photographer$ index.php?pages=pool&index=photo [L]
-	RewriteRule ^pool/meeting$ index.php?pages=pool&index=meet [L]
-	RewriteRule ^pool/entrepreneur$ index.php?pages=pool&index=entrepreneur [L]
-	RewriteRule ^pool/gaming$ index.php?pages=pool&index=gaming [L]
-	RewriteRule ^pool/music$ index.php?pages=pool&index=music [L]
-	RewriteRule ^pool/hacking$ index.php?pages=pool&index=hacker [L]
-	RewriteRule ^pool/developper$ index.php?pages=pool&index=developper [L]
-	RewriteRule ^pool/webmaster$ index.php?pages=pool&index=webmaster [L]
-	RewriteRule ^pool/computing$ index.php?pages=pool&index=informatique [L]
-	RewriteRule ^pool/seo$ index.php?pages=pool&index=seo [L]
-	RewriteRule ^pool/list$ index.php?pages=pool&index=list [L]
-	RewriteRule ^pool/training$ index.php?pages=pool&index=formation [L]
-	RewriteRule ^pool/immo$ index.php?pages=pool&index=immo [L]
-	RewriteRule ^pool/sport$ index.php?pages=pool&index=sport [L]
-	RewriteRule ^pool/animal$ index.php?pages=pool&index=animal [L]
-	RewriteRule ^pool/designer$ index.php?pages=pool&index=designer [L]
-	RewriteRule ^pool/translator$ index.php?pages=pool&index=translator [L]
-	RewriteRule ^pool/editor$ index.php?pages=pool&index=editor [L]
-	RewriteRule ^pool/lawyer$ index.php?pages=pool&index=lawyer [L]
-	RewriteRule ^pool/marketing$ index.php?pages=pool&index=marketing [L]	
-	RewriteRule ^pool/arts-and-crafts$ index.php?pages=pool&index=arts-and-crafts [L]
-	RewriteRule ^pool/transport$ index.php?pages=pool&index=transport [L]
-	RewriteRule ^pool/tourism$ index.php?pages=pool&index=tourism [L]
-	RewriteRule ^pool/health$ index.php?pages=pool&index=health [L]
-	RewriteRule ^pool/textile-fashion$ index.php?pages=pool&index=textile-fashion [L]
-	RewriteRule ^pool/restoration$ index.php?pages=pool&index=restoration [L]
-	RewriteRule ^pool/culture$ index.php?pages=pool&index=culture [L]
-	RewriteRule ^pool/insurance$ index.php?pages=pool&index=insurance [L]
-	RewriteRule ^pool/financial$ index.php?pages=pool&index=financial [L]
-	RewriteRule ^pool/automobile$ index.php?pages=pool&index=automobile [L]
-	RewriteRule ^pool/audio-visual$ index.php?pages=pool&index=audio-visual [L]
-	RewriteRule ^pool/architect$ index.php?pages=pool&index=architect [L]
-	RewriteRule ^pool/agrilculture$ index.php?pages=pool&index=agrilculture [L]
-	RewriteRule ^pool/diy$ index.php?pages=pool&index=diy [L]
-	RewriteRule ^pool/administrative$ index.php?pages=pool&index=administrative [L]
-	RewriteRule ^pool/biology$ index.php?pages=pool&index=biology [L]
-	RewriteRule ^pool/trade$ index.php?pages=pool&index=trade [L]
-	RewriteRule ^pool/non-profit$ index.php?pages=pool&index=association [L]
-	RewriteRule ^pool/hotel$ index.php?pages=pool&index=hotel [L]
-	RewriteRule ^pool/adult$ index.php?pages=pool&index=adult [L]
-</IfModule>
-
-#Faqs
-
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	RewriteRule ^faqs$ index.php?pages=faqs [L]
-</IfModule>
-
-#Pricing
-
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	RewriteRule ^pricing$ index.php?pages=pricing [L]
-	RewriteRule ^pricing-freelancer$ index.php?pages=pricing&index=freelancer [L]
-	RewriteRule ^pricing-business$ index.php?pages=pricing&index=base [L]
-	RewriteRule ^pricing-ask-for-a-quote$ index.php?pages=pricing&index=devis [L]
-</IfModule>
-
-#sponsor
-
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	RewriteRule ^sponsor$ index.php?pages=sponsor [L]
-</IfModule>
-
-#Partner
-
-<IfModule mod_rewrite.c>
-
-	RewriteEngine on
-	RewriteRule ^partner$ index.php?pages=partner [L]
-</IfModule>
-
-#Others
-
-<IfModule mod_rewrite.c>
-
-	RewriteEngine on
-	RewriteRule ^press$ index.php?pages=others&index=press [L]
-	RewriteRule ^career$ index.php?pages=others&index=career [L]
-</IfModule>
-
-#law
-
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	RewriteRule ^rules$ index.php?pages=law [L]
-	RewriteRule ^cgu$ index.php?pages=law&full=cgu [L]
-	RewriteRule ^cgv$ index.php?pages=law&full=cgv [L]
-	RewriteRule ^dmca$ index.php?pages=law&full=dmca [L]
-	RewriteRule ^legal$ index.php?pages=law&full=legal [L]
-	RewriteRule ^policy-privacy$ index.php?pages=law&full=policy-privacy [L]
-	RewriteRule ^grpd$ index.php?pages=law&full=rgpd [L]
-	RewriteRule ^cookies$ index.php?pages=law&full=cookies [L]
-	RewriteRule ^author$ index.php?pages=law&full=author [L]
-</IfModule>
-
-#sitemap
-
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	RewriteRule ^sitemap$ index.php?pages=sitemap [L]
-</IfModule>
 
 #seo
 <IfModule mod_rewrite.c>
@@ -1678,6 +1548,8 @@ FileETag None
 	#RewriteRule ^sitemap-index\.xml$ seo-others.php?sitemap=default [L]
 	#RewriteRule ^sitemap-en\.xml$ seo-others.php?sitemap=en [L]
 	#RewriteRule ^sitemap-fr\.xml$ seo-others.php?sitemap=fr [L]
+	#RewriteRule ^sitemap-de\.xml$ seo-others.php?sitemap=de [L]
+	#RewriteRule ^sitemap-ru\.xml$ seo-others.php?sitemap=ru [L]
 
 	###### JSON ###### 
 	RewriteRule ^manifest\.json$ seo.php?json=manifest [L]
@@ -1693,26 +1565,49 @@ FileETag None
 
 	###### HTML VERIFY ###### 
 
-	RewriteRule ^dmlkc9lkuwiiakno7\.html$ seo.php?html-verify=dailymotion [L]
+	#RewriteRule ^dmyc73gogfqvf3a9p\.html$ seo.php?html-verify=dailymotion [L]
 	#RewriteRule ^$var\.html$ seo.php?html-verify=google [L]
+	#RewriteRule ^pinterest-$var\.html$ seo.php?html-verify=pinterest [L]
+	#exemple: with pinterest
 	#RewriteRule ^pinterest-ccf5f\.html$ seo.php?html-verify=pinterest [L]
-	RewriteRule ^yandex_59fb2941f1f550e4\.html$ seo.php?html-verify=yandex [L]
+	#RewriteRule ^yandex_$var.html$ seo.php?html-verify=yandex [L]
+
+  RewriteRule ^contact/success$ index.php?pages=success [L]
+  RewriteRule ^error$ index.php?pages=error [L]
+  RewriteRule ^sponsor$ index.php?pages=sponsor [L]
+  RewriteRule ^partner$ index.php?pages=partner [L]
+  RewriteRule ^contact$ index.php?pages=email [L]
+  RewriteRule ^ask-quote$ index.php?pages=ask-quotes [L]
+  RewriteRule ^aboutus$ index.php?pages=aboutus [L]
+  RewriteRule ^services$ index.php?pages=services [L]
+  RewriteRule ^services/cybersecurity$ index.php?pages=services&activities=cybersecurity [L]
+  RewriteRule ^services/marketing$ index.php?pages=services&activities=marketing [L]
+  RewriteRule ^services/webmaster$ index.php?pages=services&activities=webmaster [L]
+  RewriteRule ^services/developper$ index.php?pages=services&activities=developper [L]
+  RewriteRule ^services/seo$ index.php?pages=services&activities=seo [L]
+  RewriteRule ^services/consulting$ index.php?pages=services&activities=consulting [L]
+  RewriteRule ^sitemap$ index.php?pages=sitemap [L]
+  RewriteRule ^security/csp-violate$ email.php?security=csp [L]
+
 </IfModule>
 
-# download 
+
+
+
 <IfModule mod_rewrite.c>
 	RewriteEngine on
-	
-	RewriteRule ^downloads-joomla-component$ index.php?pages=download&joomla=component [L]
-	RewriteRule ^downloads-joomla-module$ index.php?pages=download&joomla=module [L]
-	RewriteRule ^downloads-joomla-plugin$ index.php?pages=download&joomla=plugin [L]
-	RewriteRule ^downloads-joomla-template$ index.php?pages=download&joomla=template [L]
-	RewriteRule ^downloads-office-personnal$ index.php?pages=download&office=personnel [L]
-	RewriteRule ^downloads-office-professionnal$ index.php?pages=download&office=professionnel [L]
-	RewriteRule ^downloads-office-ebook$ index.php?pages=download&office=ebook [L]
-	RewriteRule ^downloads-office-audio-book$ index.php?pages=download&office=audio-book [L]
-	RewriteRule ^downloads-php-website-project-wp$ index.php?pages=download&php=website-project-wp [L]
+	#law
+	RewriteRule ^rules$ index.php?pages=law [L]
+	RewriteRule ^cgu$ index.php?pages=law&full=cgu [L]
+	RewriteRule ^cgv$ index.php?pages=law&full=cgv [L]
+	RewriteRule ^dmca$ index.php?pages=law&full=dmca [L]
+	RewriteRule ^legal$ index.php?pages=law&full=legal [L]
+	RewriteRule ^policy-privacy$ index.php?pages=law&full=policy-privacy [L]
+	RewriteRule ^grpd$ index.php?pages=law&full=rgpd [L]
+	RewriteRule ^cookies$ index.php?pages=law&full=cookies [L]
+
 </IfModule>
+
 
 # DEBUG 
 <IfModule mod_rewrite.c>
@@ -1727,19 +1622,50 @@ FileETag None
 	RewriteRule ^api/partner\.json$ index.php?pages=debug&json=partner [L]
 	RewriteRule ^api/sponsor\.json$ index.php?pages=debug&json=sponsor [L]
 	RewriteRule ^api/credits\.json$ index.php?pages=debug&json=credits [L]
+	
+	########## debug - English ##########
+	RewriteRule ^en/debug$ debug.php?lang=en&pages=debug [L]
+	RewriteRule ^en/api/sites\.json$ debug.php?lang=en&pages=debug&json=sites [L]
+	RewriteRule ^en/api/social\.json$ debug.php?lang=en&pages=debug&json=social [L]
+	RewriteRule ^en/api/private\.json$ debug.php?lang=en&pages=debug&json=private [L]
+	RewriteRule ^en/api/business\.json$ debug.php?lang=en&pages=debug&json=business [L]
+	RewriteRule ^en/api/images\.json$ debug.php?lang=en&pages=debug&json=images [L]
+	RewriteRule ^en/api/partner\.json$ debug.php?lang=en&pages=debug&json=partner [L]
+	RewriteRule ^en/api/sponsor\.json$ debug.php?lang=en&pages=debug&json=sponsor [L]
+	
+	########## debug - French ##########
+	RewriteRule ^fr/déboguer$ debug.php?lang=fr&pages=debug [L]
+	RewriteRule ^fr/api/sites\.json$ debug.php?lang=fr&pages=debug&json=sites [L]
+	RewriteRule ^fr/api/social\.json$ debug.php?lang=fr&pages=debug&json=social [L]
+	RewriteRule ^fr/api/private\.json$ debug.php?lang=fr&pages=debug&json=private [L]
+	RewriteRule ^fr/api/business\.json$ debug.php?lang=fr&pages=debug&json=business [L]
+	RewriteRule ^fr/api/images\.json$ debug.php?lang=fr&pages=debug&json=images [L]
+	RewriteRule ^fr/api/partner\.json$ debug.php?lang=fr&pages=debug&json=partner [L]
+	RewriteRule ^fr/api/sponsor\.json$ debug.php?lang=fr&pages=debug&json=sponsor [L]
+	RewriteRule ^fr/api/credits\.json$ debug.php?lang=fr&pages=debug&json=credits [L]
+	
+	########## debug - Russe ##########
+	RewriteRule ^ru/debug$ debug.php?lang=ru&pages=debug [L]
+	RewriteRule ^ru/api/sites\.json$ debug.php?lang=ru&pages=debug&json=sites [L]
+	RewriteRule ^ru/api/social\.json$ debug.php?lang=ru&pages=debug&json=social [L]
+	RewriteRule ^ru/api/private\.json$ debug.php?lang=ru&pages=debug&json=private [L]
+	RewriteRule ^ru/api/business\.json$ debug.php?lang=ru&pages=debug&json=business [L]
+	RewriteRule ^ru/api/images\.json$ debug.php?lang=ru&pages=debug&json=images [L]
+	RewriteRule ^ru/api/partner\.json$ debug.php?lang=ru&pages=debug&json=partner [L]
+	RewriteRule ^ru/api/sponsor\.json$ debug.php?lang=ru&pages=debug&json=sponsor [L]
+	
+	########## debug - German ##########
+	RewriteRule ^de/debuggen$ debug.php?lang=de&pages=debug [L]
+	RewriteRule ^de/api/sites\.json$ debug.php?lang=de&pages=debug&json=sites [L]
+	RewriteRule ^de/api/social\.json$ debug.php?lang=de&pages=debug&json=social [L]
+	RewriteRule ^de/api/private\.json$ debug.php?lang=de&pages=debug&json=private [L]
+	RewriteRule ^de/api/business\.json$ debug.php?lang=de&pages=debug&json=business [L]
+	RewriteRule ^de/api/images\.json$ debug.php?lang=de&pages=debug&json=images [L]
+	RewriteRule ^de/api/partner\.json$ debug.php?lang=de&pages=debug&json=partner [L]
+	RewriteRule ^de/api/sponsor\.json$ debug.php?lang=de&pages=debug&json=sponsor [L]
 </IfModule>
 
 
-
-
-
-
-<IfModule mod_rewrite.c>
-RewriteEngine on
-#security CSP 
-RewriteRule ^security/csp-violate$ email.php?security=csp [L]
-
-</IfModule>
 
 
 
@@ -1749,6 +1675,8 @@ RewriteEngine on
 RewriteRule ^automate/generator/sitemap-index$ seo-others.php?sitemap=index [L]
 RewriteRule ^automate/generator/sitemap-fr$ seo-others.php?sitemap=fr [L]
 RewriteRule ^automate/generator/sitemap-en$ seo-others.php?sitemap=en [L]
+RewriteRule ^automate/generator/sitemap-de$ seo-others.php?sitemap=de [L]
+RewriteRule ^automate/generator/sitemap-ru$ seo-others.php?sitemap=ru [L]
 
 #RewriteRule ^automate/generator/sitemap-test$ sitemap-php.php [L]
 
@@ -1756,37 +1684,5 @@ RewriteRule ^automate/minify/css$ minify-php.php?css=all [L]
 RewriteRule ^automate/minify/js$ minify-php.php?js=all [L]
 
 
-</IfModule>
-
-
-
-
-# TOOLS
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	RewriteRule ^tools$ tools.php?pages=index [L]
-	RewriteRule ^tools/verify-phone$ tools.php?pages=phonelibs [L]
-	RewriteRule ^fr/outils$ tools.php?lang=fr&pages=index [L]
-	RewriteRule ^fr/outils/vérifier-le-téléphone$ tools.php?lang=fr&pages=phonelibs [L]
-	RewriteRule ^en/tools$ tools.php?lang=en&pages=index [L]
-	RewriteRule ^en/tools/verify-phone$ tools.php?lang=en&pages=phonelibs [L]
-</IfModule>
- 
-# docs
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	RewriteRule ^documentation$ docs.php?pages=home [L]
-	RewriteRule ^documentation/api-data-json-basic$ docs.php?pages=basic [L]
-	RewriteRule ^documentation/api-data-json-business$ docs.php?pages=business [L]
-	
-	RewriteRule ^fr/documentation$ docs.php?lang=fr&pages=home [L]
-	RewriteRule ^fr/documentation/api-data-json-basic$ docs.php?lang=fr&pages=basic [L]
-	RewriteRule ^fr/documentation/api-data-json-business$ docs.php?lang=fr&pages=business [L]
-	
-	RewriteRule ^en/documentation$ docs.php?lang=en&pages=home [L]
-	RewriteRule ^en/documentation/api-data-json-basic$ docs.php?lang=en&pages=basic [L]
-	RewriteRule ^en/documentation/api-data-json-business$ docs.php?lang=en&pages=business [L]
 </IfModule>
 
