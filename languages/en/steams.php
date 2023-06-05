@@ -6,8 +6,8 @@ $teams = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'equipes',
-			'en' => 'team'
+			'default' => 'teams',
+			'en' => 'teams'
 		),
 		'content' => array(
 			'msg' => ''

@@ -3,6 +3,7 @@
 exemple $sites['name'];
 exemple $sites['update']['rdf'];
 exemple $sites['auto']['domain'][''];
+exemple $sites['template'];
 
 */
 $sites = array(
@@ -17,7 +18,7 @@ $sites = array(
 	),
 	'sub-domain' => 'cdnjs.webjet.cloud',  /*domain: cdexemple.tld*/
 	'protocol' => isset($_SERVER["HTTPS"]) ? 'https' : 'http',
-	'template' => 'startup',
+	'template' => 'FestavaLive',
 	'create' => array(),
 	'update' => array(
 		'rdf' => date('Y-m-d')

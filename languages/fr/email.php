@@ -7,7 +7,7 @@ $email = array(
 		'keyword' => 'contact, équipe, vous aidez, besoin information',
 		'url' => array(
 			'default' => 'contact',
-			'fr' => 'contactez'
+			'fr' => 'contacter'
 		),
 		'content' => array(
 			'container' => array(

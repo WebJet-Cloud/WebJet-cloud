@@ -20,6 +20,7 @@ $general = array(
             'starter' => 'Start',
             'previous' => 'vorherige',
             'next' => 'Weiter',
+			'share' => 'Aktie',
             'follow-us' => 'Folge uns',
             'footer-os' => 'ist Open-Source PHP aus der Community'
 		),
@@ -225,7 +226,7 @@ $general = array(
 				'title' => 'Der Schöpfer von WebJet',
 				'description' => 'Ich kreiere dieses Projekt und repräsentiere mich gleichzeitig.'
 			),
-			'presentation' => 'Hallo, mein Name ist Alexon Balangue, in den Dreißigern, der Schöpfer dieses in PHP erstellten Webanwendungsprojekts. Um den Anfängern unter Ihnen zu helfen, so einfach wie möglich in die Webentwicklung einzusteigen, hatte ich jahrelang selbst gelernt, dass es notwendig sein wird, ein so einfaches Konzept zu haben. Nachdem Sie eine Website haben, die sowohl professionell als auch persönlich ist, um beispielsweise einen Lebenslauf erstellen zu können, ist es möglich, Seiten auszuleihen, und dieses Projekt erfordert keine MySQL-Datenbank und auch keine Funktionalität eines Bass-MVC-Frameworks. Dateien und Ordner haben eine gut durchdachte Struktur für die einzelnen Tätigkeitsbereiche wie: WebDesign, Designer, Webmaster, Redakteur, Marketing und Entwickler. Generell ist es sehr wichtig, dass Sie eine gute Struktur Ihrer Dateien und Ordner haben. Auf diese Weise können Sie während der Arbeit auf der Website leicht finden, was Sie brauchen, und spätere Probleme vermeiden.',
+			'presentation' => 'Hallo, mein Name ist Alexon Balangue, ich bin in meinen Dreißigern und ich bin der Schöpfer dieses in PHP erstellten Webanwendungsprojekts. Ich möchte den meisten Anfängern unter Ihnen helfen, so einfach wie möglich in die Webentwicklung einzusteigen. Ich habe jahrelang selbst gelernt, dass es notwendig ist, ein so einfaches Konzept zu haben. Es geht darum, eine Website zu erstellen, die sowohl beruflich als auch persönlich ist, um beispielsweise einen Lebenslauf erstellen zu können. Dieses Projekt erfordert keine MySQL-Datenbank oder Funktionalität eines grundlegenden MVC-Frameworks. Die Dateien und Ordner haben eine gute Struktur und sind für die jeweiligen Tätigkeitsbereiche gut durchdacht, wie zum Beispiel: WebDesign, Designer, Webmaster, Texter, Marketing und Entwickler. Generell ist es sehr wichtig, dass Sie eine gute Struktur Ihrer Dateien und Ordner haben. Auf diese Weise können Sie während der Arbeit auf der Website leicht finden, was Sie benötigen, und spätere Probleme vermeiden.',
 			'personnalite' => array(
 				'test' => array(
 					'title' => 'Persönlichkeitstest' ,
@@ -241,7 +242,8 @@ $general = array(
 					'3' => array(
 						'title' => 'Stressmanagement',
 						'text' => 'Herzlichen Glückwunsch, Sie können Ihren Stress positiv leben! Du hast Spaß und jede Situation ist eine Herausforderung für dich! So wird zum Beispiel ein Einspruch für Sie zur Chance! Sie wissen, wie Sie Ihre Spannungen abbauen und Ihren Mitarbeitern dabei helfen können, dasselbe zu tun! Sind Sie häufig mit der Bewältigung komplexer Situationen betraut? Es ist völlig normal, Sie haben eine positive Einstellung, einen relevanten Schritt zurück und die Anpassungsfähigkeit, die Sie auszeichnet, ermöglicht es Ihnen, jede Situation zu lösen! Um ein absoluter Experte für Stressbewältigung zu werden, müssen Sie lediglich einige vorbeugende Maßnahmen ergreifen, um zu verhindern, dass Ihre Mitmenschen schwierige Zeiten durchmachen. Aber es besteht kein Zweifel, dass Sie der Herausforderung gewachsen sein werden!'
-					)
+					),
+					'short-text' => 'Sie sind ein Fachmann mit bemerkenswerter relationaler und emotionaler Intelligenz. Sie wissen, wie Sie gute Beziehungen zu Ihren Gesprächspartnern aufbauen, mit Ihren Emotionen und denen anderer umgehen und sich an alle Situationen anpassen. Außerdem verfügen Sie über ein gutes Stressmanagement, das es Ihnen ermöglicht, Herausforderungen zu meistern und Probleme zu lösen. Sie stehen kurz davor, ein absoluter Leader und Experte auf diesen Gebieten zu sein. Um dies zu erreichen, müssen Sie nur den Mut haben, Risiken einzugehen und an Ihrer Führung zu arbeiten. Sie sind eine selbstbewusste, kreative und positive Person, die Ihrem Team einen Mehrwert bringt!'
 				)
 			)
 			

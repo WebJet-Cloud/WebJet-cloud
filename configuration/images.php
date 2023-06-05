@@ -1,9 +1,10 @@
 <?php
 # exemple $images['dir']
-# exemple $images['manager']['services']['consultant']['']
+# exemple $images['manager']['intro-vdo'']['assurup']['']
 
 $images = array(
 	'manager' => array(
+		'intro-vdo' => 'video/webjet-intro.mp4',
 		/*Manager Images for Template */
 		'logo' => array(
 			'creator' => 'themes/moi-creator-alexonb.png',

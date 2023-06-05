@@ -1,6 +1,6 @@
 <?php
 # $general['index']['content']['pricing']['blocks']['small']['']    ['']
-# $general['pages']['full']['footer-os']['blocks']['small']['']    ['']
+# $general['pages']['menu']['undermenu']['pricing']['small']['']    ['']
 # $general['aboutus']['content']['container']['title']
 # $general['full']['clock']['']
 $general = array(
@@ -21,6 +21,7 @@ $general = array(
 		'full' => array(
 			'starter' => 'Démarrer',
 			'previous' => 'Précédent',
+			'share' => 'Partager',
 			'next' => 'Suivant',
 			'follow-us' => 'Nous suivre',
 			'footer-os' => 'est Open-Source PHP de la communauté'
@@ -227,7 +228,7 @@ $general = array(
 				'title' => 'Le créateur de WebJet',
 				'description' => 'Je crée ce projet et en même temps je me représente.'
 			),
-			'presentation' => 'Bonjour, mon nom est Alexon Balangue, la trentaine est le créateur de ce projet d\'application web réalisé en PHP. Pour aider les plus novices d\'entre vous à débuter dans le développement web le plus simplement possible, alors j\'avais appris depuis des années en autodidacte qu\'il faudra avoir ce type de concept très simple. Après avoir un site web qui est à la fois professionnel, et à la fois personnel pour pouvoir créer un CV par exemple, il est possible de créer un prêt de pages et ce projet ne nécessite aucune base de données MySQL également aucune fonctionnalité d\'un framework MVC de basse. Les fichiers et les dossiers ont une bonne structure a été bien pensé pour chaque domaine d\'activité différents tels que : WebDesign, Designer, Webmaster, Rédacteur, Marketing et Développeur. En général, il est très important que vous ayez une bonne structure de vos fichiers et dossiers. De cette façon, vous pouvez facilement trouver ce dont vous avez besoin lorsque vous travaillez sur le site et éviter tout problème ultérieur.',
+			'presentation' => 'Bonjour, mon nom est Alexon Balangue, j\'ai la trentaine et je suis le créateur de ce projet d\'application web réalisé en PHP. Je souhaite aider les plus novices d\'entre vous à débuter dans le développement web le plus simplement possible. J\'ai appris en autodidacte depuis des années qu\'il fallait avoir ce type de concept très simple. Il s\'agit de créer un site web qui soit à la fois professionnel et personnel, pour pouvoir par exemple réaliser un CV. Ce projet ne nécessite aucune base de données MySQL ni aucune fonctionnalité d\'un framework MVC de base. Les fichiers et les dossiers ont une bonne structure et ont été bien pensés pour chaque domaine d\'activité différent, tels que : WebDesign, Designer, Webmaster, Rédacteur, Marketing et Développeur. En général, il est très important que vous ayez une bonne structure de vos fichiers et dossiers. De cette façon, vous pouvez facilement trouver ce dont vous avez besoin lorsque vous travaillez sur le site et éviter tout problème ultérieur.',
 			'personnalite' => array(
 				'test' => array(
 					'title' => 'Teste de personnalité' ,
@@ -243,7 +244,8 @@ $general = array(
 					'3' => array(
 						'title' => 'Gestion du stress',
 						'text' => 'Félicitations, vous êtes en capacité de vivre positivement votre stress ! Vous vous amusez, et chaque situation est pour vous un challenge ! Par exemple, une objection devient pour vous une opportunité ! Vous savez évacuer vos tensions et aider vos collaborateurs à en faire autant ! On vous confie souvent la gestion de situations complexes ? C’est tout à fait normal, vous avez une approche positive, une prise de recul pertinente et l’adaptabilité qui vous caractérise vous permet de solutionner n’importe quelle situation ! Pour devenir expert absolu en gestion du stress, il ne vous reste plus qu’à mettre en place quelques actions préventives afin d’éviter à votre entourage de vivre des moments difficiles. Mais aucun doute que vous saurez relever le défi !' 
-					)
+					),
+					'short-text' => 'Vous êtes un professionnel doté d\'une intelligence relationnelle et émotionnelle remarquable. Vous savez créer des liens de qualité avec vos interlocuteurs, gérer vos émotions et celles des autres, et vous adapter à toutes les situations. Vous avez également une bonne gestion du stress, qui vous permet de relever des défis et de résoudre des problèmes. Vous êtes proche d\'être un leader et un expert absolu dans ces domaines. Pour y parvenir, il vous suffit d\'oser prendre des risques et de travailler sur votre leadership. Vous êtes une personne de confiance, créative et positive, qui apporte de la valeur à votre équipe !'
 				)
 			)
 			

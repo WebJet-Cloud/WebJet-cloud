@@ -6,8 +6,8 @@ $block = array(
 		'description' => 'Votre message à été bien envoyé avec success',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'contact/success',
-			'fr' => 'contact/succès'
+			'default' => 'success',
+			'fr' => 'succès'
 		),
 		'content' => array(
 			'msg' => 'Votre message à été bien envoyé avec success'

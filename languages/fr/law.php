@@ -17,7 +17,7 @@ $law = array(
 		'keyword' => '',
 		'url' => array(
 			'default' => 'rules',
-			'fr' => 'règles'
+			'fr' => 'regles'
 		),
 		'content' => array(
 			'' => ''
@@ -33,8 +33,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'cookies',
-			'fr' => 'cookies'
+			'default' => 'rules/cookies',
+			'fr' => 'regles/cookies'
 		),
 		'content' => array(
 			'' => ''
@@ -50,8 +50,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'cgu',
-			'fr' => 'conditions-générales-utilisation'
+			'default' => 'rules/cgu',
+			'fr' => 'regles/conditions-generales-utilisation'
 		),
 		'content' => array(
 			'' => ''
@@ -67,8 +67,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'cgv',
-			'fr' => 'conditions-générales-de-vente'
+			'default' => 'rules/cgv',
+			'fr' => 'regles/conditions-generales-de-vente'
 		),
 		'content' => array(
 			'' => ''
@@ -84,8 +84,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'dmca',
-			'fr' => 'dmca'
+			'default' => 'rules/dmca',
+			'fr' => 'regles/dmca'
 		),
 		'content' => array(
 			'' => ''
@@ -101,8 +101,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'legal',
-			'fr' => 'mentions-légales'
+			'default' => 'rules/legal',
+			'fr' => 'regles/mentions-legales'
 		),
 		'content' => array(
 			'owner' => array(
@@ -161,8 +161,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'policy-privacy',
-			'fr' => 'politique-de-confidentialité'
+			'default' => 'rules/policy-privacy',
+			'fr' => 'regles/politique-de-confidentialite'
 		),
 		'content' => array(
 			'' => ''
@@ -178,8 +178,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'grpd',
-			'fr' => 'rgpd'
+			'default' => 'rules/grpd',
+			'fr' => 'regles/rgpd'
 		),
 		'content' => array(
 			'' => ''

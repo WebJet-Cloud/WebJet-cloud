@@ -11,9 +11,10 @@ $services = array(
 		'ru' => '<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/3a9HoYIuaaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
 		'de' => '<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/iptn5TPxpD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
 	),
+	'down-contract' => 'Скачать (+ Контракт)',
 	'cybersecurity' => array(
 		'title' => 'услуги - информационная безопасность',
-		'description' => '',
+		'description' => 'Узнайте о важности кибербезопасности для защиты ваших компьютерных систем и данных от онлайн-угроз. Узнайте об основных рисках и ключевых мерах безопасности, которые необходимо принять.',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'services/cybersecurity',
@@ -207,9 +208,9 @@ $services = array(
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
-    'Маркетинг' => array(
+    'Мarketing' => array(
 		'title' => 'услуги - маркетинг',
-		'description' => '',
+		'description' => 'Влияние новых технологий на маркетинг, включая использование социальных сетей, персонализацию и клиентский опыт.',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'services/Маркетинг',
@@ -346,7 +347,7 @@ $services = array(
     ),
     'webmaster' => array(
 		'title' => 'услуги - веб-мастер',
-		'description' => '',
+		'description' => 'Презентация о веб-мастере подчеркивает важную роль этого профессионала в создании, управлении и обслуживании веб-сайтов.',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'services/webmaster',
@@ -465,7 +466,7 @@ $services = array(
     ),
     'developper' => array(
 		'title' => 'услуги - разработчик',
-		'description' => '',
+		'description' => 'Разработчик является экспертом в создании компьютерных систем, таких как программное обеспечение, приложения и веб-сайты. Он использует языки программирования и компьютерные инструменты для проектирования, разработки, внедрения и обслуживания этих систем.',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'services/developper',
@@ -582,7 +583,7 @@ $services = array(
     ),
     'seo' => array(
 		'title' => 'услуги - естественная ссылка',
-		'description' => '',
+		'description' => 'Предоставляя обзор того, как работают поисковые системы, методы поисковой оптимизации (SEO) и основные факторы, влияющие на рейтинг веб-сайта, она подчеркивает важность исследования релевантных ключевых слов, оптимизации контента, структуры сайта, качественных входящих ссылок и взаимодействия с пользователем.',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'services/seo',
@@ -704,6 +705,116 @@ $services = array(
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
+    'sap' => array(
+		'title' => 'Prestation de Services à la Personne',
+		'description' => 'Они позволяют вам оставаться дома в наилучших возможных условиях и получать помощь, адаптированную к вашей ситуации.',
+		'keyword' => '',
+		'url' => array(
+			'default' => 'services/sap',
+			'fr' => 'services/services-a-la-personne'
+		),
+		'content' => array(
+			'intro' => array(
+				'title' => 'Présentation',
+				'description' => '',
+				'text' => 'La prestation de services à la personne est un secteur qui englobe une variété d\'activités visant à répondre aux besoins quotidiens des individus. Ces services comprennent l\'aide aux tâches ménagères, les soins aux personnes âgées ou handicapées, l\'assistance éducative, les soins de santé à domicile et le soutien social et psychologique. Ils sont dispensés par des professionnels qualifiés et personnalisés en fonction des besoins spécifiques de chaque bénéficiaire. Ces services contribuent à améliorer la qualité de vie des personnes en favorisant leur autonomie, leur sécurité et leur intégration sociale. Ils sont soutenus par des politiques publiques visant à faciliter l\'accès aux services et à promouvoir l\'inclusion sociale.'
+			),
+			'excel' => array(
+				'title' => 'Les différents métiers',
+				'description' => '',
+				'table' => array(
+					'head' => array(
+						'1' => 'Méthode de services à la personne',
+						'2' => 'Description'
+					),
+					'body' => array(
+						'1' => array(
+							'tr' => array(
+								'1' => 'Aide à domicile',
+								'2' => 'Fournir une assistance dans les tâches ménagères, comme le nettoyage, le repassage, la cuisine, etc.'
+							)
+						),
+						'2' => array(
+							'tr' => array(
+								'1' => 'Soins aux personnes âgées',
+								'2' => 'Fournir une assistance aux personnes âgées pour les aider dans leurs activités quotidiennes, telles que se lever, se laver, \'habiller, prendre des médicaments, etc.'
+							)
+						),
+						'3' => array(
+							'tr' => array(
+								'1' => 'Accompagnement éducatif',
+								'2' => 'Fournir un soutien scolaire et éducatif aux enfants, les aider avec leurs devoirs, les encourager dans leur apprentissage, etc.'
+							)
+						),
+						'4' => array(
+							'tr' => array(
+								'1' => 'Soins de santé à domicile',
+								'2' => 'Dispenser des soins médicaux à domicile, tels que la prise de médicaments, le changement de pansements, les injections, etc.'
+							)
+						),
+						'5' => array(
+							'tr' => array(
+								'1' => 'Soutien psychologique',
+								'2' => 'Offrir un soutien émotionnel et psychologique aux personnes en difficulté, en les écoutant, en les conseillant et en les accompagnant dans leur parcours de vie.'
+							)
+						),
+						'6' => array(
+							'tr' => array(
+								'1' => 'Assistance aux personnes handicapées',
+								'2' => 'Aider les personnes handicapées dans leurs activités quotidiennes, en fonction de leurs besoins spécifiques, comme se déplacer, se nourrir, communiquer, etc.'
+							)
+						),
+						'7' => array(
+							'tr' => array(
+								'1' => 'Garde d\'enfants',
+								'2' => 'Assurer la garde et l\'accompagnement des enfants en l\'absence des parents, en veillant à leur sécurité, en organisant des activités ludiques, etc.'
+							)
+						),
+						'8' => array(
+							'tr' => array(
+								'1' => 'Soutien social',
+								'2' => 'Fournir un soutien social aux personnes isolées, en favorisant les échanges sociaux, en organisant des activités communautaires, etc.'
+							)
+						),
+						'9' => array(
+							'tr' => array(
+								'1' => 'Transport et accompagnement',
+								'2' => 'Assurer le transport des personnes, par exemple pour se rendre à des rendez-vous médicaux, des activités sociales, des courses, etc.'
+							)
+						)
+					)
+				)
+			),
+			'for-pro' => array(
+				'title' => 'Ma Formation et mon parcours professionnel',
+				'description' => '',
+				'text' => 'En étant autodidacte sur les services à la personne, vous pouvez acquérir des connaissances et compétences précieuses en utilisant diverses ressources disponibles. Vous pouvez commencer par consulter des livres, des cours en ligne, des vidéos et des articles sur les différents aspects des services à la personne, tels que l\'aide aux tâches ménagères, les soins aux personnes âgées, l\'accompagnement éducatif, etc. Il est également utile de se renseigner sur les réglementations et les exigences légales associées à ces services.<br /><br />Ensuite, vous pouvez vous exercer en mettant en pratique vos connaissances. Par exemple, vous pouvez proposer votre aide à des proches, des amis ou des voisins qui pourraient bénéficier de services à la personne. Cela vous permettra d\'acquérir de l\'expérience pratique et de développer vos compétences dans différents domaines.<br /><br />Il est également important de rester à jour avec les dernières tendances et pratiques dans le domaine des services à la personne. Vous pouvez suivre des blogs, participer à des forums en ligne ou rejoindre des groupes de discussion pour échanger des informations et des idées avec d\'autres professionnels du secteur.<br /><br />En résumé, en tant qu\'autodidacte dans les services à la personne, vous pouvez vous former en utilisant diverses ressources disponibles, acquérir de l\'expérience pratique et rester à jour avec les développements dans le domaine. Cela vous permettra de développer vos compétences et de vous positionner pour offrir des services de qualité dans ce secteur.'
+			),
+			'secteur' => array(
+				'1' => array(
+					'h5' => 'Services à la Personne',
+					'h1' => 'Informatique',
+					'text' => 'Les services à la personne en informatique offrent un soutien technique et une expertise aux particuliers dans le domaine de l\'informatique et de la technologie. Ces services peuvent inclure la réparation et la maintenance des ordinateurs, l\'installation de logiciels, la configuration de réseaux, la récupération de données, l\'assistance à distance et la formation aux technologies.<br /><br />Pour les futurs clients, les services à la personne en informatique offrent de nombreux avantages. Tout d\'abord, ils permettent aux utilisateurs de bénéficier d\'une assistance personnalisée et adaptée à leurs besoins spécifiques. Les professionnels de l\'informatique peuvent résoudre les problèmes techniques, améliorer les performances des systèmes, et fournir des conseils pour optimiser l\'utilisation des appareils et des logiciels.<br /><br />En outre, ces services aident les clients à économiser du temps et de l\'énergie en leur évitant d\'avoir à résoudre eux-mêmes des problèmes complexes ou à effectuer des tâches techniques qu\'ils ne maîtrisent pas. Les experts en informatique peuvent intervenir rapidement et efficacement pour résoudre les problèmes et assurer le bon fonctionnement des équipements informatiques.<br /><br />De plus, les services à la personne en informatique peuvent contribuer à renforcer la sécurité en ligne des utilisateurs. Les professionnels peuvent mettre en place des solutions de protection contre les virus, les logiciels malveillants et les cyberattaques, ainsi que sensibiliser les clients aux meilleures pratiques en matière de sécurité informatique.<br /><br />En somme, les services à la personne en informatique sont essentiels pour les futurs clients, car ils offrent un soutien technique expert, permettent d\'économiser du temps et de l\'énergie, et contribuent à renforcer la sécurité en ligne. Ces services permettent aux particuliers de bénéficier d\'une assistance personnalisée et de tirer le meilleur parti de leurs appareils et de leurs logiciels.'
+				),
+				'2' => array(
+					'h5' => 'Services à la Personne',
+					'h1' => 'Administrative',
+					'text' => 'Les services à la personne en administratif offrent un soutien professionnel dans la gestion des tâches administratives et organisationnelles. Ces services peuvent inclure la gestion de courrier, la gestion des factures et des paiements, la rédaction de documents, la planification d\'événements, la gestion de l\'agenda, la coordination des rendez-vous, etc.<br /><br />Pour les futurs clients, les services à la personne en administratif présentent de nombreux avantages. Tout d\'abord, ils permettent de déléguer les tâches administratives, souvent chronophages et complexes, à des professionnels expérimentés. Cela permet aux clients de se concentrer sur leurs activités principales et de gagner du temps précieux.<br /><br />De plus, les services à la personne en administratif offrent une expertise dans la gestion des documents et des procédures administratives. Les professionnels peuvent s\'assurer que les documents sont correctement rédigés, classés et archivés, et veiller au respect des délais et des exigences légales.<br /><br />Ces services peuvent également apporter une organisation plus efficace et une meilleure productivité. Les clients peuvent bénéficier d\'une gestion optimisée de leur agenda, d\'une planification stratégique des tâches et d\'une coordination efficace des rendez-vous et des réunions.<br /><br />En outre, les services à la personne en administratif garantissent la confidentialité et la sécurité des informations sensibles. Les professionnels respectent les règles de confidentialité et de protection des données, offrant ainsi une tranquillité d\'esprit aux clients.<br /><br />En somme, les services à la personne en administratif permettent aux futurs clients de déléguer les tâches administratives, de bénéficier d\'une expertise professionnelle, d\'améliorer l\'efficacité et la productivité, et de garantir la confidentialité des informations. Ces services offrent un soutien précieux dans la gestion administrative, libérant ainsi du temps et des ressources pour se concentrer sur les activités essentielles.'
+				),
+				'3' => array(
+					'h5' => 'Services à la Personne',
+					'h1' => 'Téléassistance et TéléConférence',
+					'text' => 'Les services à la personne en téléassistance et téléconférence offrent un soutien à distance aux individus, en particulier aux personnes âgées ou en situation de handicap. La téléassistance permet aux clients de rester en contact avec des professionnels formés qui peuvent intervenir en cas d\'urgence médicale ou de besoin d\'assistance. La téléconférence permet aux clients de communiquer et de participer à des réunions ou à des événements à distance, en utilisant des outils de communication tels que la visioconférence.<br /><br />Pour les futurs clients, les services à la personne en téléassistance et téléconférence offrent une tranquillité d\'esprit et favorisent l\'inclusion sociale. La téléassistance assure une surveillance 24h/24 et 7j/7, ce qui permet aux personnes vulnérables de se sentir en sécurité dans leur propre domicile. En cas d\'urgence médicale ou de situation critique, l\'assistance est rapidement disponible en appuyant simplement sur un bouton.<br /><br />La téléconférence facilite la communication et la participation des clients aux réunions, aux formations, aux événements familiaux ou aux activités sociales, même à distance. Cela permet aux individus de rester connectés avec leurs proches, leurs collègues ou leur communauté, en surmontant les barrières géographiques ou les difficultés de déplacement.<br /><br />Ces services à la personne offrent également une plus grande indépendance aux clients, en leur permettant de rester dans leur environnement familier et de bénéficier d\'une assistance à distance. Cela favorise l\'autonomie et le maintien à domicile des personnes âgées ou en situation de handicap.<br /><br />En somme, les services à la personne en téléassistance et téléconférence offrent un soutien essentiel aux futurs clients, en assurant leur sécurité, leur inclusion sociale et leur indépendance. Ces services permettent aux clients de recevoir une assistance à distance en cas d\'urgence et de participer activement aux activités sociales et professionnelles grâce aux outils de communication à distance.'
+				)
+			),
+			'pricing' => array(
+				'free' => '',
+				'fees-seo' => '(+/-) 40HT Frais de déplacement',
+				'not-propose' => ''
+			)
+
+		)
+	),
     'consulting' => array(
 		'title' => 'услуги - консультирование',
 		'description' => '',

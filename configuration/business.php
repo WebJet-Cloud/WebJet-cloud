@@ -1,5 +1,5 @@
 <?php
-# $business['local']['salp']
+# $business['local']['address']
 $business = array(
 	'local' => array(
 		'born' => '16/05/2023', /*exemple Day/Month/Year number only indicate age */
@@ -8,7 +8,7 @@ $business = array(
 		'tva' => '', //TVA NUM
 		'vat' => 'FR 589 5246 0152',
 		'rcs-number' => '952 460 152 RCS Paris',
-		'salp' => 'en cours',//services à la personne N° agréer
+		'salp' => '633221',//services à la personne N° agréer
 		'capital-euro' => '€100',
 		'address' => '6 Rue d\'Armaillé,',
 		'postal' => '75017',
@@ -37,12 +37,12 @@ $business = array(
 			'number' => '',
 		),
 		'mail' => array(
-			'contact' => 'con',
-			'support' => 'supp',
-			'commercial' => 'comm',
-			'sponsor' => 'spon',
-			'partner' => 'part',
-			'business' => 'buz'
+			'contact' => 'services',
+			'support' => 'services',
+			'commercial' => 'services',
+			'sponsor' => 'services',
+			'partner' => 'services',
+			'business' => 'services'
 		),
 		'team' => array(
 		/*exemple*/

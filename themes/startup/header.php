@@ -615,53 +615,21 @@ if(!empty($seo['shareaholic']['key'])){
 <?php if(!empty($apiexternal['captcha']['hcaptcha']['public'])){ ?><script src="https://hcaptcha.com/1/api.js?hl=<?php echo $Languages_translate; ?>" async defer></script><?php } ?>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
 
 
   <!--Template-->
   <link href="<?php echo $version['external']['fontawesome']['css']; ?>" rel="stylesheet">
   <script defer src="<?php echo $version['external']['fontawesome']['js']; ?>"></script>
-  <link href="<?php echo $version['external']['bootstrap-icons']['css']; ?>" rel="stylesheet">
-
 
   <link href="<?php echo $version['external']['bootstrap']['css']; ?>" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$version['internal']['libs']['owlcarousel']['css']; ?>" rel="stylesheet">
-  <link href="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$version['internal']['libs']['animate']['css']; ?>" rel="stylesheet">
-
-
-
-
-
-  <link href="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$version['internal']['custom']['css']['startup']; ?>" rel="stylesheet">
- <!-- <link href="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$version['internal']['production']['css']['langs']; ?>" rel="stylesheet">
-  <link href="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$version['internal']['production']['css']['tpl']; ?>" rel="stylesheet">-->
+  <link href="<?php echo $version['external']['bootstrap-icons']['css']; ?>" rel="stylesheet">
+  <link href="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$version['internal']['custom']['css'][$sites['template']]; ?>" rel="stylesheet">
 
 
 </head>
 <body>
-<?php
-
-if(!empty($seo['google']['tag-manager'])){
-	echo '<!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id='.$seo['google']['tag-manager'].'"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->';
-}
-
-?>
-
-  
-
-
-    <!-- Spinner Start -->
-    <!--<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner"></div>
-    </div>-->
-    <!-- Spinner End -->
-
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark px-5 d-none d-lg-block">

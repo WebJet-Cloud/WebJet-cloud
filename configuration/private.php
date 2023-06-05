@@ -1,5 +1,5 @@
 <?php
-# $private['phone']['code'].' '.$private['phone']['number']
+# $private['name']['code'].' '.$private['phone']['number']
 
 $private = array(
 	'born' => '24/04/1991', /*exemple Day/Month/Year number only indicate age */

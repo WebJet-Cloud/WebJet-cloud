@@ -19,6 +19,7 @@ $general = array(
 			'starter' => 'Get Started',
 			'previous' => 'Previous',
 			'next' => 'Next',
+			'share' => 'Share',
 			'follow-us' => 'Follow us',
 			'footer-os' => 'is Open-Source PHP community'
 		),
@@ -224,7 +225,7 @@ $general = array(
 				'title' => 'The creator of WebJet',
 				'description' => 'I create this project and at the same time I represent myself.'
 			),
-			'presentation' => 'Hello, my name is Alexon Balangue, in his thirties, is the creator of this web application project made in PHP. To help the most novice among you to start in web development as simply as possible, then I had learned for years on my own that it will be necessary to have this type of very simple concept. After having a website that is both professional, and both personal to be able to create a CV for example, it is possible to create a loan of pages and this project does not require any MySQL database also no functionality of a bass MVC framework. Files and folders have a good structure has been well thought out for each different activity area such as: WebDesign, Designer, Webmaster, Editor, Marketing and Developer. In general, it is very important that you have a good structure of your files and folders. This way, you can easily find what you need while working on the site and avoid any problems later.',
+			'presentation' => 'Hello, my name is Alexon Balangue, I\'m in my thirties and I\'m the creator of this web application project made in PHP. I want to help the most novice among you to start in web development as simply as possible. I learned on my own for years that it was necessary to have this type of very simple concept. It\'s about creating a website that is both professional and personal, to be able to create a CV, for example. This project does not require any MySQL database or any functionality of a basic MVC framework. The files and folders have a good structure and have been well thought out for each different field of activity, such as: WebDesign, Designer, Webmaster, Copywriter, Marketing and Developer. In general, it is very important that you have a good structure of your files and folders. This way, you can easily find what you need while working on the site and avoid any problems later.',
 			'personnalite' => array(
 				'test' => array(
 					'title' => 'personality test' ,
@@ -240,7 +241,8 @@ $general = array(
 					'3' => array(
 						'title' => 'Stress Management',
 					'text' => 'Congratulations, you are able to live your stress positively! You have fun, and each situation is a challenge for you! For example, an objection becomes an opportunity for you! You know how to evacuate your tensions and help your collaborators to do the same! Are you often entrusted with the management of complex situations? It\'s completely normal, you have a positive approach, a relevant step back and the adaptability that characterizes you allows you to solve any situation! To become an absolute expert in stress management, all you have to do is put in place a few preventive actions to prevent those around you from going through difficult times. But there\'s no doubt that you\'ll be up to the challenge!'
-					)
+					),
+					'short-text' => 'You are a professional with remarkable relational and emotional intelligence. You know how to create quality links with your interlocutors, manage your emotions and those of others, and adapt to all situations. You also have good stress management, which allows you to face challenges and solve problems. You are close to being an absolute leader and expert in these areas. To achieve this, you just have to dare to take risks and work on your leadership. You are a confident, creative and positive person who brings value to your team!'
 				)
 			)
 			

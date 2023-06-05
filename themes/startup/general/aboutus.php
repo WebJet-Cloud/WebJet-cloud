@@ -119,7 +119,7 @@
                 <div class="col-lg-3 wow slideInUp" data-wow-delay="0.3s">
                     <div class="team-item bg-light rounded overflow-hidden">
                         <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['logo']['creator']; ?>" alt="Alexon Balangue">
+                            <img class="img-fluid w-100" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['logo']['creator']; ?>" alt="<?php echo $private['name']; ?>">
                             <div class="team-social">
                                 <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://www.linkedin.com/in/alexonbalangue/"><i class="fab fa-linkedin fw-normal"></i></a>
                             </div>

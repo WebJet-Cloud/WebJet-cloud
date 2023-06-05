@@ -50,7 +50,8 @@ $version = array(
 				'urgence' => $local_custom.'css/urgence.css',
 				'tplsgen' => $local_custom.'css/tplsgen.css',
 				'tpl' => $local_custom.'css/tpl.css',
-				'startup' => $local_custom.'css/startup.css'
+				'startup' => $local_custom.'css/startup.css',
+				'FestavaLive' => $local_custom.'css/FestavaLive.css'
 			),
 			'js' => array(
 				/*'default' => $local_custom.'js/default.js',*/
@@ -58,7 +59,8 @@ $version = array(
 				'mamba' => $local_custom.'js/mamba.js',
 				'urgence' => $local_custom.'js/urgence.js',
 				'tpl' => $local_custom.'js/tpl.js',
-				'startup' => $local_custom.'js/startup.js'
+				'startup' => $local_custom.'js/startup.js',
+				'FestavaLive' => $local_custom.'js/FestavaLive.js'
 			)
 		),
 		'production' => array(
@@ -69,14 +71,16 @@ $version = array(
 				'urgence' => $local_production.'css/urgence.min.css',
 				'tplsgen' => $local_production.'css/tplsgen.min.css',
 				'tpl' => $local_production.'css/tpl.min.css',
-				'startup' => $local_production.'css/startup.min.css'
+				'startup' => $local_production.'css/startup.min.css',
+				'FestavaLive' => $local_production.'css/FestavaLive.min.css'
 			),
 			'js' => array(
 				'knight' => $local_production.'js/knight.min.js',
 				'mamba' => $local_production.'js/mamba.min.js',
 				'urgence' => $local_production.'js/urgence.min.js',
 				'tpl' => $local_production.'js/tpl.min.js',
-				'startup' => $local_production.'js/startup.min.js'
+				'startup' => $local_production.'js/startup.min.js',
+				'FestavaLive' => $local_production.'js/FestavaLive.min.js'
 			)
 		),
 		'combined' => array(

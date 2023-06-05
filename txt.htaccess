@@ -1357,176 +1357,175 @@ CacheKeyModify -qs:_ga
 
 <IfModule mod_rewrite.c>
 RewriteEngine on
-#INDEX frontend default
+
+# INDEX
 RewriteRule ^index$ index.php [L]
-RewriteRule ^index$ index.php?pages=index [L]
-RewriteRule ^teams$ index.php?pages=teams [L]
-</IfModule>
+RewriteRule ^fr/accueil$ index.php?fr=index [L]
+RewriteRule ^en/home$ index.php?en=index [L]
+RewriteRule ^de/herzlich-willkommen$ index.php?de=index [L]
+RewriteRule ^ru/home$ index.php?ru=index [L]
+
+# INFO
+RewriteRule ^partner$ info.php?pages=partner [L]
+RewriteRule ^fr/partenaire$ info.php?fr=partner [L]
+RewriteRule ^en/partner$ info.php?en=partner [L]
+RewriteRule ^de/mannschaften$ info.php?de=partner [L]
+RewriteRule ^ru/partner$ info.php?ru=partner [L]
+
+RewriteRule ^teams$ info.php?pages=temas [L]
+RewriteRule ^fr/equipes$ info.php?fr=temas [L]
+RewriteRule ^en/teams$ info.php?en=temas [L]
+RewriteRule ^de/mannschaften'$ info.php?de=temas [L]
+RewriteRule ^ru/teams$ info.php?ru=temas [L]
+
+RewriteRule ^aboutus$ info.php?pages=aboutus [L]
+RewriteRule ^fr/a-propos$ info.php?fr=aboutus [L]
+RewriteRule ^en/aboutus$ info.php?en=aboutus [L]
+RewriteRule ^de/um$ info.php?de=aboutus [L]
+RewriteRule ^ru/aboutus$ info.php?ru=aboutus [L]
+
+# Devis
+RewriteRule ^ask-quote$ devis.php?pages=index [L]
+RewriteRule ^fr/demande-devis$ devis.php?fr=index [L]
+RewriteRule ^en/ask-quote$ devis.php?en=index [L]
+RewriteRule ^de/ask-zitat$ devis.php?de=index [L]
+RewriteRule ^ru/ask-quote$ devis.php?ru=index [L]
+
+# Contact
+RewriteRule ^contact$ contact.php?pages=index [L]
+RewriteRule ^fr/contacter$ contact.php?fr=index [L]
+RewriteRule ^en/contact$ contact.php?en=index [L]
+RewriteRule ^de/kontakt$ contact.php?de=index [L]
+RewriteRule ^ru/contact$ contact.php?ru=index [L]
+
+# RULES
+RewriteRule ^rules$ rules.php?pages=index [L]
+RewriteRule ^fr/regles$ rules.php?fr=index [L]
+RewriteRule ^en/rules$ rules.php?en=index [L]
+RewriteRule ^de/regeln$ rules.php?de=index [L]
+RewriteRule ^ru/rules$ rules.php?ru=index [L]
+
+RewriteRule ^rules/rgpd$ rules.php?pages=rgpd [L]
+RewriteRule ^fr/regles/rgpd$ rules.php?fr=rgpd [L]
+RewriteRule ^en/rules/rgpd$ rules.php?en=rgpd [L]
+RewriteRule ^de/regeln/rgpd$ rules.php?de=rgpd [L]
+RewriteRule ^ru/rules/rgpd$ rules.php?ru=rgpd [L]
+
+RewriteRule ^rules/cookies$ rules.php?pages=cookies [L]
+RewriteRule ^fr/regles/cookies$ rules.php?fr=cookies [L]
+RewriteRule ^en/rules/cookies$ rules.php?en=cookies [L]
+RewriteRule ^de/regeln/kekse$ rules.php?de=cookies [L]
+RewriteRule ^ru/rules/cookies$ rules.php?ru=cookies [L]
+
+RewriteRule ^rules/policy-privacy$ rules.php?pages=policy-privacy [L]
+RewriteRule ^fr/regles/politique-de-confidentialite$ rules.php?fr=policy-privacy [L]
+RewriteRule ^en/rules/policy-privacy$ rules.php?en=policy-privacy [L]
+RewriteRule ^de/regeln/datenschutz-Bestimmungen$ rules.php?de=policy-privacy [L]
+RewriteRule ^ru/rules/policy-privacy$ rules.php?ru=policy-privacy [L]
+
+RewriteRule ^rules/legal$ rules.php?pages=legal [L]
+RewriteRule ^fr/regles/mentions-legales$ rules.php?fr=legal [L]
+RewriteRule ^en/rules/legal$ rules.php?en=legal [L]
+RewriteRule ^de/regeln/impressum$ rules.php?de=legal [L]
+RewriteRule ^ru/rules/legal$ rules.php?ru=legal [L]
+
+RewriteRule ^rules/dmca$ rules.php?pages=dmca [L]
+RewriteRule ^fr/regles/dmca$ rules.php?fr=dmca [L]
+RewriteRule ^en/rules/dmca$ rules.php?en=dmca [L]
+RewriteRule ^de/regeln/dmca$ rules.php?de=dmca [L]
+RewriteRule ^ru/rules/dmca$ rules.php?ru=dmca [L]
+
+RewriteRule ^rules/cgv$ rules.php?pages=cgv [L]
+RewriteRule ^fr/regles/conditions-generales-de-vente$ rules.php?fr=cgv [L]
+RewriteRule ^en/rules/cgv$ rules.php?en=cgv [L]
+RewriteRule ^de/regeln/verkaufsbedingungen$ rules.php?de=cgv [L]
+RewriteRule ^ru/rules/cgv$ rules.php?ru=cgv [L]
+
+RewriteRule ^rules/cgu$ rules.php?pages=cgu [L]
+RewriteRule ^fr/regles/conditions-generales-utilisation$ rules.php?fr=cgu [L]
+RewriteRule ^en/rules/cgu$ rules.php?en=cgu [L]
+RewriteRule ^de/regeln/nutzungsbedingungen$ rules.php?de=cgu [L]
+RewriteRule ^ru/rules/cgu$ rules.php?ru=cgu [L]
+
+# SERVICES
+RewriteRule ^services$ services.php?pages=index [L]
+RewriteRule ^fr/services$ services.php?fr=index [L]
+RewriteRule ^en/services$ services.php?en=index [L]
+RewriteRule ^de/dienstleistungen$ services.php?de=index [L]
+RewriteRule ^ru/services$ services.php?ru=index [L]
+
+RewriteRule ^services/sap$ services.php?pages=sap [L]
+RewriteRule ^fr/services/services-a-la-personne$ services.php?fr=sap [L]
+RewriteRule ^en/services/sap$ services.php?en=sap [L]
+RewriteRule ^de/dienstleistungen/personliche-dienstleistungen$ services.php?de=sap [L]
+RewriteRule ^ru/services/sap$ services.php?ru=sap [L]
+
+RewriteRule ^services/consulting$ services.php?pages=consulting [L]
+RewriteRule ^fr/services/consultant$ services.php?fr=consulting [L]
+RewriteRule ^en/services/consulting$ services.php?en=consulting [L]
+RewriteRule ^de/dienstleistungen/beratung$ services.php?de=consulting [L]
+RewriteRule ^ru/services/consulting$ services.php?ru=consulting [L]
+
+RewriteRule ^services/seo$ services.php?pages=seo [L]
+RewriteRule ^fr/services/reference-naturel$ services.php?fr=seo [L]
+RewriteRule ^en/services/seo$ services.php?en=seo [L]
+RewriteRule ^de/dienstleistungen/naturliche-referenz$ services.php?de=seo [L]
+RewriteRule ^ru/services/seo$ services.php?ru=seo [L]
+
+RewriteRule ^services/developper$ services.php?pages=developper [L]
+RewriteRule ^fr/services/developpeur$ services.php?fr=developper [L]
+RewriteRule ^en/services/developper$ services.php?en=developper [L]
+RewriteRule ^de/dienstleistungen/entwickler$ services.php?de=developper [L]
+RewriteRule ^ru/services/developper$ services.php?ru=developper [L]
+
+RewriteRule ^services/webmaster$ services.php?pages=webmaster [L]
+RewriteRule ^fr/services/webmestre$ services.php?fr=webmaster [L]
+RewriteRule ^en/services/webmaster$ services.php?en=webmaster [L]
+RewriteRule ^de/dienstleistungen/webmaster$ services.php?de=webmaster [L]
+RewriteRule ^ru/services/webmaster$ services.php?ru=webmaster [L]
+
+RewriteRule ^services/marketing$ services.php?pages=marketing [L]
+RewriteRule ^fr/services/marketing$ services.php?fr=marketing [L]
+RewriteRule ^en/services/marketing$ services.php?en=marketing [L]
+RewriteRule ^de/dienstleistungen/marketing$ services.php?de=marketing [L]
+RewriteRule ^ru/services/marketing$ services.php?ru=marketing [L]
+
+RewriteRule ^services/cybersecurity$ services.php?pages=cybersecurity [L]
+RewriteRule ^fr/services/cyber-securite$ services.php?fr=cybersecurity [L]
+RewriteRule ^en/services/cybersecurity$ services.php?en=cybersecurity [L]
+RewriteRule ^de/dienstleistungen/internet-sicherheit$ services.php?de=cybersecurity [L]
+RewriteRule ^ru/services/cybersecurity$ services.php?ru=cybersecurity [L]
+
+# Block
+RewriteRule ^contact/success$ contact.php?pages=success [L]
+RewriteRule ^fr/contacter/success$ contact.php?fr=success [L]
+RewriteRule ^en/contact/success$ contact.php?en=success [L]
+RewriteRule ^de/kontakt/success$ contact.php?de=success [L]
+RewriteRule ^ru/contact/success$ contact.php?ru=success [L]
+
+RewriteRule ^contact/error$ contact.php?pages=error [L]
+RewriteRule ^fr/contacter/error$ contact.php?fr=error [L]
+RewriteRule ^en/contact/error$ contact.php?en=error [L]
+RewriteRule ^de/kontakt/error$ contact.php?de=error [L]
+RewriteRule ^ru/contact/error$ contact.php?ru=error [L]
+
+RewriteRule ^devis/success$ devis.php?pages=success [L]
+RewriteRule ^fr/demande-devis/success$ devis.php?fr=success [L]
+RewriteRule ^en/devis/success$ devis.php?en=success [L]
+RewriteRule ^de/ask-zitat/success$ devis.php?de=success [L]
+RewriteRule ^ru/devis/success$ devis.php?ru=success [L]
+
+RewriteRule ^devis/error$ devis.php?pages=error [L]
+RewriteRule ^fr/demande-devis/error$ devis.php?fr=error [L]
+RewriteRule ^en/devis/error$ devis.php?en=error [L]
+RewriteRule ^de/ask-zitat/error$ devis.php?de=error [L]
+RewriteRule ^ru/devis/error$ devis.php?ru=error [L]
 
 
-<IfModule mod_rewrite.c>
-RewriteEngine on
-#Translate French
-RewriteRule ^fr/accueil$ general.php?lang=fr&pages=index [L]
-RewriteRule ^fr/equipes$ general.php?lang=fr&pages=teams [L]
-RewriteRule ^fr/a-propos$ general.php?lang=fr&pages=aboutus [L]
-RewriteRule ^fr/services$ general.php?lang=fr&pages=services [L]
-    RewriteRule ^fr/services/cyber-securite$ general.php?lang=fr&pages=services&activities=cybersecurity [L]
-    RewriteRule ^fr/services/marketing$ general.php?lang=fr&pages=services&activities=marketing [L]
-    RewriteRule ^fr/services/webmestre$ general.php?lang=fr&pages=services&activities=webmaster [L]
-    RewriteRule ^fr/services/developpeur$ general.php?lang=fr&pages=services&activities=developper [L]
-    RewriteRule ^fr/services/reference-naturel$ general.php?lang=fr&pages=services&activities=seo [L]
-    RewriteRule ^fr/services/consultant$ general.php?lang=fr&pages=services&activities=consulting [L]
-	RewriteRule ^fr/déboguer$ debug.php?lang=fr&pages=debug [L]
-	RewriteRule ^fr/api/sites\.json$ debug.php?lang=fr&pages=debug&json=sites [L]
-	RewriteRule ^fr/api/social\.json$ debug.php?lang=fr&pages=debug&json=social [L]
-	RewriteRule ^fr/api/private\.json$ debug.php?lang=fr&pages=debug&json=private [L]
-	RewriteRule ^fr/api/business\.json$ debug.php?lang=fr&pages=debug&json=business [L]
-	RewriteRule ^fr/api/images\.json$ debug.php?lang=fr&pages=debug&json=images [L]
-	RewriteRule ^fr/api/partner\.json$ debug.php?lang=fr&pages=debug&json=partner [L]
-	RewriteRule ^fr/api/sponsor\.json$ debug.php?lang=fr&pages=debug&json=sponsor [L]
-	RewriteRule ^fr/api/credits\.json$ debug.php?lang=fr&pages=debug&json=credits [L]
-	RewriteRule ^fr/règles$ law.php?lang=fr&pages=law [L]
-	RewriteRule ^fr/conditions-générales-utilisation$ law.php?lang=fr&pages=law&full=cgu [L]
-	RewriteRule ^fr/conditions-générales-de-vente$ law.php?lang=fr&pages=law&full=cgv [L]
-	RewriteRule ^fr/dmca$ law.php?lang=fr&pages=law&full=dmca [L]
-	RewriteRule ^fr/mentions-légales$ law.php?lang=fr&pages=law&full=legal [L]
-	RewriteRule ^fr/politique-de-confidentialité$ law.php?lang=fr&pages=law&full=policy-privacy [L]
-	RewriteRule ^fr/rgpd$ law.php?lang=fr&pages=law&full=rgpd [L]
-	RewriteRule ^fr/cookies$ law.php?lang=fr&pages=law&full=cookies [L]
-RewriteRule ^fr/sponsorisé$ sponsor.php?lang=fr&pages=index [L]
-RewriteRule ^fr/partenaire$ partner.php?lang=fr&pages=index [L]
-RewriteRule ^fr/contactez$ email.php?lang=fr&pages=index [L]
-RewriteRule ^fr/demande-devis$ email.php?lang=fr&pages=ask-quotes [L]
-RewriteRule ^fr/plan-du-site$ sitemap.php?lang=fr&pages=index [L]
-RewriteRule ^fr/contact/success$ block.php?lang=fr&pages=success [L]
-RewriteRule ^fr/erreur$ block.php?lang=fr&pages=error [L]
+RewriteRule ^error$ index.php?pages=error [L]
+RewriteRule ^success$ index.php?pages=success [L]
 
 
-####################################################################################################
-####################################################################################################
-####################################################################################################
-####################################################################################################
-
-#Translate English
-    RewriteRule ^en/home$ general.php?lang=en&pages=index [L]
-    RewriteRule ^en/teams$ general.php?lang=en&pages=teams [L]
-    RewriteRule ^en/aboutus$ general.php?lang=en&pages=aboutus [L]
-    RewriteRule ^en/services$ general.php?lang=en&pages=services [L]
-    RewriteRule ^en/services/cybersecurity$ general.php?lang=en&pages=services&activities=cybersecurity [L]
-    RewriteRule ^en/services/marketing$ general.php?lang=en&pages=services&activities=marketing [L]
-    RewriteRule ^en/services/webmaster$ general.php?lang=en&pages=services&activities=webmaster [L]
-    RewriteRule ^en/services/developper$ general.php?lang=en&pages=services&activities=developper [L]
-    RewriteRule ^en/services/seo$ general.php?lang=en&pages=services&activities=seo [L]
-    RewriteRule ^en/services/consulting$ general.php?lang=en&pages=services&activities=consulting [L]
-	RewriteRule ^en/debug$ debug.php?lang=en&pages=debug [L]
-	RewriteRule ^en/api/sites\.json$ debug.php?lang=en&pages=debug&json=sites [L]
-	RewriteRule ^en/api/social\.json$ debug.php?lang=en&pages=debug&json=social [L]
-	RewriteRule ^en/api/private\.json$ debug.php?lang=en&pages=debug&json=private [L]
-	RewriteRule ^en/api/business\.json$ debug.php?lang=en&pages=debug&json=business [L]
-	RewriteRule ^en/api/images\.json$ debug.php?lang=en&pages=debug&json=images [L]
-	RewriteRule ^en/api/partner\.json$ debug.php?lang=en&pages=debug&json=partner [L]
-	RewriteRule ^en/api/sponsor\.json$ debug.php?lang=en&pages=debug&json=sponsor [L]
-	RewriteRule ^en/api/credits\.json$ debug.php?lang=en&pages=debug&json=credits [L]
-	RewriteRule ^en/rules$ law.php?lang=en&pages=law [L]
-	RewriteRule ^en/terms-and-conditions$ law.php?lang=en&pages=law&full=cgu [L]
-	RewriteRule ^en/terms-and-conditions-of-sale$ law.php?lang=en&pages=law&full=cgv [L]
-	RewriteRule ^en/dmca$ law.php?lang=en&pages=law&full=dmca [L]
-	RewriteRule ^en/legal$ law.php?lang=en&pages=law&full=legal [L]
-	RewriteRule ^en/policy-privacy$ law.php?lang=en&pages=law&full=policy-privacy [L]
-	RewriteRule ^en/grpd$ law.php?lang=en&pages=law&full=rgpd [L]
-	RewriteRule ^en/cookies$ law.php?lang=en&pages=law&full=cookies [L]
-    RewriteRule ^en/sponsor$ sponsor.php?lang=en&pages=index [L]
-    RewriteRule ^en/partner$ partner.php?lang=en&pages=index [L]
-    RewriteRule ^en/contact$ email.php?lang=en&pages=index [L]
-    RewriteRule ^en/ask-quote$ email.php?lang=en&pages=ask-quotes [L]
-    RewriteRule ^en/sitemap$ sitemap.php?lang=en&pages=index [L]
-    RewriteRule ^en/contact/success$ block.php?lang=en&pages=success [L]
-    RewriteRule ^en/error$ block.php?lang=en&pages=error [L]
-
-
-####################################################################################################
-####################################################################################################
-####################################################################################################
-####################################################################################################
-
-#Translate allemand
-RewriteRule ^de/startseite$ general.php?lang=de&pages=index [L]
-	RewriteRule ^de/debuggen$ general.php?lang=de&pages=debug [L]
-	RewriteRule ^de/uber-uns$ general.php?lang=de&pages=aboutus [L]
-	RewriteRule ^de/dienstleistungen$ general.php?lang=de&pages=services [L]
-    RewriteRule ^de/dienstleistungen/internet-sicherheit$ general.php?lang=de&pages=services&activities=cybersecurity [L]
-    RewriteRule ^de/dienstleistungen/marketing$ general.php?lang=de&pages=services&activities=marketing [L]
-    RewriteRule ^de/dienstleistungen/webmaster$ general.php?lang=de&pages=services&activities=webmaster [L]
-    RewriteRule ^de/dienstleistungen/entwickler$ general.php?lang=de&pages=services&activities=developper [L]
-    RewriteRule ^de/dienstleistungen/naturliche-referenz$ general.php?lang=de&pages=services&activities=seo [L]
-    RewriteRule ^de/dienstleistungen/beratung$ general.php?lang=de&pages=services&activities=consulting [L]
-	RewriteRule ^de/api/sites\.json$ debug.php?lang=de&pages=debug&json=sites [L]
-	RewriteRule ^de/api/social\.json$ debug.php?lang=de&pages=debug&json=social [L]
-	RewriteRule ^de/api/private\.json$ debug.php?lang=de&pages=debug&json=private [L]
-	RewriteRule ^de/api/business\.json$ debug.php?lang=de&pages=debug&json=business [L]
-	RewriteRule ^de/api/images\.json$ debug.php?lang=de&pages=debug&json=images [L]
-	RewriteRule ^de/api/partner\.json$ debug.php?lang=de&pages=debug&json=partner [L]
-	RewriteRule ^de/api/sponsor\.json$ debug.php?lang=de&pages=debug&json=sponsor [L]
-	RewriteRule ^de/api/credits\.json$ debug.php?lang=de&pages=debug&json=credits [L]
-	RewriteRule ^de/regeln$ law.php?lang=de&pages=law [L]
-	RewriteRule ^de/nutzungsbedingungen$ law.php?lang=de&pages=law&full=cgu [L]
-	RewriteRule ^de/verkaufsbedingungen$ law.php?lang=de&pages=law&full=cgv [L]
-	RewriteRule ^de/dmca$ law.php?lang=de&pages=law&full=dmca [L]
-	RewriteRule ^de/impressum$ law.php?lang=de&pages=law&full=legal [L]
-	RewriteRule ^de/datenschutz-bestimmungen$ law.php?lang=de&pages=law&full=policy-privacy [L]
-	RewriteRule ^de/grpd$ law.php?lang=de&pages=law&full=rgpd [L]
-	RewriteRule ^de/kekse$ law.php?lang=de&pages=law&full=cookies [L]
-RewriteRule ^de/sponsor$ sponsor.php?lang=de&pages=index [L]
-RewriteRule ^de/partner$ partner.php?lang=de&pages=index [L]
-RewriteRule ^de/kontakt$ email.php?lang=de&pages=index [L]
-RewriteRule ^de/angebotsanfrage$ email.php?lang=de&pages=ask-quotes [L]
-RewriteRule ^de/seitenverzeichnis$ sitemap.php?lang=de&pages=index [L]
-RewriteRule ^de/kontakt/erfolg$ block.php?lang=de&pages=success [L]
-RewriteRule ^de/fehler$ block.php?lang=de&pages=error [L]
-
-
-
-
-####################################################################################################
-####################################################################################################
-####################################################################################################
-####################################################################################################
-
-#Translate Russe
-RewriteRule ^ru/home$ general.php?lang=ru&pages=index [L]
-	RewriteRule ^ru/debug$ debug.php?lang=ru&pages=debug [L]
-	RewriteRule ^ru/aboutus$ general.php?lang=ru&pages=aboutus [L]
-	RewriteRule ^ru/services$ general.php?lang=ru&pages=services [L]
-    RewriteRule ^ru/services/cybersecurity$ general.php?lang=ru&pages=services&activities=cybersecurity [L]
-    RewriteRule ^ru/services/marketing$ general.php?lang=ru&pages=services&activities=marketing [L]
-    RewriteRule ^ru/services/webmaster$ general.php?lang=ru&pages=services&activities=webmaster [L]
-    RewriteRule ^ru/services/developper$ general.php?lang=ru&pages=services&activities=developper [L]
-    RewriteRule ^ru/services/seo$ general.php?lang=ru&pages=services&activities=seo [L]
-    RewriteRule ^ru/services/consulting$ general.php?lang=ru&pages=services&activities=consulting [L]
-	RewriteRule ^ru/api/sites\.json$ debug.php?lang=ru&pages=debug&json=sites [L]
-	RewriteRule ^ru/api/social\.json$ debug.php?lang=ru&pages=debug&json=social [L]
-	RewriteRule ^ru/api/private\.json$ debug.php?lang=ru&pages=debug&json=private [L]
-	RewriteRule ^ru/api/business\.json$ debug.php?lang=ru&pages=debug&json=business [L]
-	RewriteRule ^ru/api/images\.json$ debug.php?lang=ru&pages=debug&json=images [L]
-	RewriteRule ^ru/api/partner\.json$ debug.php?lang=ru&pages=debug&json=partner [L]
-	RewriteRule ^ru/api/sponsor\.json$ debug.php?lang=ru&pages=debug&json=sponsor [L]
-	RewriteRule ^ru/api/credits\.json$ debug.php?lang=ru&pages=debug&json=credits [L]
-	RewriteRule ^ru/rules$ law.php?lang=ru&pages=law [L]
-	RewriteRule ^ru/terms-and-conditions$ law.php?lang=ru&pages=law&full=cgu [L]
-	RewriteRule ^ru/terms-and-conditions-of-sale$ law.php?lang=ru&pages=law&full=cgv [L]
-	RewriteRule ^ru/dmca$ law.php?lang=ru&pages=law&full=dmca [L]
-	RewriteRule ^ru/legal$ law.php?lang=ru&pages=law&full=legal [L]
-	RewriteRule ^ru/policy-privacy$ law.php?lang=ru&pages=law&full=policy-privacy [L]
-	RewriteRule ^ru/grpd$ law.php?lang=ru&pages=law&full=rgpd [L]
-	RewriteRule ^ru/cookies$ law.php?lang=ru&pages=law&full=cookies [L]
-RewriteRule ^ru/sponsor$ sponsor.php?lang=ru&pages=index [L]
-RewriteRule ^ru/partner$ partner.php?lang=ru&pages=index [L]
-RewriteRule ^ru/contact$ email.php?lang=ru&pages=index [L]
-RewriteRule ^ru/ask-quote$ email.php?lang=ru&pages=ask-quotes [L]
-RewriteRule ^ru/sitemap$ sitemap.php?lang=ru&pages=index [L]
-RewriteRule ^ru/contact/success$ block.php?lang=ru&pages=success [L]
-RewriteRule ^ru/error$ block.php?lang=ru&pages=error [L]
 
 
 </IfModule>
@@ -1542,14 +1541,14 @@ RewriteRule ^ru/error$ block.php?lang=ru&pages=error [L]
 	RewriteRule ^badge\.xml$ seo-others.php?index=badge [L]
 	RewriteRule ^browserconfig\.xml$ seo-others.php?index=badge [L]
 	RewriteRule ^BingSiteAuth\.xml$ seo-others.php?index=BingSiteAuth [L]
-  RewriteRule ^sitemap\.xml$ seo-others.php?sitemap=index [L]
+    RewriteRule ^sitemap\.xml$ seo-others.php?sitemap=index [L]
 
 	##SITEMAP NOT NEED##
-	#RewriteRule ^sitemap-index\.xml$ seo-others.php?sitemap=default [L]
-	#RewriteRule ^sitemap-en\.xml$ seo-others.php?sitemap=en [L]
-	#RewriteRule ^sitemap-fr\.xml$ seo-others.php?sitemap=fr [L]
-	#RewriteRule ^sitemap-de\.xml$ seo-others.php?sitemap=de [L]
-	#RewriteRule ^sitemap-ru\.xml$ seo-others.php?sitemap=ru [L]
+	RewriteRule ^sitemap-index\.xml$ seo-others.php?sitemap=default [L]
+	RewriteRule ^sitemap-en\.xml$ seo-others.php?sitemap=en [L]
+	RewriteRule ^sitemap-fr\.xml$ seo-others.php?sitemap=fr [L]
+	RewriteRule ^sitemap-de\.xml$ seo-others.php?sitemap=de [L]
+	RewriteRule ^sitemap-ru\.xml$ seo-others.php?sitemap=ru [L]
 
 	###### JSON ###### 
 	RewriteRule ^manifest\.json$ seo.php?json=manifest [L]
@@ -1560,114 +1559,12 @@ RewriteRule ^ru/error$ block.php?lang=ru&pages=error [L]
 	###### TXT ###### 
 	RewriteRule ^robots\.txt$ seo.php?txt=robots [L]
 	RewriteRule ^humans\.txt$ seo.php?txt=humans [L]
-	RewriteRule ^\.well-known/brave-rewards-verification\.txt$ seo.php?txt=brave-rewards-verification [L]
+	# RewriteRule ^\.well-known/brave-rewards-verification\.txt$ seo.php?txt=brave-rewards-verification [L]
 	RewriteRule ^ads\.txt$ seo.php?txt=ads [L]
 
-	###### HTML VERIFY ###### 
 
-	#RewriteRule ^dmyc73gogfqvf3a9p\.html$ seo.php?html-verify=dailymotion [L]
-	#RewriteRule ^$var\.html$ seo.php?html-verify=google [L]
-	#RewriteRule ^pinterest-$var\.html$ seo.php?html-verify=pinterest [L]
-	#exemple: with pinterest
-	#RewriteRule ^pinterest-ccf5f\.html$ seo.php?html-verify=pinterest [L]
-	#RewriteRule ^yandex_$var.html$ seo.php?html-verify=yandex [L]
-
-  RewriteRule ^contact/success$ index.php?pages=success [L]
-  RewriteRule ^error$ index.php?pages=error [L]
-  RewriteRule ^sponsor$ index.php?pages=sponsor [L]
-  RewriteRule ^partner$ index.php?pages=partner [L]
-  RewriteRule ^contact$ index.php?pages=email [L]
-  RewriteRule ^ask-quote$ index.php?pages=ask-quotes [L]
-  RewriteRule ^aboutus$ index.php?pages=aboutus [L]
-  RewriteRule ^services$ index.php?pages=services [L]
-  RewriteRule ^services/cybersecurity$ index.php?pages=services&activities=cybersecurity [L]
-  RewriteRule ^services/marketing$ index.php?pages=services&activities=marketing [L]
-  RewriteRule ^services/webmaster$ index.php?pages=services&activities=webmaster [L]
-  RewriteRule ^services/developper$ index.php?pages=services&activities=developper [L]
-  RewriteRule ^services/seo$ index.php?pages=services&activities=seo [L]
-  RewriteRule ^services/$ index.php?pages=services&activities= [L]
-  RewriteRule ^sitemap$ index.php?pages=sitemap [L]
-  RewriteRule ^security/csp-violate$ email.php?security=csp [L]
 
 </IfModule>
-
-
-
-
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	#law
-	RewriteRule ^rules$ index.php?pages=law [L]
-	RewriteRule ^cgu$ index.php?pages=law&full=cgu [L]
-	RewriteRule ^cgv$ index.php?pages=law&full=cgv [L]
-	RewriteRule ^dmca$ index.php?pages=law&full=dmca [L]
-	RewriteRule ^legal$ index.php?pages=law&full=legal [L]
-	RewriteRule ^policy-privacy$ index.php?pages=law&full=policy-privacy [L]
-	RewriteRule ^grpd$ index.php?pages=law&full=rgpd [L]
-	RewriteRule ^cookies$ index.php?pages=law&full=cookies [L]
-
-</IfModule>
-
-
-# DEBUG 
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-	
-	RewriteRule ^debug$ index.php?pages=debug [L]
-	RewriteRule ^api/sites\.json$ index.php?pages=debug&json=sites [L]
-	RewriteRule ^api/social\.json$ index.php?pages=debug&json=social [L]
-	RewriteRule ^api/private\.json$ index.php?pages=debug&json=private [L]
-	RewriteRule ^api/business\.json$ index.php?pages=debug&json=business [L]
-	RewriteRule ^api/images\.json$ index.php?pages=debug&json=images [L]
-	RewriteRule ^api/partner\.json$ index.php?pages=debug&json=partner [L]
-	RewriteRule ^api/sponsor\.json$ index.php?pages=debug&json=sponsor [L]
-	RewriteRule ^api/credits\.json$ index.php?pages=debug&json=credits [L]
-	
-	########## debug - English ##########
-	RewriteRule ^en/debug$ debug.php?lang=en&pages=debug [L]
-	RewriteRule ^en/api/sites\.json$ debug.php?lang=en&pages=debug&json=sites [L]
-	RewriteRule ^en/api/social\.json$ debug.php?lang=en&pages=debug&json=social [L]
-	RewriteRule ^en/api/private\.json$ debug.php?lang=en&pages=debug&json=private [L]
-	RewriteRule ^en/api/business\.json$ debug.php?lang=en&pages=debug&json=business [L]
-	RewriteRule ^en/api/images\.json$ debug.php?lang=en&pages=debug&json=images [L]
-	RewriteRule ^en/api/partner\.json$ debug.php?lang=en&pages=debug&json=partner [L]
-	RewriteRule ^en/api/sponsor\.json$ debug.php?lang=en&pages=debug&json=sponsor [L]
-	
-	########## debug - French ##########
-	RewriteRule ^fr/déboguer$ debug.php?lang=fr&pages=debug [L]
-	RewriteRule ^fr/api/sites\.json$ debug.php?lang=fr&pages=debug&json=sites [L]
-	RewriteRule ^fr/api/social\.json$ debug.php?lang=fr&pages=debug&json=social [L]
-	RewriteRule ^fr/api/private\.json$ debug.php?lang=fr&pages=debug&json=private [L]
-	RewriteRule ^fr/api/business\.json$ debug.php?lang=fr&pages=debug&json=business [L]
-	RewriteRule ^fr/api/images\.json$ debug.php?lang=fr&pages=debug&json=images [L]
-	RewriteRule ^fr/api/partner\.json$ debug.php?lang=fr&pages=debug&json=partner [L]
-	RewriteRule ^fr/api/sponsor\.json$ debug.php?lang=fr&pages=debug&json=sponsor [L]
-	RewriteRule ^fr/api/credits\.json$ debug.php?lang=fr&pages=debug&json=credits [L]
-	
-	########## debug - Russe ##########
-	RewriteRule ^ru/debug$ debug.php?lang=ru&pages=debug [L]
-	RewriteRule ^ru/api/sites\.json$ debug.php?lang=ru&pages=debug&json=sites [L]
-	RewriteRule ^ru/api/social\.json$ debug.php?lang=ru&pages=debug&json=social [L]
-	RewriteRule ^ru/api/private\.json$ debug.php?lang=ru&pages=debug&json=private [L]
-	RewriteRule ^ru/api/business\.json$ debug.php?lang=ru&pages=debug&json=business [L]
-	RewriteRule ^ru/api/images\.json$ debug.php?lang=ru&pages=debug&json=images [L]
-	RewriteRule ^ru/api/partner\.json$ debug.php?lang=ru&pages=debug&json=partner [L]
-	RewriteRule ^ru/api/sponsor\.json$ debug.php?lang=ru&pages=debug&json=sponsor [L]
-	
-	########## debug - German ##########
-	RewriteRule ^de/debuggen$ debug.php?lang=de&pages=debug [L]
-	RewriteRule ^de/api/sites\.json$ debug.php?lang=de&pages=debug&json=sites [L]
-	RewriteRule ^de/api/social\.json$ debug.php?lang=de&pages=debug&json=social [L]
-	RewriteRule ^de/api/private\.json$ debug.php?lang=de&pages=debug&json=private [L]
-	RewriteRule ^de/api/business\.json$ debug.php?lang=de&pages=debug&json=business [L]
-	RewriteRule ^de/api/images\.json$ debug.php?lang=de&pages=debug&json=images [L]
-	RewriteRule ^de/api/partner\.json$ debug.php?lang=de&pages=debug&json=partner [L]
-	RewriteRule ^de/api/sponsor\.json$ debug.php?lang=de&pages=debug&json=sponsor [L]
-</IfModule>
-
-
-
-
 
 <IfModule mod_rewrite.c>
 RewriteEngine on

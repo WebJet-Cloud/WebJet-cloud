@@ -1,7 +1,12 @@
 <?php
 # $hosting['server']['external']['cloud']['site']
 # $hosting['server']['internal']['site']
+# $hosting['dl']['certifier-recipise']['site']
 $hosting = array(
+	'dl' => array(
+		'prest-contract' => 'dl/',
+		'certifier-recipise' => 'docs/'
+	),
 	'server' => array(
 		'internal' => array(
 			'name' => 'PlanetHoster',

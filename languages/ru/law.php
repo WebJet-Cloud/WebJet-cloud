@@ -33,8 +33,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'cookies',
-			'ru' => 'cookies'
+			'default' => 'rules/cookies',
+			'ru' => 'rules/cookies'
 		),
 		'content' => array(
 			'' => ''
@@ -50,8 +50,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'cgu',
-			'ru' => 'conditions-générales-utilisation'
+			'default' => 'rules/cgu',
+			'ru' => 'rules/conditions-générales-utilisation'
 		),
 		'content' => array(
 			'' => ''
@@ -67,8 +67,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'cgv',
-			'ru' => 'conditions-générales-de-vente'
+			'default' => 'rules/cgv',
+			'ru' => 'rules/conditions-générales-de-vente'
 		),
 		'content' => array(
 			'' => ''
@@ -84,8 +84,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'dmca',
-			'ru' => 'dmca'
+			'default' => 'rules/dmca',
+			'ru' => 'rules/dmca'
 		),
 		'content' => array(
 			'' => ''
@@ -101,8 +101,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'legal',
-			'ru' => 'legal'
+			'default' => 'rules/legal',
+			'ru' => 'rules/legal'
 		),
 		'content' => array(
 			'owner' => array(
@@ -161,8 +161,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'policy-privacy',
-			'ru' => 'policy-privacy'
+			'default' => 'rules/policy-privacy',
+			'ru' => 'rules/policy-privacy'
 		),
 		'content' => array(
 			'' => ''
@@ -178,8 +178,8 @@ $law = array(
 		'description' => '',
 		'keyword' => '',
 		'url' => array(
-			'default' => 'grpd',
-			'ru' => 'rgpd'
+			'default' => 'rules/grpd',
+			'ru' => 'rules/rgpd'
 		),
 		'content' => array(
 			'' => ''
