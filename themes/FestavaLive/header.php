@@ -738,7 +738,7 @@ if(!empty($seo['shareaholic']['key'])){
 
                     <div class="col-lg-6 col-12">
                         <div class="about-text-wrap">
-                            <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$imgs; ?>" class="about-image img-fluid" alt="<?php echo $title; ?>">
+                            <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$imgs; ?>" class="about-image img-fluid" alt="<?php echo $title; ?>">
                             <!--
                             <div class="about-text-info d-flex">
                                 <div class="d-flex">

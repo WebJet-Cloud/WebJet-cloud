@@ -127,7 +127,7 @@
                     <div class="col-lg-6 col-12">
                         <div class="artists-thumb">
                             <div class="artists-image-wrap">
-                                <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$services['cdevelopper']['sitemap']['images']; ?>"
+                                <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$services['developper']['sitemap']['images']; ?>"
                                     class="artists-image img-fluid" alt="<?php echo $services['developper']['title']; ?>">
                             </div>
 

@@ -29,7 +29,6 @@
                             <tr class="align-middle">
                                 <th scope="col"><?php echo $services['sap']['content']['excel']['table']['head']['1']; ?></th>
                                 <th scope="col"><?php echo $services['sap']['content']['excel']['table']['head']['2']; ?></th>
-                                <th scope="col"><?php echo $services['sap']['content']['excel']['table']['head']['3']; ?></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -167,50 +166,3 @@
         </div>
     </div>
 </div>
-
- 
-
-    <!-- Pricing Plan Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase"><?php echo $general['index']['content']['pricing']['container']['title']; ?></h5>
-                <h1 class="mb-0"><?php echo $general['index']['content']['pricing']['container']['description']; ?></h1>
-            </div>
-            <div class="row g-0">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="bg-light rounded">
-                        <div class="col-12 col-lg-6">
-                            <h1 class="display-5 mb-3">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;"> <?php echo $services['sap']['content']['pricing']['free']; ?></small>
-                            </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>--</span></div>
-                            <div class="d-flex justify-content-between mb-3"><span>--</span></div>
-                            <div class="d-flex justify-content-between mb-3"><span>--</span></div>
-                            <div class="d-flex justify-content-between mb-2"><span><?php echo $services['sap']['content']['pricing']['fees-seo']; ?></span></div>
-                            <a href="<?php echo $protocols.'://'.$sites['domain'].'/'.$email['ask-quotes']['url']['default']; ?>" class="btn btn-primary py-2 px-4 mt-4"><?php echo $general['index']['content']['quotes']['container']['title']; ?></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="bg-white rounded shadow position-relative" style="z-index: 1;">
-                        <div class="col-12 col-lg-6">
-                            <h1 class="display-5 mb-3">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;"><?php echo $sites['tarifs']['money']; ?></small><?php echo $sites['tarifs']['plan']['basic']; ?><small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;"> HT/ <?php echo $general['index']['content']['pricing']['blocks']['small']['ho']; ?></small>
-                            </h1>
-                            
-                            <div class="d-flex justify-content-between mb-3"><span><?php echo $services['sap']['content']['secteur']['1']['h1']; ?></span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span><?php echo $services['sap']['content']['secteur']['2']['h1']; ?></span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span><?php echo $services['sap']['content']['secteur']['3']['h1']; ?></span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span><?php echo $services['sap']['content']['pricing']['fees-seo']; ?></span></div>
-                            <a href="<?php echo $protocols.'://stores.'.$sites['domain']; ?>/all/numerique/creation-de-site-vitrine/" class="btn btn-primary py-2 px-4 mt-4"><?php echo $general['index']['content']['pricing']['blocks']['btn']['1']; ?></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Pricing Plan End -->
-
-

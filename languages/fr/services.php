@@ -822,11 +822,15 @@ $services = array(
 				'not-propose' => ''
 			)
 
+		),
+		'sitemap' => array(
+			'images' => 'services/consultant/assistant-informatique.jpg',
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	),
     'consulting' => array(
 		'title' => 'Prestation de Services en consultant',
-		'description' => '',
+		'description' => 'Un consultant est un expert qui conseille les entreprises pour les aider à résoudre des défis, optimiser leurs résultats et atteindre leurs ambitions. Il intervient dans différents domaines, comme la stratégie, le management, l\'informatique et plus encore. Ce métier offre de belles perspectives de carrière et d\'évolution, mais il demande aussi beaucoup de travail et de mobilité.',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'services/consulting',

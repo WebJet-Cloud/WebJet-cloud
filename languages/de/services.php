@@ -822,11 +822,15 @@ $services = array(
 				'not-propose' => ''
 			)
 
+		),
+		'sitemap' => array(
+			'images' => 'services/consultant/assistant-informatique.jpg',
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	),
     'consulting' => array(
 		'title' => 'Dienstleistungen - Beratung',
-		'description' => '',
+		'description' => 'Ein Berater ist ein Experte, der Unternehmen berät, um ihnen bei der Lösung von Herausforderungen, der Optimierung ihrer Ergebnisse und der Verwirklichung ihrer Ziele zu helfen. Er arbeitet in verschiedenen Bereichen wie Strategie, Management, IT und mehr. Dieser Job bietet tolle Karriere- und Entwicklungsperspektiven, erfordert aber auch viel Arbeit und Mobilität.',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'services/consulting',

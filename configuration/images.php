@@ -100,7 +100,13 @@ $images = array(
 				'5' => 'services/webmaster/freelancer.jpg',
 				'6' => 'services/webmaster/booking.jpg',
 				'7' => 'services/webmaster/social.jpg',
+			),
+			'sap' => array(
+				'1' => 'services/sap/informatique.jpg',
+				'2' => 'services/sap/administratif.jpg',
+				'3' => 'services/sap/téléassistance.jpg'
 			)
+
 			/*Custom your own*/
 		)
 	),

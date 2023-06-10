@@ -316,6 +316,10 @@ $services = array(
 				'not-propose' => ''
 			)
 
+		),
+		'sitemap' => array(
+			'images' => 'services/consultant/assistant-informatique.jpg',
+			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	),
     'marketing' => array(
@@ -827,7 +831,7 @@ $services = array(
     ),
     'consulting' => array(
 		'title' => 'Services - consulting',
-		'description' => '',
+		'description' => 'A consultant is an expert who advises companies to help them solve challenges, optimize their results and achieve their ambitions. He works in different areas, such as strategy, management, IT and more. This job offers great career and development prospects, but it also requires a lot of work and mobility.',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'services/consulting',
