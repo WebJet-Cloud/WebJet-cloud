@@ -40,7 +40,13 @@
 
     <div class="container">
         <div class="row">
-
+            <div class="col-lg-12 col-12">
+                 <!-- TrustBox widget - Micro Review Count -->
+                 <div style="text-color:#FFF;" class="trustpilot-widget" data-locale="<?php echo $DefineTranslateLang.'-'.$DefineMajLang; ?>" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="636fddaf92505cc8f792814c" data-style-height="24px" data-style-width="100%" data-theme="light" data-min-review-count="0" data-style-alignment="center">
+                        <a href="https://<?php echo $DefineTranslateLang; ?>.trustpilot.com/review/webjet.cloud" target="_blank" rel="noopener">Trustpilot</a>
+                        </div>
+                        <!-- End TrustBox widget -->
+            </div>
             <div class="col-lg-6 col-12 mb-4 pb-2">
                 <h5 class="site-footer-title mb-3"><?php echo $general['pages']['menu']['footer']['link-speed']; ?></h5>
 
@@ -78,14 +84,7 @@
                     </li>
                 </ul>
                 <ul class="site-footer-links">
-                    <li class="site-footer-link-item">
-                         <!-- TrustBox widget - Micro Review Count -->
-                        <div class="trustpilot-widget" data-locale="<?php echo $DefineTranslateLang.'-'.$DefineMajLang; ?>" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="636fddaf92505cc8f792814c" data-style-height="24px" data-style-width="100%" data-theme="light" data-min-review-count="0" data-style-alignment="center">
-                        <a class="site-footer-link" href="https://<?php echo $DefineTranslateLang; ?>.trustpilot.com/review/webjet.cloud" target="_blank" rel="noopener">Trustpilot</a>
-                        </div>
-                        <!-- End TrustBox widget -->
-                    </li>
-
+                 
                     
                     <li class="site-footer-link-item">
                     <a href="<?php echo $protocols.'://'.$domainTLD; ?>"></a>

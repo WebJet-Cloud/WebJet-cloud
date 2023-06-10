@@ -2,8 +2,31 @@
 # $general['index']['content']['pricing']['blocks']['small']['']    ['']
 # $general['pages']['menu']['undermenu']['pricing']['small']['']    ['']
 # $general['aboutus']['content']['container']['title']
-# $general['full']['clock']['']
+# $general['access']['dates']['days']['times']['2']
 $general = array(
+	'access' => 'Accéder',
+	'schedule' => array(
+		'tile' => 'Planning',
+		'dates' => array(
+			'h1' => 'Dates',
+			'mon' => 'Lundi',
+			'the' => 'Mardi',
+			'wed' => 'Mercredi',
+			'thu' => 'Jeudi',
+			'fri' => 'Vendredi',
+			'sar-sun' => 'Samedi & Dimanche',
+			'days' => array(
+				'h1' => 'Journée',
+				'open' => 'Ouvert',
+				'close' => 'Fermé',
+				'holiday' => 'férié',
+				'times' => array(
+					'1' => '17h à 20h',
+					'2' => '10h à 20h'
+				)
+			)
+		)
+	),
 	'full' => array(
 		'there-is-him' => 'Il a',
 		'there-is-her' => 'Elle a',
