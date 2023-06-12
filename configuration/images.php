@@ -105,9 +105,9 @@ $images = array(
 		),
 		'partner' => array(
 			'page' => 'partner/partner.jpg',
-			'1' => 'partner/logo-indy-new.svg',
+			'1' => 'partner/indy.fr.jpg',
 			'2' => 'partner/planethoster-logo.png',
-			'3' => 'partner/logo-assurup.svg',
+			'3' => 'partner/assurup.png',
 			'4' => 'partner/uber.jpg',
 			'5' => 'partner/',
 			'6' => 'partner/',
