@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'webjet-cloud/webjet-cloud',
-        'pretty_version' => '2.2.3',
-        'version' => '2.2.3.0',
+        'pretty_version' => '3.0.1',
+        'version' => '3.0.1.0',
         'reference' => NULL,
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'giggsey/libphonenumber-for-php' => array(
-            'pretty_version' => '8.13.11',
-            'version' => '8.13.11.0',
-            'reference' => 'e2395dadce92f139fc6ec71bfe8ae46a2e942944',
+            'pretty_version' => '8.13.13',
+            'version' => '8.13.13.0',
+            'reference' => 'a8996558d694b1437678d27de80e37620367b8de',
             'type' => 'library',
             'install_path' => __DIR__ . '/../giggsey/libphonenumber-for-php',
             'aliases' => array(),
@@ -74,9 +74,9 @@
             'dev_requirement' => false,
         ),
         'matthiasmullie/minify' => array(
-            'pretty_version' => '1.3.70',
-            'version' => '1.3.70.0',
-            'reference' => '2807d9f9bece6877577ad44acb5c801bb3ae536b',
+            'pretty_version' => '1.3.71',
+            'version' => '1.3.71.0',
+            'reference' => 'ae42a47d7fecc1fbb7277b2f2d84c37a33edc3b1',
             'type' => 'library',
             'install_path' => __DIR__ . '/../matthiasmullie/minify',
             'aliases' => array(),
@@ -128,8 +128,8 @@
             'dev_requirement' => false,
         ),
         'webjet-cloud/webjet-cloud' => array(
-            'pretty_version' => '2.2.3',
-            'version' => '2.2.3.0',
+            'pretty_version' => '3.0.1',
+            'version' => '3.0.1.0',
             'reference' => NULL,
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
