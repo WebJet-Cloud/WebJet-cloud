@@ -318,7 +318,7 @@ $services = array(
 
 		),
 		'sitemap' => array(
-			'images' => 'services/consultant/assistant-informatique.jpg',
+			'images' => 'services/consultant/salp.png',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	),
@@ -574,7 +574,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => 'services/webmaster/site-vitrine.jpg',
+			'images' => 'services/webmaster/freelancer.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
@@ -691,7 +691,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => 'services/developper/developper.jpg',
+			'images' => 'services/developper/dev-web.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
@@ -825,13 +825,13 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => 'services/seo/local-business.jpg',
+			'images' => 'services/seo/community-manager.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
     'consulting' => array(
 		'title' => 'Services - consulting',
-		'description' => 'A consultant is an expert who advises companies to help them solve challenges, optimize their results and achieve their ambitions. He works in different areas, such as strategy, management, IT and more. This job offers great career and development prospects, but it also requires a lot of work and mobility.',
+		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'services/consulting',

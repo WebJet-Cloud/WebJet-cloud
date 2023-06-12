@@ -4,8 +4,8 @@
 # $hosting['dl']['certifier-recipise']['site']
 $hosting = array(
 	'dl' => array(
-		'prest-contract' => 'dl/remplir-clients-vendeur-prestataire-contract-devis-adapter.pdf',
-		'certifier-recipise' => 'dl/WEBJETCLOUDS-certificat-sap.pdf'
+		'prest-contract' => 'dl/',
+		'certifier-recipise' => 'docs/'
 	),
 	'server' => array(
 		'internal' => array(

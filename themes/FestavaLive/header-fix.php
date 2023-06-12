@@ -24,10 +24,7 @@
 
 <!--Multi language-->
 <link rel="alternate" href="<?php echo $protocols.'://'.$domainTLD.'/'.$urls; ?>" hreflang="x-default" />
-<link rel="alternate" href="<?php echo $translatef_fr; ?>" hreflang="fr" />
-<link rel="alternate" href="<?php echo $translatef_en; ?>" hreflang="en" />
-<link rel="alternate" href="<?php echo $translatef_de; ?>" hreflang="de" />
-<link rel="alternate" href="<?php echo $translatef_ru; ?>" hreflang="ru" />
+<link rel="alternate" href="<?php echo $protocols.'://'.$domainTLD.'/'.$urls; ?>" hreflang="<?php echo $DefineTranslateLang; ?>"/>
 
 
 

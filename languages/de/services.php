@@ -459,7 +459,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => 'services/webmaster/site-vitrine.jpg',
+			'images' => 'services/webmaster/freelancer.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
@@ -576,7 +576,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => 'services/developper/developper.jpg',
+			'images' => 'services/developper/dev-web.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
@@ -710,7 +710,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => 'services/seo/local-business.jpg',
+			'images' => 'services/seo/community-manager.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
@@ -824,13 +824,13 @@ $services = array(
 
 		),
 		'sitemap' => array(
-			'images' => 'services/consultant/assistant-informatique.jpg',
+			'images' => 'services/consultant/salp.png',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	),
     'consulting' => array(
 		'title' => 'Dienstleistungen - Beratung',
-		'description' => 'Ein Berater ist ein Experte, der Unternehmen berät, um ihnen bei der Lösung von Herausforderungen, der Optimierung ihrer Ergebnisse und der Verwirklichung ihrer Ziele zu helfen. Er arbeitet in verschiedenen Bereichen wie Strategie, Management, IT und mehr. Dieser Job bietet tolle Karriere- und Entwicklungsperspektiven, erfordert aber auch viel Arbeit und Mobilität.',
+		'description' => '',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'services/consulting',

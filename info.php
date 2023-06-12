@@ -19,7 +19,6 @@ $seo = json_decode($JE_seo, true);
 $partner = json_decode($JE_partner, true);
 $social = json_decode($JE_social, true);
 $hosting = json_decode($JE_hosting, true);
-$videos = json_decode($JE_videos, true);
 $marketing = json_decode($JE_marketing, true);
 $apiexternal = json_decode($JE_apiexternal, true);
 $images = json_decode($JE_images, true);
@@ -125,15 +124,17 @@ if(isset($_GET[$DefineTranslateLang])){
 		$title = $general['aboutus']['title'];
 		$description = $general['aboutus']['description'];
 		$keyword = $general['aboutus']['keyword'];
-		$urls = $general['aboutus']['url']['default'];
+		//$urls = $general['aboutus']['url']['default'];
 		$imgs = $general['aboutus']['sitemap']['images'];
 		$vdos = $general['aboutus']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$general['aboutus']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$general['aboutus']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$general['aboutus']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$general['aboutus']['url']['ru'];
 
+		if(!empty($DefineTranslateLang)){ 
+			$urls = $DefineTranslateLang.'/'.$general['aboutus']['url'][$DefineTranslateLang]; 
+		} else { 
+			$urls = $general['aboutus']['url']['default'];
+		}
+	
 		
 		include('themes/'.$sites['template'].'/header.php');
 		include_once('themes/'.$sites['template'].'/general/aboutus.php');
@@ -143,15 +144,17 @@ if(isset($_GET[$DefineTranslateLang])){
 		$title = $teams['index']['title'];
 		$description = $teams['index']['description'];
 		$keyword = $teams['index']['keyword'];
-		$urls = $teams['index']['url']['default'];
+		//$urls = $teams['index']['url']['default'];
 		$imgs = $teams['index']['sitemap']['images'];
 		$vdos = $teams['index']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$teams['index']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$teams['index']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$teams['index']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$teams['index']['url']['ru'];
 
+		if(!empty($DefineTranslateLang)){ 
+			$urls = $DefineTranslateLang.'/'.$teams['index']['url'][$DefineTranslateLang]; 
+		} else { 
+			$urls = $teams['index']['url']['default'];
+		}
+	
 		
 		include('themes/'.$sites['template'].'/header.php');
 		include_once('themes/'.$sites['template'].'/general/teams.php');
@@ -162,15 +165,18 @@ if(isset($_GET[$DefineTranslateLang])){
 		$title = $partner['index']['title'];
 		$description = $partner['index']['description'];
 		$keyword = $partner['index']['keyword'];
-		$urls = $partner['index']['url']['default'];
+		//$urls = $partner['index']['url']['default'];
 		$imgs = $partner['index']['sitemap']['images'];
 		$vdos = $partner['index']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$partner['index']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$partner['index']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$partner['index']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$partner['index']['url']['ru'];
 
+		if(!empty($DefineTranslateLang)){ 
+			$urls = $DefineTranslateLang.'/'.$partner['index']['url'][$DefineTranslateLang]; 
+		} else { 
+			$urls = $partner['index']['url']['default'];
+		}
+	
+		
 		
 		include('themes/'.$sites['template'].'/header.php');
 		include_once('themes/'.$sites['template'].'/partner/full.php');
@@ -184,15 +190,18 @@ if(isset($_GET[$DefineTranslateLang])){
 		$title = $general['aboutus']['title'];
 		$description = $general['aboutus']['description'];
 		$keyword = $general['aboutus']['keyword'];
-		$urls = $general['aboutus']['url']['default'];
+		//$urls = $general['aboutus']['url']['default'];
 		$imgs = $general['aboutus']['sitemap']['images'];
 		$vdos = $general['aboutus']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$general['aboutus']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$general['aboutus']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$general['aboutus']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$general['aboutus']['url']['ru'];
 
+		if(!empty($DefineTranslateLang)){ 
+			$urls = $DefineTranslateLang.'/'.$general['aboutus']['url'][$DefineTranslateLang]; 
+		} else { 
+			$urls = $general['aboutus']['url']['default'];
+		}
+	
+		
 		
 		include('themes/'.$sites['template'].'/header.php');
 		include_once('themes/'.$sites['template'].'/general/aboutus.php');
@@ -202,15 +211,18 @@ if(isset($_GET[$DefineTranslateLang])){
 		$title = $teams['index']['title'];
 		$description = $teams['index']['description'];
 		$keyword = $teams['index']['keyword'];
-		$urls = $teams['index']['url']['default'];
+		//$urls = $teams['index']['url']['default'];
 		$imgs = $teams['index']['sitemap']['images'];
 		$vdos = $teams['index']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$teams['index']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$teams['index']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$teams['index']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$teams['index']['url']['ru'];
 
+		if(!empty($DefineTranslateLang)){ 
+			$urls = $DefineTranslateLang.'/'.$teams['index']['url'][$DefineTranslateLang]; 
+		} else { 
+			$urls = $teams['index']['url']['default'];
+		}
+	
+		
 		
 		include('themes/'.$sites['template'].'/header.php');
 		include_once('themes/'.$sites['template'].'/general/teams.php');
@@ -221,15 +233,18 @@ if(isset($_GET[$DefineTranslateLang])){
 		$title = $partner['index']['title'];
 		$description = $partner['index']['description'];
 		$keyword = $partner['index']['keyword'];
-		$urls = $partner['index']['url']['default'];
+		//$urls = $partner['index']['url']['default'];
 		$imgs = $partner['index']['sitemap']['images'];
 		$vdos = $partner['index']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$partner['index']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$partner['index']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$partner['index']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$partner['index']['url']['ru'];
 
+		if(!empty($DefineTranslateLang)){ 
+			$urls = $DefineTranslateLang.'/'.$partner['index']['url'][$DefineTranslateLang]; 
+		} else { 
+			$urls = $partner['index']['url']['default'];
+		}
+	
+		
 		
 		include('themes/'.$sites['template'].'/header.php');
 		include_once('themes/'.$sites['template'].'/partner/full.php');

@@ -9,9 +9,9 @@ $images = array(
 		'logo' => array(
 			'creator' => 'themes/moi-creator-alexonb.png',
 			'icon' => 'pinned/favicon.ico', /*ICO recommended oversize */
-			'normal' => 'themes/logo-normal.png', /*size recommended ~60x60 */
+			'normal' => 'startup/Web_Jet-logo.png', /*size recommended ~60x60 */
 			'small' => 'pinned/favicon-32x32.png', /*size recommended ~32x32 = favicon on PNG */
-			'big' => 'themes/logo-big.png' /*size recommended ~200x200 */
+			'big' => 'startup/Web_Jet-logo.png' /*size recommended ~200x200 */
 		),
 		/*Manager Images for SEO PINNED (Windows, Apple, Android/Safari, chrome) */
 		'pinned' => array(
@@ -100,13 +100,7 @@ $images = array(
 				'5' => 'services/webmaster/freelancer.jpg',
 				'6' => 'services/webmaster/booking.jpg',
 				'7' => 'services/webmaster/social.jpg',
-			),
-			'sap' => array(
-				'1' => 'services/sap/informatique.jpg',
-				'2' => 'services/sap/administratif.jpg',
-				'3' => 'services/sap/téléassistance.jpg'
 			)
-
 			/*Custom your own*/
 		)
 	),

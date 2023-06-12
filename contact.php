@@ -19,7 +19,6 @@ $seo = json_decode($JE_seo, true);
 $partner = json_decode($JE_partner, true);
 $social = json_decode($JE_social, true);
 $hosting = json_decode($JE_hosting, true);
-$videos = json_decode($JE_videos, true);
 $marketing = json_decode($JE_marketing, true);
 $apiexternal = json_decode($JE_apiexternal, true);
 $images = json_decode($JE_images, true);
@@ -126,16 +125,16 @@ if(isset($_GET[$DefineTranslateLang])){
 			$title = $block['success']['title'];
 			$description = $block['success']['description'];
 			$keyword = $block['success']['keyword'];
-			$urls = $block['success']['url']['default'];
+			//$urls = $block['success']['url']['default'];
 			$imgs = $block['success']['sitemap']['images'];
 			$vdos = $block['success']['sitemap']['video'];
 
-            $translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$block['success']['url']['fr'];
-            $translate_en = $protocols.'://'.$domainTLD.'/en/'.$block['success']['url']['en'];
-            $translate_de = $protocols.'://'.$domainTLD.'/de/'.$block['success']['url']['de'];
-            $translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$block['success']['url']['ru'];
-    
-            
+			if(!empty($DefineTranslateLang)){ 
+				$urls = $DefineTranslateLang.'/'.$block['success']['url'][$DefineTranslateLang]; 
+			} else { 
+				$urls = $block['success']['url']['default'];
+			}
+		
 			include('themes/'.$sites['template'].'/header.php');
 			include_once('themes/'.$sites['template'].'/block/success.php');
 			include('themes/'.$sites['template'].'/footer.php');
@@ -148,12 +147,12 @@ if(isset($_GET[$DefineTranslateLang])){
 			$imgs = $block['error']['sitemap']['images'];
 			$vdos = $block['error']['sitemap']['video'];
 
-            $translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$block['error']['url']['fr'];
-            $translate_en = $protocols.'://'.$domainTLD.'/en/'.$block['error']['url']['en'];
-            $translate_de = $protocols.'://'.$domainTLD.'/de/'.$block['error']['url']['de'];
-            $translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$block['error']['url']['ru'];
-    
-            
+			if(!empty($DefineTranslateLang)){ 
+				$urls = $DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]; 
+			} else { 
+				$urls = $block['error']['url']['default'];
+			}
+		
 			include('themes/'.$sites['template'].'/header.php');
 			include_once('themes/'.$sites['template'].'/block/error.php');
 			include('themes/'.$sites['template'].'/footer.php');	
@@ -166,6 +165,14 @@ if(isset($_GET[$DefineTranslateLang])){
 		$imgs = $email['index']['sitemap']['images'];
 		$vdos = $email['index']['sitemap']['video'];
 
+
+		if(!empty($DefineTranslateLang)){ 
+			$urls = $DefineTranslateLang.'/'.$email['index']['url'][$DefineTranslateLang]; 
+		} else { 
+			$urls = $email['index']['url']['default'];
+		}
+	
+		
 
 			if (array_key_exists('email', $_POST) && $mail->validateAddress($_POST['email'])) {
 				date_default_timezone_set($sites['default-timezone']);
@@ -316,13 +323,6 @@ if(isset($_GET[$DefineTranslateLang])){
 
 				}
 			}		
-
-            $translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$email['index']['url']['fr'];
-            $translate_en = $protocols.'://'.$domainTLD.'/en/'.$email['index']['url']['en'];
-            $translate_de = $protocols.'://'.$domainTLD.'/de/'.$email['index']['url']['de'];
-            $translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$email['index']['url']['ru'];
-    
-            
 
 		include('themes/'.$sites['template'].'/header.php');
 		include_once('themes/'.$sites['template'].'/email/full.php');
@@ -337,16 +337,16 @@ if(isset($_GET[$DefineTranslateLang])){
 			$title = $block['success']['title'];
 			$description = $block['success']['description'];
 			$keyword = $block['success']['keyword'];
-			$urls = $block['success']['url']['default'];
+			//$urls = $block['success']['url']['default'];
 			$imgs = $block['success']['sitemap']['images'];
 			$vdos = $block['success']['sitemap']['video'];
 
-            $translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$block['success']['url']['fr'];
-            $translate_en = $protocols.'://'.$domainTLD.'/en/'.$block['success']['url']['en'];
-            $translate_de = $protocols.'://'.$domainTLD.'/de/'.$block['success']['url']['de'];
-            $translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$block['success']['url']['ru'];
-    
-            
+			if(!empty($DefineTranslateLang)){ 
+				$urls = $DefineTranslateLang.'/'.$block['success']['url'][$DefineTranslateLang]; 
+			} else { 
+				$urls = $block['success']['url']['default'];
+			}
+		
 			include('themes/'.$sites['template'].'/header.php');
 			include_once('themes/'.$sites['template'].'/block/success.php');
 			include('themes/'.$sites['template'].'/footer.php');
@@ -355,16 +355,16 @@ if(isset($_GET[$DefineTranslateLang])){
 			$title = $block['error']['title'];
 			$description = $block['error']['description'];
 			$keyword = $block['error']['keyword'];
-			$urls = $block['error']['url']['default'];
+			//$urls = $block['error']['url']['default'];
 			$imgs = $block['error']['sitemap']['images'];
 			$vdos = $block['error']['sitemap']['video'];
 
-            $translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$block['error']['url']['fr'];
-            $translate_en = $protocols.'://'.$domainTLD.'/en/'.$block['error']['url']['en'];
-            $translate_de = $protocols.'://'.$domainTLD.'/de/'.$block['error']['url']['de'];
-            $translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$block['error']['url']['ru'];
-    
-            
+			if(!empty($DefineTranslateLang)){ 
+				$urls = $DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]; 
+			} else { 
+				$urls = $block['error']['url']['default'];
+			}
+		
 			include('themes/'.$sites['template'].'/header.php');
 			include_once('themes/'.$sites['template'].'/block/error.php');
 			include('themes/'.$sites['template'].'/footer.php');	
@@ -373,9 +373,17 @@ if(isset($_GET[$DefineTranslateLang])){
 		$title = $email['index']['title'];
 		$description = $email['index']['description'];
 		$keyword = $email['index']['keyword'];
-		$urls = $email['index']['url']['default'];
+		//$urls = $email['index']['url']['default'];
 		$imgs = $email['index']['sitemap']['images'];
 		$vdos = $email['index']['sitemap']['video'];
+
+		if(!empty($DefineTranslateLang)){ 
+			$urls = $DefineTranslateLang.'/'.$email['index']['url'][$DefineTranslateLang]; 
+		} else { 
+			$urls = $email['index']['url']['default'];
+		}
+	
+		
 
 
 			if (array_key_exists('email', $_POST) && $mail->validateAddress($_POST['email'])) {
@@ -528,12 +536,6 @@ if(isset($_GET[$DefineTranslateLang])){
 				}
 			}		
 
-            $translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$email['index']['url']['fr'];
-            $translate_en = $protocols.'://'.$domainTLD.'/en/'.$email['index']['url']['en'];
-            $translate_de = $protocols.'://'.$domainTLD.'/de/'.$email['index']['url']['de'];
-            $translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$email['index']['url']['ru'];
-    
-            
 
 		include('themes/'.$sites['template'].'/header.php');
 		include_once('themes/'.$sites['template'].'/email/full.php');

@@ -3,29 +3,6 @@
 # $general['pages']['full']['footer-os']['blocks']['small']['']    ['']
 # $general['full'']['clock']['1']['blocks']['small']['']    ['']
 $general = array(
-	'access' => 'Чтобы получить доступ',
-	'schedule' => array(
-		'tile' => 'Расписание',
-		'dates' => array(
-			'h1' => 'даты',
-			'mon' => 'Понедельник',
-			'the' => 'Вторник',
-			'wed' => 'Среда',
-			'thu' => 'ЧЕТВЕРГ',
-			'fri' => 'Пятница',
-			'sar-sun' => 'Суббота & Воскресенье',
-			'days' => array(
-				'h1' => 'Дневное время',
-				'open' => 'Открыть',
-				'close' => 'Ферма',
-				'holiday' => 'праздничный день',
-				'times' => array(
-					'1' => 'с 17:00 до 20:00',
-					'2' => 'с 10:00 до 20:00'
-				)
-			)
-		)
-	),
 	'full' => array(
 		'there-is-him' => 'Он есть',
 		'there-is-her' => 'У нее есть',
