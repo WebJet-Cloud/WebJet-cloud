@@ -1,6 +1,29 @@
 <?php
 
 $general = array(
+	'access' => 'To access',
+	'schedule' => array(
+		'tile' => 'Schedule',
+		'dates' => array(
+			'h1' => 'Dates',
+			'mon' => 'Monday',
+			'the' => 'Tuesday',
+			'wed' => 'Wednesday',
+			'thu' => 'Thursday',
+			'fri' => 'Friday',
+			'sar-sun' => 'Saturday & Sunday',
+			'days' => array(
+				'h1' => 'Daily',
+				'open' => 'Open',
+				'close' => 'Close',
+				'holiday' => 'Holiday',
+				'times' => array(
+					'1' => '5:00 PM - 8:00 PM',
+					'2' => '10:00 AM - 8:00 PM'
+				)
+			)
+		)
+	),
 	'full' => array(
 		'there-is-him' => 'He has',
 		'there-is-her' => 'She has',

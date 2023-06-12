@@ -459,7 +459,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => 'services/webmaster/freelancer.jpg',
+			'images' => 'services/webmaster/site-vitrine.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
@@ -576,7 +576,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => 'services/developper/dev-web.jpg',
+			'images' => 'services/developper/developper.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
@@ -710,7 +710,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => 'services/seo/community-manager.jpg',
+			'images' => 'services/seo/local-business.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
@@ -824,13 +824,13 @@ $services = array(
 
 		),
 		'sitemap' => array(
-			'images' => 'services/consultant/salp.png',
+			'images' => 'services/consultant/assistant-informatique.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	),
     'consulting' => array(
 		'title' => 'Prestation de Services en consultant',
-		'description' => '',
+		'description' => 'Un consultant est un expert qui conseille les entreprises pour les aider à résoudre des défis, optimiser leurs résultats et atteindre leurs ambitions. Il intervient dans différents domaines, comme la stratégie, le management, l\'informatique et plus encore. Ce métier offre de belles perspectives de carrière et d\'évolution, mais il demande aussi beaucoup de travail et de mobilité.',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'services/consulting',

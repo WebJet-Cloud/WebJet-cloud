@@ -2,6 +2,29 @@
 # $general['index']['content']['pricing']['blocks']['small']['']    ['']
 # $general['pages']['full']['footer-os']['blocks']['small']['']    ['']
 $general = array(
+	'access' => 'Zugreifen',
+	'schedule' => array(
+		'tile' => 'Zeitplan',
+		'dates' => array(
+			'h1' => 'Termine',
+			'mon' => 'Montag',
+			'the' => 'Dienstag',
+			'wed' => 'Mittwoch',
+			'thu' => 'Donnerstag',
+			'fri' => 'Freitag',
+			'sar-sun' => 'Samstag & Sonntag',
+			'days' => array(
+				'h1' => 'Tageszeit',
+				'open' => 'Offen',
+				'close' => 'Bauernhof',
+				'holiday' => 'Urlaub',
+				'times' => array(
+					'1' => '17:00 bis 20:00 Uhr',
+					'2' => '10 bis 20 Uhr'
+				)
+			)
+		)
+	),
 	'full' => array(
         'there-is-him' => 'Er hat',
         'there-is-her' => 'Sie hat',

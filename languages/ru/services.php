@@ -460,7 +460,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => 'services/webmaster/freelancer.jpg',
+			'images' => 'services/webmaster/site-vitrine.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
@@ -577,7 +577,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => 'services/developper/dev-web.jpg',
+			'images' => 'services/developper/developper.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
@@ -701,7 +701,7 @@ $services = array(
 			)
 		),
 		'sitemap' => array(
-			'images' => 'services/seo/community-manager.jpg',
+			'images' => 'services/seo/local-business.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
     ),
@@ -815,13 +815,13 @@ $services = array(
 
 		),
 		'sitemap' => array(
-			'images' => 'services/consultant/salp.png',
+			'images' => 'services/consultant/assistant-informatique.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	),
     'consulting' => array(
 		'title' => 'услуги - консультирование',
-		'description' => '',
+		'description' => 'Консультант — это эксперт, который консультирует компании, чтобы помочь им решить проблемы, оптимизировать свои результаты и реализовать свои амбиции. Он работает в разных областях, таких как стратегия, менеджмент, ИТ и многое другое. Эта работа предлагает большие перспективы карьерного роста и развития, но также требует много работы и мобильности.',
 		'keyword' => '',
 		'url' => array(
 			'default' => 'services/consulting',

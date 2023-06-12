@@ -1,6 +1,6 @@
 <?php
 # exemple $images['dir']
-# exemple $images['manager']['intro-vdo'']['assurup']['']
+# exemple $images['manager']['partner']['']['']
 
 $images = array(
 	'manager' => array(
@@ -102,6 +102,29 @@ $images = array(
 				'7' => 'services/webmaster/social.jpg',
 			)
 			/*Custom your own*/
+		),
+		'partner' => array(
+			'page' => 'partner/partner.jpg',
+			'1' => 'partner/logo-indy-new.svg',
+			'2' => 'partner/planethoster-logo.png',
+			'3' => 'partner/logo-assurup.svg',
+			'4' => 'partner/uber.jpg',
+			'5' => 'partner/',
+			'6' => 'partner/',
+			'7' => 'partner/',
+			'8' => 'partner/',
+			'9' => 'partner/',
+			'10' => 'partner/',
+			'11' => 'partner/',
+			'12' => 'partner/',
+			'13' => 'partner/',
+			'14' => 'partner/',
+			'15' => 'partner/',
+			'16' => 'partner/',
+			'17' => 'partner/',
+			'18' => 'partner/',
+			'19' => 'partner/',
+			'20' => 'partner/'
 		)
 	),
 	'dir' => 'images'

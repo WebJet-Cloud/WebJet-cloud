@@ -1,7 +1,7 @@
 {
     "name": "webjet-cloud/webjet-cloud",
     "type": "project",
-    "version": "3.0.1",
+    "version": "2.2.3",
     "description": "WebJet | No DB requirement",
     "keywords": [
 		"website project", 

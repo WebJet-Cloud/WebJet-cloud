@@ -50,7 +50,7 @@
                         <h2 class="mb-4"><?php echo $general['index']['content']['services']['container']['title']; ?></h2>
                     </div>
 
-                    <div class="col-lg-3 col-12">
+                    <div class="col-lg-6 col-12">
                         <div class="artists-thumb">
                             <div class="artists-image-wrap">
                                 <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$services['cybersecurity']['sitemap']['images']; ?>"
@@ -68,13 +68,13 @@
                                 <hr>
 
                                 <p class="mb-0">
-                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['cybersecurity']['url']['default']; ?>"><i class="fa-solid fa-link"></i></a>
+                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['cybersecurity']['url']['default']; ?>"><i class="fa-solid fa-link"></i> <?php echo $general['access']; ?></a>
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-12">
+                    <div class="col-lg-6 col-12">
                         <div class="artists-thumb">
                             <div class="artists-image-wrap">
                                 <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$services['marketing']['sitemap']['images']; ?>"
@@ -92,14 +92,14 @@
                                 <hr>
 
                                 <p class="mb-0">
-                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['marketing']['url']['default']; ?>"><i class="fa-solid fa-link"></i></a>
+                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['marketing']['url']['default']; ?>"><i class="fa-solid fa-link"></i> <?php echo $general['access']; ?></a>
                                 </p>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="col-lg-3 col-12">
+                    <div class="col-lg-6 col-12">
                         <div class="artists-thumb">
                             <div class="artists-image-wrap">
                                 <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$services['webmaster']['sitemap']['images']; ?>"
@@ -117,14 +117,14 @@
                                 <hr>
 
                                 <p class="mb-0">
-                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['webmaster']['url']['default']; ?>"><i class="fa-solid fa-link"></i></a>
+                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['webmaster']['url']['default']; ?>"><i class="fa-solid fa-link"></i> <?php echo $general['access']; ?></a>
                                 </p>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="col-lg-3 col-12">
+                    <div class="col-lg-6 col-12">
                         <div class="artists-thumb">
                             <div class="artists-image-wrap">
                                 <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$services['developper']['sitemap']['images']; ?>"
@@ -142,14 +142,14 @@
                                 <hr>
 
                                 <p class="mb-0">
-                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['developper']['url']['default']; ?>"><i class="fa-solid fa-link"></i></a>
+                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['developper']['url']['default']; ?>"><i class="fa-solid fa-link"></i> <?php echo $general['access']; ?></a>
                                 </p>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="col-lg-4 col-12">
+                    <div class="col-lg-6 col-12">
                         <div class="artists-thumb">
                             <div class="artists-image-wrap">
                                 <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$services['seo']['sitemap']['images']; ?>"
@@ -167,35 +167,11 @@
                                 <hr>
 
                                 <p class="mb-0">
-                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['seo']['url']['default']; ?>"><i class="fa-solid fa-link"></i></a>
+                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['seo']['url']['default']; ?>"><i class="fa-solid fa-link"></i> <?php echo $general['access']; ?></a>
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="artists-thumb">
-                            <div class="artists-image-wrap">
-                                <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$services['consulting']['sitemap']['images']; ?>"
-                                    class="artists-image img-fluid" alt="<?php echo $services['consulting']['title']; ?><">
-                            </div>
-
-                            <div class="artists-hover">
-                                <p>
-                                    <strong><?php echo $services['consulting']['title']; ?></strong>
-                                </p>
-
-                                <p>
-                                <strong><?php echo $services['consulting']['description']; ?></strong>
-                                </p>
-                                <hr>
-
-                                <p class="mb-0">
-                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['consulting']['url']['default']; ?>"><i class="fa-solid fa-link"></i></a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
+                        
                         <div class="artists-thumb">
                             <div class="artists-image-wrap">
                                 <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$services['sap']['sitemap']['images']; ?>"
@@ -213,12 +189,34 @@
                                 <hr>
 
                                 <p class="mb-0">
-                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['sap']['url']['default']; ?>"><i class="fa-solid fa-link"></i></a>
+                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['sap']['url']['default']; ?>"><i class="fa-solid fa-link"></i> <?php echo $general['access']; ?></a>
                                 </p>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="artists-thumb">
+                            <div class="artists-image-wrap">
+                                <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$services['consulting']['sitemap']['images']; ?>"
+                                    class="artists-image img-fluid" alt="<?php echo $services['consulting']['title']; ?>">
+                            </div>
 
+                            <div class="artists-hover">
+                                <p>
+                                    <strong><?php echo $services['consulting']['title']; ?></strong>
+                                </p>
+
+                                <p>
+                                <strong><?php echo $services['consulting']['description']; ?></strong>
+                                </p>
+                                <hr>
+
+                                <p class="mb-0">
+                                    <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$services['consulting']['url']['default']; ?>"><i class="fa-solid fa-link"></i> <?php echo $general['access']; ?></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -229,87 +227,100 @@
                 <div class="row">
 
                     <div class="col-12 text-center">
-                        <h2 class="text-white mb-4">Event Schedule</h1>
+                        <h2 class="text-white mb-4"><?php echo $general['schedule']['tile']; ?></h1>
 
                             <div class="table-responsive">
                                 <table class="schedule-table table table-dark">
                                     <thead>
                                         <tr>
-                                            <th scope="col">Date</th>
+                                            <th scope="col"><?php echo $general['schedule']['dates']['h1']; ?></th>
 
-                                            <th scope="col">Wednesday</th>
+                                            <th scope="col"><?php echo $general['schedule']['dates']['mon']; ?></th>
 
-                                            <th scope="col">Thursday</th>
+                                            <th scope="col"><?php echo $general['schedule']['dates']['the']; ?></th>
 
-                                            <th scope="col">Friday</th>
+                                            <th scope="col"><?php echo $general['schedule']['dates']['wed']; ?></th>
 
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                         <tr>
-                                            <th scope="row">Day 1</th>
+                                            <th scope="row"><?php echo $general['schedule']['dates']['days']['h1']; ?></th>
 
                                             <td class="table-background-image-wrap pop-background-image">
-                                                <h3>Pop Night</h3>
+                                                <h3><?php echo $general['schedule']['dates']['days']['open']; ?></h3>
 
-                                                <p class="mb-2">5:00 - 7:00 PM</p>
-
-                                                <p>By Adele</p>
+                                                <p class="mb-2"><?php echo $general['schedule']['dates']['days']['times']['2']; ?></p>
 
                                                 <div class="section-overlay"></div>
                                             </td>
 
-                                            <td style="background-color: #F3DCD4"></td>
+                                            
+                                            <td class="table-background-image-wrap pop-background-image">
+                                                <h3><?php echo $general['schedule']['dates']['days']['open']; ?></h3>
 
-                                            <td class="table-background-image-wrap rock-background-image">
-                                                <h3>Rock & Roll</h3>
+                                                <p class="mb-2"><?php echo $general['schedule']['dates']['days']['times']['1']; ?></p>
 
-                                                <p class="mb-2">7:00 - 11:00 PM</p>
+                                                <div class="section-overlay"></div>
+                                            </td>
 
-                                                <p>By Rihana</p>
+                                            <td class="table-background-image-wrap pop-background-image">
+                                                <h3><?php echo $general['schedule']['dates']['days']['open']; ?></h3>
+
+                                                <p class="mb-2"><?php echo $general['schedule']['dates']['days']['times']['1']; ?></p>
 
                                                 <div class="section-overlay"></div>
                                             </td>
                                         </tr>
-
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="table-responsive">
+                                <table class="schedule-table table table-dark">
+                                    <thead>
                                         <tr>
-                                            <th scope="row">Day 2</th>
+                                            <th scope="col"><?php echo $general['schedule']['dates']['h1']; ?></th>
 
-                                            <td style="background-color: #ECC9C7"></td>
+                                            <th scope="col"><?php echo $general['schedule']['dates']['thu']; ?></th>
 
-                                            <td>
-                                                <h3>DJ Night</h3>
+                                            <th scope="col"><?php echo $general['schedule']['dates']['fri']; ?></th>
 
-                                                <p class="mb-2">6:30 - 9:30 PM</p>
+                                            <th scope="col"><?php echo $general['schedule']['dates']['sar-sun']; ?></th>
 
-                                                <p>By Rihana</p>
-                                            </td>
-
-                                            <td style="background-color: #D9E3DA"></td>
                                         </tr>
+                                    </thead>
 
+                                    <tbody>
                                         <tr>
-                                            <th scope="row">Day 3</th>
+                                            <th scope="row"><?php echo $general['schedule']['dates']['days']['h1']; ?></th>
 
-                                            <td class="table-background-image-wrap country-background-image">
-                                                <h3>Country Music</h3>
+                                            <td class="table-background-image-wrap pop-background-image">
+                                                <h3><?php echo $general['schedule']['dates']['days']['open']; ?></h3>
 
-                                                <p class="mb-2">4:30 - 7:30 PM</p>
-
-                                                <p>By Rihana</p>
+                                                <p class="mb-2"><?php echo $general['schedule']['dates']['days']['times']['2']; ?></p>
 
                                                 <div class="section-overlay"></div>
                                             </td>
 
-                                            <td style="background-color: #D1CFC0"></td>
+                                           
+                                            <td class="table-background-image-wrap pop-background-image">
+                                                <h3><?php echo $general['schedule']['dates']['days']['open']; ?></h3>
 
-                                            <td>
-                                                <h3>Free Styles</h3>
+                                                <p class="mb-2"><?php echo $general['schedule']['dates']['days']['times']['1']; ?></p>
 
-                                                <p class="mb-2">6:00 - 10:00 PM</p>
+                                                <div class="section-overlay"></div>
+                                            </td>
 
-                                                <p>By Members</p>
+                                            <td style="background-color:#F3DCD4;text-color: #0000;">
+                                                <h3><?php echo $general['schedule']['dates']['days']['close']; ?></h3>
+
+                                                <p class="mb-2">--</p>
+
+                                                <p><?php echo $general['schedule']['dates']['days']['holiday']; ?></p>
+
+                                                <div class="section-overlay"></div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -333,7 +344,7 @@
                         <div class="pricing-thumb">
                             <div class="d-flex">
                                 <div>
-                                    <h3> <?php echo $sites['tarifs']['plan']['basic']; ?><small>HT/ <?php echo $general['index']['content']['pricing']['blocks']['small']['ho']; ?></small></h3>
+                                    <h3> <sup>€</sup><?php echo $sites['tarifs']['plan']['basic']; ?><small>HT/ <?php echo $general['index']['content']['pricing']['blocks']['small']['ho']; ?></small></h3>
 
                                 </div>
                             </div>
@@ -359,7 +370,7 @@
                                         <line x1="16" y1="12" x2="22" y2="18"></line>
                                     </g>
                                 </svg>
-                            </a>
+                            </a><br>
                             <a class="link-fx-1 color-contrast-higher mt-4" href="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$hosting['dl']['prest-contract']; ?>">
                                 <span><?php echo $services['down-contract']; ?></span>
                                 <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
@@ -377,7 +388,7 @@
                         <div class="pricing-thumb">
                             <div class="d-flex">
                                 <div>
-                                    <h3><?php echo $sites['tarifs']['plan']['premium']; ?>HT/ <?php echo $general['index']['content']['pricing']['blocks']['small']['ho']; ?></small></h3>
+                                    <h3><sup>€</sup><?php echo $sites['tarifs']['plan']['premium']; ?>HT/ <?php echo $general['index']['content']['pricing']['blocks']['small']['ho']; ?></small></h3>
 
                                 </div>
                             </div>
@@ -400,7 +411,7 @@
                                         <line x1="16" y1="12" x2="22" y2="18"></line>
                                     </g>
                                 </svg>
-                            </a>
+                            </a><br>
                             <a class="link-fx-1 color-contrast-higher mt-4" href="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$hosting['dl']['prest-contract']; ?>">
                                 <span><?php echo $services['down-contract']; ?></span>
                                 <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">

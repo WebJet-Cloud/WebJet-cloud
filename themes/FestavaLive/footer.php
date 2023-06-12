@@ -8,6 +8,15 @@
         <div class="container">
             <div class="row">
 
+            <div class="col-lg-12 col-12">
+                 <!-- TrustBox widget - Micro Review Count -->
+                 <div class="trustpilot-widget" data-locale="<?php echo $DefineTranslateLang.'-'.$DefineMajLang; ?>" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="636fddaf92505cc8f792814c" data-style-height="24px" data-style-width="100%" data-theme="light" data-min-review-count="0" data-style-alignment="center">
+                        <a href="https://<?php echo $DefineTranslateLang; ?>.trustpilot.com/review/webjet.cloud" target="_blank" rel="noopener">Trustpilot</a>
+                        </div>
+                        <!-- End TrustBox widget -->
+            </div>
+         </div>
+            <div class="row">
                 <div class="col-lg-6 col-12">
                     <h2 class="text-white mb-lg-0"><?php echo $sites['name'];; ?></h2>
                 </div>
@@ -40,15 +49,10 @@
 
     <div class="container">
         <div class="row">
-
             <div class="col-lg-6 col-12 mb-4 pb-2">
                 <h5 class="site-footer-title mb-3"><?php echo $general['pages']['menu']['footer']['link-speed']; ?></h5>
 
                 <ul class="site-footer-links">
-                    <li class="site-footer-link-item">
-                        <a href="#" class="site-footer-link">Home</a>
-                    </li>
-
                     <li class="site-footer-link-item">
                         <a class="site-footer-link" href="<?php echo $protocols.'://tripecotech.blog'; ?>"><?php echo $general['pages']['menu']['undermenu']['blog']; ?></a>
                     </li>
@@ -78,34 +82,29 @@
                     </li>
                 </ul>
                 <ul class="site-footer-links">
-                    <li class="site-footer-link-item">
-                         <!-- TrustBox widget - Micro Review Count -->
-                        <div class="trustpilot-widget" data-locale="<?php echo $DefineTranslateLang.'-'.$DefineMajLang; ?>" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="636fddaf92505cc8f792814c" data-style-height="24px" data-style-width="100%" data-theme="light" data-min-review-count="0" data-style-alignment="center">
-                        <a class="site-footer-link" href="https://<?php echo $DefineTranslateLang; ?>.trustpilot.com/review/webjet.cloud" target="_blank" rel="noopener">Trustpilot</a>
-                        </div>
-                        <!-- End TrustBox widget -->
-                    </li>
-
+                 
                     
                     <li class="site-footer-link-item">
                     <a href="<?php echo $protocols.'://'.$domainTLD; ?>"></a>
-                    <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/Web_Jet-logo.png" class="site-footer-link" width="125"></a><br>
+                    <img width="250" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/Web_Jet-logo.png" class="img-fluid site-footer-link"></a><br>
                             <?php echo 'www.'.$sites['domain'].' '.$general['pages']['full']['footer-os']; ?>
                     </li>
-
+                  
+                </ul>
+                <ul class="site-footer-links">
                     <li class="site-footer-link-item">
-                               <a href="https://g.page/r/CS8F0BF9HcgpEBI/review"> <img width="125" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['others']['g-advice']; ?>" alt="Google reviews"></a>
+                               <a href="https://g.page/r/CS8F0BF9HcgpEBI/review"> <img width="120" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['others']['g-advice']; ?>" alt="Google reviews"></a>
                                
                           </li>
 
                             <li class="site-footer-link-item">
-                                <img width="125" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['others']['assurup']; ?>" alt="assurup"><br>
+                                <img width="120" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['others']['assurup']; ?>" alt="assurup" style="background-color:#fff;"><br>
                                 N° RCP23052584222
                                 
                             </li>
 
                             <li class="site-footer-link-item">
-                              <img width="125" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['consultant']['salp']; ?>" alt="services à la personne"><br>
+                              <img width="120" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['services']['consultant']['salp']; ?>" alt="services à la personne"><br>
                                 <?php echo $services['consulting']['content']['footer']['n-agree'].' '.$business['local']['salp']; ?> 
                             </li>
                 </ul>
@@ -160,19 +159,23 @@
                 <div class="col-lg-8 col-12 mt-lg-5">
                     <ul class="site-footer-links">
                         <li class="site-footer-link-item">
-                            <a href="<?php echo $law['legal']['url']['default']; ?>" class="site-footer-link"><?php echo $law['legal']['title']; ?></a>
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$law['legal']['url'][$DefineTranslateLang]; ?>" class="site-footer-link"><?php echo $law['legal']['title']; ?></a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="<?php echo $law['cgu']['url']['default']; ?>" class="site-footer-link"><?php echo $law['cgu']['title']; ?></a>
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$law['cgu']['url'][$DefineTranslateLang]; ?>" class="site-footer-link"><?php echo $law['cgu']['title']; ?></a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="<?php echo $law['cgv']['url']['default']; ?>" class="site-footer-link"><?php echo $law['cgv']['title']; ?></a>
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$law['cgv']['url'][$DefineTranslateLang]; ?>" class="site-footer-link"><?php echo $law['cgv']['title']; ?></a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="<?php echo $law['policy-privacy']['url']['default']; ?>" class="site-footer-link"><?php echo $law['policy-privacy']['title']; ?></a>
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$law['policy-privacy']['url'][$DefineTranslateLang]; ?>" class="site-footer-link"><?php echo $law['policy-privacy']['title']; ?></a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$partner['index']['url'][$DefineTranslateLang]; ?>" class="site-footer-link"><?php echo $partner['index']['title']; ?></a>
                         </li>
                     </ul>
                 </div>
