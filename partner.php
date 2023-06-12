@@ -137,7 +137,7 @@ else {
 			
 				
                 include('themes/'.$sites['template'].'/header.php');
-                include_once('themes/'.$sites['template'].'/general/services.php');
+                include_once('themes/'.$sites['template'].'/partner/full.php');
                 include('themes/'.$sites['template'].'/footer.php');
 			} else {
 				header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$partner['index']['url'][$DefineTranslateLang]);
@@ -160,7 +160,7 @@ else {
 			
 				
                 include('themes/'.$sites['template'].'/header.php');
-                include_once('themes/'.$sites['template'].'/general/services.php');
+                include_once('themes/'.$sites['template'].'/partner/full.php');
                 include('themes/'.$sites['template'].'/footer.php');
 			} else {
 				header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$partner['index']['url'][$DefineTranslateLang]);
