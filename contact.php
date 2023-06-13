@@ -1,7 +1,7 @@
 <?php
 # Check out if have error and fix
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
+#error_reporting(E_ALL);
+#ini_set("display_errors", 1);
 
 require 'libs/autoload.php';
 #require libs/custom/
@@ -311,14 +311,14 @@ if(isset($_GET[$DefineTranslateLang])){
 					
 					
 					if (!$mail->send() AND $hcaptcha_RData->success) {
-					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url']['default']);
+					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]);
 					   exit();
 					} else {
-					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['success']['url']['default']);
+					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['success']['url'][$DefineTranslateLang]);
 					   exit();
 					}
 				} else {
-					header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url']['default']);
+					header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]);
 					exit();
 
 				}
@@ -523,14 +523,14 @@ if(isset($_GET[$DefineTranslateLang])){
 					
 					
 					if (!$mail->send() AND $hcaptcha_RData->success) {
-					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url']['default']);
+					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]);
 					   exit();
 					} else {
-					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['success']['url']['default']);
+					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['success']['url'][$DefineTranslateLang]);
 					   exit();
 					}
 				} else {
-					header('Location: '.$protocols.'://'.$domainTLD.'/'.$block['error']['url']['default']);
+					header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]);
 					exit();
 
 				}
@@ -542,7 +542,7 @@ if(isset($_GET[$DefineTranslateLang])){
 		include('themes/'.$sites['template'].'/footer.php');	
  
 	} else {
-		header('Location: '.$protocols.'://'.$domainTLD.'/'.$email['index']['url']['default']);
+		header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$email['index']['url'][$DefineTranslateLang]);
 	}
 } else {
     header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$email['index']['url'][$DefineTranslateLang]);
