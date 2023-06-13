@@ -95,25 +95,25 @@ $version = array(
 	'external' => array(
 		/*CDNJ*/
 		'bootstrap' => array(
-			'css' => $cdn_vendor.'twitter-bootstrap/5.2.3/css/bootstrap.min.css',
-			'js' => $cdn_vendor.'twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js'
+			'css' => $cdn_vendor.'twitter-bootstrap/5.3.0/css/bootstrap.min.css',
+			'js' => $cdn_vendor.'twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js'
 		),
 		'bootstrap-icons' => array(
-			'css' => $cdn_vendor.'bootstrap-icons/1.9.1/font/bootstrap-icons.min.css'
+			'css' => $cdn_vendor.'bootstrap-icons/1.10.5/font/bootstrap-icons.min.css'
 		),
 		'fontawesome' => array(
 			'css' => $cdn_vendor.'font-awesome/6.4.0/css/all.min.css',
 			'js' => $cdn_vendor.'font-awesome/6.4.0/js/all.min.js'
 		),
 		'jquery' => array(
-			'js' => $cdn_vendor.'jquery/3.4.1/jquery.min.js'
+			'js' => $cdn_vendor.'jquery/3.7.0/jquery.min.js'
 		),
 		'aos' => array(
 			'css' => $cdn_vendor.'aos/2.3.4/aos.css',
 			'js' => $cdn_vendor.'aos/2.3.4/aos.js'
 		),
 		'animate' => array(
-			'css' => $cdn_vendor.'animate.css/3.5.2/animate.min.css' #4.1.1
+			'css' => $cdn_vendor.'animate.css/4.1.1/animate.min.css' #4.1.1
 		),
 		'wow' => array(
 			'js' => $cdn_vendor.'wow/1.1.2/wow.min.js'
