@@ -1544,11 +1544,11 @@ RewriteRule ^success$ index.php?pages=success [L]
     RewriteRule ^sitemap\.xml$ seo-others.php?sitemap=index [L]
 
 	##SITEMAP NOT NEED##
-	RewriteRule ^sitemap-index\.xml$ seo-others.php?sitemap=default [L]
-	RewriteRule ^sitemap-en\.xml$ seo-others.php?sitemap=en [L]
-	RewriteRule ^sitemap-fr\.xml$ seo-others.php?sitemap=fr [L]
-	RewriteRule ^sitemap-de\.xml$ seo-others.php?sitemap=de [L]
-	RewriteRule ^sitemap-ru\.xml$ seo-others.php?sitemap=ru [L]
+	RewriteRule ^sitemap-index\.xml$ sitemap-index.php [L]
+	RewriteRule ^sitemap-en\.xml$ sitemap-en.php [L]
+	RewriteRule ^sitemap-fr\.xml$ sitemap-fr.php [L]
+	RewriteRule ^sitemap-de\.xml$ sitemap-de.php [L]
+	RewriteRule ^sitemap-ru\.xml$ sitemap-ru.php [L]
 
 	###### JSON ###### 
 	RewriteRule ^manifest\.json$ seo.php?json=manifest [L]
