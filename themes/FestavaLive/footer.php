@@ -157,19 +157,19 @@
                 <div class="col-lg-8 col-12 mt-lg-5">
                     <ul class="site-footer-links">
                         <li class="site-footer-link-item">
-                            <a href="<?php echo $law['legal']['url']['default']; ?>" class="site-footer-link"><?php echo $law['legal']['title']; ?></a>
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$law['legal']['url']['default']; ?>" class="site-footer-link"><?php echo $law['legal']['title']; ?></a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="<?php echo $law['cgu']['url']['default']; ?>" class="site-footer-link"><?php echo $law['cgu']['title']; ?></a>
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$law['cgu']['url']['default']; ?>" class="site-footer-link"><?php echo $law['cgu']['title']; ?></a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="<?php echo $law['cgv']['url']['default']; ?>" class="site-footer-link"><?php echo $law['cgv']['title']; ?></a>
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$law['cgv']['url']['default']; ?>" class="site-footer-link"><?php echo $law['cgv']['title']; ?></a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="<?php echo $law['policy-privacy']['url']['default']; ?>" class="site-footer-link"><?php echo $law['policy-privacy']['title']; ?></a>
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$law['policy-privacy']['url']['default']; ?>" class="site-footer-link"><?php echo $law['policy-privacy']['title']; ?></a>
                         </li>
                     </ul>
                 </div>
