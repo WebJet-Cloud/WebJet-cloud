@@ -371,7 +371,7 @@ strong {
 }
 
 .navbar {
-  background: transparent;
+  background: var(--dark-color);
   z-index: 9;
 }
 

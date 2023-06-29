@@ -4,11 +4,6 @@
     <section id="services" class="services">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2><?php echo $title; ?><br />18/05/2023</h2>
-          <p><?php echo $description; ?></p>
-        </div>
-
         <div class="row">
           <div class="col-lg-12">
               <h3>ARTICLE 1 - Champ d'application</h3>
@@ -96,7 +91,7 @@ Le prix est payé par voie de paiement sécurisé, selon les modalités suivante
   <li>ou paiement par chèque</li>
   <li>ou paiement par virement bancaire sur le compte bancaire du Vendeur (dont les coordonnées sont communiquées au Client lors de la passation de la commande)</li>
   <li>Paypal</li>
-  <li>Alma - Payer en plusieurs fois (2x/3x/4x)</li>
+  <li>Paiement en plusieurs fois avec Alma</li>
 </ul>
 
 <p>
@@ -112,22 +107,23 @@ Le Vendeur ne sera pas tenu de procéder à la délivrance des Produits command�
 </p>
 
 <p>
+
 Le paiement en plusieurs fois/différé est disponible via notre partenaire Alma. La sécurisation des paiements est assurée par Alma et ses prestataires. Tous les paiements sont protégés par le 3D Secure.
-</p><br /><br /><br /><br />
-<h4>Montant des achats</h4><br />
+<br /><br />
+<b>Montant des achats</b><br /><br />
 P2X : Seuls les achats entre 50 € et 2 000 € sont éligibles au paiement avec Alma.<br />
 P3X : Seuls les achats entre 50 € et 2 000 € sont éligibles au paiement avec Alma.<br />
-P4X : Seuls les achats entre 100 € et 2 000 € sont éligibles au paiement avec Alma.</p>
-<br /><br /><br /><br />
-<h4>Frais</h4>
+P4X : Seuls les achats entre 50 € et 2 000 € sont éligibles au paiement avec Alma.<br />
+
+<b>Frais</b><br /><br />
 En payant en plusieurs fois avec Alma le Client ne paye pas de frais. Sauf pour les cas suivants :
-<br /><br /><br /><br />
-P2X : 0,65% par transaction<br />
+<br /><br />
+P2X : 0.65% par transaction<br />
 P3X : 1.31% par transaction<br />
-P4X : 1.95% par transaction
+P4X : 1.95% par transaction<br />
 Alma est gestionnaire de télé-paiement et délivre un certificat électronique qui vaudra preuve du montant et de la date de la transaction conformément aux dispositions des articles 1316 et suivants du code civil.
-</p><br /><br /><br /><br />
-<h4>Résiliation</h4>
+<br /><br />
+<b>Résiliation</b><br /><br />
 Toute résiliation des CGV qui lient le Vendeur et le client, entraine la résiliation des CGU entre Alma et le client.
 </p>
 
@@ -150,7 +146,7 @@ Les livraisons sont assurées par un transporteur indépendant, à l'adresse men
 Lorsque le Client s'est lui-même chargé de faire appel à un transporteur qu'il choisit lui-même, la livraison est réputée effectuée dès la remise des Produits commandés par le Vendeur au transporteur qui les a acceptés sans réserves. Le Client reconnaît donc que c'est au transporteur qu'il appartient d'effectuer la livraison et ne dispose d'aucun recours en garantie contre le Vendeur en cas de défaut de livraison des marchandises transportées.
 <br /><br />
 En cas de demande particulière du Client concernant les conditions d'emballage ou de transport des produits commandés, dûment acceptées par écrit par le Vendeur, les coûts y liés feront l'objet d'une facturation spécifique complémentaire, sur devis préalablement accepté par écrit par le Client.
-Le Client est tenu de vérifier l'état des produits livrés. Il dispose d'un délai de #254 Délai maximal pour... à compter de la livraison pour formuler des réclamations par WebJetClouds  6 RUE D ARMAILLE 75017 PARIS services@webjet.cloud, accompagnées de tous les justificatifs y afférents (photos notamment). Passé ce délai et à défaut d'avoir respecté ces formalités, les Produits seront réputés conformes et exempts de tout vice apparent et aucune réclamation ne pourra être valablement acceptée par le Vendeur.
+Le Client est tenu de vérifier l'état des produits livrés. Il dispose d'un délai de #254 Délai maximal pour... à compter de la livraison pour formuler des réclamations par WebJetClouds 6 RUE D ARMAILLE 75017 PARISservices@webjet.cloud, accompagnées de tous les justificatifs y afférents (photos notamment). Passé ce délai et à défaut d'avoir respecté ces formalités, les Produits seront réputés conformes et exempts de tout vice apparent et aucune réclamation ne pourra être valablement acceptée par le Vendeur.
 Le Vendeur remboursera ou remplacera dans les plus brefs délais et à ses frais, les Produits livrés dont les défauts de conformité ou les vices apparents ou cachés auront été dûment prouvés par le Client, dans les conditions prévues aux articles L 217-4 et suivants du Code de la consommation et celles prévues aux présentes CGV.
 <br /><br />
 Le transfert des risques de perte et de détérioration s'y rapportant, ne sera réalisé qu'au moment où le Client prendra physiquement possession des Produits. Les Produits voyagent donc aux risques et périls du Vendeur sauf lorsque le Client aura lui-même choisi le transporteur. A ce titre, les risques sont transférés au moment de la remise du bien au transporteur.
@@ -164,7 +160,7 @@ Le transfert des risques de perte et de détérioration s'y rapportant, ne sera 
 
 <h3>ARTICLE 7 - Droit de rétractation</h3>
 
-<p>Selon les modalités de l’article L221-18 du Code de la Consommation « Pour les contrats prévoyant la livraison régulière de biens pendant une période définie, le délai court à compter de la réception du premier bien. »
+<p>Selon les modalités de l’article L221-18 du Code de la Consommation «Pour les contrats prévoyant la livraison régulière de biens pendant une période définie, le délai court à compter de la réception du premier bien. »
 Le droit de rétractation peut être exercé en ligne, à l'aide du formulaire de rétractation ci-joint et également disponible sur le site ou de toute autre déclaration, dénuée d'ambiguïté, exprimant la volonté de se rétracter et notamment par courrier postal adressé au Vendeur aux coordonnées postales ou mail indiquées à l’ARTICLE 1 des CGV.
 Les retours sont à effectuer dans leur état d'origine et complets (emballage, accessoires, notice...) permettant leur recommercialisation à l'état neuf, accompagnés de la facture d'achat.
 Les Produits endommagés, salis ou incomplets ne sont pas repris.

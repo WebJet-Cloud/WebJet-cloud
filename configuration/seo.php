@@ -21,7 +21,7 @@ $seo = array(
 		'token' => ''
 	),
 	'google' => array(
-		'analystics' => '',
+		'analystics' => 'UA-249943113-1',
 		'tag-manager' => 'GTM-N4WXMFG'
 	),
 	'shareaholic' => array(

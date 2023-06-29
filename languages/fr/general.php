@@ -240,7 +240,7 @@ $general = array(
 	),
 	'aboutus' => array(
 		'title' => 'A Propos',
-		'description' => 'Découvrir qui nous somme avec l\'équipe WebJet',
+		'description' => 'Découvrir qui nous somme avec l\'équipe WebJetclouds',
 		'keyword' => 'a propos, equipe, webjet',
 		'url' => array(
 			'default' => 'aboutus',
@@ -274,7 +274,7 @@ $general = array(
 			
 		),
 		'sitemap' => array(
-			'images' => 'block/error.jpg',
+			'images' => 'startup/alexonbstudio.png',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	),
@@ -290,7 +290,7 @@ $general = array(
 			/*custom your own*/
 		),
 		'sitemap' => array(
-			'images' => 'block/error.jpg',
+			'images' => 'startup/services.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	)

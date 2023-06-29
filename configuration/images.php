@@ -1,6 +1,6 @@
 <?php
 # exemple $images['dir']
-# exemple $images['manager']['intro-vdo'']['assurup']['']
+# exemple $images['manager']['partner']['']['']
 
 $images = array(
 	'manager' => array(
@@ -9,9 +9,9 @@ $images = array(
 		'logo' => array(
 			'creator' => 'themes/moi-creator-alexonb.png',
 			'icon' => 'pinned/favicon.ico', /*ICO recommended oversize */
-			'normal' => 'themes/logo-normal.png', /*size recommended ~60x60 */
+			'normal' => 'startup/Web_Jet-logo.png', /*size recommended ~60x60 */
 			'small' => 'pinned/favicon-32x32.png', /*size recommended ~32x32 = favicon on PNG */
-			'big' => 'themes/logo-big.png' /*size recommended ~200x200 */
+			'big' => 'startup/Web_Jet-logo.png' /*size recommended ~200x200 */
 		),
 		/*Manager Images for SEO PINNED (Windows, Apple, Android/Safari, chrome) */
 		'pinned' => array(
@@ -100,14 +100,31 @@ $images = array(
 				'5' => 'services/webmaster/freelancer.jpg',
 				'6' => 'services/webmaster/booking.jpg',
 				'7' => 'services/webmaster/social.jpg',
-			),
-			'sap' => array(
-				'1' => 'services/sap/informatique.jpg',
-				'2' => 'services/sap/administratif.jpg',
-				'3' => 'services/sap/téléassistance.jpg'
 			)
-
 			/*Custom your own*/
+		),
+		'partner' => array(
+			'page' => 'partner/partner.jpg',
+			'1' => 'partner/indy.fr.jpg',
+			'2' => 'partner/planethoster-logo.png',
+			'3' => 'partner/assurup.png',
+			'4' => 'partner/uber.jpg',
+			'5' => 'partner/',
+			'6' => 'partner/',
+			'7' => 'partner/',
+			'8' => 'partner/',
+			'9' => 'partner/',
+			'10' => 'partner/',
+			'11' => 'partner/',
+			'12' => 'partner/',
+			'13' => 'partner/',
+			'14' => 'partner/',
+			'15' => 'partner/',
+			'16' => 'partner/',
+			'17' => 'partner/',
+			'18' => 'partner/',
+			'19' => 'partner/',
+			'20' => 'partner/'
 		)
 	),
 	'dir' => 'images'

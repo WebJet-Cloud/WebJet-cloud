@@ -89,14 +89,16 @@
                     <img width="250" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir']; ?>/startup/Web_Jet-logo.png" class="img-fluid site-footer-link"></a><br>
                             <?php echo 'www.'.$sites['domain'].' '.$general['pages']['full']['footer-os']; ?>
                     </li>
-
+                  
+                </ul>
+                <ul class="site-footer-links">
                     <li class="site-footer-link-item">
                                <a href="https://g.page/r/CS8F0BF9HcgpEBI/review"> <img width="120" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['others']['g-advice']; ?>" alt="Google reviews"></a>
                                
                           </li>
 
                             <li class="site-footer-link-item">
-                                <img width="120" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['others']['assurup']; ?>" alt="assurup"><br>
+                                <img width="120" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['others']['assurup']; ?>" alt="assurup" style="background-color:#fff;"><br>
                                 N° RCP23052584222
                                 
                             </li>
@@ -157,6 +159,7 @@
                 <div class="col-lg-8 col-12 mt-lg-5">
                     <ul class="site-footer-links">
                         <li class="site-footer-link-item">
+<<<<<<< HEAD
                             <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$law['legal']['url']['default']; ?>" class="site-footer-link"><?php echo $law['legal']['title']; ?></a>
                         </li>
 
@@ -170,6 +173,25 @@
 
                         <li class="site-footer-link-item">
                             <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$law['policy-privacy']['url']['default']; ?>" class="site-footer-link"><?php echo $law['policy-privacy']['title']; ?></a>
+=======
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$law['legal']['url'][$DefineTranslateLang]; ?>" class="site-footer-link"><?php echo $law['legal']['title']; ?></a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$law['cgu']['url'][$DefineTranslateLang]; ?>" class="site-footer-link"><?php echo $law['cgu']['title']; ?></a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$law['cgv']['url'][$DefineTranslateLang]; ?>" class="site-footer-link"><?php echo $law['cgv']['title']; ?></a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$law['policy-privacy']['url'][$DefineTranslateLang]; ?>" class="site-footer-link"><?php echo $law['policy-privacy']['title']; ?></a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$partner['index']['url'][$DefineTranslateLang]; ?>" class="site-footer-link"><?php echo $partner['index']['title']; ?></a>
+>>>>>>> 0cc232f5c2ca78f0bf5ac375a66170e19324e66c
                         </li>
                     </ul>
                 </div>

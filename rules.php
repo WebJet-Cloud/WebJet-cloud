@@ -1,7 +1,7 @@
 <?php
 # Check out if have error and fix
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
+#error_reporting(E_ALL);
+#ini_set("display_errors", 1);
 
 require 'libs/autoload.php';
 #require libs/custom/
@@ -19,7 +19,6 @@ $seo = json_decode($JE_seo, true);
 $partner = json_decode($JE_partner, true);
 $social = json_decode($JE_social, true);
 $hosting = json_decode($JE_hosting, true);
-$videos = json_decode($JE_videos, true);
 $marketing = json_decode($JE_marketing, true);
 $apiexternal = json_decode($JE_apiexternal, true);
 $images = json_decode($JE_images, true);
@@ -125,16 +124,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['cgu']['title'];
         $description = $law['cgu']['description'];
         $keyword = $law['cgu']['keyword'];
-        $urls = $law['cgu']['url']['default'];
+        //$urls = $law['cgu']['url']['default'];
         $imgs = $law['cgu']['sitemap']['images'];
         $vdos = $law['cgu']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['cgu']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['cgu']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['cgu']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['cgu']['url']['ru'];
 
-		
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['cgu']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['cgu']['url']['default'];
+        }
+    
+        
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/cgu.php');
         include('themes/'.$sites['template'].'/footer.php');	
@@ -142,15 +143,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['cgv']['title'];
         $description = $law['cgv']['description'];
         $keyword = $law['cgv']['keyword'];
-        $urls = $law['cgv']['url']['default'];
+        //$urls = $law['cgv']['url']['default'];
         $imgs = $law['cgv']['sitemap']['images'];
         $vdos = $law['cgv']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['cgv']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['cgv']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['cgv']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['cgv']['url']['ru'];
 
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['cgv']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['cgv']['url']['default'];
+        }
+    
+        
 		
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/cgv.php');
@@ -159,16 +163,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['dmca']['title'];
         $description = $law['dmca']['description'];
         $keyword = $law['dmca']['keyword'];
-        $urls = $law['dmca']['url']['default'];
+        //$urls = $law['dmca']['url']['default'];
         $imgs = $law['dmca']['sitemap']['images'];
         $vdos = $law['dmca']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['dmca']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$$law['dmca']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$$law['dmca']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$$law['dmca']['url']['ru'];
 
-		
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['dmca']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['dmca']['url']['default'];
+        }
+    
+        
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/dmca.php');
         include('themes/'.$sites['template'].'/footer.php');	
@@ -176,16 +182,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['legal']['title'];
         $description = $law['legal']['description'];
         $keyword = $law['legal']['keyword'];
-        $urls = $law['legal']['url']['default'];
+        //$urls = $law['legal']['url']['default'];
         $imgs = $law['legal']['sitemap']['images'];
         $vdos = $law['legal']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['legal']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['legal']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['legal']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['legal']['url']['ru'];
 
-		
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['legal']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['legal']['url']['default'];
+        }
+    
+        
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/legal.php');
         include('themes/'.$sites['template'].'/footer.php');	
@@ -193,16 +201,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['policy-privacy']['title'];
         $description = $law['policy-privacy']['description'];
         $keyword = $law['policy-privacy']['keyword'];
-        $urls = $law['policy-privacy']['url']['default'];
+        //$urls = $law['policy-privacy']['url']['default'];
         $imgs = $law['policy-privacy']['sitemap']['images'];
         $vdos = $law['policy-privacy']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['policy-privacy']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['policy-privacy']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['policy-privacy']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['policy-privacy']['url']['ru'];
 
-		
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['policy-privacy']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['policy-privacy']['url']['default'];
+        }
+    
+        
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/policy-privacy.php');
         include('themes/'.$sites['template'].'/footer.php');	
@@ -210,16 +220,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['cookies']['title'];
         $description = $law['cookies']['description'];
         $keyword = $law['cookies']['keyword'];
-        $urls = $law['cookies']['url']['default'];
+        //$urls = $law['cookies']['url']['default'];
         $imgs = $law['cookies']['sitemap']['images'];
         $vdos = $law['cookies']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['cookies']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['cookies']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['cookies']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['cookies']['url']['ru'];
 
-		
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['cookies']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['cookies']['url']['default'];
+        }
+    
+        
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/cookies.php');
         include('themes/'.$sites['template'].'/footer.php');	
@@ -227,15 +239,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['rgpd']['title'];
         $description = $law['rgpd']['description'];
         $keyword = $law['rgpd']['keyword'];
-        $urls = $law['rgpd']['url']['default'];
+        //$urls = $law['rgpd']['url']['default'];
         $imgs = $law['rgpd']['sitemap']['images'];
         $vdos = $law['rgpd']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['rgpd']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['rgpd']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['rgpd']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['rgpd']['url']['ru'];
 
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['rgpd']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['rgpd']['url']['default'];
+        }
+    
+        
 		
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/rgpd.php');
@@ -245,15 +260,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['pages']['title'];
         $description = $law['pages']['description'];
         $keyword = $law['pages']['keyword'];
-        $urls = $law['pages']['url']['default'];
+        //$urls = $law['pages']['url']['default'];
         $imgs = $law['pages']['sitemap']['images'];
         $vdos = $law['pages']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['pages']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['pages']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['pages']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['pages']['url']['ru'];
 
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['pages']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['pages']['url']['default'];
+        }
+    
+        
 		
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/full.php');
@@ -268,16 +286,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['cgu']['title'];
         $description = $law['cgu']['description'];
         $keyword = $law['cgu']['keyword'];
-        $urls = $law['cgu']['url']['default'];
+        //$urls = $law['cgu']['url']['default'];
         $imgs = $law['cgu']['sitemap']['images'];
         $vdos = $law['cgu']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['cgu']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['cgu']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['cgu']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['cgu']['url']['ru'];
 
-		
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['cgu']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['cgu']['url']['default'];
+        }
+    
+        
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/cgu.php');
         include('themes/'.$sites['template'].'/footer.php');	
@@ -285,16 +305,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['cgv']['title'];
         $description = $law['cgv']['description'];
         $keyword = $law['cgv']['keyword'];
-        $urls = $law['cgv']['url']['default'];
+        //$urls = $law['cgv']['url']['default'];
         $imgs = $law['cgv']['sitemap']['images'];
         $vdos = $law['cgv']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['cgv']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['cgv']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['cgv']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['cgv']['url']['ru'];
 
-		
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['cgv']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['cgv']['url']['default'];
+        }
+    
+        
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/cgv.php');
         include('themes/'.$sites['template'].'/footer.php');	
@@ -302,16 +324,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['dmca']['title'];
         $description = $law['dmca']['description'];
         $keyword = $law['dmca']['keyword'];
-        $urls = $law['dmca']['url']['default'];
+        //$urls = $law['dmca']['url']['default'];
         $imgs = $law['dmca']['sitemap']['images'];
         $vdos = $law['dmca']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['dmca']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$$law['dmca']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$$law['dmca']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$$law['dmca']['url']['ru'];
 
-		
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['dmca']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['dmca']['url']['default'];
+        }
+    
+        
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/dmca.php');
         include('themes/'.$sites['template'].'/footer.php');	
@@ -319,15 +343,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['legal']['title'];
         $description = $law['legal']['description'];
         $keyword = $law['legal']['keyword'];
-        $urls = $law['legal']['url']['default'];
+        //$urls = $law['legal']['url']['default'];
         $imgs = $law['legal']['sitemap']['images'];
         $vdos = $law['legal']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['legal']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['legal']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['legal']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['legal']['url']['ru'];
 
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['legal']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['legal']['url']['default'];
+        }
+    
+        
 		
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/legal.php');
@@ -336,15 +363,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['policy-privacy']['title'];
         $description = $law['policy-privacy']['description'];
         $keyword = $law['policy-privacy']['keyword'];
-        $urls = $law['policy-privacy']['url']['default'];
+        //$urls = $law['policy-privacy']['url']['default'];
         $imgs = $law['policy-privacy']['sitemap']['images'];
         $vdos = $law['policy-privacy']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['policy-privacy']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['policy-privacy']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['policy-privacy']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['policy-privacy']['url']['ru'];
 
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['policy-privacy']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['policy-privacy']['url']['default'];
+        }
+    
+        
 		
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/policy-privacy.php');
@@ -353,16 +383,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['cookies']['title'];
         $description = $law['cookies']['description'];
         $keyword = $law['cookies']['keyword'];
-        $urls = $law['cookies']['url']['default'];
+        //$urls = $law['cookies']['url']['default'];
         $imgs = $law['cookies']['sitemap']['images'];
         $vdos = $law['cookies']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['cookies']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['cookies']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['cookies']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['cookies']['url']['ru'];
 
-		
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['cookies']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['cookies']['url']['default'];
+        }
+    
+        
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/cookies.php');
         include('themes/'.$sites['template'].'/footer.php');	
@@ -370,16 +402,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['rgpd']['title'];
         $description = $law['rgpd']['description'];
         $keyword = $law['rgpd']['keyword'];
-        $urls = $law['rgpd']['url']['default'];
+        //$urls = $law['rgpd']['url']['default'];
         $imgs = $law['rgpd']['sitemap']['images'];
         $vdos = $law['rgpd']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['rgpd']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['rgpd']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['rgpd']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['rgpd']['url']['ru'];
 
-		
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['rgpd']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['rgpd']['url']['default'];
+        }
+    
+        
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/rgpd.php');
         include('themes/'.$sites['template'].'/footer.php');	
@@ -388,16 +422,18 @@ if(isset($_GET[$DefineTranslateLang])){
         $title = $law['pages']['title'];
         $description = $law['pages']['description'];
         $keyword = $law['pages']['keyword'];
-        $urls = $law['pages']['url']['default'];
+        //$urls = $law['pages']['url']['default'];
         $imgs = $law['pages']['sitemap']['images'];
         $vdos = $law['pages']['sitemap']['video'];
 
-		$translatef_fr = $protocols.'://'.$domainTLD.'/fr/'.$law['pages']['url']['fr'];
-		$translate_en = $protocols.'://'.$domainTLD.'/en/'.$law['pages']['url']['en'];
-		$translate_de = $protocols.'://'.$domainTLD.'/de/'.$law['pages']['url']['de'];
-		$translate_ru = $protocols.'://'.$domainTLD.'/ru/'.$law['pages']['url']['ru'];
 
-		
+        if(!empty($DefineTranslateLang)){ 
+            $urls = $DefineTranslateLang.'/'.$law['pages']['url'][$DefineTranslateLang]; 
+        } else { 
+            $urls = $law['pages']['url']['default'];
+        }
+    
+        
         include('themes/'.$sites['template'].'/header.php');
         include_once('themes/'.$sites['template'].'/law/full.php');
         include('themes/'.$sites['template'].'/footer.php');

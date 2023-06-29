@@ -239,7 +239,7 @@ $general = array(
 	),
 	'aboutus' => array(
 		'title' => 'кстати',
-		'description' => 'Узнайте, кто мы с командой WebJet',
+		'description' => 'Узнайте, кто мы с командой WebJetclouds',
 		'keyword' => 'о, команда, вебджет',
 		'url' => array(
 			'default' => 'aboutus',
@@ -273,7 +273,7 @@ $general = array(
 			
 		),
 		'sitemap' => array(
-			'images' => 'block/error.jpg',
+			'images' => 'startup/alexonbstudio.png',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	),
@@ -289,7 +289,7 @@ $general = array(
 			/*custom your own*/
 		),
 		'sitemap' => array(
-			'images' => 'block/error.jpg',
+			'images' => 'startup/services.jpg',
 			'video' => 'www.youtube.com/watch?v=aAGMYq68eHc'  /*directory images from <exemple.tld>/assets */
 		)
 	)
