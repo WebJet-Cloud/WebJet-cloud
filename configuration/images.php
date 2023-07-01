@@ -104,7 +104,7 @@ $images = array(
 			/*Custom your own*/
 		),
 		'partner' => array(
-			'page' => 'partner/partner.jpg',
+			'page' => 'partner/dougs-logo.png',
 			'1' => 'partner/indy.fr.jpg',
 			'2' => 'partner/planethoster-logo.png',
 			'3' => 'partner/assurup.png',

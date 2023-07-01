@@ -7,10 +7,10 @@
         <div class="row">
           <div class="col-12 col-lg-3">
             <div class="card" style="width: 18rem;">
-              <img class="card-img-top img-fluid" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['partner']['1']; ?>" alt="indy">
+              <img class="card-img-top img-fluid" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['partner']['1']; ?>" alt="dougs">
               <div class="card-body">
                 <p class="card-text"><?php echo $partner['index']['content']['text']['1']; ?></p>
-                <a href="https://www.indy.fr?promocode=REF_6P3OUK3Z" class="btn btn-primary"><i class="fa-solid fa-link"></i> <?php echo $general['access']; ?></a>
+                <a href="https://www.dougs.fr?r=zeZdbR2dtj" class="btn btn-primary"><i class="fa-solid fa-link"></i> <?php echo $general['access']; ?></a>
               </div>
             </div>
           </div>

@@ -12,10 +12,10 @@ $partner = array(
 		),
 		'content' => array(
 			'text' => array(
-				'1' => 'Indy ist eine Online-Buchhaltungs-App für Freiberufler. Es ermöglicht die Automatisierung der Verwaltung der Aktivität und die Erstellung aller Steuererklärungen. Indy bietet außerdem personalisierten Support durch spezialisierte und reaktionsschnelle Berater. Indy ist die ideale Lösung, um den Verwaltungsalltag von Freiberuflern zu vereinfachen.',
+				'1' => 'Dougs ist eine Online-Wirtschaftsprüfungsgesellschaft, die Buchhaltungsdienstleistungen für Unternehmer anbietet. Sie bieten ihren Kunden eine intuitive und ergonomische Benutzeroberfläche. Sie sind beim Orden der Wirtschaftsprüfer in Lyon registriert und kümmern sich um alle Ihre beruflichen Steuerpflichten, einschließlich Ihrer Bilanz, Gewinn- und Verlustrechnung und der Übermittlung Ihrer Steuererklärung',
 				'2' => 'Planethoster.com ist eine Website, die Webhosting, Domainnamen und Online-Sicherheitsdienste anbietet. Es bietet Lösungen, die an die Bedürfnisse seiner Kunden angepasst sind, sei es für private, berufliche oder E-Commerce-Websites. Planethoster.com garantiert hohe Leistung, Zuverlässigkeit und hochwertigen technischen Support.',
 				'3' => 'Assurup.com ist eine Online-Plattform, die auf die Bedürfnisse von Berufstätigen zugeschnittene Versicherungslösungen anbietet. Egal ob Selbstständiger, Selbstständiger, Startup oder Unternehmen, Sie können Ihre Versicherungsverträge mit nur wenigen Klicks abschließen und verwalten. Assurup.com unterstützt Sie beim Schutz Ihres Unternehmens und Ihrer beruflichen Vermögenswerte.',
-				'4' => '',
+				'4' => 'Uber.com ist eine Website, auf der Benutzer Fahrten mit professionellen Fahrern buchen können. Die Seite bietet mehrere Transportoptionen, wie zum Beispiel UberX, UberPool, UberBlack oder UberEats. Uber.com ermöglicht es Benutzern außerdem, ihre Fahrt in Echtzeit zu verfolgen, online zu bezahlen und Feedback zum Service zu geben.',
 				'5' => '',
 				'6' => '',
 				'7' => '',
