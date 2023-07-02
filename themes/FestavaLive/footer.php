@@ -152,14 +152,14 @@
             <div class="row">
 
                 <div class="col-lg-3 col-12 mt-5">
-                    <p class="copyright-text">&copy; 2022-<?php echo date('Y'); ?> <?php echo $law['full']['content']['footer']; ?> | <?php echo $law['full']['content']['powered']; ?> <a class="text-white border-bottom" href="<?php echo $protocols.'://'.$domainTLD; ?>"><?php echo $sites['name']; ?></a> <?php echo $general['pages']['full']['footer-os']; ?></p>
+                    <p class="copyright-text">&copy; 2022-<?php echo date('Y'); ?> <?php echo $law['full']['content']['footer']; ?> | <?php echo $law['full']['content']['powered']; ?> <a class="text-white border-bottom" href="<?php echo $protocols.'://webjet.cloud'; ?>">WebJetClouds</a> <?php echo $general['pages']['full']['footer-os']; ?></p>
                     <p class="copyright-text"><?php echo $law['full']['content']['designer']; ?>: <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a> <?php echo $law['full']['content']['distributed']; ?>: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a> <?php echo $law['full']['content']['developper']; ?>: <a class="border-bottom" href="https://alexonb.studio" target="_blank">Alexonb.Studio</a></p>
                 </div>
 
                 <div class="col-lg-8 col-12 mt-lg-5">
                     <ul class="site-footer-links">
                         <li class="site-footer-link-item">
-<<<<<<< HEAD
+
                             <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$law['legal']['url']['default']; ?>" class="site-footer-link"><?php echo $law['legal']['title']; ?></a>
                         </li>
 
@@ -173,7 +173,7 @@
 
                         <li class="site-footer-link-item">
                             <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$law['policy-privacy']['url']['default']; ?>" class="site-footer-link"><?php echo $law['policy-privacy']['title']; ?></a>
-=======
+
                             <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$law['legal']['url'][$DefineTranslateLang]; ?>" class="site-footer-link"><?php echo $law['legal']['title']; ?></a>
                         </li>
 
@@ -191,7 +191,7 @@
 
                         <li class="site-footer-link-item">
                             <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$partner['index']['url'][$DefineTranslateLang]; ?>" class="site-footer-link"><?php echo $partner['index']['title']; ?></a>
->>>>>>> 0cc232f5c2ca78f0bf5ac375a66170e19324e66c
+
                         </li>
                     </ul>
                 </div>
