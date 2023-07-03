@@ -17,10 +17,10 @@ $apiexternal = array(
 	/*OTHER*/
 	'verify-phone' => '', /**GET your API KEY on https://numverify.com/**/
 	'matomo' => array(
-		'url' => 'traffic.alexonb.studio',
-		'id' => '4'
+		'url' => '',
+		'id' => ''
 	),
-	'clarity.ms' => 'dj2sgs7t7r'	
+	'clarity.ms' => ''	
 );
 
 $JE_apiexternal = json_encode($apiexternal);
