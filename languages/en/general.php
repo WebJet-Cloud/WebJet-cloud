@@ -227,6 +227,22 @@ $general = array(
 					'designer' => 'Designer',
 					'developper' => 'Developper'
 				)
+			), 
+			'faqs' => array(
+				'title' => 'FAQs',
+				'small' => 'Find answers to the most frequently asked questions below.',
+				'question' => array(
+					'1' => 'What communication methods does WebJetClouds use for consulting?',
+					'2' => 'How long does it take to develop a custom website with WebJetClouds?',
+					'3' => 'Does WebJetClouds offer hosting services for developed websites?',
+					'4' => 'Do WebJetClouds graphics services include printing of communication materials?'
+				),
+				'respond' => array(
+					'1' => 'WebJetClouds primarily uses online meetings, phone calls, and email exchanges to ensure smooth communication with their consulting clients.',
+					'2' => 'The time frame for developing a custom website depends on the complexity of the project. WebJetClouds will assess your needs and provide you with a realistic estimate of the time required.',
+					'3' => 'Yes, WebJetClouds offers web hosting services to ensure the availability and performance of your developed sites.',
+					'4' => 'WebJetClouds focuses on graphics services for the web. However, they can recommend reliable printing partners if you need physical media.'
+				)
 			)
 			
 		),

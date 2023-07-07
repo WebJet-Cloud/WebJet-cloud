@@ -75,7 +75,7 @@ $general = array(
 				'others' => 'Autres'
 			)
 		)
-	),
+	), 
 	'index' => array(
 		'title' => 'Accueil',
 		'description' => 'WebJet est Open-Source PHP de la communauté.',
@@ -229,6 +229,22 @@ $general = array(
 					'video' => 'Vidéo',
 					'designer' => 'Designer',
 					'developper' => 'Développeur'
+				)
+			), 
+			'faqs' => array(
+				'title' => 'FAQ',
+				'small' => 'Trouvez ci-dessous les réponses aux questions les plus fréquemment posées',
+				'question' => array(
+					'1' => 'Quelles sont les méthodes de communication utilisées par WebJetClouds pour le consulting ?',
+					'2' => 'Combien de temps faut-il pour développer un site Web personnalisé avec WebJetClouds ?',
+					'3' => 'WebJetClouds propose-t-il des services d\'hébergement pour les sites Web développés ?',
+					'4' => 'Les services graphiques de WebJetClouds incluent-ils l\'impression de supports de communication ?'
+				),
+				'respond' => array(
+					'1' => 'WebJetClouds utilise principalement des réunions en ligne, des appels téléphoniques et des échanges d\'e-mails pour assurer une communication fluide avec leurs clients en matière de consulting.',
+					'2' => 'Le délai de développement d\'un site Web personnalisé dépend de la complexité du projet. WebJetClouds évaluera vos besoins et vous fournira une estimation réaliste du délai nécessaire.',
+					'3' => 'Oui, WebJetClouds propose des services d\'hébergement Web pour assurer la disponibilité et la performance de vos sites développés.',
+					'4' => 'WebJetClouds se concentre sur les services graphiques pour le web. Cependant, ils peuvent vous recommander des partenaires d\'impression fiables si vous avez besoin de supports physiques.'
 				)
 			)
 			

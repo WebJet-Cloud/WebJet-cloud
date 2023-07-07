@@ -228,6 +228,22 @@ $general = array(
                     'designer' => 'Designer',
                     'developper' => 'Entwickler'
 				)
+			), 
+			'faqs' => array(
+				'title' => 'FAQs',
+				'small' => 'Nachfolgend finden Sie Antworten auf die am häufigsten gestellten Fragen.',
+				'question' => array(
+					'1' => 'Welche Kommunikationsmethoden nutzt WebJetClouds für die Beratung ?',
+					'2' => 'Wie lange dauert die Entwicklung einer benutzerdefinierten Website mit WebJetClouds ?',
+					'3' => 'Bietet WebJetClouds Hosting-Dienste für entwickelte Websites an ?',
+					'4' => 'Umfassen die Grafikdienste von WebJetCloud den Druck von Kommunikationsmaterialien ?'
+				),
+				'respond' => array(
+					'1' => 'WebJetClouds nutzt hauptsächlich Online-Meetings, Telefonanrufe und E-Mail-Austausch, um eine reibungslose Kommunikation mit seinen Beratungskunden sicherzustellen.',
+					'2' => 'Der Zeitrahmen für die Entwicklung einer individuellen Website hängt von der Komplexität des Projekts ab. WebJetClouds ermittelt Ihren Bedarf und erstellt Ihnen eine realistische Schätzung des Zeitaufwands.',
+					'3' => 'Ja, WebJetClouds bietet Webhosting-Dienste an, um die Verfügbarkeit und Leistung Ihrer entwickelten Websites sicherzustellen.',
+					'4' => 'WebJetClouds konzentriert sich auf Grafikdienste für das Web. Sie können Ihnen jedoch zuverlässige Druckpartner empfehlen, wenn Sie physische Medien benötigen.'
+				)
 			)
 			
 		),
