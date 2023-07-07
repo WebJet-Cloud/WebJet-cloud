@@ -768,30 +768,30 @@ $("form").submit(function(event) {
 
   <div class="row">
     <div class="col-md-6 col-lg-6 mb-6">
-      <h6 class="mb-3 text-primary"><?php echo $general['index']['content']['faqs']['title']['question']['1']; ?></h6>
+      <h6 class="mb-3 text-primary"><?php echo $general['index']['content']['faqs']['question']['1']; ?></h6>
       <p>
-        <?php echo $general['index']['content']['faqs']['title']['respond']['1']; ?>
+        <?php echo $general['index']['content']['faqs']['respond']['1']; ?>
       </p>
     </div>
 
     <div class="col-md-6 col-lg-6 mb-6">
-      <h6 class="mb-3 text-primary"> <?php echo $general['index']['content']['faqs']['title']['question']['2']; ?></h6>
+      <h6 class="mb-3 text-primary"> <?php echo $general['index']['content']['faqs']['question']['2']; ?></h6>
       <p>
-      <?php echo $general['index']['content']['faqs']['title']['respond']['2']; ?>
+      <?php echo $general['index']['content']['faqs']['respond']['2']; ?>
       </p>
     </div>
 
     <div class="col-md-6 col-lg-6 mb-6">
-      <h6 class="mb-3 text-primary"> <?php echo $general['index']['content']['faqs']['title']['question']['3']; ?></h6>
+      <h6 class="mb-3 text-primary"> <?php echo $general['index']['content']['faqs']['question']['3']; ?></h6>
       <p>
-      <?php echo $general['index']['content']['faqs']['title']['respond']['3']; ?>
+      <?php echo $general['index']['content']['faqs']['respond']['3']; ?>
       </p>
     </div>
 
     <div class="col-md-6 col-lg-6 mb-6">
-      <h6 class="mb-3 text-primary"> <?php echo $general['index']['content']['faqs']['title']['question']['4']; ?></h6>
+      <h6 class="mb-3 text-primary"> <?php echo $general['index']['content']['faqs']['question']['4']; ?></h6>
       <p>
-      <?php echo $general['index']['content']['faqs']['title']['respond']['4']; ?>
+      <?php echo $general['index']['content']['faqs']['respond']['4']; ?>
       </p>
     </div>
 
