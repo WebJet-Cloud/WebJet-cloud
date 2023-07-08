@@ -713,11 +713,15 @@ if(!empty($seo['shareaholic']['key'])){
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link click-scroll" href="https://customers.webjet.cloud"><?php echo $general['pages']['menu']['undermenu']['former']; ?></a>
+                        </li>
+                        
+                        <li class="nav-item">
                             <a class="nav-link click-scroll" href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$email['index']['url'][$DefineTranslateLang]; ?>"><?php echo $email['index']['title']; ?></a>
                         </li>
                     </ul>
 
-                    
+                    <a href="https://calendly.com/webjetclouds" class="btn custom-btn d-lg-block d-none"><?php echo $general['pages']['menu']['undermenu']['rdv']; ?></a>
                 </div>
             </div>
         </nav>

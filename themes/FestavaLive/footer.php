@@ -138,11 +138,6 @@
                     </svg>
                 </a>
 
-                <!-- Début de widget de lien Calendly -->
-                 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                  <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/webjetclouds?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;" class="btn custom-btn d-lg-none ms-auto me-4"><?php echo $email['index']['content']['container']['calendly']; ?></a>
-                                        <!-- Fin de widget de lien Calendly -->
             </div>
         </div>
     </div>
@@ -158,22 +153,9 @@
 
                 <div class="col-lg-8 col-12 mt-lg-5">
                     <ul class="site-footer-links">
+                      
                         <li class="site-footer-link-item">
-
-                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$law['legal']['url']['default']; ?>" class="site-footer-link"><?php echo $law['legal']['title']; ?></a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$law['cgu']['url']['default']; ?>" class="site-footer-link"><?php echo $law['cgu']['title']; ?></a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$law['cgv']['url']['default']; ?>" class="site-footer-link"><?php echo $law['cgv']['title']; ?></a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$law['policy-privacy']['url']['default']; ?>" class="site-footer-link"><?php echo $law['policy-privacy']['title']; ?></a>
-
+                            
                             <a href="<?php echo $protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$law['legal']['url'][$DefineTranslateLang]; ?>" class="site-footer-link"><?php echo $law['legal']['title']; ?></a>
                         </li>
 
