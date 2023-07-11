@@ -1,10 +1,11 @@
 <?php
 # $general['index']['content']['pricing']['blocks']['small']['']    ['']
-# $general['pages']['full']['footer-os']['blocks']['small']['']    ['']
+# $general['pages']['schedule']['h6']['blocks']['small']['']    ['']
 $general = array(
 	'access' => 'Zugreifen',
 	'schedule' => array(
 		'tile' => 'Zeitplan',
+		'h6' => 'Reisekosten (+/-) von 40 € exkl. MwSt. inklusive Hin- und Rückfahrt. Die 10 km lange Umgebung der Zone in der Nähe von Paris 75017 ist kostenlos.',
 		'dates' => array(
 			'h1' => 'Termine',
 			'mon' => 'Montag',

@@ -4,6 +4,7 @@ $general = array(
 	'access' => 'To access',
 	'schedule' => array(
 		'tile' => 'Schedule',
+		'h6' => 'Travel costs (+/-) of €40 excl. tax included the round trip. The 10KM Surroundings of the Zone near Paris 75017 is free.',
 		'dates' => array(
 			'h1' => 'Dates',
 			'mon' => 'Monday',

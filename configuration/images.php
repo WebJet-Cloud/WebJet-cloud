@@ -1,6 +1,6 @@
 <?php
-# exemple $images['dir']
-# exemple $images['manager']['partner']['']['']
+# exemple $images['dir'].'/'.$images['manager']['others']['marianne-ecolo']
+# exemple $images['manager']['others']['marianne-ecolo']['']
 
 $images = array(
 	'manager' => array(
@@ -35,7 +35,8 @@ $images = array(
 		),
 		'others' => array(
 			'assurup' => 'others/assurup.725be7d.png',
-			'g-advice' => 'others/google-advice.png'
+			'g-advice' => 'others/google-advice.png',
+			'marianne-ecolo' => 'default/marianne-ecologie-transparent.png'
 		),
 		/*Manager Images */
 		'services' => array(
@@ -105,26 +106,26 @@ $images = array(
 		),
 		'partner' => array(
 			'page' => 'partner/dougs-logo.png',
-			'1' => 'partner/indy.fr.jpg',
+			'1' => 'partner/dougs-logo.png',
 			'2' => 'partner/planethoster-logo.png',
 			'3' => 'partner/assurup.png',
 			'4' => 'partner/uber.jpg',
-			'5' => 'partner/',
-			'6' => 'partner/',
-			'7' => 'partner/',
-			'8' => 'partner/',
-			'9' => 'partner/',
-			'10' => 'partner/',
-			'11' => 'partner/',
-			'12' => 'partner/',
-			'13' => 'partner/',
-			'14' => 'partner/',
-			'15' => 'partner/',
-			'16' => 'partner/',
-			'17' => 'partner/',
-			'18' => 'partner/',
-			'19' => 'partner/',
-			'20' => 'partner/'
+			'5' => 'partner/logo-wpml-otgs.png',
+			'6' => 'partner/miss.jpg',
+			'7' => 'partner/miss.jpg',
+			'8' => 'partner/miss.jpg',
+			'9' => 'partner/miss.jpg',
+			'10' => 'partner/miss.jpg',
+			'11' => 'partner/miss.jpg',
+			'12' => 'partner/miss.jpg',
+			'13' => 'partner/miss.jpg',
+			'14' => 'partner/miss.jpg',
+			'15' => 'partner/miss.jpg',
+			'16' => 'partner/miss.jpg',
+			'17' => 'partner/miss.jpg',
+			'18' => 'partner/miss.jpg',
+			'19' => 'partner/miss.jpg',
+			'20' => 'partner/miss.jpg'
 		)
 	),
 	'dir' => 'images'

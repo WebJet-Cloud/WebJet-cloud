@@ -360,27 +360,34 @@
                             </ul>
 
                             
-
-                            <a class="link-fx-1 color-contrast-higher mt-4" href="<?php echo $protocols.'://'.$domainTLD.'/'.$email['ask-quotes']['url']['default']; ?>">
-                                <span><?php echo $email['ask-quotes']['title']; ?></span>
-                                <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="16" cy="16" r="15.5"></circle>
-                                        <line x1="10" y1="18" x2="16" y2="12"></line>
-                                        <line x1="16" y1="12" x2="22" y2="18"></line>
-                                    </g>
-                                </svg>
-                            </a><br>
-                            <a class="link-fx-1 color-contrast-higher mt-4" href="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$hosting['dl']['prest-contract']; ?>">
-                                <span><?php echo $services['down-contract']; ?></span>
-                                <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="16" cy="16" r="15.5"></circle>
-                                        <line x1="10" y1="18" x2="16" y2="12"></line>
-                                        <line x1="16" y1="12" x2="22" y2="18"></line>
-                                    </g>
-                                </svg>
-                            </a>
+                            <div class="row">
+                                <div class="col-lg-6 col-6">
+                                <a class="link-fx-1 color-contrast-higher mt-4" href="<?php echo $protocols.'://'.$domainTLD.'/'.$email['ask-quotes']['url']['default']; ?>">
+                                    <span><?php echo $email['ask-quotes']['title']; ?></span>
+                                    <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="16" cy="16" r="15.5"></circle>
+                                            <line x1="10" y1="18" x2="16" y2="12"></line>
+                                            <line x1="16" y1="12" x2="22" y2="18"></line>
+                                        </g>
+                                    </svg>
+                                </a><br>
+                                <a class="link-fx-1 color-contrast-higher mt-4" href="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$hosting['dl']['prest-contract']; ?>">
+                                    <span><?php echo $services['down-contract']; ?></span>
+                                    <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="16" cy="16" r="15.5"></circle>
+                                            <line x1="10" y1="18" x2="16" y2="12"></line>
+                                            <line x1="16" y1="12" x2="22" y2="18"></line>
+                                        </g>
+                                    </svg>
+                                </a>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <img src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['others']['marianne-ecolo']; ?>" alt="Déplacement Propre" width="90" height="90" />
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -424,6 +431,7 @@
                             </a>
                         </div>
                     </div>
+                    <div class="col-12"><small class="text-center"><?php echo $general['schedule']['h6']; ?></small></div>
 
                 </div>
             </div>
@@ -766,7 +774,7 @@ $("form").submit(function(event) {
   <?php echo $general['index']['content']['faqs']['small']; ?>
   </p>
 
-  <div class="row">
+  <div class="row container">
     <div class="col-md-6 col-lg-6 mb-6">
       <h6 class="mb-3 text-primary"><?php echo $general['index']['content']['faqs']['question']['1']; ?></h6>
       <p>

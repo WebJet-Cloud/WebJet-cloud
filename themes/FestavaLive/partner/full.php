@@ -44,15 +44,15 @@
         </div>
 
 
-<!--
+
 
         <div class="row">
           <div class="col-12 col-lg-3">
             <div class="card" style="width: 18rem;">
-              <img class="card-img-top img-fluid" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['partner']['5']; ?>" alt="">
+              <img class="card-img-top img-fluid" src="<?php echo $protocols.'://'.$CDNdomainTLD.'/'.$images['dir'].'/'.$images['manager']['partner']['5']; ?>" alt="wpml wordpress">
               <div class="card-body">
                 <p class="card-text"><?php echo $partner['index']['content']['text']['5']; ?></p>
-                <a href="#" class="btn btn-primary"><i class="fa-solid fa-link"></i> <?php echo $general['access']; ?></a>
+                <a href="https://wpml.org/fr/?aid=701047&affiliate_key=ckobzSJFyZfL" class="btn btn-primary"><i class="fa-solid fa-link"></i> <?php echo $general['access']; ?></a>
               </div>
             </div>
           </div>
@@ -210,11 +210,6 @@
             </div>
           </div>
         </div>
-
--->
-
-
-
 
       </div>
     </section><!-- End Services Section -->

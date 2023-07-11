@@ -3,31 +3,18 @@
 <html lang="<?php echo $DefineTranslateLang; ?>">
 <head>
 <lien rel="dns-prefetch" href="//<?php echo $CDNdomainURL; ?>/" />
-    <lien rel="dns-prefetch" href="//traffic.alexonb.studio/" />
-    <lien rel="dns-prefetch" href="//clarity.ms/">
     <lien rel="dns-prefetch" href="//googletagmanager.com/" />
-    <lien rel="dns-prefetch" href="//cdn.jsdelivr.net/" />
-    <lien rel="dns-prefetch" href="//mc.yandex.ru/" />
-    <lien rel="dns-prefetch" href="//quantcast.mgr.consensu.org/" />
-    <lien rel="dns-prefetch" href="//cdn.tynt.com/" />
-    <lien rel="dns-prefetch" href="//www.dwin2.com/" />
+    <lien rel="dns-prefetch" href="//cdnjs.cloudflare.com/" />
     <lien rel="dns-prefetch" href="//pagead2.googlesyndication.com/" />
     <lien rel="dns-prefetch" href="//www.googletagmanager.com/" />
-    <lien rel="dns-prefetch" href="//cdn.shareaholic.net/" />
     <lien rel="dns-prefetch" href="//fonts.googleapis.com/" />
     <lien rel="dns-prefetch" href="//fonts.gstatic.com/" />
-    <lien rel="dns-prefetch" href="//s7.addthis.com/" />
-    <lien rel="dns-prefetch" href="//client.crisp.chat/" />
-    <lien rel="dns-prefetch" href="//w.likebtn.com/" />
     <lien rel="dns-prefetch" href="//code.tidio.co/" />
     <lien rel="dns-prefetch" href="//connect.facebook.net/" />
 
 <!--Multi language-->
 <link rel="alternate" href="<?php echo $protocols.'://'.$domainTLD.'/'.$urls; ?>" hreflang="x-default" />
-<link rel="alternate" href="<?php echo $translatef_fr; ?>" hreflang="fr"/>
-<link rel="alternate" href="<?php echo $translatef_en; ?>" hreflang="en"/>
-<link rel="alternate" href="<?php echo $translatef_de; ?>" hreflang="de"/>
-<link rel="alternate" href="<?php echo $translatef_ru; ?>" hreflang="ru"/>
+<link rel="alternate" href="<?php echo $protocols.'://'.$domainTLD.'/'.$urls; ?>" hreflang="<?php echo $DefineTranslateLang; ?>"/>
 
 
 <!-- TrustBox script -->

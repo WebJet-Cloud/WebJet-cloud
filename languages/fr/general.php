@@ -7,6 +7,7 @@ $general = array(
 	'access' => 'Accéder',
 	'schedule' => array(
 		'tile' => 'Planning',
+		'h6' => 'Frais de déplacement (+/-) de €40HT comprise l\'Aller et Retour. Les Alentours de 10KM de la Zone proche du Paris 75017 est gratuit.',
 		'dates' => array(
 			'h1' => 'Dates',
 			'mon' => 'Lundi',
