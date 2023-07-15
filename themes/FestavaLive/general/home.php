@@ -362,7 +362,7 @@
                             
                             <div class="row">
                                 <div class="col-lg-6 col-6">
-                                <a class="link-fx-1 color-contrast-higher mt-4" href="<?php echo $protocols.'://'.$domainTLD.'/'.$email['ask-quotes']['url']['default']; ?>">
+                                <a class="link-fx-1 color-contrast-higher mt-4" href="https://customers.webjet.cloud/demander-un-devis/">
                                     <span><?php echo $email['ask-quotes']['title']; ?></span>
                                     <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
                                         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
@@ -409,7 +409,7 @@
                                 <li class="pricing-list-item"><?php echo $services['seo']['title']; ?></li>
                             </ul>
 
-                            <a class="link-fx-1 color-contrast-higher mt-4" href="<?php echo $protocols.'://'.$domainTLD.'/'.$email['ask-quotes']['url']['default']; ?>">
+                            <a class="link-fx-1 color-contrast-higher mt-4" href="https://customers.webjet.cloud/demander-un-devis/">
                                 <span><?php echo $email['ask-quotes']['title']; ?></span>
                                 <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
                                     <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
