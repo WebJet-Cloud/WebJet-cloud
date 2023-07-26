@@ -13,10 +13,6 @@ $seo = array(
 	'quantcast' => array(
 		'key' => '' /*gH0YrwXWXWWS3*/
 	),
-	'hcaptcha' => array(
-		'public-key' => '746e40aa-2cc5-4112-abc3-be5458139d27', /* Key public*/
-		'private-key' => 'daa1f01e-caf1-4c49-b36c-894dbfc82622' /* Key private*/
-	),
 	'brave' => array(
 		'token' => ''
 	),

@@ -1,6 +1,6 @@
 # PHP Sitemap Generator
 
-[![Build Status](https://travis-ci.org/icamys/php-sitemap-generator.svg?branch=master)](https://travis-ci.org/icamys/php-sitemap-generator)
+![Testing status](https://github.com/icamys/php-sitemap-generator/actions/workflows/run-tests.yml/badge.svg)
 [![codecov.io](https://codecov.io/github/icamys/php-sitemap-generator/coverage.svg?branch=master)](https://codecov.io/github/icamys/php-sitemap-generator?branch=master)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.3%20%7C%7C%20%3E%3D%208.0-8892BF.svg)](https://php.net/)
 [![Latest Stable Version](https://poser.pugx.org/icamys/php-sitemap-generator/v/stable.png)](https://packagist.org/packages/icamys/php-sitemap-generator)
@@ -13,6 +13,7 @@ Features:
 * Supports alternative links for multi-language pages (see [google documentation](https://webmasters.googleblog.com/2012/05/multilingual-and-multinational-site.html))
 * Supports video and image sitemap generation  
 * Low memory usage for any amount of URLs
+* Supports sitemap stylesheets
 
 Installation with Composer:
 
@@ -69,6 +70,10 @@ $alternates = [
 // The file format is 'sm-{index}-{timestamp}.xml'
 $generator->addURL('/path/to/page/', new DateTime(), 'always', 0.5, $alternates);
 
+// Optional: add sitemap stylesheet. Note that you need to create
+// the file 'sitemap.xsl' beforehand on your own.
+$generator->setSitemapStylesheet('sitemap.xsl');
+
 // Flush all stored urls from memory to the disk and close all necessary tags.
 $generator->flush();
 
@@ -78,7 +83,7 @@ $generator->finalize();
 // Update robots.txt file in output directory or create a new one
 $generator->updateRobots();
 
-// Submit your sitemaps to Google, Yahoo, Bing and Ask.com
+// Submit your sitemaps to Google and Yandex.
 $generator->submitSitemap();
 ```
 

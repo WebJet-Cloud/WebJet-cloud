@@ -65,6 +65,11 @@ class SitemapGenerator
      */
     private $sitemapIndexFileName = "sitemap-index.xml";
     /**
+     * Sitemap Stylesheet link.
+     * @var string
+     */
+    private $sitemapStylesheetLink = "";
+    /**
      * Quantity of URLs per single sitemap file.
      * If Your links are very long, sitemap file can be bigger than 10MB,
      * in this case use smaller value.
@@ -101,7 +106,7 @@ class SitemapGenerator
      * @var string
      * @access private
      */
-    private $classVersion = "4.4.1";
+    private $classVersion = "4.6.0";
     /**
      * Search engines URLs
      * @var array of strings
@@ -109,8 +114,6 @@ class SitemapGenerator
      */
     private $searchEngines = [
         "http://www.google.com/ping?sitemap=",
-        "http://submissions.ask.com/ping?sitemap=",
-        "http://www.bing.com/ping?sitemap=",
         "http://www.webmaster.yandex.ru/ping?sitemap=",
     ];
     /**
@@ -262,6 +265,19 @@ class SitemapGenerator
     }
 
     /**
+     * @param string $path
+     * @return SitemapGenerator
+     */
+    public function setSitemapStylesheet(string $path): SitemapGenerator
+    {
+        if (strlen($path) === 0) {
+            throw new InvalidArgumentException('sitemap stylesheet path should not be empty');
+        }
+        $this->sitemapStylesheetLink = $path;
+        return $this;
+    }
+
+    /**
      * @param string $filename
      * @return $this
      */
@@ -397,9 +413,13 @@ class SitemapGenerator
         return $this;
     }
 
-    private function writeSitemapStart()
+    protected function writeSitemapStart(): void
     {
         $this->xmlWriter->startDocument("1.0", "UTF-8");
+        if ($this->sitemapStylesheetLink != "") {
+            $this->xmlWriter->writePi('xml-stylesheet',
+                sprintf('type="text/xsl" href="%s"', $this->sitemapStylesheetLink));
+        }
         $this->xmlWriter->writeComment(sprintf('generator-class="%s"', get_class($this)));
         $this->xmlWriter->writeComment(sprintf('generator-version="%s"', $this->classVersion));
         $this->xmlWriter->writeComment(sprintf('generated-on="%s"', date('c')));
@@ -569,7 +589,7 @@ class SitemapGenerator
         );
     }
 
-    private function writeSitemapIndexStart()
+    protected function writeSitemapIndexStart()
     {
         $this->xmlWriter->startDocument("1.0", "UTF-8");
         $this->xmlWriter->writeComment(sprintf('generator-class="%s"', get_class($this)));
@@ -605,7 +625,7 @@ class SitemapGenerator
 
     /**
      * Will inform search engines about newly created sitemaps.
-     * Google, Ask, Bing will be notified.
+     * Google and Yandex will be notified.
      * @param string $yahooAppId Your site Yahoo appid. This is a deprecated parameter and will be removed in future versions.
      * @return array of messages and http codes from each search engine
      * @access public

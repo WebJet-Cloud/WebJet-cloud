@@ -1,7 +1,7 @@
 {
     "name": "webjet-cloud/webjet-cloud",
     "type": "project",
-    "version": "2.2.3",
+    "version": "3.0.2",
     "description": "WebJet | No DB requirement",
     "keywords": [
 		"website project", 
@@ -143,7 +143,7 @@
         "giggsey/libphonenumber-for-php": "^8.13",
         "icamys/php-sitemap-generator": "^4.4",
         "joomla/utilities": "~2.0",
-		"google/recaptcha": "^1.2",
+		"google/recaptcha": "^1.3",
         "visualappeal/php-ssllabs-api": "^1.0",
         "giggsey/locale": "^2.4",
         "matthiasmullie/minify": "^1.3",

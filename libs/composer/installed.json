@@ -39,17 +39,17 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.13.13",
-            "version_normalized": "8.13.13.0",
+            "version": "8.13.17",
+            "version_normalized": "8.13.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "a8996558d694b1437678d27de80e37620367b8de"
+                "reference": "dee92bfa0782fd5899fe6b295dea40cdb0607476"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/a8996558d694b1437678d27de80e37620367b8de",
-                "reference": "a8996558d694b1437678d27de80e37620367b8de",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/dee92bfa0782fd5899fe6b295dea40cdb0607476",
+                "reference": "dee92bfa0782fd5899fe6b295dea40cdb0607476",
                 "shasum": ""
             },
             "require": {
@@ -66,7 +66,7 @@
                 "symfony/console": "^2.8|^3.0|^v4.4|^v5.2",
                 "symfony/phpunit-bridge": "^4.2 || ^5"
             },
-            "time": "2023-06-05T07:39:05+00:00",
+            "time": "2023-07-20T10:32:50+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -226,17 +226,17 @@
         },
         {
             "name": "icamys/php-sitemap-generator",
-            "version": "4.4.1",
-            "version_normalized": "4.4.1.0",
+            "version": "4.6.0",
+            "version_normalized": "4.6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/icamys/php-sitemap-generator.git",
-                "reference": "a43e954b0c5a4fa47f4aac7a7c0ca46c2f1c2c24"
+                "reference": "a0f436b5984fa5148f781c9d9d8cd5d0b9a88486"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/icamys/php-sitemap-generator/zipball/a43e954b0c5a4fa47f4aac7a7c0ca46c2f1c2c24",
-                "reference": "a43e954b0c5a4fa47f4aac7a7c0ca46c2f1c2c24",
+                "url": "https://api.github.com/repos/icamys/php-sitemap-generator/zipball/a0f436b5984fa5148f781c9d9d8cd5d0b9a88486",
+                "reference": "a0f436b5984fa5148f781c9d9d8cd5d0b9a88486",
                 "shasum": ""
             },
             "require": {
@@ -252,9 +252,9 @@
             },
             "require-dev": {
                 "php-mock/php-mock-phpunit": "^2.6.0",
-                "phpunit/phpunit": "^9.3.8"
+                "phpunit/phpunit": "^9.5.19"
             },
-            "time": "2022-04-06T22:39:30+00:00",
+            "time": "2023-06-26T14:08:43+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -285,7 +285,7 @@
             ],
             "support": {
                 "issues": "https://github.com/icamys/php-sitemap-generator/issues",
-                "source": "https://github.com/icamys/php-sitemap-generator/tree/4.4.1"
+                "source": "https://github.com/icamys/php-sitemap-generator/tree/4.6.0"
             },
             "install-path": "../icamys/php-sitemap-generator"
         },

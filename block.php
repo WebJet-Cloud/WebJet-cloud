@@ -1,6 +1,6 @@
 <?php
 # Check out if have error and fix
-#error_reporting(E_ALL);
+error_reporting(E_ALL);
 @ini_set("display_errors", 1);
 
 require 'libs/autoload.php';

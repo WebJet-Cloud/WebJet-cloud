@@ -30,7 +30,7 @@ $sites = array(
 	'head' => array(
 		'robots' => 'index, follow' /*Only show on template header.php | robots meta*/
 	),
-	'default-timezone' => 'Etc/UTC', /*Docs PHP variable date_default_timezone_set() */
+	'default-timezone' => 'Europe/Paris', /*Docs PHP variable date_default_timezone_set() */
 	/*Pricing*/
 	'tarifs' => array(
 		'money' => '€',

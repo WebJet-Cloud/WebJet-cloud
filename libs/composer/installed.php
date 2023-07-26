@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'webjet-cloud/webjet-cloud',
-        'pretty_version' => '2.2.3',
-        'version' => '2.2.3.0',
+        'pretty_version' => '3.0.2',
+        'version' => '3.0.2.0',
         'reference' => NULL,
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'giggsey/libphonenumber-for-php' => array(
-            'pretty_version' => '8.13.13',
-            'version' => '8.13.13.0',
-            'reference' => 'a8996558d694b1437678d27de80e37620367b8de',
+            'pretty_version' => '8.13.17',
+            'version' => '8.13.17.0',
+            'reference' => 'dee92bfa0782fd5899fe6b295dea40cdb0607476',
             'type' => 'library',
             'install_path' => __DIR__ . '/../giggsey/libphonenumber-for-php',
             'aliases' => array(),
@@ -47,9 +47,9 @@
             'dev_requirement' => false,
         ),
         'icamys/php-sitemap-generator' => array(
-            'pretty_version' => '4.4.1',
-            'version' => '4.4.1.0',
-            'reference' => 'a43e954b0c5a4fa47f4aac7a7c0ca46c2f1c2c24',
+            'pretty_version' => '4.6.0',
+            'version' => '4.6.0.0',
+            'reference' => 'a0f436b5984fa5148f781c9d9d8cd5d0b9a88486',
             'type' => 'library',
             'install_path' => __DIR__ . '/../icamys/php-sitemap-generator',
             'aliases' => array(),
@@ -128,8 +128,8 @@
             'dev_requirement' => false,
         ),
         'webjet-cloud/webjet-cloud' => array(
-            'pretty_version' => '2.2.3',
-            'version' => '2.2.3.0',
+            'pretty_version' => '3.0.2',
+            'version' => '3.0.2.0',
             'reference' => NULL,
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',

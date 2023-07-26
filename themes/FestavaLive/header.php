@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="<?php echo $DefineTranslateLang; ?>">
 <head>
-<lien rel="dns-prefetch" href="//<?php echo $CDNdomainURL; ?>/" />
+<lien rel="dns-prefetch" href="//<?php echo $CDNdomainTLD; ?>/" />
     <lien rel="dns-prefetch" href="//googletagmanager.com/" />
     <lien rel="dns-prefetch" href="//cdnjs.cloudflare.com/" />
     <lien rel="dns-prefetch" href="//pagead2.googlesyndication.com/" />

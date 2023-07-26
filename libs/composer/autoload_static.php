@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit771cf21f1aca6c1724d2663ca565d1eb
+class ComposerStaticInitff6b0e7fa9c728d439f43db177e51885
 {
     public static $files = array (
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
@@ -185,7 +185,6 @@ class ComposerStaticInit771cf21f1aca6c1724d2663ca565d1eb
         'libphonenumber\\AsYouTypeFormatter' => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src/AsYouTypeFormatter.php',
         'libphonenumber\\CountryCodeSource' => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src/CountryCodeSource.php',
         'libphonenumber\\CountryCodeToRegionCodeMap' => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src/CountryCodeToRegionCodeMap.php',
-        'libphonenumber\\CountryCodeToRegionCodeMapForTesting' => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src/CountryCodeToRegionCodeMapForTesting.php',
         'libphonenumber\\DefaultMetadataLoader' => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src/DefaultMetadataLoader.php',
         'libphonenumber\\Leniency' => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src/Leniency.php',
         'libphonenumber\\Leniency\\AbstractLeniency' => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src/Leniency/AbstractLeniency.php',
@@ -227,10 +226,10 @@ class ComposerStaticInit771cf21f1aca6c1724d2663ca565d1eb
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit771cf21f1aca6c1724d2663ca565d1eb::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit771cf21f1aca6c1724d2663ca565d1eb::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit771cf21f1aca6c1724d2663ca565d1eb::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit771cf21f1aca6c1724d2663ca565d1eb::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitff6b0e7fa9c728d439f43db177e51885::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitff6b0e7fa9c728d439f43db177e51885::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitff6b0e7fa9c728d439f43db177e51885::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitff6b0e7fa9c728d439f43db177e51885::$classMap;
 
         }, null, ClassLoader::class);
     }
