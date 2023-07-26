@@ -58,23 +58,15 @@
                     </li>
 
                     <li class="site-footer-link-item">
-                        <a class="site-footer-link" href="<?php echo $protocols.'://'; ?>1troc1.site">1 TroC 1</a>
+                        <a class="site-footer-link" href="<?php echo $protocols.'://'; ?>zip.bike">ZipBikes</a>
                     </li>
 
                     <li class="site-footer-link-item">
-                        <a class="site-footer-link" href="<?php echo $protocols.'://'; ?>1Euro1.Agency">1 EuRo 1</a>
-                    </li>
-
-                    <li class="site-footer-link-item">
-                        <a class="site-footer-link" href="<?php echo $protocols.'://'; ?>Boost-Vos-Achat.fr">Boost Vos Achat</a>
+                        <a class="site-footer-link" href="<?php echo $protocols.'://'; ?>SpotRentZ.com">Spot RentZ</a>
                     </li>
 
                     <li class="site-footer-link-item">
                         <a class="site-footer-link" href="<?php echo $protocols.'://'; ?>Alexonb.Studio">AlexonbStudio</a>
-                    </li>
-
-                    <li class="site-footer-link-item">
-                        <a class="site-footer-link" href="<?php echo $protocols.'://'; ?>The-familly.com">The Familly</a>
                     </li>
 
                     <li class="site-footer-link-item">
