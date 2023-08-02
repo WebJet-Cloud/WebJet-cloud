@@ -2,29 +2,29 @@
 # $business['local']['address']
 $business = array(
 	'local' => array(
-		'born' => '16/05/2023', /*exemple Day/Month/Year number only indicate age */
-		'name' => 'WebJetClouds',/*IF empty variable output not show public/not use*/
-		'siret' => '952 460 152',
+		'born' => '', /*exemple Day/Month/Year number only indicate age */
+		'name' => '',/*IF empty variable output not show public/not use*/
+		'siret' => '',
 		'tva' => '', //TVA NUM
-		'vat' => 'FR 589 5246 0152',
-		'rcs-number' => '952 460 152 RCS Paris',
-		'salp' => '633221',//services à la personne N° agréer
-		'capital-euro' => '€100',
-		'address' => '6 Rue d\'Armaillé,',
-		'postal' => '75017',
-		'city' => 'Paris',
-		'region' => 'Île-De-France',
-		'contry' => 'France',
-		'status' => 'SASU', /*Special status on france SASU, SARL, SAS, etc...*/
+		'vat' => '',
+		'rcs-number' => '',
+		'salp' => '',//services à la personne N° agréer
+		'capital-euro' => '',
+		'address' => '',
+		'postal' => '',
+		'city' => '',
+		'region' => '',
+		'contry' => '',
+		'status' => '', /*Special status on france SASU, SARL, SAS, etc...*/
 		'geo' => array(
 		/*Pratical for use Google map JS/Mapbox or other*/
-			'latitude' => '48.878089904785156',
-			'longitude' => '2.291578531265259'
+			'latitude' => '',
+			'longitude' => ''
 		),
 		'mobile' => array(
 			'code' => '+33',
 			'normal' => '0',
-			'number' => '756934140',
+			'number' => '',
 		),
 		'phone' => array(
 			'code' => '+33',
@@ -37,12 +37,12 @@ $business = array(
 			'number' => '',
 		),
 		'mail' => array(
-			'contact' => 'services',
-			'support' => 'services',
-			'commercial' => 'services',
-			'sponsor' => 'services',
-			'partner' => 'services',
-			'business' => 'services'
+			'contact' => '',
+			'support' => '',
+			'commercial' => '',
+			'sponsor' => '',
+			'partner' => '',
+			'business' => ''
 		),
 		'team' => array(
 		/*exemple*/

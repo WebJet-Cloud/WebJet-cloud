@@ -1,8 +1,8 @@
 <?php
-#$marketing['33Across']['jey']
+
 $marketing = array(
 	'google' => array(
-		'adsense' => 'pub-2369775505625185'
+		'adsense' => ''
 	),
 	'bing' => array(
 		'key' => ''

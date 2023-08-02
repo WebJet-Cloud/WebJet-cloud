@@ -1,11 +1,10 @@
 <?php
-# exemple $social['pinterest']['name'];
 $social_http_sites = isset($_SERVER["HTTPS"]) ? 'https' : 'http'; 
 
 $social = array(
 	'facebook' => array(
 		'sites' => 'facebook',
-		'name' => 'webjetclouds',
+		'name' => '',
 		'url' => $social_http_sites.'://facebook.com/webjet.cloud',
 		'admins' => '',
 		'profile-id' => '',
@@ -14,8 +13,8 @@ $social = array(
 	),
 	'twitter' => array(
 		'sites' => 'twitter',
-		'name' => 'webjetclouds',
-		'url' => $social_http_sites.'://twitter.com/webjetclouds'
+		'name' => '',
+		'url' => $social_http_sites.'://twitter.com/'
 	),
 	'tiktok' => array(
 		'sites' => 'tiktok',
@@ -34,8 +33,8 @@ $social = array(
 	),
 	'instagram' => array(
 		'sites' => 'instagram',
-		'name' => 'webjetclouds',
-		'url' => $social_http_sites.'://instagram.com/webjetclouds'
+		'name' => '',
+		'url' => $social_http_sites.'://instagram.com/'
 	),
 	'soundcloud' => array(
 		'sites' => 'soundcloud',
@@ -52,8 +51,8 @@ $social = array(
 	),
 	'youtube' => array(
 		'sites' => 'youtube',
-		'name' => 'WebJetClouds',
-		'url' => $social_http_sites.'://www.youtube.com/channel/UCb_yP8M244gxQG1uen6dRgQ'
+		'name' => '',
+		'url' => $social_http_sites.'://www.youtube.com/@'
 	),
 	'twitch' => array(
 		'sites' => 'twitch',
@@ -62,9 +61,9 @@ $social = array(
 	),
 	'github' => array(
 		'sites' => 'github',
-		'name' => 'WebJet-Cloud',
-		'url' => $social_http_sites.'://github.com/WebJet-Cloud/',
-		'sponsor' => $social_http_sites.'://github.com/sponsors/alexonbstudio'
+		'name' => '',
+		'url' => $social_http_sites.'://github.com/',
+		'sponsor' => $social_http_sites.'://github.com/sponsors/'
 	),
 	'discord' => array(
 		'sites' => 'discord',
@@ -91,8 +90,8 @@ $social = array(
 	),
 	'pinterest' => array(
 		'sites' => 'pinterest',
-		'name' => 'webjetclouds',
-		'url' => $social_http_sites.'://www.pinterest.com/webjetclouds'
+		'name' => '',
+		'url' => $social_http_sites.'://www.pinterest.com/'
 	),
 	'redbubble' => array(
 		'sites' => 'redbubble',
@@ -108,11 +107,6 @@ $social = array(
 		'sites' => 'teespring',
 		'name' => '',
 		'url' => ''
-	),
-	'shop' => array(
-		'sites' => 'shop',
-		'name' => 'webjet',
-		'url' => $social_http_sites.'://lives.webjet.cloud/boutique/'
 	),
 	'coinbase' => array(
 		'sites' => 'coinbase',
@@ -161,8 +155,8 @@ $social = array(
 	),
 	'slack' => array(
 		'sites' => 'slack',
-		'name' => 'webjetclouds',
-		'url' => $social_http_sites.'://webjetclouds.slack.com'
+		'name' => '',
+		'url' => $social_http_sites.'://.slack.com'
 	),
 	'telegram' => array(
 		'sites' => 'telegram',

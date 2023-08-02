@@ -46,58 +46,12 @@ $credits = array(
 		)
 	),
 	'designer' => array(
-		'alexonbstudio' => array(
-			'name' => 'AlexonbStudio',
-			'url' => 'alexonb.studio'
-		),
-		'flaticon' => array(
-			'name' => 'Flaticon',
-			'url' => 'flaticon.com'
-		)
 	),
 	'webdesigner' => array(
-		'startbootstrap' => array(
-			'name' => 'startbootstrap',
-			'url' => 'startbootstrap.com'
-		),
-		'bootstrapmade' => array(
-			'name' => 'bootstrapmade',
-			'url' => 'bootstrapmade.com'
-		)
 	),
 	'photographer' => array(
-		'other' => array(
-			'name' => 'AlexonbStudio',
-			'url' => 'alexonb.studio'
-		)
 	),
 	'images' => array(
-		'alexonbstudio' => array(
-			'name' => 'AlexonbStudio',
-			'url' => 'alexonb.studio'
-		),
-		'pexels' => array(
-			'name' => 'Pexels',
-			'url' => 'pexels.com'
-		),
-		'unsplash' => array(
-			'name' => 'Unsplash',
-			'url' => 'unsplash.com'
-		),
-		'wikimedia' => array(
-			'name' => 'Wikimedia',
-			'url' => 'wikimedia.org'
-		),
-		'pixabay' => array(
-			'name' => 'Pixabay',
-			'url' => 'pixabay.com'
-		)
-	),
-	'marketing' => array(
-		'alexonbstudio' => array(
-			'name' => 'AlexonbStudio',
-			'url' => 'alexonb.studio'
-		)
 	),
 	'webmaster' => array(
 		'alexonbstudio' => array(
@@ -105,35 +59,13 @@ $credits = array(
 			'url' => 'alexonb.studio'
 		)	
 	),
-	'video' => array(
-		'alexonbstudio' => array(
-			'name' => 'AlexonbStudio',
-			'url' => 'alexonb.studio'
-		),
-		'pexels' => array(
-			'name' => 'Pexels',
-			'url' => 'pexels.com'
-		),
-		'unsplash' => array(
-			'name' => 'Unsplash',
-			'url' => 'unsplash.com'
-		),
-		'wikimedia' => array(
-			'name' => 'Wikimedia',
-			'url' => 'wikimedia.org'
-		),
-		'pixabay' => array(
-			'name' => 'Pixabay',
-			'url' => 'pixabay.com'
-		)
-	),
 	'version' => array(
-		'stable' => '2.2.3',
+		'stable' => '3.0.3',
 		'rc' => '1.9',
 		'beta' => '1.3',
 		'alpha' => '0.2',
 		'actual' => 'Stable',
-		'date' => '2022/11/26'
+		'date' => '2023/08/02'
 	)
 );
 

@@ -5,9 +5,9 @@ $apiexternal = array(
 	/*CAPTCHA*/
 	'captcha' => array(
 		'google' => array(
-			'secret' => '6Lc0rwAmAAAAADBJEmqkGsBAlYhTnXs0Elh1JT40',
+			'secret' => '',
 			'private' => '',
-			'public' => '6Lc0rwAmAAAAAH4ELs7_q_wE16aqV_1E8m9-tXlW'
+			'public' => ''
 		),
 		'hcaptcha' => array(
 			'secret' => '', # Secret key

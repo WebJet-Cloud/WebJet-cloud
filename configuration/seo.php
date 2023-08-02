@@ -5,7 +5,7 @@ $seo = array(
 		'key' => '' 
 	),
 	'tidio' => array(
-		'key' => 'hqtz8xoeoocivqmra3si7m6feopljlyb' 
+		'key' => '' 
 	),
 	'fb-pexel' => array(
 		'key' => '' 
@@ -17,8 +17,8 @@ $seo = array(
 		'token' => ''
 	),
 	'google' => array(
-		'analystics' => 'UA-249943113-1',
-		'tag-manager' => 'GTM-N4WXMFG'
+		'analystics' => '',
+		'tag-manager' => ''
 	),
 	'shareaholic' => array(
 		'key' => ''

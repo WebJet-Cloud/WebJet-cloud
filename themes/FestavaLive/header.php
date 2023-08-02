@@ -1,4 +1,4 @@
-<?php ob_start("native_html_output"); ?>
+<?php #  ob_start("native_html_output");  /** Minify HTML start **/ ?>
 <!doctype html>
 <html lang="<?php echo $DefineTranslateLang; ?>">
 <head>

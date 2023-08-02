@@ -1,14 +1,13 @@
 <?php
-# $private['name']['code'].' '.$private['phone']['number']
 
 $private = array(
-	'born' => '24/04/1991', /*exemple Day/Month/Year number only indicate age */
-	'name' => 'Alexon Balangue',/*IF empty variable output not show public/not use*/
-	'address' => 'adresse personnel non partager',
-	'postal' => '75017',
-	'city' => 'Paris',
-	'region' => 'Paris',
-	'contry' => 'France',
+	'born' => '', /*exemple Day/Month/Year number only indicate age */
+	'name' => '',/*IF empty variable output not show public/not use*/
+	'address' => '',
+	'postal' => '',
+	'city' => '',
+	'region' => '',
+	'contry' => '',
 	'phone' => array(
 		'code' => '+33',
 		'normal' => '0',
@@ -25,10 +24,10 @@ $private = array(
 		'number' => '',
 	),
 	'mail' => array(
-		'public' => 'services', /*IF yes domain name or not indicate use mail private -> @ -> external = gamil.com*/
-		'private' => 'services', /* *@gmail.com down is gmail.com*/
+		'public' => '', /*IF yes domain name or not indicate use mail private -> @ -> external = gamil.com*/
+		'private' => '', /* *@gmail.com down is gmail.com*/
 		'@' => array(
-			'external' => 'webjet.cloud'
+			'external' => ''
 		)
 	)
 );

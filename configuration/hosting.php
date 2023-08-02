@@ -3,10 +3,6 @@
 # $hosting['server']['internal']['site']
 # $hosting['dl']['certifier-recipise']['site']
 $hosting = array(
-	'dl' => array(
-		'prest-contract' => 'dl/remplir-clients-vendeur-prestataire-contract-devis-adapter.pdf',
-		'certifier-recipise' => 'dl/WEBJETCLOUDS-certificat-sap.pdf'
-	),
 	'server' => array(
 		'internal' => array(
 			'name' => 'PlanetHoster',
