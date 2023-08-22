@@ -7,7 +7,7 @@ $email = array(
 		'keyword' => '',
 		'url' => array(
 			'default' => '',
-			'fr' => ''
+			'ru' => ''
 		),
 		'content' => array(
 

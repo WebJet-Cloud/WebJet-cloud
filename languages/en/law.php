@@ -7,7 +7,7 @@ $law = array(
 		'keyword' => '',
 		'url' => array(
 			'default' => '',
-			'fr' => ''
+			'en' => ''
 		),
 		'content' => array(
 
@@ -24,7 +24,7 @@ $law = array(
 		'keyword' => '',
 		'url' => array(
 			'default' => '',
-			'fr' => ''
+			'en' => ''
 		),
 		'content' => array(
 

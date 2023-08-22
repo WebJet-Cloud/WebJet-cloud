@@ -7,7 +7,7 @@ $block = array(
 		'keyword' => '',
 		'url' => array(
 			'default' => '',
-			'fr' => ''
+			'ru' => ''
 		),
 		'content' => array(
 
@@ -24,7 +24,7 @@ $block = array(
 		'keyword' => '',
 		'url' => array(
 			'default' => '',
-			'fr' => ''
+			'ru' => ''
 		),
 		'content' => array(
 

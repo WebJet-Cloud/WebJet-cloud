@@ -7,8 +7,8 @@ exemple $sites['template'];
 
 */
 $sites = array(
-	'name' => 'Business name',
-	'domain' => 'webjetclouds.local', /*domain: exemple.tld*/
+	'name' => 'The Familly',
+	'domain' => 'tfcom.local:8890', /*domain: exemple.tld*/
 	'acceptlang' => 'fr',
 	'auto' => array(
 		'domain' => preg_replace('/www./i', '', $_SERVER['SERVER_NAME']) /*Automate domain.tld no put*/
@@ -16,9 +16,9 @@ $sites = array(
 	'email' => array(
 		'receive' => 'text' /* [text or icon] (icon: need to use template mailing - contact form you'll receive */
 	),
-	'sub-domain' => 'webjetclouds.local',  /*domain: cdexemple.tld*/
+	'sub-domain' => 'tfcom.local:8890',  /*domain: cdexemple.tld*/
 	'protocol' => isset($_SERVER["HTTPS"]) ? 'https' : 'http',
-	'template' => 'FestavaLive',
+	'template' => 'default',
 	'create' => array(),
 	'update' => array(
 		'rdf' => date('Y-m-d')

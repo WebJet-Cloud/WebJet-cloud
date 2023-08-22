@@ -1,7 +1,7 @@
 <?php
 # Check out if have error and fix
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
+#error_reporting(E_ALL);
+#ini_set("display_errors", 1);
 
 require 'libs/autoload.php';
 #require libs/custom/
@@ -57,15 +57,10 @@ if (file_exists($lang_finales)) {
 
 #Translate
 $general = json_decode($JE_translate_general, true);
-$partner = json_decode($JE_translate_partner, true);
-$sponsor = json_decode($JE_translate_sponsor, true);
 $law = json_decode($JE_translate_law, true);
 $email = json_decode($JE_translate_email, true);
 $block = json_decode($JE_translate_block, true);
-$sitemap = json_decode($JE_translate_sitemap, true);
 $phone_results = json_decode($JE_translate_phone_results, true);
-$teams = json_decode($JE_translate_teams, true);
-$services = json_decode($JE_translate_services, true);
 
 #Email contact form PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
@@ -87,6 +82,7 @@ $JE_DSslLabsOut = $api->analyze($protocols.'://'.$domainTLD);
 
 # captcha of google
 use ReCaptcha\ReCaptcha;
+
 
 
 #frontend
@@ -135,6 +131,8 @@ if(isset($_GET[$DefineTranslateLang])){
 		$urls = $email['index']['url']['default'];
 		$imgs = $email['index']['sitemap']['images'];
 		$vdos = $email['index']['sitemap']['video'];
+
+
 
 
 		if(!empty($DefineTranslateLang)){ 
@@ -219,6 +217,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]);
     }
 }		
+	
 
 		include('themes/'.$sites['template'].'/header.php');
 		include_once('themes/'.$sites['template'].'/email/full.php');
@@ -281,82 +280,157 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	
 		
 
-		
 
-
-// Vérifier si le formulaire a été soumis
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Récupérer les données du formulaire
-    # anti spam with HCAPTCHA
-    #$Gresponse = $GRecaptcha->setExpectedHostname($domainTLD)->verify($GRecaptchaResponse, IpHelper::getIp());
-    $hcaptcha_VResponse = file_get_contents('https://hcaptcha.com/siteverify?secret='.$apiexternal['captcha']['hcaptcha']['secret'].'&response='.$_POST['h-captcha-response'].'&remoteip='.IpHelper::getIp());
-    $hcaptcha_RData = json_decode($hcaptcha_VResponse);
-
-    // Vérifier la réponse reCAPTCHA
-    $recaptcha = new ReCaptcha($apiexternal['captcha']['google']['secret']);
-    $recaptchaResult = $recaptcha->verify($_POST['g-recaptcha-response']);
-
-    if ($recaptchaResult->isSuccess() OR $hcaptcha_RData->success) {
-  #  if($recaptchaResult->isScored() && $recaptchaResult->getScore() >= 0.5) {
-        // La vérification reCAPTCHA a réussi
-
-        // Vérifier le numéro de téléphone
-        $phoneNumberUtil = PhoneNumberUtil::getInstance();
-        try {
-            $phoneNumber = $phoneNumberUtil->parse($_POST['phone'], strtoupper($DefineTranslateLang));
-            if ($phoneNumberUtil->isValidNumber($phoneNumber) && $mail->validateAddress($_POST['email'])) {
-                date_default_timezone_set($sites['default-timezone']);
-                // Le numéro de téléphone est valide
-                // Vous pouvez effectuer d'autres actions ici, comme l'envoi d'un email ou l'enregistrement des données dans une base de données
-                /*
-                $mail->isSMTP();
-                $mail->Host = 'smtp.example.com';
-                $mail->SMTPAuth = true;
-                $mail->Username = 'votre_email@example.com';
-                $mail->Password = 'votre_mot_de_passe';
-                $mail->SMTPSecure = 'tls';
-                $mail->Port = 587;
-                */
-                $mail->setFrom($_POST['email'], $_POST['name']);
-               
+			if (array_key_exists('email', $_POST) && $mail->validateAddress($_POST['email'])) {
+				date_default_timezone_set($sites['default-timezone']);
+				
+				$mail->setFrom($_POST['email'], $_POST['name']);
+				
 				if(!empty($private['mail']['public'])){
 					$mail->addAddress($private['mail']['public'].'@'.$domainTLD, $domainTLD);
 				} else {
 					$mail->addAddress($private['mail']['private'].'@'.$private['mail']['@']['external'], $domainTLD);
-				} 
-                $mail->isHTML(true);
-                $mail->Subject = $_POST['subject'];
-                $mail->Body = '<strong>'.$email['index']['content']['default']['email'].':</strong> '.$_POST['email'].'<br />
-                <strong>'.$email['index']['content']['default']['name'].':</strong> '.$_POST['name'].'<br />
-                <strong>'.$email['index']['content']['default']['phone'].':</strong>' . $phoneNumber . '<br />
-                <strong>'.$email['index']['content']['default']['message'].':</strong> '.$_POST['message'];
+				}
 
-                if ($mail->send()) {
-                    echo 'Message envoyé avec succès';
-                    # header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['success']['url'][$DefineTranslateLang]);
-                } else {
-                    echo 'Erreur lors de l\'envoi du message';
-                    # header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]);
-                }
-            } else {
-                // Le numéro de téléphone n'est pas valide
-                // Vous pouvez afficher un message d'erreur à l'utilisateur ou effectuer d'autres actions nécessaires
-                # echo 'Le numéro de téléphone n\'est pas valide';
-                header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]);
-            }
-        } catch (\libphonenumber\NumberParseException $e) {
-            // Une exception s'est produite lors de l'analyse du numéro de téléphone
-            // Vous pouvez afficher un message d'erreur à l'utilisateur ou effectuer d'autres actions nécessaires
-            #echo 'Une exception s\'est produite lors de l\'analyse du numéro de téléphone';
-            header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]);
-        }
-    } else {
-        // La vérification reCAPTCHA a échoué
-        // Vous pouvez afficher un message d'erreur à l'utilisateur ou effectuer d'autres actions nécessaires
-        #echo 'La vérification reCAPTCHA a échoué';
-        header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]);
-    }
-}	
+				if(isset($_POST['phone-country-code']) && !empty($_POST['phone-country-code'])){
+					$PhoneCountryCodeArray = $_POST['phone-country-code'];
+					print_r($PhoneCountryCodeArray);
+						foreach($PhoneCountryCodeArray as $PhoneCountryCodeValue){
+								$PhoneCountryCode = $PhoneCountryCodeValue;
+					}
+				}
+				# Verify Number libphonenumber-for-php		
+				if(!empty($_POST['phone'])){
+					$phone = $PhoneNumberUtil->parse(substr(strip_tags($_POST['phone']), 0, 255), $PhoneCountryCode); # Default FR
+				} else {
+					$phone = $PhoneNumberUtil->parse('000000000', $PhoneCountryCode); # Default FR
+				}
+				if ($PhoneNumberUtil->isValidNumber($phone)){
+					$PhoneVerify = $phone_results['true'][$sites['email']['receive']];
+					$PhoneRegionCodeNumbers = $PhoneNumberUtil->getCountryCodeForRegion($PhoneCountryCode); # 33
+					$PhonecarrerNumbers = $PhoneNumberCarrierMapper->getNameForNumber($phone, $DefineTranslateLang);
+					$PhoneformatE164Numbers = $PhoneNumberUtil->format($phone, PhoneNumberFormat::E164);
+					$PhoneformatNATIONALNumbers = $PhoneNumberUtil->format($phone, PhoneNumberFormat::NATIONAL);
+					$PhoneformatINTERNATIONALNumbers = $PhoneNumberUtil->format($phone, PhoneNumberFormat::INTERNATIONAL);
+					$PhoneformatRFC3966Numbers = $PhoneNumberUtil->format($phone, PhoneNumberFormat::RFC3966);
+				} else {
+					$PhoneVerify = $phone_results['false'][$sites['email']['receive']];
+					$PhoneRegionCodeNumbers = $PhoneNumberUtil->getCountryCodeForRegion($PhoneCountryCode); # 33
+					$PhonecarrerNumbers = '';
+					$PhoneformatE164Numbers = '#';
+					$PhoneformatNATIONALNumbers = '000000000';
+					$PhoneformatINTERNATIONALNumbers = '000000000';
+					$PhoneformatRFC3966Numbers = '#';
+				}
+				
+				switch ($PhoneNumberUtil->getNumberType($phone)) {
+					case '0':
+						$PhoneGetType = $phone_results['switch']['FIXED-LINE'];
+					break;
+					case '1':
+						$PhoneGetType = $phone_results['switch']['MOBILE'];
+					break;
+					case '2':
+						$PhoneGetType = $phone_results['switch']['FIXED-LINE-OR-MOBILE'];
+					break;
+					case '3':
+						$PhoneGetType = $phone_results['switch']['TOLL-REE'];
+					break;
+					case '4':
+						$PhoneGetType = $phone_results['switch']['PREMIUM-RATE'];
+					break;
+					case '5':
+						$PhoneGetType = $phone_results['switch']['SHARED-COST'];
+					break;
+					case '6':
+						$PhoneGetType = $phone_results['switch']['VOIP'];
+					break;
+					case '7':
+						$PhoneGetType = $phone_results['switch']['PERSONAL-NUMBER'];
+					break;
+					case '8':
+						$PhoneGetType = $phone_results['switch']['PAGER'];
+					break;
+					case '9':
+						$PhoneGetType = $phone_results['switch']['UAN'];
+					break;
+					case '10':
+						$PhoneGetType = $phone_results['switch']['UNKNOWN'];
+					break;
+					case '27':
+						$PhoneGetType = $phone_results['switch']['EMERGENCY'];
+					break;
+					case '28':
+						$PhoneGetType = $phone_results['switch']['VOICEMAIL'];
+					break;
+					case '29':
+						$PhoneGetType = $phone_results['switch']['SHORT-CODE'];
+					break;
+					case '30':
+						$PhoneGetType = $phone_results['switch']['STANDARD-RATE'];
+					break;
+					default:
+						$PhoneGetType = $phone_results['switch']['UNKNOWN'];
+				}
+						
+				if ($mail->addReplyTo($_POST['email'], $_POST['name']) && isset($_POST['h-captcha-response']) && !empty($_POST['h-captcha-response'])) {
+					$mail->Subject = $_POST['subject'].' ('.$email['index']['title'].') - '.$domainTLD.'.';
+					$mail->isHTML(true);
+							/*
+							#Solution 1
+							ob_start("ob_html_compress");
+							include 'themes/email/backend.php';
+							$body = ob_get_clean();
+							$mail->msgHTML($body, dirname(__FILE__));
+							*/
+							#Solution 2
+							/*$email_vars_tpl = array(
+								'subject' => $_POST['subject'],
+								'email' => $_POST['email'],
+								'name' => $_POST['name'],
+								'phone' =>  '(Type:'.$PhoneGetType.'/'.$PhoneVerify.')='.$phone.' | +('.$PhoneRegionCodeNumbers.') <a href="'.$PhoneformatE164Numbers.'">'.$PhoneformatINTERNATIONALNumbers.'</a> <strong>(info: '.$PhonecarrerNumbers.')',
+								'message' => $_POST['message'],
+							);
+							$body_tpl = file_get_contents('themes/email/public.php');
+
+							if(isset($vars_tpl)){
+								foreach($email_vars_tpl as $code_tpl=>$value){
+									$body_tpl = str_replace('{'.strtoupper($code_tpl).'}', $value, $body_tpl);
+								}
+							}
+							$mail->msgHTML($body_tpl, dirname(__FILE__));
+							#Solution 3
+							#$mail->msgHTML(file_get_contents('contents.html'), __DIR__);*/
+							#Solution 0 = basic
+							$mail->Body = '
+							<h2>'.$email['index']['title'].': '.$domainTLD.'</h2>
+							<h4>'.$email['index']['content']['default']['subject'].' - '.$_POST['subject'].'</h4>
+							<strong>'.$email['index']['content']['default']['email'].':</strong> '.$_POST['email'].'<br />
+							<strong>'.$email['index']['content']['default']['name'].':</strong> '.$_POST['name'].'<br />
+							<strong>'.$email['index']['content']['default']['phone'].':</strong> (Type:'.$PhoneGetType.'/'.$PhoneVerify.')='.$phone.' | +('.$PhoneRegionCodeNumbers.') <a href="'.$PhoneformatE164Numbers.'">'.$PhoneformatINTERNATIONALNumbers.'</a> <strong>(info: '.$PhonecarrerNumbers.')</strong><br /><br />
+							<strong>'.$email['index']['content']['default']['message'].':</strong> '.$_POST['message'];
+					
+					//$Gresponse = $GRecaptcha->setExpectedHostname($domainTLD)->verify($GRecaptchaResponse, IpHelper::getIp());
+
+					# anti spam with HCAPTCHA
+					$hcaptcha_VResponse = file_get_contents('https://hcaptcha.com/siteverify?secret='.$apiexternal['captcha']['hcaptcha']['secret'].'&response='.$_POST['h-captcha-response'].'&remoteip='.IpHelper::getIp());
+					$hcaptcha_RData = json_decode($hcaptcha_VResponse);
+					
+					
+					if (!$mail->send() AND $hcaptcha_RData->success) {
+					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]);
+					   exit();
+					} else {
+					   header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['success']['url'][$DefineTranslateLang]);
+					   exit();
+					}
+				} else {
+					header('Location: '.$protocols.'://'.$domainTLD.'/'.$DefineTranslateLang.'/'.$block['error']['url'][$DefineTranslateLang]);
+					exit();
+
+				}
+			}		
+
 
 		include('themes/'.$sites['template'].'/header.php');
 		include_once('themes/'.$sites['template'].'/email/full.php');

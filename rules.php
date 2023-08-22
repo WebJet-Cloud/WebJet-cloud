@@ -16,10 +16,8 @@ $translate = json_decode($JE_translate, true);
 $credits = json_decode($JE_credits, true);
 $private = json_decode($JE_private, true);
 $seo = json_decode($JE_seo, true);
-$partner = json_decode($JE_partner, true);
 $social = json_decode($JE_social, true);
 $hosting = json_decode($JE_hosting, true);
-$marketing = json_decode($JE_marketing, true);
 $apiexternal = json_decode($JE_apiexternal, true);
 $images = json_decode($JE_images, true);
 $business = json_decode($JE_business, true);
@@ -53,20 +51,14 @@ if (file_exists($lang_finales)) {
 	foreach (glob('languages/'.$translate['manual']['frontend']['french'].'/*.php') as $GlobLangManual) { include_once $GlobLangManual; }
 	$DefineMajLang = strtoupper($translate['manual']['frontend']['french']);
 	$DefineTranslateLang = $translate['manual']['frontend']['french'];
-} 
+}
 
 #Translate
 $general = json_decode($JE_translate_general, true);
-$partner = json_decode($JE_translate_partner, true);
-$sponsor = json_decode($JE_translate_sponsor, true);
 $law = json_decode($JE_translate_law, true);
 $email = json_decode($JE_translate_email, true);
 $block = json_decode($JE_translate_block, true);
-$sitemap = json_decode($JE_translate_sitemap, true);
 $phone_results = json_decode($JE_translate_phone_results, true);
-$teams = json_decode($JE_translate_teams, true);
-$services = json_decode($JE_translate_services, true);
-
 #Email contact form PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
 $mail = new PHPMailer(true);

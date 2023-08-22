@@ -16,10 +16,8 @@ $translate = json_decode($JE_translate, true);
 $credits = json_decode($JE_credits, true);
 $private = json_decode($JE_private, true);
 $seo = json_decode($JE_seo, true);
-$partner = json_decode($JE_partner, true);
 $social = json_decode($JE_social, true);
 $hosting = json_decode($JE_hosting, true);
-$marketing = json_decode($JE_marketing, true);
 $apiexternal = json_decode($JE_apiexternal, true);
 $images = json_decode($JE_images, true);
 $business = json_decode($JE_business, true);
@@ -57,16 +55,10 @@ if (file_exists($lang_finales)) {
 
 #Translate
 $general = json_decode($JE_translate_general, true);
-$partner = json_decode($JE_translate_partner, true);
-$sponsor = json_decode($JE_translate_sponsor, true);
 $law = json_decode($JE_translate_law, true);
 $email = json_decode($JE_translate_email, true);
 $block = json_decode($JE_translate_block, true);
-$sitemap = json_decode($JE_translate_sitemap, true);
 $phone_results = json_decode($JE_translate_phone_results, true);
-$teams = json_decode($JE_translate_teams, true);
-$services = json_decode($JE_translate_services, true);
-
 #Email contact form PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
 $mail = new PHPMailer(true);
@@ -87,43 +79,13 @@ use VisualAppeal\SslLabs;
 $api = new SslLabs(true);
 $JE_DSslLabsOut = $api->analyze($protocols.'://'.$domainTLD);
 
-#Google Captcha:
-//$GRecaptcha = new \ReCaptcha\ReCaptcha($apiexternal['captcha']['google']['secret']);
-//$Gresponse = $GRecaptcha->setExpectedHostname($domainTLD)->verify($GRecaptchaResponse, IpHelper::getIp());
-
-# anti spam with HCAPTCHA
-//$hcaptcha_VResponse = file_get_contents('https://hcaptcha.com/siteverify?secret='.$apiexternal['captcha']['hcaptcha']['private'].'&response='.$_POST['h-captcha-response'].'&remoteip='.IpHelper::getIp());
-//$hcaptcha_RData = json_decode($hcaptcha_VResponse);
-
-/*
-$data = array(
-            'secret' => $apiexternal['captcha']['hcaptcha']['secret'],
-            'response' => $_POST['h-captcha-response']
-        );
-$verify = curl_init();
-curl_setopt($verify, CURLOPT_URL, "https://hcaptcha.com/siteverify");
-curl_setopt($verify, CURLOPT_POST, true);
-curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
-curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
-$response = curl_exec($verify);
-
-// var_dump($response);
-$responseData = json_decode($response);
-if($responseData->success) {
-    // your success code goes here
-} 
-else {
-   // return error to user; they did not pass
-}
-*/
-
 
 #frontend
 if(isset($_GET[$DefineTranslateLang])){
 
 	if($_GET[$DefineTranslateLang] == 'index'){
 		$title = $general['index']['title'];
-		$description = $services['developper']['content']['secteur']['1']['text'];
+		$description = $general['index']['description'];
 		$keyword = $general['index']['keyword'];
 		//$urls = $general['index']['url']['default'];
 		$imgs = $general['index']['sitemap']['images'];
@@ -136,7 +98,7 @@ if(isset($_GET[$DefineTranslateLang])){
 			$urls = $general['index']['url']['default'];
 		}
 	
-		include('themes/'.$sites['template'].'/header-fix.php');
+		include('themes/'.$sites['template'].'/header.php');
 		include_once('themes/'.$sites['template'].'/general/home.php');
 		include('themes/'.$sites['template'].'/footer.php');
 	} else {
@@ -185,7 +147,7 @@ if(isset($_GET[$DefineTranslateLang])){
 
 } else {
 	$title = $general['index']['title'];
-	$description = $services['developper']['content']['secteur']['1']['text'];
+	$description = $general['index']['description'];
 	$keyword = $general['index']['keyword'];
 	//$urls = $general['index']['url']['default'];
 	$imgs = $general['index']['sitemap']['images'];
@@ -197,7 +159,7 @@ if(isset($_GET[$DefineTranslateLang])){
 		$urls = $general['index']['url']['default'];
 	}
 
-	include('themes/'.$sites['template'].'/header-fix.php');
+	include('themes/'.$sites['template'].'/header.php');
 	include_once('themes/'.$sites['template'].'/general/home.php');
 	include('themes/'.$sites['template'].'/footer.php');	
 }
