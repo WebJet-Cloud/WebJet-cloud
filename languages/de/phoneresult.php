@@ -2,29 +2,29 @@
 # $phone_results['switch']['icon']
 $phone_results = array(
 	'switch' => array(
-		'FIXED-LINE' => 'FESTE LINIE',
-		'MOBILE' => 'HANDY, MOBILTELEFON',
-		'FIXED-LINE-OR-MOBILE' => 'FESTE ODER MOBILE LEITUNG',
-		'TOLL-REE' => 'OHNE MAUT',
-		'PREMIUM-RATE' => 'PREMIUM-RATE',
-		'SHARED-COST' => 'GETEILTE KOSTEN',
+		'FIXED-LINE' => 'LIGNE FIXE',
+		'MOBILE' => 'MOBILE',
+		'FIXED-LINE-OR-MOBILE' => 'LIGNE FIXE OU MOBILE',
+		'TOLL-REE' => 'SANS PÉAGE',
+		'PREMIUM-RATE' => 'TARIF PREMIUM',
+		'SHARED-COST' => 'COÛT PARTAGÉ',
 		'VOIP' => 'VOIP',
-		'PERSONAL NUMBER' => 'PERSÖNLICHE NUMMER',
-		'PAGER' => 'PIEPSER',
+		'PERSONAL NUMBER' => 'NUMÉRO PERSONNEL',
+		'PAGER' => 'BEEPER',
 		'UAN' => 'UAN',
-		'UNKNOWN' => 'UNBEKANNT',
-		'EMERGENCY' => 'NOTFALL',
+		'UNKNOWN' => 'INCONNUE',
+		'EMERGENCY' => 'URGENCE',
 		'VOICEMAIL' => 'VOICEMAIL',
-		'SHORT-CODE' => 'KLEINER CODE',
-		'STANDARD RATE' => 'NORMALSATZ'
+		'SHORT-CODE' => 'PETIT CODE',
+		'STANDARD RATE' => 'TAUX STANDARD'
 	),
 	'true' => array(
 		'icon' => '<i class="fas fa-check fa-3x"></i>',
-		'text' => 'Richtig'
+		'text' => 'Correct'
 	),
 	'false' => array(
 		'icon' => '<i class="fas fa-ban fa-3x"></i>',
-		'text' => 'Falsch'
+		'text' => 'Faux'
 	)
 );
 

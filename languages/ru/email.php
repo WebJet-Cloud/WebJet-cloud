@@ -1,7 +1,23 @@
 <?php
-# $email['index']['content']['mail']['contact']
+
 $email = array(
-	'exemple' => 'Public'
+	'contact' => array(
+		'title' => '',
+		'description' => '',
+		'keyword' => '',
+		'url' => array(
+			'default' => '',
+			'fr' => ''
+		),
+		'content' => array(
+
+			
+		),
+		'sitemap' => array(
+			'images' => '',
+			'video' => 'www.youtube.com/watch?v='  /*directory images from <exemple.tld>/assets */
+		)
+	)
 );
 
 
