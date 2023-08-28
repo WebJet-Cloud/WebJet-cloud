@@ -79,36 +79,6 @@ use VisualAppeal\SslLabs;
 $api = new SslLabs(true);
 $JE_DSslLabsOut = $api->analyze($protocols.'://'.$domainTLD);
 
-#Google Captcha:
-//$GRecaptcha = new \ReCaptcha\ReCaptcha($apiexternal['captcha']['google']['secret']);
-//$Gresponse = $GRecaptcha->setExpectedHostname($domainTLD)->verify($GRecaptchaResponse, IpHelper::getIp());
-
-# anti spam with HCAPTCHA
-//$hcaptcha_VResponse = file_get_contents('https://hcaptcha.com/siteverify?secret='.$apiexternal['captcha']['hcaptcha']['private'].'&response='.$_POST['h-captcha-response'].'&remoteip='.IpHelper::getIp());
-//$hcaptcha_RData = json_decode($hcaptcha_VResponse);
-
-/*
-$data = array(
-            'secret' => $apiexternal['captcha']['hcaptcha']['secret'],
-            'response' => $_POST['h-captcha-response']
-        );
-$verify = curl_init();
-curl_setopt($verify, CURLOPT_URL, "https://hcaptcha.com/siteverify");
-curl_setopt($verify, CURLOPT_POST, true);
-curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
-curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
-$response = curl_exec($verify);
-
-// var_dump($response);
-$responseData = json_decode($response);
-if($responseData->success) {
-    // your success code goes here
-} 
-else {
-   // return error to user; they did not pass
-}
-*/
-
 
 #frontend
 if(isset($_GET[$DefineTranslateLang])){

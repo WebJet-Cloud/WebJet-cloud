@@ -6,7 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    '6e3fae29631ef280660b3cdad06f25a8' => $vendorDir . '/symfony/deprecation-contracts/function.php',
     '2fb9d6f23c8e8faefc193a4cde0cab4f' => $vendorDir . '/joomla/string/src/phputf8/utf8.php',
     'e6851e0ae7328fe5412fcec73928f3d9' => $vendorDir . '/joomla/string/src/phputf8/ord.php',
     'd9ad1b7c85c100a18c404a13824b846e' => $vendorDir . '/joomla/string/src/phputf8/str_ireplace.php',

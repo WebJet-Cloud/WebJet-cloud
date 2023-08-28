@@ -1,7 +1,7 @@
 {
     "name": "webjet-cloud/webjet-cloud",
     "type": "project",
-    "version": "3.0.2",
+    "version": "3.1.0",
     "description": "WebJet | No DB requirement",
     "keywords": [
 		"website project", 
@@ -35,7 +35,7 @@
         "optimize-autoloader": true,
 		"archive-format": "zip",
         "platform": {
-            "php": "8.1"
+            "php": "8.2"
         },
         "vendor-dir": "libs"
     },

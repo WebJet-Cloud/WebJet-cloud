@@ -1,10 +1,9 @@
 <?php
-
-#error_reporting(E_ALL);
-#ini_set("display_errors", 1);
+# Check out if have error and fix
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 
 require 'libs/autoload.php';
-
 #require libs/custom/
 foreach (glob('libs/custom/*.php') as $GlobRequire) { include_once $GlobRequire; }
 
@@ -19,11 +18,15 @@ $private = json_decode($JE_private, true);
 $seo = json_decode($JE_seo, true);
 $social = json_decode($JE_social, true);
 $hosting = json_decode($JE_hosting, true);
-$marketing = json_decode($JE_marketing, true);
+$apiexternal = json_decode($JE_apiexternal, true);
 $images = json_decode($JE_images, true);
-$videos = json_decode($JE_videos, true);
 $business = json_decode($JE_business, true);
 $PhoneRegionCodeManualNumbers = json_decode($JE_PhoneRegionCodeManualNumbers, true);
+/*
+#Supplémentaire
+$markets = json_decode($JE_markets, true);
+$restaurant = json_decode($JE_restaurant, true);
+*/
 
 
 #Syslink
@@ -38,7 +41,6 @@ $phone_langs = isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]) ? substr($browser_lang, 3
 $meta_langs = $browser_lang;
 
 
-
 #Configuration
 $lang_finales = 'languages/'.$Languages_translate.'/general.php';
 if (file_exists($lang_finales)) {
@@ -51,20 +53,34 @@ if (file_exists($lang_finales)) {
 	$DefineTranslateLang = $translate['manual']['frontend']['french'];
 }
 
-
 #Translate
 $general = json_decode($JE_translate_general, true);
-$partner = json_decode($JE_translate_partner, true);
-$sponsor = json_decode($JE_translate_sponsor, true);
 $law = json_decode($JE_translate_law, true);
 $email = json_decode($JE_translate_email, true);
 $block = json_decode($JE_translate_block, true);
-$sitemap = json_decode($JE_translate_sitemap, true);
-$debug = json_decode($JE_translate_debug, true);
-$teams = json_decode($JE_translate_teams, true);
-$services = json_decode($JE_translate_services, true);
+$phone_results = json_decode($JE_translate_phone_results, true);
+#Email contact form PHPMailer
+use PHPMailer\PHPMailer\PHPMailer;
+$mail = new PHPMailer(true);
+
+use Joomla\Utilities\IpHelper;
+
+#LibPhoneNumber-for-php - check only
+use libphonenumber\PhoneNumberUtil;
+use libphonenumber\PhoneNumberToCarrierMapper;
+use libphonenumber\geocoding\PhoneNumberOfflineGeocoder;
+use libphonenumber\PhoneNumberFormat;
+
+$PhoneNumberUtil = PhoneNumberUtil::getInstance();
+$PhoneNumberCarrierMapper = PhoneNumberToCarrierMapper::getInstance();
+$PhoneNumberGeocoder = PhoneNumberOfflineGeocoder::getInstance();
+
+use VisualAppeal\SslLabs;
+$api = new SslLabs(true);
+$JE_DSslLabsOut = $api->analyze($protocols.'://'.$domainTLD);
 
 
+#frontend
 
 use Icamys\SitemapGenerator\SitemapGenerator;	
 //use Icamys\SitemapGenerator\FileSystem;
@@ -83,18 +99,16 @@ use MatthiasMullie\Minify;
 
 #frontend
 
-$generator->setSitemapFileName("sitemap-fr.xml");
+$generator->setSitemapFileName("sitemap-index.xml");
 
 $alternates = [
-    ['hreflang' => 'de', 'href' => $protocols.'://'.$sites['domain'].'/de'],
-    ['hreflang' => 'en', 'href' => $protocols.'://'.$sites['domain'].'/en'],
-    ['hreflang' => 'ru', 'href' => $protocols.'://'.$sites['domain'].'/ru']
+    ['hreflang' => 'fr', 'href' => $protocols.'://'.$sites['domain'].'/fr'],
+    ['hreflang' => 'en', 'href' => $protocols.'://'.$sites['domain'].'/en']
 ];
 
 # Preparing integrated on the sitemap
 $generator->addURL('/fr/'.$general['index']['url']['fr'], new DateTime(), 'monthly', 0.5, $alternates);
-include_once('themes/automate/sitemap-fr.php');	
-#include_once('themes/automate/sitemap-index.php');
+
 
 $generator->flush();
 $generator->finalize();

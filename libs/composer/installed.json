@@ -39,17 +39,17 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.13.17",
-            "version_normalized": "8.13.17.0",
+            "version": "8.13.19",
+            "version_normalized": "8.13.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "dee92bfa0782fd5899fe6b295dea40cdb0607476"
+                "reference": "7b60d1264ba806e68fb99b06e73e2ed07815689e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/dee92bfa0782fd5899fe6b295dea40cdb0607476",
-                "reference": "dee92bfa0782fd5899fe6b295dea40cdb0607476",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/7b60d1264ba806e68fb99b06e73e2ed07815689e",
+                "reference": "7b60d1264ba806e68fb99b06e73e2ed07815689e",
                 "shasum": ""
             },
             "require": {
@@ -66,7 +66,7 @@
                 "symfony/console": "^2.8|^3.0|^v4.4|^v5.2",
                 "symfony/phpunit-bridge": "^4.2 || ^5"
             },
-            "time": "2023-07-20T10:32:50+00:00",
+            "time": "2023-08-22T13:59:44+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -226,17 +226,17 @@
         },
         {
             "name": "icamys/php-sitemap-generator",
-            "version": "4.6.0",
-            "version_normalized": "4.6.0.0",
+            "version": "4.7.0",
+            "version_normalized": "4.7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/icamys/php-sitemap-generator.git",
-                "reference": "a0f436b5984fa5148f781c9d9d8cd5d0b9a88486"
+                "reference": "236d8e7de28e9bb3ff028180ab9e3d0fe7c047b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/icamys/php-sitemap-generator/zipball/a0f436b5984fa5148f781c9d9d8cd5d0b9a88486",
-                "reference": "a0f436b5984fa5148f781c9d9d8cd5d0b9a88486",
+                "url": "https://api.github.com/repos/icamys/php-sitemap-generator/zipball/236d8e7de28e9bb3ff028180ab9e3d0fe7c047b8",
+                "reference": "236d8e7de28e9bb3ff028180ab9e3d0fe7c047b8",
                 "shasum": ""
             },
             "require": {
@@ -254,7 +254,7 @@
                 "php-mock/php-mock-phpunit": "^2.6.0",
                 "phpunit/phpunit": "^9.5.19"
             },
-            "time": "2023-06-26T14:08:43+00:00",
+            "time": "2023-08-06T22:25:38+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -285,47 +285,41 @@
             ],
             "support": {
                 "issues": "https://github.com/icamys/php-sitemap-generator/issues",
-                "source": "https://github.com/icamys/php-sitemap-generator/tree/4.6.0"
+                "source": "https://github.com/icamys/php-sitemap-generator/tree/4.7.0"
             },
             "install-path": "../icamys/php-sitemap-generator"
         },
         {
             "name": "joomla/string",
-            "version": "2.0.1",
-            "version_normalized": "2.0.1.0",
+            "version": "1.4.6",
+            "version_normalized": "1.4.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/string.git",
-                "reference": "bcdb8d45ad3953bf3cfc2b9577288823cab381b9"
+                "reference": "728ba9e39a8f1bd15b75ab878f57fa505184b8ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/string/zipball/bcdb8d45ad3953bf3cfc2b9577288823cab381b9",
-                "reference": "bcdb8d45ad3953bf3cfc2b9577288823cab381b9",
+                "url": "https://api.github.com/repos/joomla-framework/string/zipball/728ba9e39a8f1bd15b75ab878f57fa505184b8ab",
+                "reference": "728ba9e39a8f1bd15b75ab878f57fa505184b8ab",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5|~8.0.0|~8.1.0",
-                "symfony/deprecation-contracts": "^2.1"
-            },
-            "conflict": {
-                "doctrine/inflector": "<1.2"
+                "php": "^5.3.10|^7.0|^8.0"
             },
             "require-dev": {
-                "doctrine/inflector": "^1.2",
-                "joomla/coding-standards": "^3.0@dev",
-                "joomla/test": "^2.0.1",
-                "phpunit/phpunit": "^8.5|^9.0"
+                "joomla/coding-standards": "^2.0@alpha",
+                "joomla/test": "^1.0",
+                "phpunit/phpunit": "^4.8.35|^5.4.3|^6.0|^7.0|^8.0"
             },
             "suggest": {
-                "doctrine/inflector": "To use the string inflector",
                 "ext-mbstring": "For improved processing"
             },
-            "time": "2022-08-15T12:47:17+00:00",
+            "time": "2022-01-25T15:16:52+00:00",
             "type": "joomla-package",
             "extra": {
                 "branch-alias": {
-                    "dev-2.0-dev": "2.0-dev"
+                    "dev-master": "1.x-dev"
                 }
             },
             "installation-source": "dist",
@@ -364,7 +358,7 @@
             ],
             "support": {
                 "issues": "https://github.com/joomla-framework/string/issues",
-                "source": "https://github.com/joomla-framework/string/tree/2.0.1"
+                "source": "https://github.com/joomla-framework/string/tree/1.4.6"
             },
             "funding": [
                 {
@@ -380,28 +374,28 @@
         },
         {
             "name": "joomla/utilities",
-            "version": "2.0.1",
-            "version_normalized": "2.0.1.0",
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/utilities.git",
-                "reference": "ab1660fd22184700306b932c39410ba955dc82e1"
+                "reference": "f5d4fcf778abbbf1c099814297c87ef177e8b268"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/utilities/zipball/ab1660fd22184700306b932c39410ba955dc82e1",
-                "reference": "ab1660fd22184700306b932c39410ba955dc82e1",
+                "url": "https://api.github.com/repos/joomla-framework/utilities/zipball/f5d4fcf778abbbf1c099814297c87ef177e8b268",
+                "reference": "f5d4fcf778abbbf1c099814297c87ef177e8b268",
                 "shasum": ""
             },
             "require": {
-                "joomla/string": "^2.0",
-                "php": "^7.2.5|~8.0.0|~8.1.0"
+                "joomla/string": "^1.3|^2.0",
+                "php": "^7.2.5|^8.0"
             },
             "require-dev": {
-                "joomla/coding-standards": "^3.0@dev",
+                "joomla/coding-standards": "^2.0@alpha",
                 "phpunit/phpunit": "^8.5|^9.0"
             },
-            "time": "2022-08-15T11:29:34+00:00",
+            "time": "2021-08-16T20:13:00+00:00",
             "type": "joomla-package",
             "extra": {
                 "branch-alias": {
@@ -427,7 +421,7 @@
             ],
             "support": {
                 "issues": "https://github.com/joomla-framework/utilities/issues",
-                "source": "https://github.com/joomla-framework/utilities/tree/2.0.1"
+                "source": "https://github.com/joomla-framework/utilities/tree/2.0.0"
             },
             "funding": [
                 {
@@ -655,88 +649,18 @@
             "install-path": "../phpmailer/phpmailer"
         },
         {
-            "name": "symfony/deprecation-contracts",
-            "version": "v2.5.2",
-            "version_normalized": "2.5.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "e8b495ea28c1d97b5e0c121748d6f9b53d075c66"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/e8b495ea28c1d97b5e0c121748d6f9b53d075c66",
-                "reference": "e8b495ea28c1d97b5e0c121748d6f9b53d075c66",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "time": "2022-01-02T09:53:40+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "2.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "files": [
-                    "function.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "A generic function and convention to trigger deprecation notices",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.2"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "install-path": "../symfony/deprecation-contracts"
-        },
-        {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.27.0",
-            "version_normalized": "1.27.0.0",
+            "version": "v1.28.0",
+            "version_normalized": "1.28.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "8ad114f6b39e2c98a8b0e3bd907732c207c2b534"
+                "reference": "42292d99c55abe617799667f454222c54c60e229"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/8ad114f6b39e2c98a8b0e3bd907732c207c2b534",
-                "reference": "8ad114f6b39e2c98a8b0e3bd907732c207c2b534",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/42292d99c55abe617799667f454222c54c60e229",
+                "reference": "42292d99c55abe617799667f454222c54c60e229",
                 "shasum": ""
             },
             "require": {
@@ -748,11 +672,11 @@
             "suggest": {
                 "ext-mbstring": "For best performance"
             },
-            "time": "2022-11-03T14:55:06+00:00",
+            "time": "2023-07-28T09:04:16+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.27-dev"
+                    "dev-main": "1.28-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -792,7 +716,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.27.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.28.0"
             },
             "funding": [
                 {
