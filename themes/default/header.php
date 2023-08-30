@@ -608,7 +608,8 @@ if(!empty($seo['shareaholic']['key'])){
 ?>
 
 <?php if(!empty($apiexternal['captcha']['hcaptcha']['public'])){ ?><script src="https://hcaptcha.com/1/api.js?hl=<?php echo $Languages_translate; ?>" async defer></script><?php } ?>
-  <!-- Google Fonts -->
+  <?php if(!empty($apiexternal['captcha']['google']['public'])){ ?><script src="https://www.google.com/recaptcha/api.js?render=<?php echo $apiexternal['captcha']['google']['public']; ?>"></script><?php } ?>
+    <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">

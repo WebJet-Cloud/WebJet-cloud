@@ -10,6 +10,21 @@
     <script src="<?php # echo $version['external']['jquery']['js']; ?>"></script>
   <script src="<?php # echo $version['external']['bootstrap']['js']; ?>"></script>
   <script src="<?php # echo $version['external']['jquery-sticky']['js']; ?>"></script>
+
+
+  <?php if(!empty($apiexternal['captcha']['hcaptcha']['public'])){ ?>
+<script>
+$("form").submit(function(event) {
+
+   var hcaptchaVal = $('[name=h-captcha-response]').value;
+   if (hcaptchaVal === "") {
+      event.preventDefault();
+      alert("Please complete the hCaptcha");
+   }
+});
+</script>
+<?php } ?>
+
   <script src="<?php # echo $protocols.'://'.$CDNdomainTLD.'/'.$version['internal']['custom']['js'][$sites['template']]; ?>"></script>
   <!--<script src="<?php # echo $version['external']['intl-tel-input']['js']; ?>"></script>
   
