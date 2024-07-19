@@ -75,10 +75,6 @@ $PhoneNumberUtil = PhoneNumberUtil::getInstance();
 $PhoneNumberCarrierMapper = PhoneNumberToCarrierMapper::getInstance();
 $PhoneNumberGeocoder = PhoneNumberOfflineGeocoder::getInstance();
 
-use VisualAppeal\SslLabs;
-$api = new SslLabs(true);
-$JE_DSslLabsOut = $api->analyze($protocols.'://'.$domainTLD);
-
 
 #frontend
 if(isset($_GET[$DefineTranslateLang])){

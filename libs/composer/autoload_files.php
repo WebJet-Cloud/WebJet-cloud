@@ -22,5 +22,4 @@ return array(
     '4292e2fa66516089e6006723267587b4' => $vendorDir . '/joomla/string/src/phputf8/utils/ascii.php',
     '87465e33b7551b401bf051928f220e9a' => $vendorDir . '/joomla/string/src/phputf8/utils/validation.php',
     '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => $vendorDir . '/symfony/polyfill-mbstring/bootstrap.php',
-    'bf9f5270ae66ac6fa0290b4bf47867b7' => $vendorDir . '/adodb/adodb-php/adodb.inc.php',
 );
