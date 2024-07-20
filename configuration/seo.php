@@ -1,67 +1,66 @@
-<?php
-# $seo['hcaptcha']['private-key']
-$seo = array(
-	'crisp' => array(
-		'key' => '' 
+<?php 
+
+$Seo = array(
+	'name' => 'Test Name',
+	'domain' => 'webjetclouds-php.local:8890', /*domain: exemple.tld*/
+	'auto' => array(
+		'domain' => preg_replace('/www./i', '', $_SERVER['SERVER_NAME']) /*Automate domain.tld no put*/
 	),
-	'tidio' => array(
-		'key' => '' 
+	'protocol' => isset($_SERVER["HTTPS"]) ? 'https' : 'http',
+	'default-timezone' => 'Europe/Paris', /*Docs PHP variable date_default_timezone_set() */
+	'hosting' => array(
+		'Compagny-name' => '',
+		'Address' => ''
 	),
-	'fb-pexel' => array(
-		'key' => '' 
-	),
-	'quantcast' => array(
-		'key' => '' /*gH0YrwXWXWWS3*/
-	),
-	'brave' => array(
-		'token' => ''
-	),
-	'google' => array(
-		'analystics' => '',
-		'tag-manager' => ''
-	),
-	'shareaholic' => array(
-		'key' => ''
-	),
-	'yandex' => array(
-		'analystics' => '' /**/
-	),
-	'bing' => array(
-		'key' => ''
-	),
-	'microsoft' => array(
-		'key' => ''
-	),
-	'addthis' => array(
-		'key' => '' /*ra-5efbed45630393b0*/
-	),
-	'html-verify' => array(
-		/** Verification HTLM Social & Video & Search Engine after that change your seo.htaccess **/	
-		'dailymotion' => array(
-			'key' => ''
+	'local' => array(
+		'organisation-names' => '',
+		'email' => 'exempl@domail.tld',
+		'address' => array(
+			'street' => '',
+			'zipcode' => '',
+			'city' => '',
+			'region' => '',
+			'contry' => ''
 		),
-		'google' => array(
-			'key' => ''
+		'type-entreprise' => '',
+		'times-open' => array(
+			'monday' => '10:00-20:00',
+			'tuesday' => '10:00-20:00',
+			'wednesday' => '10:00-20:00',
+			'thursday' => '10:00-20:00',
+			'friday' => '10:00-20:00',
+			'saturday' => '10:00-20:00',
+			'sunday' => '10:00-20:00'
 		),
-		'pinterest' => array(
-			'key' => ''
+		'number-phone' => array(
+			'' => ''
 		),
-		'yandex' => array(
-			'key' => ''
-		)
-		
-	),
-	/*			All Browser Pinned - just color on HEX			*/
-	'browsers' => array(
-		'color' => array(
-			'title' => '#2b5797',
-			'themes' => '#ffffff',
-			'safari' => '#5bbad5',
-			'background' => '#ffffff'
+		'prices' => '€€',
+		'additional-info' => array(
+			'legal-name' => '',
+			'funding-name' => '',
+			'duns' => '',
+			'vat-id' => '',
+			'number-employed' => '',
+			'tax-id' => ''
+		),
+		'map' => array(
+			'google' => array(
+				'api' => ''
+			),
+			'geo' => array(
+				'latitude' => '',
+				'longitude' => ''
+			)
+		),
+		'pages' => array(
+			'about-url' => '',
+			'contact-url' => ''
 		)
 	)
+	
 );
 
-$JE_seo = json_encode($seo);
-# $seo['browsers']['color']['title']
+$JSeo = json_encode($Seo);
+
 ?>

@@ -30,6 +30,10 @@ class ComposerStaticInitff6b0e7fa9c728d439f43db177e51885
         array (
             'libphonenumber\\' => 15,
         ),
+        'i' => 
+        array (
+            'i18n\\' => 5,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -66,6 +70,10 @@ class ComposerStaticInitff6b0e7fa9c728d439f43db177e51885
         'libphonenumber\\' => 
         array (
             0 => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src',
+        ),
+        'i18n\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stantabcorp/i18n/src',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
@@ -171,6 +179,8 @@ class ComposerStaticInitff6b0e7fa9c728d439f43db177e51885
         'ReCaptcha\\RequestParameters' => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha/RequestParameters.php',
         'ReCaptcha\\Response' => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha/Response.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
+        'i18n\\i18n' => __DIR__ . '/..' . '/stantabcorp/i18n/src/i18n.php',
+        'i18n\\i18nTwigExtension' => __DIR__ . '/..' . '/stantabcorp/i18n/src/i18nTwigExtension.php',
         'libphonenumber\\AlternateFormatsCountryCodeSet' => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src/AlternateFormatsCountryCodeSet.php',
         'libphonenumber\\AsYouTypeFormatter' => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src/AsYouTypeFormatter.php',
         'libphonenumber\\CountryCodeSource' => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src/CountryCodeSource.php',

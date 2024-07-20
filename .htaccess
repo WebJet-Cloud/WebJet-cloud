@@ -1,0 +1,43 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+# INDEX - French
+RewriteRule ^accueil$ index.php?pages=index [L]
+
+# INDEX - English
+RewriteRule ^home$ index.php?pages=index [L]
+
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+# contact- French
+RewriteRule ^contact$ contact.php?pages=index [L]
+
+# contact - English
+RewriteRule ^contact$ contact.php?pages=index [L]
+
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+# rules - French
+RewriteRule ^mention-legale$ rules.php?pages=legal-notice [L]
+
+# rules - English
+RewriteRule ^legal-notice$ rules.php?pages=legal-notice [L]
+
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+# block- French
+RewriteRule ^merci$ contact.php?pages=success [L]
+RewriteRule ^erreur$ contact.php?pages=error [L]
+
+# block - English
+RewriteRule ^thank-you$ contact.php?pages=success [L]
+RewriteRule ^error$ contact.php?pages=error [L]
+
+</IfModule>
+

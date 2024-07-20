@@ -61,6 +61,8 @@ return array(
     'ReCaptcha\\RequestParameters' => $vendorDir . '/google/recaptcha/src/ReCaptcha/RequestParameters.php',
     'ReCaptcha\\Response' => $vendorDir . '/google/recaptcha/src/ReCaptcha/Response.php',
     'Symfony\\Polyfill\\Mbstring\\Mbstring' => $vendorDir . '/symfony/polyfill-mbstring/Mbstring.php',
+    'i18n\\i18n' => $vendorDir . '/stantabcorp/i18n/src/i18n.php',
+    'i18n\\i18nTwigExtension' => $vendorDir . '/stantabcorp/i18n/src/i18nTwigExtension.php',
     'libphonenumber\\AlternateFormatsCountryCodeSet' => $vendorDir . '/giggsey/libphonenumber-for-php/src/AlternateFormatsCountryCodeSet.php',
     'libphonenumber\\AsYouTypeFormatter' => $vendorDir . '/giggsey/libphonenumber-for-php/src/AsYouTypeFormatter.php',
     'libphonenumber\\CountryCodeSource' => $vendorDir . '/giggsey/libphonenumber-for-php/src/CountryCodeSource.php',

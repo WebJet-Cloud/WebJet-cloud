@@ -106,6 +106,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'stantabcorp/i18n' => array(
+            'pretty_version' => '1.4.3',
+            'version' => '1.4.3.0',
+            'reference' => '5a28cef6378a7f4bb232ce1ac9657ba9ef84a330',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../stantabcorp/i18n',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'symfony/polyfill-mbstring' => array(
             'pretty_version' => 'v1.30.0',
             'version' => '1.30.0.0',

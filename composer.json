@@ -81,7 +81,8 @@
 			"libs/joomla/utilities/src/IpHelper.php", 
 			"libs/icamys/php-sitemap-generator/src/SitemapGenerator.php", 
 			"libs/google/recaptcha/src/ReCaptcha/",
-			"libs/gargron/fileupload/src/"
+			"libs/gargron/fileupload/src/",
+			"libs/stantabcorp/i18n/src/"
 		],		
         "exclude-from-classmap": [
 			"/libs/giggsey/libphonenumber-for-php/src/tests/",
@@ -111,7 +112,8 @@
 		"google/recaptcha": "^1.3",
         "giggsey/locale": "^2.4",
         "matthiasmullie/minify": "^1.3",
-        "gargron/fileupload": "^1.4"
+        "gargron/fileupload": "^1.4",
+        "stantabcorp/i18n": "^1.4"
     },
 	"archive": {
 		"name": "WebJetClouds",
@@ -207,7 +209,10 @@
 			"libs/gargron/fileupload/LICENSE",
 			"libs/gargron/fileupload/.travis.yml",
 			"libs/gargron/fileupload/tests/",
-			"libs/gargron/fileupload/todo.md"
+			"libs/gargron/fileupload/todo.md",
+			"libs/stantabcorp/i18n/composer.json",
+			"libs/stantabcorp/i18n/LICENSE.md",
+			"libs/stantabcorp/i18n/README.md"
 		]
 	},
 	"suggest": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "270e42ec068051c697d63275ced7f4d6",
+    "content-hash": "ee63b0ef542e084d923dbda784387e3b",
     "packages": [
         {
             "name": "gargron/fileupload",
@@ -627,6 +627,44 @@
                 }
             ],
             "time": "2023-11-25T22:23:28+00:00"
+        },
+        {
+            "name": "stantabcorp/i18n",
+            "version": "1.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stantabcorp/i18n.git",
+                "reference": "5a28cef6378a7f4bb232ce1ac9657ba9ef84a330"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stantabcorp/i18n/zipball/5a28cef6378a7f4bb232ce1ac9657ba9ef84a330",
+                "reference": "5a28cef6378a7f4bb232ce1ac9657ba9ef84a330",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "i18n\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Thibault Junin",
+                    "email": "spamfree@thibaultjunin.fr"
+                }
+            ],
+            "description": "Internationalization library for PHP",
+            "homepage": "https://github.com/stantabcorp/i18n",
+            "support": {
+                "issues": "https://github.com/stantabcorp/i18n/issues",
+                "source": "https://github.com/stantabcorp/i18n/tree/1.4.3"
+            },
+            "time": "2020-01-18T22:01:39+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",

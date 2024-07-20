@@ -653,6 +653,47 @@
             "install-path": "../phpmailer/phpmailer"
         },
         {
+            "name": "stantabcorp/i18n",
+            "version": "1.4.3",
+            "version_normalized": "1.4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stantabcorp/i18n.git",
+                "reference": "5a28cef6378a7f4bb232ce1ac9657ba9ef84a330"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stantabcorp/i18n/zipball/5a28cef6378a7f4bb232ce1ac9657ba9ef84a330",
+                "reference": "5a28cef6378a7f4bb232ce1ac9657ba9ef84a330",
+                "shasum": ""
+            },
+            "time": "2020-01-18T22:01:39+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "i18n\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Thibault Junin",
+                    "email": "spamfree@thibaultjunin.fr"
+                }
+            ],
+            "description": "Internationalization library for PHP",
+            "homepage": "https://github.com/stantabcorp/i18n",
+            "support": {
+                "issues": "https://github.com/stantabcorp/i18n/issues",
+                "source": "https://github.com/stantabcorp/i18n/tree/1.4.3"
+            },
+            "install-path": "../stantabcorp/i18n"
+        },
+        {
             "name": "symfony/polyfill-mbstring",
             "version": "v1.30.0",
             "version_normalized": "1.30.0.0",
