@@ -38,7 +38,7 @@ if(isset($_GET['pages'])){
 	$title = $i18n->get("index_homes_title[pages]");
 	$description = $i18n->get("index_homes_description[pages]");
 	$keyword = $i18n->get("index_homes_keyword[pages]");
-	$urls = $i18n->get("index_homes_url[pages]");
+	$urls = '';
 	$imgs = 'images.jpg';
 
 	include('templates/header.php');

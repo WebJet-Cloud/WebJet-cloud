@@ -1,5 +1,5 @@
 <?php 
-
+# $JSeo['logo']['type-entreprise']
 $Seo = array(
 	'name' => 'Test Name',
 	'domain' => 'webjetclouds-php.local:8890', /*domain: exemple.tld*/
@@ -12,8 +12,21 @@ $Seo = array(
 		'Compagny-name' => '',
 		'Address' => ''
 	),
+	/* Please choose the extention webp images on intern from assets folder  */
+	'logo' => array(
+		'size' => array(
+			'32x32' => '',
+			'192x192' => '',
+			'180x180' => '',
+			'270x270' => ''
+		),
+		'default' => ''
+	), 
+	'date-publish' => '2024-07-21T14:20:47+02:00"',
+	'date-update' => '2024-07-21T14:20:47+02:00"',
 	'local' => array(
 		'organisation-names' => '',
+		'alternative-names' => '',
 		'email' => 'exempl@domail.tld',
 		'address' => array(
 			'street' => '',
@@ -22,7 +35,7 @@ $Seo = array(
 			'region' => '',
 			'contry' => ''
 		),
-		'type-entreprise' => '',
+		'type-entreprise' => 'FundingAgency',
 		'times-open' => array(
 			'monday' => '10:00-20:00',
 			'tuesday' => '10:00-20:00',
@@ -33,7 +46,7 @@ $Seo = array(
 			'sunday' => '10:00-20:00'
 		),
 		'number-phone' => array(
-			'' => ''
+			'service-client' => ''
 		),
 		'prices' => '€€',
 		'additional-info' => array(
